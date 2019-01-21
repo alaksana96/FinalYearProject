@@ -1,0 +1,1388 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930) (preloaded format=pdflatex 2019.1.15)  21 JAN 2019 12:15
+entering extended mode
+**./main.tex
+(main.tex
+LaTeX2e <2018-12-01>
+(MastersDoctoralThesis.cls
+Document Class: MastersDoctoralThesis 2017/08/27 v1.6 LaTeXTemplates.com
+(/home/aufar/.miktex/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count80
+)
+(/home/aufar/.miktex/texmfs/install/tex/latex/l3packages/xparse/xparse.sty
+(/home/aufar/.miktex/texmfs/install/tex/latex/l3kernel/expl3.sty
+Package: expl3 2019-01-01 L3 programming layer (loader) 
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2019-01-01 L3 programming layer (code)
+\c_max_int=\count81
+\l_tmpa_int=\count82
+\l_tmpb_int=\count83
+\g_tmpa_int=\count84
+\g_tmpb_int=\count85
+\g__kernel_prg_map_int=\count86
+\c_log_iow=\count87
+\l_iow_line_count_int=\count88
+\l__iow_line_target_int=\count89
+\l__iow_one_indent_int=\count90
+\l__iow_indent_int=\count91
+\c_zero_dim=\dimen102
+\c_max_dim=\dimen103
+\l_tmpa_dim=\dimen104
+\l_tmpb_dim=\dimen105
+\g_tmpa_dim=\dimen106
+\g_tmpb_dim=\dimen107
+\c_zero_skip=\skip41
+\c_max_skip=\skip42
+\l_tmpa_skip=\skip43
+\l_tmpb_skip=\skip44
+\g_tmpa_skip=\skip45
+\g_tmpb_skip=\skip46
+\c_zero_muskip=\muskip10
+\c_max_muskip=\muskip11
+\l_tmpa_muskip=\muskip12
+\l_tmpb_muskip=\muskip13
+\g_tmpa_muskip=\muskip14
+\g_tmpb_muskip=\muskip15
+\l_keys_choice_int=\count92
+\l__intarray_loop_int=\count93
+\c__intarray_sp_dim=\dimen108
+\g__intarray_font_int=\count94
+\c__fp_leading_shift_int=\count95
+\c__fp_middle_shift_int=\count96
+\c__fp_trailing_shift_int=\count97
+\c__fp_big_leading_shift_int=\count98
+\c__fp_big_middle_shift_int=\count99
+\c__fp_big_trailing_shift_int=\count100
+\c__fp_Bigg_leading_shift_int=\count101
+\c__fp_Bigg_middle_shift_int=\count102
+\c__fp_Bigg_trailing_shift_int=\count103
+\c__kernel_randint_max_int=\count104
+\g__fp_array_int=\count105
+\l__fp_array_loop_int=\count106
+\l__sort_length_int=\count107
+\l__sort_min_int=\count108
+\l__sort_top_int=\count109
+\l__sort_max_int=\count110
+\l__sort_true_max_int=\count111
+\l__sort_block_int=\count112
+\l__sort_begin_int=\count113
+\l__sort_end_int=\count114
+\l__sort_A_int=\count115
+\l__sort_B_int=\count116
+\l__sort_C_int=\count117
+\l__tl_analysis_normal_int=\count118
+\l__tl_analysis_index_int=\count119
+\l__tl_analysis_nesting_int=\count120
+\l__tl_analysis_type_int=\count121
+\l__regex_internal_a_int=\count122
+\l__regex_internal_b_int=\count123
+\l__regex_internal_c_int=\count124
+\l__regex_balance_int=\count125
+\l__regex_group_level_int=\count126
+\l__regex_mode_int=\count127
+\c__regex_cs_in_class_mode_int=\count128
+\c__regex_cs_mode_int=\count129
+\l__regex_catcodes_int=\count130
+\l__regex_default_catcodes_int=\count131
+\c__regex_catcode_D_int=\count132
+\c__regex_catcode_S_int=\count133
+\c__regex_catcode_L_int=\count134
+\c__regex_catcode_O_int=\count135
+\c__regex_catcode_A_int=\count136
+\c__regex_all_catcodes_int=\count137
+\l__regex_show_lines_int=\count138
+\l__regex_min_state_int=\count139
+\l__regex_max_state_int=\count140
+\l__regex_left_state_int=\count141
+\l__regex_right_state_int=\count142
+\l__regex_capturing_group_int=\count143
+\l__regex_min_pos_int=\count144
+\l__regex_max_pos_int=\count145
+\l__regex_curr_pos_int=\count146
+\l__regex_start_pos_int=\count147
+\l__regex_success_pos_int=\count148
+\l__regex_curr_char_int=\count149
+\l__regex_curr_catcode_int=\count150
+\l__regex_last_char_int=\count151
+\l__regex_case_changed_char_int=\count152
+\l__regex_curr_state_int=\count153
+\l__regex_step_int=\count154
+\l__regex_min_active_int=\count155
+\l__regex_max_active_int=\count156
+\l__regex_replacement_csnames_int=\count157
+\l__regex_match_count_int=\count158
+\l__regex_min_submatch_int=\count159
+\l__regex_submatch_int=\count160
+\l__regex_zeroth_submatch_int=\count161
+\g__regex_trace_regex_int=\count162
+\c_empty_box=\box27
+\l_tmpa_box=\box28
+\l_tmpb_box=\box29
+\g_tmpa_box=\box30
+\g_tmpb_box=\box31
+\l__box_top_dim=\dimen109
+\l__box_bottom_dim=\dimen110
+\l__box_left_dim=\dimen111
+\l__box_right_dim=\dimen112
+\l__box_top_new_dim=\dimen113
+\l__box_bottom_new_dim=\dimen114
+\l__box_left_new_dim=\dimen115
+\l__box_right_new_dim=\dimen116
+\l__box_internal_box=\box32
+\l__coffin_internal_box=\box33
+\l__coffin_internal_dim=\dimen117
+\l__coffin_offset_x_dim=\dimen118
+\l__coffin_offset_y_dim=\dimen119
+\l__coffin_x_dim=\dimen120
+\l__coffin_y_dim=\dimen121
+\l__coffin_x_prime_dim=\dimen122
+\l__coffin_y_prime_dim=\dimen123
+\c_empty_coffin=\box34
+\l__coffin_aligned_coffin=\box35
+\l__coffin_aligned_internal_coffin=\box36
+\l_tmpa_coffin=\box37
+\l_tmpb_coffin=\box38
+\l__coffin_display_coffin=\box39
+\l__coffin_display_coord_coffin=\box40
+\l__coffin_display_pole_coffin=\box41
+\l__coffin_display_offset_dim=\dimen124
+\l__coffin_display_x_dim=\dimen125
+\l__coffin_display_y_dim=\dimen126
+\g__file_internal_ior=\read1
+\l__coffin_bounding_shift_dim=\dimen127
+\l__coffin_left_corner_dim=\dimen128
+\l__coffin_right_corner_dim=\dimen129
+\l__coffin_bottom_corner_dim=\dimen130
+\l__coffin_top_corner_dim=\dimen131
+\l__coffin_scaled_total_height_dim=\dimen132
+\l__coffin_scaled_width_dim=\dimen133
+\l__seq_internal_a_int=\count163
+\l__seq_internal_b_int=\count164
+)
+(/home/aufar/.miktex/texmfs/install/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2019-01-01 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count165
+))
+Package: xparse 2018-10-17 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count166
+\g__xparse_grabber_int=\count167
+\l__xparse_m_args_int=\count168
+\l__xparse_mandatory_args_int=\count169
+\l__xparse_v_nesting_int=\count170
+)
+(/home/aufar/.miktex/texmfs/install/tex/latex/base/book.cls
+Document Class: book 2018/09/03 v1.4i Standard LaTeX document class
+(/home/aufar/.miktex/texmfs/install/tex/latex/base/bk11.clo
+File: bk11.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count171
+\c@chapter=\count172
+\c@section=\count173
+\c@subsection=\count174
+\c@subsubsection=\count175
+\c@paragraph=\count176
+\c@subparagraph=\count177
+\c@figure=\count178
+\c@table=\count179
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/home/aufar/.miktex/texmfs/install/tex/generic/babel/babel.sty
+Package: babel 2018/11/13 3.27 The Babel package
+
+(/home/aufar/.miktex/texmfs/install/tex/generic/babel/switch.def
+File: switch.def 2018/11/13 3.27 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+(/home/aufar/.miktex/texmfs/install/tex/latex/arabi/bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(/home/aufar/.miktex/texmfs/install/tex/latex/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+(/home/aufar/.miktex/texmfs/install/tex/generic/babel/babel.def
+File: babel.def 2018/11/13 3.27 Babel common definitions
+\babel@savecnt=\count180
+\U@D=\dimen135
+
+(/home/aufar/.miktex/texmfs/install/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count181
+)
+\l@british = a dialect from \language\l@english 
+\l@UKenglish = a dialect from \language\l@english 
+\l@american = a dialect from \language\l@english 
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+(/home/aufar/.miktex/texmfs/install/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2018/12/30 v3.26a KOMA-Script package (KOMA-Script-independent
+ basics and keyval usage)
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/home/aufar/.miktex/texmfs/install/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2018/12/30 v3.26a KOMA-Script package (loading files)
+))
+(/home/aufar/.miktex/texmfs/install/tex/latex/koma-script/scrhack.sty
+Package: scrhack 2018/12/30 v3.26a KOMA-Script package 
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2018/12/30 v3.26a KOMA-Script package (KOMA-Script-dependent 
+basics and keyval usage)
+)
+(/home/aufar/.miktex/texmfs/install/tex/latex/xpatch/xpatch.sty
+Package: xpatch 2012/10/02 v0.3 Extending etoolbox patching commands
+))
+(/home/aufar/.miktex/texmfs/install/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+Package scrhack Info: loading setspace hack on input line 193.
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/koma-script/setspace.hak
+File: setspace.hak 2018/12/30 v3.26a KOMA-Script package (hacking package setsp
+ace)
+)
+(/home/aufar/.miktex/texmfs/install/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
+\LTleft=\skip49
+\LTright=\skip50
+\LTpre=\skip51
+\LTpost=\skip52
+\LTchunksize=\count182
+\LTcapwidth=\dimen136
+\LT@head=\box42
+\LT@firsthead=\box43
+\LT@foot=\box44
+\LT@lastfoot=\box45
+\LT@cols=\count183
+\LT@rows=\count184
+\c@LT@tables=\count185
+\c@LT@chunks=\count186
+\LT@p@ftn=\toks15
+)
+(/home/aufar/.miktex/texmfs/install/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2018/05/17 v2.7s A comprehensive (SI) units package
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen137
+))
+(/home/aufar/.miktex/texmfs/install/tex/latex/tools/array.sty
+Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
+\col@sep=\dimen138
+\ar@mcellbox=\box46
+\extrarowheight=\dimen139
+\NC@list=\toks17
+\extratabsurround=\skip53
+\backup@length=\skip54
+\ar@cellbox=\box47
+)
+(/home/aufar/.miktex/texmfs/install/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2018-10-17 LaTeX2e option processing using LaTeX3 keys
+)
+\l__siunitx_tmp_box=\box48
+\l__siunitx_tmp_dim=\dimen140
+\l__siunitx_tmp_int=\count187
+\l__siunitx_number_mantissa_length_int=\count188
+\l__siunitx_number_uncert_length_int=\count189
+\l__siunitx_round_int=\count190
+\l__siunitx_process_decimal_int=\count191
+\l__siunitx_process_uncertainty_int=\count192
+\l__siunitx_process_fixed_int=\count193
+\l__siunitx_process_integer_min_int=\count194
+\l__siunitx_process_precision_int=\count195
+\l__siunitx_group_min_int=\count196
+\l__siunitx_angle_marker_box=\box49
+\l__siunitx_angle_unit_box=\box50
+\l__siunitx_angle_marker_dim=\dimen141
+\l__siunitx_angle_unit_dim=\dimen142
+\l__siunitx_unit_int=\count197
+\l__siunitx_unit_denominator_int=\count198
+\l__siunitx_unit_numerator_int=\count199
+\l__siunitx_unit_prefix_int=\count266
+\l__siunitx_unit_prefix_base_int=\count267
+\l__siunitx_unit_prefix_gram_int=\count268
+\l__siunitx_number_product_int=\count269
+\c__siunitx_one_fill_skip=\skip55
+\l__siunitx_table_unit_align_skip=\skip56
+\l__siunitx_table_exponent_dim=\dimen143
+\l__siunitx_table_integer_dim=\dimen144
+\l__siunitx_table_mantissa_dim=\dimen145
+\l__siunitx_table_marker_dim=\dimen146
+\l__siunitx_table_result_dim=\dimen147
+\l__siunitx_table_uncert_dim=\dimen148
+\l__siunitx_table_fill_pre_dim=\dimen149
+\l__siunitx_table_fill_post_dim=\dimen150
+\l__siunitx_table_fill_mid_dim=\dimen151
+\l__siunitx_table_pre_box=\box51
+\l__siunitx_table_post_box=\box52
+\l__siunitx_table_mantissa_box=\box53
+\l__siunitx_table_result_box=\box54
+\l__siunitx_table_number_align_skip=\skip57
+\l__siunitx_table_text_align_skip=\skip58
+(/home/aufar/.miktex/texmfs/install/tex/latex/translator/translator.sty
+Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
+))
+(/home/aufar/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/home/aufar/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen152
+\Gin@req@width=\dimen153
+)
+(/home/aufar/.miktex/texmfs/install/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen154
+\lightrulewidth=\dimen155
+\cmidrulewidth=\dimen156
+\belowrulesep=\dimen157
+\belowbottomsep=\dimen158
+\aboverulesep=\dimen159
+\abovetopsep=\dimen160
+\cmidrulesep=\dimen161
+\cmidrulekern=\dimen162
+\defaultaddspace=\dimen163
+\@cmidla=\count270
+\@cmidlb=\count271
+\@aboverulesep=\dimen164
+\@belowrulesep=\dimen165
+\@thisruleclass=\count272
+\@lastruleclass=\count273
+\@thisrulewidth=\dimen166
+)
+(/home/aufar/.miktex/texmfs/install/tex/latex/caption/caption.sty
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/caption/caption3.sty
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen167
+\captionmargin@=\dimen168
+\captionwidth=\dimen169
+\caption@tempdima=\dimen170
+\caption@indent=\dimen171
+\caption@parindent=\dimen172
+\caption@hangindent=\dimen173
+)
+\c@caption@flags=\count274
+\c@ContinuedFloat=\count275
+Package caption Info: longtable package is loaded.
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2018/08/26 v1.4-95 longtable captions (AR)
+))
+(/home/aufar/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/home/aufar/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+(/home/aufar/.miktex/texmfs/install/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+(/home/aufar/.miktex/texmfs/install/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/home/aufar/.miktex/texmfs/install/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count276
+\Gm@cntv=\count277
+\c@Gm@tempcnt=\count278
+\Gm@bindingoffset=\dimen174
+\Gm@wd@mp=\dimen175
+\Gm@odd@mp=\dimen176
+\Gm@even@mp=\dimen177
+\Gm@layoutwidth=\dimen178
+\Gm@layoutheight=\dimen179
+\Gm@layouthoffset=\dimen180
+\Gm@layoutvoffset=\dimen181
+\Gm@dimlist=\toks18
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
+(/home/aufar/.miktex/texmfs/install/tex/latex/koma-script/scrlayer-scrpage.sty
+Package: scrlayer-scrpage 2018/12/30 v3.26a KOMA-Script package (end user inter
+face for scrlayer)
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/koma-script/scrlayer.sty
+Package: scrlayer 2018/12/30 v3.26a KOMA-Script package (defining layers and pa
+ge styles)
+\footheight=\skip59
+Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 208
+3.
+)
+Package scrbase Info: Unknown processing state.
+(scrbase)             Processing option `markcase=used'
+(scrbase)             of member `.scrlayer-scrpage.sty' of family
+(scrbase)             `KOMA' doesn't set
+(scrbase)             a valid state. This will be interpreted
+(scrbase)             as \FamilyKeyStateProcessed on input line 724.
+)
+Package scrlayer-scrpage Info: auto-selection of `pagestyleset=standard'.
+
+1: chapter
+1: chapter
+1: section
+) (/home/aufar/.miktex/texmfs/install/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
+)
+(/home/aufar/.miktex/texmfs/install/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/base/t1enc.def
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/home/aufar/.miktex/texmfs/install/tex/latex/psnfss/mathpazo.sty
+Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup4
+)
+(/home/aufar/.miktex/texmfs/install/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2018/11/02 v3.12 programmable bibliographies (PK/MW)
+
+(/home/aufar/.miktex/texmfs/install/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/home/aufar/.miktex/texmfs/install/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/home/aufar/.miktex/texmfs/install/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/home/aufar/.miktex/texmfs/install/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/home/aufar/.miktex/texmfs/install/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/home/aufar/.miktex/texmfs/install/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/home/aufar/.miktex/texmfs/install/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+)))
+(/home/aufar/.miktex/texmfs/install/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count279
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/home/aufar/.miktex/texmfs/install/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/home/aufar/.miktex/texmfs/install/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count280
+\c@listtotal=\count281
+\c@listcount=\count282
+\c@liststart=\count283
+\c@liststop=\count284
+\c@citecount=\count285
+\c@citetotal=\count286
+\c@multicitecount=\count287
+\c@multicitetotal=\count288
+\c@instcount=\count289
+\c@maxnames=\count290
+\c@minnames=\count291
+\c@maxitems=\count292
+\c@minitems=\count293
+\c@citecounter=\count294
+\c@maxcitecounter=\count295
+\c@savedcitecounter=\count296
+\c@uniquelist=\count297
+\c@uniquename=\count298
+\c@refsection=\count299
+\c@refsegment=\count300
+\c@maxextratitle=\count301
+\c@maxextratitleyear=\count302
+\c@maxextraname=\count303
+\c@maxextradate=\count304
+\c@maxextraalpha=\count305
+\c@abbrvpenalty=\count306
+\c@highnamepenalty=\count307
+\c@lownamepenalty=\count308
+\c@maxparens=\count309
+\c@parenlevel=\count310
+\blx@tempcnta=\count311
+\blx@tempcntb=\count312
+\blx@tempcntc=\count313
+\blx@maxsection=\count314
+\blx@maxsegment@0=\count315
+\blx@notetype=\count316
+\blx@parenlevel@text=\count317
+\blx@parenlevel@foot=\count318
+\blx@sectionciteorder@0=\count319
+\blx@entrysetcounter=\count320
+\labelnumberwidth=\skip60
+\labelalphawidth=\skip61
+\biblabelsep=\skip62
+\bibitemsep=\skip63
+\bibnamesep=\skip64
+\bibinitsep=\skip65
+\bibparsep=\skip66
+\bibhang=\skip67
+\blx@bcfin=\read2
+\blx@bcfout=\write3
+\c@mincomprange=\count321
+\c@maxcomprange=\count322
+\c@mincompwidth=\count323
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2018/11/02 v3.12 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'authoryear.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count324
+\c@savedafterword=\count325
+\c@annotator=\count326
+\c@savedannotator=\count327
+\c@author=\count328
+\c@savedauthor=\count329
+\c@bookauthor=\count330
+\c@savedbookauthor=\count331
+\c@commentator=\count332
+\c@savedcommentator=\count333
+\c@editor=\count334
+\c@savededitor=\count335
+\c@editora=\count336
+\c@savededitora=\count337
+\c@editorb=\count338
+\c@savededitorb=\count339
+\c@editorc=\count340
+\c@savededitorc=\count341
+\c@foreword=\count342
+\c@savedforeword=\count343
+\c@holder=\count344
+\c@savedholder=\count345
+\c@introduction=\count346
+\c@savedintroduction=\count347
+\c@namea=\count348
+\c@savednamea=\count349
+\c@nameb=\count350
+\c@savednameb=\count351
+\c@namec=\count352
+\c@savednamec=\count353
+\c@translator=\count354
+\c@savedtranslator=\count355
+\c@shortauthor=\count356
+\c@savedshortauthor=\count357
+\c@shorteditor=\count358
+\c@savedshorteditor=\count359
+\c@labelname=\count360
+\c@savedlabelname=\count361
+\c@institution=\count362
+\c@savedinstitution=\count363
+\c@lista=\count364
+\c@savedlista=\count365
+\c@listb=\count366
+\c@savedlistb=\count367
+\c@listc=\count368
+\c@savedlistc=\count369
+\c@listd=\count370
+\c@savedlistd=\count371
+\c@liste=\count372
+\c@savedliste=\count373
+\c@listf=\count374
+\c@savedlistf=\count375
+\c@location=\count376
+\c@savedlocation=\count377
+\c@organization=\count378
+\c@savedorganization=\count379
+\c@origlocation=\count380
+\c@savedoriglocation=\count381
+\c@origpublisher=\count382
+\c@savedorigpublisher=\count383
+\c@publisher=\count384
+\c@savedpublisher=\count385
+\c@language=\count386
+\c@savedlanguage=\count387
+\c@origlanguage=\count388
+\c@savedoriglanguage=\count389
+\c@pageref=\count390
+\c@savedpageref=\count391
+\shorthandwidth=\skip68
+\shortjournalwidth=\skip69
+\shortserieswidth=\skip70
+\shorttitlewidth=\skip71
+\shortauthorwidth=\skip72
+\shorteditorwidth=\skip73
+\locallabelnumberwidth=\skip74
+\locallabelalphawidth=\skip75
+\localshorthandwidth=\skip76
+\localshortjournalwidth=\skip77
+\localshortserieswidth=\skip78
+\localshorttitlewidth=\skip79
+\localshortauthorwidth=\skip80
+\localshorteditorwidth=\skip81
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load BibTeX backend compatibility...
+Package biblatex Info: ... file 'blx-bibtex.def' found.
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/biblatex/blx-bibtex.def
+File: blx-bibtex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
+
+
+Package biblatex Warning: Using fall-back BibTeX(8) backend:
+(biblatex)                functionality may be reduced/unavailable.
+
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (/home/aufar/.miktex/texmfs/install/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
+\c@textcitecount=\count392
+\c@textcitetotal=\count393
+\c@textcitemaxnames=\count394
+\c@biburlnumpenalty=\count395
+\c@biburlucpenalty=\count396
+\c@biburllcpenalty=\count397
+\c@smartand=\count398
+)
+Package biblatex Info: Trying to load natbib compatibility...
+Package biblatex Info: ... file 'blx-natbib.def' found.
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/biblatex/blx-natbib.def
+File: blx-natbib.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
+ overwriting.
+)
+Package biblatex Info: Trying to load bibliography style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.bbx' found.
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/biblatex/bbx/authoryear.bbx
+File: authoryear.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count399
+\c@bbx:relatedtotal=\count400
+))
+Package biblatex Info: Trying to load citation style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.cbx' found.
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/biblatex/cbx/authoryear.cbx
+File: authoryear.cbx 2018/11/02 v3.12 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+))
+(/home/aufar/.miktex/texmfs/install/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
+\csq@reset=\count401
+\csq@gtype=\count402
+\csq@glevel=\count403
+\csq@qlevel=\count404
+\csq@maxlvl=\count405
+\csq@tshold=\count406
+\csq@ltx@everypar=\toks21
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2018/04/13 v5.2d csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+)
+Package csquotes Info: Enabling multilingual quotes.
+)
+(/home/aufar/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
+
+(/home/aufar/.miktex/texmfs/install/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/home/aufar/.miktex/texmfs/install/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/home/aufar/.miktex/texmfs/install/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen182
+\Hy@linkcounter=\count407
+\Hy@pagecounter=\count408
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count409
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/00miktex/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4519.
+Package hyperref Info: Link nesting OFF on input line 4524.
+Package hyperref Info: Hyper index ON on input line 4527.
+Package hyperref Info: Plain pages OFF on input line 4534.
+Package hyperref Info: Backreferencing OFF on input line 4539.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4772.
+\c@Hy@tempcnt=\count410
+LaTeX Info: Redefining \url on input line 5125.
+\XeTeXLinkMargin=\dimen183
+\Fld@menulength=\count411
+\Field@Width=\dimen184
+\Fld@charsize=\dimen185
+Package hyperref Info: Hyper figures OFF on input line 6380.
+Package hyperref Info: Link nesting OFF on input line 6385.
+Package hyperref Info: Hyper index ON on input line 6388.
+Package hyperref Info: backreferencing OFF on input line 6395.
+Package hyperref Info: Link coloring OFF on input line 6400.
+Package hyperref Info: Link coloring with OCG OFF on input line 6405.
+Package hyperref Info: PDF/A mode OFF on input line 6410.
+LaTeX Info: Redefining \ref on input line 6450.
+LaTeX Info: Redefining \pageref on input line 6454.
+\Hy@abspage=\count412
+\c@Item=\count413
+\c@Hfootnote=\count414
+)
+Package scrhack Info: hyperref hack deactivated because of
+(scrhack)             detection of hyperref version, that doesn't
+(scrhack)             need that hack, on input line 90.
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
+\Fld@listcount=\count415
+\c@bookmark@seq@number=\count416
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip82
+)
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 90.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 90.
+Package hyperref Info: Option `colorlinks' set `true' on input line 90.
+Package hyperref Info: Option `unicode' set `true' on input line 90.
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/hyperref/puenc.def
+File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `breaklinks' set `true' on input line 90.
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+
+(main.aux (Chapters/Chapter1.aux) (Appendices/AppendixA.aux))
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 90.
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/psnfss/t1ppl.fd
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+)
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+FEFF (decimal 65279)
+)
+(/home/aufar/.miktex/texmfs/install/tex/latex/translator/translator-basic-dicti
+onary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+)
+(/home/aufar/.miktex/texmfs/install/tex/latex/siunitx/siunitx-abbreviations.cfg
+File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
+) (/home/aufar/.miktex/texmfs/install/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count417
+\scratchdimen=\dimen186
+\scratchbox=\box55
+\nofMPsegments=\count418
+\nofMParguments=\count419
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count420
+\MPscratchDim=\dimen187
+\MPnumerator=\count421
+\makeMPintoPDFobject=\count422
+\everyMPtoPDFconversion=\toks23
+) (/home/aufar/.miktex/texmfs/install/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* bindingoffset: 14.22636pt
+* modes: includehead includefoot twoside 
+* h-part:(L,W,R)=(71.13188pt, 404.02908pt, 108.12054pt)
+* v-part:(T,H,B)=(42.67912pt, 759.6886pt, 42.67912pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=404.02908pt
+* \textheight=693.49821pt
+* \oddsidemargin=13.08826pt
+* \evensidemargin=35.85056pt
+* \topmargin=-29.59087pt
+* \headheight=18.85364pt
+* \headsep=19.8738pt
+* \topskip=11.0pt
+* \footskip=27.46295pt
+* \marginparwidth=116.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package scrlayer Info: Setting magic \footheight to \baselineskip while
+(scrlayer)             \begin{document} on input line 90.
+Package scrbase Info: activating english \abbrevname on input line 90.
+Package scrbase Info: activating english \byname on input line 90.
+Package scrbase Info: activating english \acknowledgementname on input line 90.
+
+Package scrbase Info: activating english \authorshipname on input line 90.
+Package scrbase Info: activating english \constantsname on input line 90.
+Package scrbase Info: activating english \symbolsname on input line 90.
+\big@size=\dimen188
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Input encoding 'utf8' specified.
+Package biblatex Info: Data encoding 'utf8' specified.
+(biblatex)             No need to reencode data.
+\openout3 = `main-blx.bib'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+(main.bbl)
+Package biblatex Info: Reference section=0 on input line 90.
+Package biblatex Info: Reference segment=0 on input line 90.
+\AtBeginShipoutBox=\box56
+Package hyperref Info: Link coloring ON on input line 90.
+ (/home/aufar/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/home/aufar/.miktex/texmfs/install/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count423
+)
+LaTeX Info: Redefining \ref on input line 90.
+LaTeX Info: Redefining \pageref on input line 90.
+LaTeX Info: Redefining \nameref on input line 90.
+
+(main.out) (main.out)
+\@outlinefile=\write4
+\openout4 = `main.out'.
+
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 90.
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/psnfss/ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 90.
+
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/psnfss/omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 90.
+
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/psnfss/omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 90.
+
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/psnfss/omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 90.
+
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+1: section
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 108.
+[1
+
+
+
+{/home/aufar/.miktex/texmfs/data/pdftex/config/pdftex.map}] [2
+
+]
+--------------------
+ Declaration of Authorship
+--------------------
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 148.
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/psnfss/omsppl.fd
+File: omsppl.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 148.
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+
+ []
+
+1: section
+[3] [4
+
+] [5] [6
+
+]
+--------------------
+ Abstract
+--------------------
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 180.
+1: section
+[7] [8
+
+]
+--------------------
+ Acknowledgements
+--------------------
+1: section
+[9] [10
+
+]
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 197.
+ (main.toc
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 18.
+ (/home/aufar/.miktex/texmfs/install/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 18.
+)
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+
+1: section
+[11] [12
+
+] (main.lof)
+\tf@lof=\write6
+\openout6 = `main.lof'.
+
+
+1: section
+[13] [14
+
+] (main.lot)
+\tf@lot=\write7
+\openout7 = `main.lot'.
+
+
+1: section
+[15] [16
+
+]
+1: section
+[17] [18
+
+]
+1: section
+[19] [20
+
+]
+1: section
+[21] [22
+
+]
+--------------------
+ Dedicatory
+--------------------
+1: section
+[23] [24
+
+]
+1: section
+\openout2 = `Chapters/Chapter1.aux'.
+
+(Chapters/Chapter1.tex
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 18.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 28.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 32.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 32.
+
+Overfull \hbox (29.1923pt too wide) in paragraph at lines 34--36
+\T1/ppl/m/n/10.95 updated) from here: [][]$\T1/cmtt/m/n/10.95 http : / / www . 
+ctan . org / tex-[]archive / info / lshort / english / lshort .
+ []
+
+1: section
+[1
+
+
+]
+Overfull \hbox (21.96138pt too wide) in paragraph at lines 57--58
+\T1/ppl/m/n/10.95 you need -- bundled together and pre-customized -- for a full
+y working L[]T[]X environment
+ []
+
+
+Overfull \hbox (30.54854pt too wide) in paragraph at lines 65--66
+\T1/ppl/m/n/10.95 template and then proceed to place your own information into 
+the \T1/ppl/m/it/10.95 THESIS INFORMATION
+ []
+
+
+Overfull \hbox (12.15245pt too wide) in paragraph at lines 73--75
+\T1/ppl/m/n/10.95 site, here: [][]$\T1/cmtt/m/n/10.95 http : / / www . ecs . so
+ton . ac . uk / ~srg / softwaretools / document / templates/$[][] 
+ []
+
+
+Overfull \hbox (42.75835pt too wide) in paragraph at lines 76--78
+\T1/ppl/m/n/10.95 template can be found on Sunil's site here: [][]$\T1/cmtt/m/n
+/10.95 http : / / www . sunilpatel . co . uk / thesis-[]template$[][] 
+ []
+
+[2]
+Overfull \hbox (15.1592pt too wide) in paragraph at lines 109--110
+[]\T1/ppl/b/n/10.95 example.bib \T1/ppl/m/n/10.95 -- this is an important file 
+that contains all the bibliographic information
+ []
+
+[3]
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 137.
+
+Overfull \hbox (10.99797pt too wide) in paragraph at lines 141--142
+[]\T1/ppl/m/n/10.95 Open the file and scroll down to the third large block titl
+ed \T1/ppl/m/it/10.95 THESIS INFORMATION
+ []
+
+
+Overfull \hbox (11.18489pt too wide) in paragraph at lines 145--146
+[]\T1/ppl/m/n/10.95 When you have done this, save the file and recompile \T1/cm
+tt/m/n/10.95 main.tex\T1/ppl/m/n/10.95 . All the information
+ []
+
+
+Overfull \hbox (2.29524pt too wide) in paragraph at lines 151--152
+\T1/ppl/m/n/10.95 comments that explain what pages, sections and formatting the
+ L[]T[]X code is creating.
+ []
+
+[4] [5]
+Overfull \hbox (8.37132pt too wide) in paragraph at lines 181--182
+\T1/ppl/m/n/10.95 sided printing is as simple as uncommenting the \T1/cmtt/m/it
+/10.95 oneside \T1/ppl/m/n/10.95 option of the \T1/cmtt/m/n/10.95 documentclass
+
+ []
+
+
+Overfull \hbox (5.08032pt too wide) in paragraph at lines 195--196
+\T1/ppl/m/n/10.95 automatically for you. To see how you use references, have a 
+look at the \T1/cmtt/m/n/10.95 Chapter1.tex
+ []
+
+[6]
+Overfull \hbox (1.92569pt too wide) in paragraph at lines 203--204
+\T1/ppl/m/n/10.95 The bibtex backend used in the template by default does not c
+orrectly handle unicode
+ []
+
+[7]
+<Figures/Electron.pdf, id=342, 398.3386pt x 284.52756pt>
+File: Figures/Electron.pdf Graphic file (type pdf)
+<use Figures/Electron.pdf>
+Package pdftex.def Info: Figures/Electron.pdf  used on input line 263.
+(pdftex.def)             Requested size: 398.33762pt x 284.52686pt.
+ [8 <./Figures/Electron.pdf>]
+Overfull \hbox (0.90797pt too wide) in paragraph at lines 309--310
+\T1/ppl/m/n/10.95 automatically builds a table of Contents by looking at all th
+e []\T1/cmtt/m/n/10.95 \chapter{}\T1/ppl/m/n/10.95 , []\T1/cmtt/m/n/10.95 \sect
+ion{}
+ []
+
+
+Overfull \hbox (0.45015pt too wide) in paragraph at lines 311--312
+[]\T1/ppl/m/n/10.95 The Table of Contents should only list the sections to thre
+e (3) levels. A []\T1/cmtt/m/n/10.95 chapter{}
+ []
+
+[9]) [10]
+\openout2 = `Appendices/AppendixA.aux'.
+
+ (Appendices/AppendixA.tex
+Appendix A.
+)
+1: section
+[11
+
+
+
+] [12
+
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 287.
+
+1: section
+[13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 287.
+ (main.aux (Chapters/Chapter1.aux) (Appendices/AppendixA.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 287.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 287.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: F7133538FDA70AFAA08268C53CCA674F;4922.
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 34774 strings out of 494865
+ 701299 string characters out of 3178317
+ 932153 words of memory out of 3000000
+ 37999 multiletter control sequences out of 15000+200000
+ 604235 words of font info for 156 fonts, out of 3000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 61i,21n,83p,1115b,1991s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/aufar/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1000
+.pk> </home/aufar/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecit10
+95.pk> </home/aufar/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecst
+1095.pk> </home/aufar/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ec
+tt1440.pk>{/home/aufar/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc} </ho
+me/aufar/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk></h
+ome/aufar/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></hom
+e/aufar/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home
+/aufar/.miktex/texmfs/install/fonts/type1/public/mathpazo/fplmri.pfb></home/auf
+ar/.miktex/texmfs/install/fonts/type1/urw/palatino/uplb8a.pfb></home/aufar/.mik
+tex/texmfs/install/fonts/type1/urw/palatino/uplr8a.pfb></home/aufar/.miktex/tex
+mfs/install/fonts/type1/urw/palatino/uplr8a.pfb></home/aufar/.miktex/texmfs/ins
+tall/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (37 pages, 253555 bytes).
+PDF statistics:
+ 640 PDF objects out of 1000 (max. 8388607)
+ 85 named destinations out of 1000 (max. 500000)
+ 246 words of extra memory for PDF output out of 10000 (max. 10000000)
+
