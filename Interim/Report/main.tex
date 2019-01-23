@@ -1,0 +1,411 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Imperial Placement Report Template 
+% LaTeX Template
+% Version 1.0 (28/06/16)
+% Version 1.1 (20/01/28) 
+% Modified by Aufar Laksana into a lab report template
+% For academic use only
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt,a4paper]{report}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[toc,page]{appendix}
+\usepackage{listings}
+\usepackage[page]{totalcount}
+\usepackage{color}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage[bottom]{footmisc}
+\usepackage{diagbox}
+\usepackage{gensymb}
+\usepackage{mathpazo}
+
+\usepackage{natbib} 
+
+
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{mylilas}{RGB}{170,55,241}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Final Year Project}
+\rhead{Interim Report}
+\rfoot{\thepage\ / \totalpages}
+
+% \geometry{headheight=15pt}
+% \geometry{footskip=0.4in}
+% \geometry{textheight=694pt}
+% \geometry{textwidth=400pt}
+
+
+
+\lstset{ %
+  basicstyle=\small,
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen}\ttfamily\small,    % comment style
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=shadowbox,	                   % adds a frame around the code
+  rulesepcolor=\color{teal},
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=C,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+}
+\lstdefinelanguage{Mymatlab}{
+    language=Matlab,%
+    %basicstyle=\color{red},
+    basicstyle=\ttfamily\footnotesize,
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+\lstdefinelanguage{TI}{
+  sensitive = true,
+  keywords={MVC,MVK,MVKLH,LDDW,LDW,NOP,STW,ZERO,LDDW,MPYDP,ADDDP,SUB,B},
+  otherkeywords={% Operators
+    >, <, ==
+  },
+  keywords = [2]{_circ_FIR_DP,loop,lend},
+  keywordstyle=\color{blue},
+  keywordstyle=[2]\color{purple},% for example
+  numbers=left,
+  numberstyle=\scriptsize,
+  stepnumber=1,
+  numbersep=8pt,
+  showstringspaces=false,
+  breaklines=true,
+  frame=shadowbox,	                   % adds a frame around the code
+  rulesepcolor=\color{teal},
+  comment=[l]{;},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{mygreen}\ttfamily\small,
+  stringstyle=\color{red}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+  }
+
+
+\begin{document}
+
+\begin{titlepage}
+
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+\setlength{\topmargin}{0in}
+\center % Center everything on the page
+ 
+\vspace*{-3cm}
+ 
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\hspace*{-0.5cm}
+%\includegraphics[scale=0.14]{Imperial.png}\\
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.5\textwidth}
+\begin{flushright} \large
+\hspace*{2cm}
+% \includegraphics[scale=0.4]{dsk6713.jpg}\\
+\end{flushright}
+\end{minipage}\\[1cm]
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE Imperial College of Science, Technology and Medicine}\\[1.5cm] % Name of your university/college
+\textsc{\Large Department of Electrical and Electronic Engineering}\\[0.8cm] % Major heading such as course name
+\textsc{\Large  Final Year Project}\\[0.8cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\addvspace{1.8em}
+
+\HRule \\[0.2cm]
+{ \huge \bfseries Interim Report:\\ Augmented Reality for Human Robotic Interaction }\\[0.2cm] % Title of your document
+\HRule \\[1cm]
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{flushleft}
+
+\large \emph{Authors:} \\
+Aufar \textsc{Laksana} \\
+CID: 01093575\\
+
+\addvspace{0.6em}
+
+\large \emph{Project Supervisor:} \\
+Dr. Yiannis Demiris\\
+
+\addvspace{0.6em}
+
+%\large \emph{Project Second Marker:} \\
+%Dr. David Thomas\\
+
+\addvspace{1.8em}
+
+\end{flushleft}
+
+% \begin{minipage}{1\textwidth}
+% 	\begin{center}
+% 		\frame{\includegraphics[scale=0.9]{declare.png}}\\
+% 	\end{center}
+% \end{minipage}\\[1cm]
+
+
+\vspace*{3em}
+
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[0.5cm] % Date, change the \today to a set date if you want to be precise
+
+
+\vfill % Fill the rest of the page with whitespace
+Shortcode: apl115 \\
+\end{titlepage}
+
+\addvspace{6em}
+
+\renewcommand{\abstractname}{\LARGE Abstract}
+
+\tableofcontents
+\newpage
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+
+\chapter{Introduction and Requirements}
+
+\section{Introduction}
+This report was written as part of the Final Year Project for the MEng. Electronic \& Information Engineering course. The project is supervised by Dr. Yiannis Demiris at the Imperial College London. The content of the report covers the research and progress of the project so far, between October 2018 until January 2019.
+
+\section{Motivation}
+A study on powered wheelchair users showed that there were approximately 3.6 million wheelchair users in the United States alone \citep{Kairy2014}. The study also showed that approximately 30\% of the users were operating powered wheelchairs (PWCs) or scooters, and that similar data had been reported in Europe. According to a report examining the recent trends amongst adults aged 65 and older in the United States, the number of elderly adults is projected to more than double from 46 million to over 98 million by 2060; due to increased life expectancy stemming from better healthcare and a reduction in mortality rate at older ages \citep{Mather2015}. As a result of the growing elderly population, it is likely that the number of powered mobility devices will continue to grow.
+
+The study by \cite{Kairy2014} also highlights the problems faced by powered wheelchair users (PWUs). PWUs are often afraid of navigating in crowded areas, or are unable to operate their device safely, due to visual, motor and cognitive disabilities. In order to address these issues, the implementation of smart or intelligent wheelchairs has been proposed. These smart wheelchairs will help the users by providing services such as navigation assistance, allowing the user to carry out daily activities with more ease. An example of navigation assistance is collaborative control, \cite{Carlson2012} which utilizes a smart system that recognizes and assists the user when they require help, by manipulating the control signals of the powered wheelchair.
+
+Within the Personal Robotics Lab at the Imperial College London, a lot of work has been done on enhancing the powered wheelchair user experience. One approach, \cite{Zolotas2018} involves the use of an augmented reality (AR) headset to help the user understand their wheelchair's behaviour. The AR headset renders helpful indicators, such as the trajectory of the wheelchair and highlighting potential obstacle collisions.
+
+This project explores the idea implementing a smart system that would further benefit PWUs, by allowing them to navigate in crowded areas and recognizing locations that are frequently visited, such as at home or the shopping mall, and building a map of the location to allow better navigation assistance. An AR headset can also be utilized to display the internal state of the smart wheelchair, such as highlighting objects that determine the frequently visited location, or alerting the user to people moving towards the wheelchair and rendering a suggested path to avoid collision.
+
+\section{Project Specification}
+The aim of this project is to design and build a system that will allow powered wheelchair users to more easily conduct routine tasks, such as navigating around the house, or other frequently visited locations, such as the grocery store.
+
+This project involves several hardware components, all of which are available within the Personal Robotics Lab. The hardware includes the following, as well as the sensors already mounted on the wheelchair:
+
+\begin{itemize}
+	\item Powered Wheelchair
+	\item Microsoft Hololens
+	\item Cameras (Microsoft Kinect)
+\end{itemize}
+
+
+The system being developed is divided into two major parts, Robotic Behaviour and Augmented Reality Visualization.
+
+\subsection{Robotic Behaviour}
+The goal for this section of the project is to design and develop algorithms that will allow for assistive navigation on the powered wheelchair. The system will utilize sensors mounted on the wheelchair to build up a map of the surroundings. Objects in the surrounding area will be detected and marked as potential collisions, depending on the trajectory of the wheelchair. An extension is the ability to detect moving objects, such as people, calculating the trajectory of the object and deciding if a collision is imminent.
+
+A major hardware component of this project is the Microsoft Hololens, a mixed reality headset that can be worn by the powered wheelchair user. The Hololens posses the ability to track the eye movements of the user. An interesting concept that can be explored is the ability to control the powered wheelchair using the eye-tracker, removing the need for a joystick. This would benefit users who lack the motor skills to operate a joystick. This feature can also be utilized to check if the user has noticed an object that may cause a collision. Should the user not see the object, the system will first highlight the object, before taking over from the user and altering the trajectory to avoid the object.
+
+\subsection{Augmented Reality Visualization}
+Using the Hololens, the goal of this section is to communicate to the user the internal state of the system controlling the powered wheelchair. Using augmented reality, visualizations will be rendered on the Hololens, allowing the user to understand the trajectory of the wheelchair, what potential collisions may occur. The system will also be able to take over control of the wheelchair, as such, it would be beneficial if a warning was displayed to the user right before the system takes over.
+
+Other visualizations include highlighting moving objects and tracking them as they move across the field of vision of the user. Should the user not notice a moving object that may cause a collision, the Hololens will flash a warning and highlight the offending object in order to attract the attention of the user, allowing them to make adjustments themselves.
+
+\newpage
+
+\chapter{Background}
+\section{Literature Review}
+
+
+\newpage
+\section{Literature Survey}
+\subsection{A}
+\newpage
+
+\section{Project Roadmap}
+\subsection{Hardware Component}
+\subsubsection{Input Component}
+\subsubsection{Output Component}
+\subsection{Software Component}
+\section{Project Timeline}
+\section{Conclusion}
+
+\section{The Virtual Air Sculpture}
+
+For this project, ideally there will be a wearable device that interacts with the virtual object, the first step of this project is to make a device that can respond to the simple virtual object, e.g. a cubic. Then from there the complexity of the object is going to be increased, and the sculpting tool and sculpting functionality would be added to the overall design. 
+
+\begin{figure}[H]
+    \centering
+%	\includegraphics[width=120mm,height=80mm]{O.jpg}
+	\caption{Design idea of this project}
+	\label{fig:full}
+\end{figure}
+
+\subsection{Tracing Device}
+
+A system is needed to keep track the physical coordinate of the device and map it to the virtual space to interact with the virtual object. Here are a few ideas that could achieve this goal. Currently, the idea of using Leap-Motion hardware to achieve this project is the most likely solution to this problem. 
+
+\subsubsection{Leap-Motion}
+
+Leap Motion is a hardware designed by the Leap Motion Inc. In the device there are consists of 2 camera sensor and a few LED light, the 3d hand motion is reconstructed through the difference of image collected by the two cameras, and this device can achieve an accuracy of 0.7mm with average 200 frames per second data collection. 
+
+\begin{figure}[H]
+    \centering
+%	\includegraphics[width = 0.6\textwidth]{leap.jpg}
+	\caption{Image From: https://edgylabs.com/leap-motion-hand-vr}
+	\label{fig:full}
+\end{figure}
+
+\subsubsection{Wireless Tracking}
+
+Positional tracking can be achieved by using the wireless signal to mimic the GPS system, this method requires a few wireless routers to be placed at different locations, and wireless signal transducer to be placed on the device and constantly sending signals to the wireless router. Upon research, the best achievable accuracy currently for any wireless tracking system is 5mm, and the protocol used was not specified, possibly using the WiFi or ZigBee Technology with the IEEE 802.11 protocol. 
+
+\subsubsection{Camera Matrix}
+
+Multiple cameras can be placed at different angles to reconstruct the physical location of any object in the virtual world. however, upon research, to purchase the camera system that could achieve the accuracy range for gesture reconstruction is very costly. 
+
+\subsubsection{Inertial Tracking}
+
+Multiple or combined accelerometers and gyroscopes can achieve accurate positional tracking for one point. however, to reconstruct multiple points and potentially the full hand movement, the number of accelerometers needed and the calibration requirements are massive and out of the scope of manageable. 
+
+\subsubsection{Sensor Fusion }
+
+Combine accelerometers, optical sensors, and other sensors could be a great way to achieve positional tracking. Currently, the HTC Vive tracker is using this sensor fusion technique to recreate single point positional tracking.  
+
+\begin{figure}[H]
+    \centering
+%	\includegraphics[width = 0.6\textwidth]{vive.png}
+	\caption{Image From: https://www.vrheads.com/everything-we-know-about-vive-tracker}
+	\label{fig:full}
+\end{figure}
+\subsection{Hap-tic Device Idea 1: Controller}
+
+Currently all Virtual Reality related hardware are using controllers, a few main stream examples are listed below.
+\begin{figure}[H]
+    \centering
+%	\includegraphics[width = 0.8\textwidth]{C.png}
+	\caption{Image From: http://metanautvr.com/blog/2015/11/02/55387/}
+	\label{fig:full}
+\end{figure}
+After careful consideration, the project is now focusing on the design of a pair of glove to interact with the virtual world instead of a controller, here are a few reasons: 
+
+\begin{itemize}
+  \item It is more natural for human being to feel object with hand. 
+  \item It is more user friendly for blind people. 
+  \item To avoid reinvent the wheel and provide new and better solution for the current generation of VR hardware. 
+  \item Personally more experienced to work with glove from third year embedded system course. 
+\end{itemize}
+
+\subsection{Hap-tic Device Idea 2: Glove}
+
+During the third year embedded course, we developed a glove controller using the flex sensor. The last generation of glove controller is from the Nintendo, called Nintendo power glove, which developed in 1989 with flex sensor and no other company had tried to produce such a product publicly again.  
+
+\begin{figure}[H]
+    \centering
+%	\includegraphics[width = 0.6\textwidth]{G1.png}
+	\caption{Image From: https://hothardware.com/news/nintendo-power-glove-hack-control-drones}
+	\label{fig:full}
+\end{figure}
+
+The problem now is to simulate the sense of touch via different method. 
+
+\subsubsection{Generate Feed-back via vibrator}
+
+Using the vibrator as the feedback is the most likely solution to the current problem, the idea is to allocate vibrator to the finger joints and palm, and use vibration to simulate the sense of touching an object. 
+
+\begin{figure}[H]
+    \centering
+%	\includegraphics[width = 0.4\textwidth]{G2.png}
+	\caption{Image From: http://blog.leapmotion.com/getting-started-leap-motion-sdk/}
+	\label{fig:full}
+\end{figure}
+
+By place vibrator to all the dot above, ideally, it would reconstruct a sense of touch via vibration when the position of the 3D object is matching the hand position in the physical space. 
+
+\begin{figure}[H]
+    \centering
+%	\includegraphics[width = 0.4\textwidth]{G21.PNG}
+	\caption{Image From: https://www.alibaba.com/product-detail/1020-small-vibration-motor-micro-vibration}
+	\label{fig:full}
+\end{figure}
+
+The plan is to make sure that one vibrator performs with the system, then after one vibrator worked, step by step the amount of vibrator will increase and a multi-IO micro-controller will probably be used to control different vibrator and vibration force.    
+
+\subsubsection{Pin with Electromagnets}
+
+\begin{figure}[H]
+    \centering
+%	\includegraphics[width = 0.4\textwidth]{G3.jpg}
+	\caption{Image From: https://cn.depositphotos.com/97855378/stock-photo-retro-pin-board-toy.html}
+	\label{fig:full}
+\end{figure}
+
+Similar to the idea of a pin-board toy, the glove can be developed as a pin board and the pin can be driven by magnets, so when the virtual object is contacting the physical glove, the part that is contacting can generate a magnetic force to push the pin toward the hand to simulate the sense of touching. However, it is difficult to achieve thus it is still in the idea form. 
+
+\section{Similar Hardware/Product that is currently existed}
+
+\subsection{Oculus Medium}
+
+Oculus Medium is a VR sculpting software for Oculus VR users, the difference between this product and this project is that the project is more focusing on the sense of touch and not rely on the visual data. 
+
+\begin{figure}[H]
+    \centering
+%	\includegraphics[width = 0.8\textwidth]{oc.png}
+	\caption{Image From: https://www.youtube.com/watch?v=XbkPbfTyFvE}
+	\label{fig:full}
+\end{figure}
+
+\subsection{The National Gallery of Prague}
+
+The national gallery of Prague had developed a set of virtual sculpture for historical sculpture and a glove device for people to touch them virtually. The difference here is that the device that the Prague national gallery developed can only track one point and have no ability to reshape the form of an object. 
+
+
+\newpage
+
+\bibliographystyle{agsm}
+\bibliography{FinalYearProject}
+
+
+\end{document}

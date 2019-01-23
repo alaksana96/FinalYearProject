@@ -1,0 +1,31 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{Carlson \harvardand\ Demiris}{2012}{Carlson2012}
+Carlson, T. \harvardand\ Demiris, Y.  \harvardyearleft 2012\harvardyearright ,
+  `{Collaborative control for a robotic wheelchair: Evaluation of performance,
+  attention, and workload}', {\em IEEE Transactions on Systems, Man, and
+  Cybernetics, Part B: Cybernetics} {\bf 42}(3),~876--888.
+
+\harvarditem[Kairy et~al.]{Kairy, Rushton, Archambault, Pituch, Torkia, {El
+  Fathi}, Stone, Routhier, Forget, Demers, Pineau \harvardand\
+  Gourdeau}{2014}{Kairy2014}
+Kairy, D., Rushton, P.~W., Archambault, P., Pituch, E., Torkia, C., {El Fathi},
+  A., Stone, P., Routhier, F., Forget, R., Demers, L., Pineau, J. \harvardand\
+  Gourdeau, R.  \harvardyearleft 2014\harvardyearright , `{Exploring powered
+  wheelchair users and their caregivers' perspectives on potential intelligent
+  power wheelchair use: A qualitative study}', {\em International Journal of
+  Environmental Research and Public Health} {\bf 11}(2),~2244--2261.
+
+\harvarditem[Mather et~al.]{Mather, Jacobsen \harvardand\
+  Pollard}{2015}{Mather2015}
+Mather, M., Jacobsen, L.~A. \harvardand\ Pollard, K.~M.  \harvardyearleft
+  2015\harvardyearright , `{Aging in the United States}', {\em Population
+  Bulletin} {\bf 70}(2).
+
+\harvarditem[Zolotas et~al.]{Zolotas, Elsdon \harvardand\
+  Demiris}{2018}{Zolotas2018}
+Zolotas, M., Elsdon, J. \harvardand\ Demiris, Y.  \harvardyearleft
+  2018\harvardyearright , `{Head-Mounted Augmented Reality for Explainable
+  Robotic Wheelchair Assistance}'.
+
+\end{thebibliography}
