@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930) (preloaded format=pdflatex 2019.1.15)  23 JAN 2019 17:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930) (preloaded format=pdflatex 2019.1.15)  25 JAN 2019 21:50
 entering extended mode
 **./main.tex
 (main.tex
@@ -731,32 +731,7 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 )
 (/home/aufar/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
-) (main.aux
-
-LaTeX Warning: Label `fig:full' multiply defined.
-
-
-LaTeX Warning: Label `fig:full' multiply defined.
-
-
-LaTeX Warning: Label `fig:full' multiply defined.
-
-
-LaTeX Warning: Label `fig:full' multiply defined.
-
-
-LaTeX Warning: Label `fig:full' multiply defined.
-
-
-LaTeX Warning: Label `fig:full' multiply defined.
-
-
-LaTeX Warning: Label `fig:full' multiply defined.
-
-
-LaTeX Warning: Label `fig:full' multiply defined.
-
-)
+) (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
@@ -773,7 +748,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
 LaTeX Font Info:    ... okay on input line 122.
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 122.
 
- (/home/aufar/.miktex/texmfs/install/tex/latex/psnfss/ot1ppl.fd
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 (/home/aufar/.miktex/texmfs/install/tex/latex/ucs/ucsencs.def
@@ -1000,58 +976,81 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [4]
 Chapter 2.
+
+Overfull \hbox (1.64502pt too wide) in paragraph at lines 261--262
+\OT1/ppl/m/n/12 In this project, the main purpose of object detection algorithm
+s will be to identify
+ []
+
+
+Overfull \hbox (8.97733pt too wide) in paragraph at lines 265--266
+[]\OT1/ppl/m/n/12 However, the use cases of object detection is not only limite
+d to detecting humans.
+ []
+
+
+Overfull \hbox (6.2776pt too wide) in paragraph at lines 265--266
+\OT1/ppl/m/n/12 There has been research conducted into the use of object detect
+ion for recognizing
+ []
+
+
+Overfull \hbox (9.07324pt too wide) in paragraph at lines 268--269
+\OT1/ppl/m/n/12 in the appearance. A frontal view of a person may be recognized
+ by the algorithm,
+ []
+
 [5
 
 ]
+Overfull \hbox (1.27379pt too wide) in paragraph at lines 272--273
+\OT1/ppl/m/n/12 cluttered nature of the image. In order to detect a small objec
+t in the background,
+ []
+
+
+Overfull \hbox (9.39717pt too wide) in paragraph at lines 274--275
+\OT1/ppl/m/n/12 Euclidean distance. However, a drawback of using SIFT is the hi
+gh computational
+ []
+
+
+Overfull \hbox (0.94986pt too wide) in paragraph at lines 277--278
+ \OT1/ppl/b/n/12 YOLO[] \OT1/ppl/m/n/12 You Only Look Once (YOLO) is a state of
+ the art object detection system
+ []
+
+<Images/Literature/YOLO_Architecture.png, id=51, 953.5625pt x 380.42125pt>
+File: Images/Literature/YOLO_Architecture.png Graphic file (type png)
+<use Images/Literature/YOLO_Architecture.png>
+Package pdftex.def Info: Images/Literature/YOLO_Architecture.png  used on input
+ line 281.
+(pdftex.def)             Requested size: 381.41824pt x 152.16579pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6]
+[6 <./Images/Literature/YOLO_Architecture.png>]
+<Images/Literature/YOLO_Action_Recognition.png, id=58, 574.145pt x 479.7925pt>
+File: Images/Literature/YOLO_Action_Recognition.png Graphic file (type png)
+<use Images/Literature/YOLO_Action_Recognition.png>
+Package pdftex.def Info: Images/Literature/YOLO_Action_Recognition.png  used on
+ input line 292.
+(pdftex.def)             Requested size: 229.65393pt x 191.91359pt.
+
+Overfull \hbox (10.9794pt too wide) in paragraph at lines 301--301
+[]\OT1/ppl/b/n/17.28 Simultaneous Localization And Mapping (SLAM) 
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7]
-Overfull \hbox (9.79378pt too wide) in paragraph at lines 303--304
-\OT1/ppl/m/n/12 locations, and wireless signal transducer to be placed on the d
-evice and constantly
- []
-
-
-Overfull \hbox (10.29758pt too wide) in paragraph at lines 303--304
-\OT1/ppl/m/n/12 sending signals to the wireless router. Upon research, the best
- achievable accuracy
- []
-
-
-Overfull \hbox (1.84938pt too wide) in paragraph at lines 303--304
-\OT1/ppl/m/n/12 not specified, possibly using the WiFi or ZigBee Technology wit
-h the IEEE 802.11
- []
-
-
-Overfull \hbox (13.72952pt too wide) in paragraph at lines 307--308
-\OT1/ppl/m/n/12 the camera system that could achieve the accuracy range for ges
-ture reconstruction
- []
-
-
-Overfull \hbox (25.92122pt too wide) in paragraph at lines 311--312
-\OT1/ppl/m/n/12 Multiple or combined accelerometers and gyroscopes can achieve 
-accurate positional
- []
-
-
-Overfull \hbox (9.20561pt too wide) in paragraph at lines 311--312
-\OT1/ppl/m/n/12 the full hand movement, the number of accelerometers needed and
- the calibration
- []
-
+[7 <./Images/Literature/YOLO_Action_Recognition.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1059,9 +1058,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8]
-Overfull \hbox (5.24495pt too wide) in paragraph at lines 338--339
-[]\OT1/ppl/m/n/12 Personally more experienced to work with glove from third yea
-r embedded
+Overfull \hbox (1.27345pt too wide) in paragraph at lines 324--325
+\OT1/ppl/m/n/12 that the robot understands. This process determines the positio
+n and orientation
+ []
+
+
+Overfull \hbox (6.83011pt too wide) in paragraph at lines 327--328
+ \OT1/ppl/b/n/12 Tracking[] \OT1/ppl/m/n/12 Here, the reconstructed map is used
+ to estimate the pose of the camera
+ []
+
+
+Overfull \hbox (29.02971pt too wide) in paragraph at lines 330--331
+\OT1/ppl/m/n/12 camera images. The structures are then added to the existing ma
+p of the environment. 
  []
 
 
@@ -1071,62 +1082,63 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
-Underfull \hbox (badness 1960) in paragraph at lines 370--370
-[]\OT1/ppl/m/n/12 Figure 2.7: |Image From: https://www.alibaba.com/product-deta
-il/1020-
- []
-
-
-Underfull \hbox (badness 2818) in paragraph at lines 381--381
-[]\OT1/ppl/m/n/12 Figure 2.8: |Image From: https://cn.depositphotos.com/9785537
-8/stock-
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10]
-Overfull \hbox (12.62006pt too wide) in paragraph at lines 387--387
-[]\OT1/ppl/b/n/17.28 Similar Hardware/Product that is currently existed 
+[10] (main.bbl
+Underfull \hbox (badness 1418) in paragraph at lines 31--35
+\OT1/ppl/m/n/12 through object detection', \OT1/ppl/m/it/12 Proceedings - IEEE 
+International Conference on
  []
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[11] (main.bbl) [12
+[11
 
 ]
+Underfull \hbox (badness 1281) in paragraph at lines 83--88
+\OT1/ppl/m/n/12 a survey from 2010 to 2016', \OT1/ppl/m/it/12 IPSJ Transactions
+ on Computer Vision and
+ []
+
+(/home/aufar/.miktex/texmfs/install/tex/latex/ucs/uni-32.def
+File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
+)
+Underfull \hbox (badness 1540) in paragraph at lines 90--93
+\OT1/ppl/b/n/12 URL: \OT1/ppl/m/it/12 https://medium.com/@madhawavidanapathiran
+a/real-time-human-detection-
+ []
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
 
 Package totalcount Warning: Total counter(s) have changed.
 (totalcount)                Rerun to get them right.
 
-(main.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+(main.aux) ) 
 Here is how much of TeX's memory you used:
- 18557 strings out of 494865
- 343579 string characters out of 3178317
+ 18862 strings out of 494865
+ 347636 string characters out of 3178317
  610078 words of memory out of 3000000
- 21757 multiletter control sequences out of 15000+200000
+ 22055 multiletter control sequences out of 15000+200000
  25009 words of font info for 63 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 62i,11n,92p,813b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/home/aufar/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/aufar/
-.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/aufar/.
-miktex/texmfs/install/fonts/type1/urw/palatino/uplb8a.pfb></home/aufar/.miktex/
-texmfs/install/fonts/type1/urw/palatino/uplr8a.pfb></home/aufar/.miktex/texmfs/
-install/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (13 pages, 95750 bytes).
+ 62i,11n,92p,813b,422s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/home/aufar/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</h
+ome/aufar/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></ho
+me/aufar/.miktex/texmfs/install/fonts/type1/urw/palatino/uplb8a.pfb></home/aufa
+r/.miktex/texmfs/install/fonts/type1/urw/palatino/uplr8a.pfb></home/aufar/.mikt
+ex/texmfs/install/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (13 pages, 645706 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
+ 94 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 109 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 119 words of extra memory for PDF output out of 10000 (max. 10000000)
 

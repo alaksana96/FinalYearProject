@@ -1,10 +1,37 @@
 \begin{thebibliography}{xx}
 
+\harvarditem{Bailey \harvardand\ Durrant-Whyte}{2006}{Bailey2006a}
+Bailey, T. \harvardand\ Durrant-Whyte, H.  \harvardyearleft
+  2006\harvardyearright , `{Simultaneous localisation and mapping (SLAM): Part
+  I - The essential algorithms.}', {\em IEEE Robotics and Automation Magazine}
+  {\bf 13}(2),~99--108.
+
+\harvarditem[Cadena et~al.]{Cadena, Carlone, Carrillo, Latif, Scaramuzza,
+  Neira, Reid \harvardand\ Leonard}{2016}{Cadena2016}
+Cadena, C., Carlone, L., Carrillo, H., Latif, Y., Scaramuzza, D., Neira, J.,
+  Reid, I. \harvardand\ Leonard, J.~J.  \harvardyearleft 2016\harvardyearright
+  , `{Past, present, and future of simultaneous localization and mapping:
+  Toward the robust-perception age}', {\em IEEE Transactions on Robotics} {\bf
+  32}(6),~1309--1332.
+
 \harvarditem{Carlson \harvardand\ Demiris}{2012}{Carlson2012}
 Carlson, T. \harvardand\ Demiris, Y.  \harvardyearleft 2012\harvardyearright ,
   `{Collaborative control for a robotic wheelchair: Evaluation of performance,
   attention, and workload}', {\em IEEE Transactions on Systems, Man, and
   Cybernetics, Part B: Cybernetics} {\bf 42}(3),~876--888.
+
+\harvarditem{Dalal \harvardand\ Triggs}{2004}{Dalal2004}
+Dalal, N. \harvardand\ Triggs, W.  \harvardyearleft 2004\harvardyearright ,
+  `{Histograms of Oriented Gradients for Human Detection}', {\em 2005 IEEE
+  Computer Society Conference on Computer Vision and Pattern Recognition
+  CVPR05} {\bf 1}(3),~886--893.
+
+\harvarditem[Espinace et~al.]{Espinace, Kollar, Soto \harvardand\
+  Roy}{2010}{Espinace2010}
+Espinace, P., Kollar, T., Soto, A. \harvardand\ Roy, N.  \harvardyearleft
+  2010\harvardyearright , `{Indoor scene recognition through object
+  detection}', {\em Proceedings - IEEE International Conference on Robotics and
+  Automation} pp.~1406--1413.
 
 \harvarditem[Kairy et~al.]{Kairy, Rushton, Archambault, Pituch, Torkia, {El
   Fathi}, Stone, Routhier, Forget, Demers, Pineau \harvardand\
@@ -16,11 +43,59 @@ Kairy, D., Rushton, P.~W., Archambault, P., Pituch, E., Torkia, C., {El Fathi},
   power wheelchair use: A qualitative study}', {\em International Journal of
   Environmental Research and Public Health} {\bf 11}(2),~2244--2261.
 
+\harvarditem{Lowe}{2004}{Lowe2004}
+Lowe, D.~G.  \harvardyearleft 2004\harvardyearright , `{Distinctive Image
+  Features from Scale-Invariant Keypoints}', {\em International Journal of
+  Computer Vision} pp.~1--28.
+
 \harvarditem[Mather et~al.]{Mather, Jacobsen \harvardand\
   Pollard}{2015}{Mather2015}
 Mather, M., Jacobsen, L.~A. \harvardand\ Pollard, K.~M.  \harvardyearleft
   2015\harvardyearright , `{Aging in the United States}', {\em Population
   Bulletin} {\bf 70}(2).
+
+\harvarditem{Nist{\'{e}}r}{2004}{Nister2004}
+Nist{\'{e}}r, D.  \harvardyearleft 2004\harvardyearright , `{A Minimal Solution
+  to the Generalised 3-Point Pose Problem}', {\em Journal of Mathematical
+  Imaging and Vision} {\bf 27}(1),~560--567.
+
+\harvarditem{Quattoni \harvardand\ Torralba}{2009}{Quattoni2009}
+Quattoni, A. \harvardand\ Torralba, A.  \harvardyearleft 2009\harvardyearright
+  , `{Recognizing Indoor Scenes}', {\em International Surgery} {\bf
+  56}(3),~182--186.
+
+\harvarditem[Redmon et~al.]{Redmon, Divvala, Girshick \harvardand\
+  Farhadi}{2015}{Redmon2015}
+Redmon, J., Divvala, S., Girshick, R. \harvardand\ Farhadi, A.
+  \harvardyearleft 2015\harvardyearright , `{You Only Look Once: Unified,
+  Real-Time Object Detection}'.
+\newline\harvardurl{http://arxiv.org/abs/1506.02640}
+
+\harvarditem[Shinde et~al.]{Shinde, Kothari \harvardand\
+  Gupta}{2018}{Shinde2018}
+Shinde, S., Kothari, A. \harvardand\ Gupta, V.  \harvardyearleft
+  2018\harvardyearright , `{YOLO based Human Action Recognition and
+  Localization}', {\em Procedia Computer Science} {\bf 133}(2018),~831--838.
+\newline\harvardurl{https://doi.org/10.1016/j.procs.2018.07.112}
+
+\harvarditem[Taketomi et~al.]{Taketomi, Uchiyama \harvardand\
+  Ikeda}{2017}{Taketomi2017}
+Taketomi, T., Uchiyama, H. \harvardand\ Ikeda, S.  \harvardyearleft
+  2017\harvardyearright , `{Visual SLAM algorithms: a survey from 2010 to
+  2016}', {\em IPSJ Transactions on Computer Vision and Applications} {\bf
+  9}(1),~16.
+\newline\harvardurl{http://ipsjcva.springeropen.com/articles/10.1186/s41074-017-0027-2}
+
+\harvarditem{Vidanapathirana}{2018}{Vidanapathirana}
+Vidanapathirana, M.  \harvardyearleft 2018\harvardyearright , `{Real-time Human
+  Detection in Computer Vision — Part 2}'.
+\newline\harvardurl{https://medium.com/@madhawavidanapathirana/real-time-human-detection-in-computer-vision-part-2-c7eda27115c6}
+
+\harvarditem[Wang et~al.]{Wang, Feng \harvardand\ Hung}{2011}{Wang2011}
+Wang, Y.~T., Feng, Y.~C. \harvardand\ Hung, D.~Y.  \harvardyearleft
+  2011\harvardyearright , `{Detection and tracking of moving objects in SLAM
+  using vision sensors}', {\em Conference Record - IEEE Instrumentation and
+  Measurement Technology Conference} pp.~1078--1082.
 
 \harvarditem[Zolotas et~al.]{Zolotas, Elsdon \harvardand\
   Demiris}{2018}{Zolotas2018}

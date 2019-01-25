@@ -255,151 +255,90 @@ Other visualizations include highlighting moving objects and tracking them as th
 
 \newpage
 
-\chapter{Background}
-\section{Literature Review}
+\chapter{Literature Review}
 
+\section{Object Detection}
+In this project, the main purpose of object detection algorithms will be to identify objects of the class 'Human' in the surrounding area of the wheelchair. In order to tackle the problem of users being unwilling to navigate in crowded areas, a system must be implemented to help track and navigate around humans.
 
-\newpage
-\section{Literature Survey}
-\subsection{A}
-\newpage
+One of the modern approaches to detecting humans in an image from a camera is to use Deep Convolutional Neural Networks. Human detection,as stated by \cite{Vidanapathirana}, is a special case of Object Detection and Object Localization. The system would ideally be able to pinpoint the location of the human object relative to the wheelchair, in order to be able to calculate the trajectory of the person.
 
-\section{Project Roadmap}
-\subsection{Hardware Component}
-\subsubsection{Input Component}
-\subsubsection{Output Component}
-\subsection{Software Component}
-\section{Project Timeline}
-\section{Conclusion}
+However, the use cases of object detection is not only limited to detecting humans. There has been research conducted into the use of object detection for recognizing the scene around a robot, ie. the system is able to identify the robot is now in a hallway \citep{Quattoni2009, Espinace2010}.
 
-\section{The Virtual Air Sculpture}
+\subsection{Human Detection}
+The main challenges with detecting humans in an image is the large variations in the appearance. A frontal view of a person may be recognized by the algorithm, but a side view may cause problems due to the algorithm not recognizing key features from a different angle \citep{Dalal2004}.
 
-For this project, ideally there will be a wearable device that interacts with the virtual object, the first step of this project is to make a device that can respond to the simple virtual object, e.g. a cubic. Then from there the complexity of the object is going to be increased, and the sculpting tool and sculpting functionality would be added to the overall design. 
+\paragraph{SIFT} A solution to this problem is outlined by \cite{Lowe2004}, in an approach named the Scale Invariant Feature Transform (SIFT), which transforms image data into co-ordinates which are scale invariant relative to local features. This method allows for a large number of features to be extracted from an image. The feature are also distinct, allowing for a single feature to be correctly matched with a low uncertainty against a database of existing features.
 
-\begin{figure}[H]
-    \centering
-%	\includegraphics[width=120mm,height=80mm]{O.jpg}
-	\caption{Design idea of this project}
-	\label{fig:full}
+A large quantity of features is required for object detection, due to the often cluttered nature of the image. In order to detect a small object in the background, at least 3 features must be correctly matched for reliable identification. 
+
+In order to perform object detection, SIFT features are first extracted from the training set of available images. A new image, in our case, a human torso/body, will be recognized by individually comparing the features in the test image with the features in the training set, in a Nearest Neighbours approach utilizing Euclidean distance. However, a drawback of using SIFT is the high computational cost of comparing the features \citep{Wang2011}.
+
+\paragraph{YOLO}
+You Only Look Once (YOLO) is a state of the art object detection system relying on a single neural network to predict bounding boxes around the objects \citep{Redmon2015}. The main advantage of YOLO is that it is extremely fast, as the name, the algorithm only looks once at an image to predict what objects are present.
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[scale=0.4]{Images/Literature/YOLO_Architecture.png}
+		\caption{The YOLO architecture \citep{Redmon2015}}
+	\end{center}
 \end{figure}
 
-\subsection{Tracing Device}
+The Convolutional Neural Network (CNN) in the YOLO system takes in an image and resizes it to 448x488 pixels. The image is then passed through the CNN layers and is output as a 7x7x30 tensor, containing the co-ordinates of the bounding boxes and the probability distributions over all the classes the network is trained on. 
 
-A system is needed to keep track the physical coordinate of the device and map it to the virtual space to interact with the virtual object. Here are a few ideas that could achieve this goal. Currently, the idea of using Leap-Motion hardware to achieve this project is the most likely solution to this problem. 
+The YOLO algorithm has been used to recognize human actions by \cite{Shinde2018}, using the LIRIS Human Activities dataset, which contain human actions such as shaking hands and entering rooms. It was found in the study that only a few frames of a streamed video is required for the YOLO algorithm to recognize the human actions.
 
-\subsubsection{Leap-Motion}
-
-Leap Motion is a hardware designed by the Leap Motion Inc. In the device there are consists of 2 camera sensor and a few LED light, the 3d hand motion is reconstructed through the difference of image collected by the two cameras, and this device can achieve an accuracy of 0.7mm with average 200 frames per second data collection. 
-
-\begin{figure}[H]
-    \centering
-%	\includegraphics[width = 0.6\textwidth]{leap.jpg}
-	\caption{Image From: https://edgylabs.com/leap-motion-hand-vr}
-	\label{fig:full}
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[scale=0.4]{Images/Literature/YOLO_Action_Recognition.png}
+		\caption{The YOLO algorithm recognizing human actions \citep{Shinde2018}}
+	\end{center}
 \end{figure}
 
-\subsubsection{Wireless Tracking}
+An extension of this work for the purposes of this project would be to detect humans walking towards the camera mounted on the wheelchair, in order to help with navigating through crowded areas.
 
-Positional tracking can be achieved by using the wireless signal to mimic the GPS system, this method requires a few wireless routers to be placed at different locations, and wireless signal transducer to be placed on the device and constantly sending signals to the wireless router. Upon research, the best achievable accuracy currently for any wireless tracking system is 5mm, and the protocol used was not specified, possibly using the WiFi or ZigBee Technology with the IEEE 802.11 protocol. 
+\section{Camera Pose Estimation}
 
-\subsubsection{Camera Matrix}
+\section{Simultaneous Localization And Mapping (SLAM)}
+The term mapping refers to a system that will create a map of the surrounding areas, by detecting objects such as walls and other obstacles. In order to help users navigate, the system must analyse the surroundings for potential dangers. As such, it is important to build up a thorough and complete map.
 
-Multiple cameras can be placed at different angles to reconstruct the physical location of any object in the virtual world. however, upon research, to purchase the camera system that could achieve the accuracy range for gesture reconstruction is very costly. 
+A fundamental method for robot navigation is the Simultaneous Localization And Mapping (SLAM) method. The process allows the system to predict the trajectory of the robot and the location of all objects on-line, without the need of an \textit{a priori} knowledge of the robots location \citep{Bailey2006a}. The method estimates the pose of the robot relative to landmarks which are detected. The popularity of SLAM increased with the emergence of indoor applications of robotic devices. For this project, it is expected that the user will be mostly navigating around the house or indoors, which rules out the use of GPS to bound the localization errors \citep{Cadena2016}.
 
-\subsubsection{Inertial Tracking}
+%\begin{figure}[h!]
+%	\begin{center}
+%		\includegraphics[scale=0.3]{Images/Literature/AdvancedRobotics_Maps.png}
+%	\end{center}
+%	
+%\end{figure}
 
-Multiple or combined accelerometers and gyroscopes can achieve accurate positional tracking for one point. however, to reconstruct multiple points and potentially the full hand movement, the number of accelerometers needed and the calibration requirements are massive and out of the scope of manageable. 
+\subsection{Existing Work}
+A review of SLAM techniques can be found in \cite{Cadena2016}, which also outlines the standard formulation of the SLAM problem as that of a Maximum a posteriori (MAP) estimation. The formulation relies on Bayes theorem, and using the prior knowledge of the robots pose to maximize the likelihood to estimate the current position of the robot. The variables required to estimate the position are the robot poses, the position of landmarks and the calibration parameters of the sensors.
 
-\subsubsection{Sensor Fusion }
+In order to build an accurate map of the surroundings, the calibration of the sensors providing the measurements is a crucial step. The choice of sensors also matter, as the type of data returned by the sensor may affect the computational complexity of the SLAM algorithm. As such, it is common to have a module in the system that deals with the extraction of relevant features from the sensor data.
 
-Combine accelerometers, optical sensors, and other sensors could be a great way to achieve positional tracking. Currently, the HTC Vive tracker is using this sensor fusion technique to recreate single point positional tracking.  
+A fairly common assumption in SLAM approaches is that the world is static and remains unchanged as the robot moves. This becomes an issue with the goal of this project, which hopes to achieve the ability to detect human objects walking around the wheelchair. This issue will be addressed in a later section.
 
-\begin{figure}[H]
-    \centering
-%	\includegraphics[width = 0.6\textwidth]{vive.png}
-	\caption{Image From: https://www.vrheads.com/everything-we-know-about-vive-tracker}
-	\label{fig:full}
-\end{figure}
-\subsection{Hap-tic Device Idea 1: Controller}
+\subsection{Visual SLAM}
+Visual SLAM (vSLAM) is an implementation of SLAM that relies on visual inputs only. As stated in \cite{Taketomi2017}, vSLAM is suitable for AR due to the low computational algorithms that can be implemented on the limited resources of an AR headset. The technique of vSlam is mainly composed of three modules:
 
-Currently all Virtual Reality related hardware are using controllers, a few main stream examples are listed below.
-\begin{figure}[H]
-    \centering
-%	\includegraphics[width = 0.8\textwidth]{C.png}
-	\caption{Image From: http://metanautvr.com/blog/2015/11/02/55387/}
-	\label{fig:full}
-\end{figure}
-After careful consideration, the project is now focusing on the design of a pair of glove to interact with the virtual world instead of a controller, here are a few reasons: 
+\paragraph{Initialization}
+In the initialization stage, camera pose estimation is conducted, to transform objects in a 2D image from the camera into a 3D co-ordinate system that the robot understands. This process determines the position and orientation of the camera relative to the object. A part of the environment is reconstructed as part of the initial map using the global co-ordinate system of the robot.
 
-\begin{itemize}
-  \item It is more natural for human being to feel object with hand. 
-  \item It is more user friendly for blind people. 
-  \item To avoid reinvent the wheel and provide new and better solution for the current generation of VR hardware. 
-  \item Personally more experienced to work with glove from third year embedded system course. 
-\end{itemize}
+\paragraph{Tracking}
+Here, the reconstructed map is used to estimate the pose of the camera with respect to the map. Feature mapping or feature tracking is conducted on the images in order to get a 2D-3D correspondence between the image and the map. The camera pose can then be calculated from the correspondences by solving the Perspective-n-Point problem \citep{Nister2004}. This allows the system to identify where on the map the robot currently is.
 
-\subsection{Hap-tic Device Idea 2: Glove}
+\paragraph{Mapping}
+When the robot passes through an environment that has previously not been mapped, the 3D structure of the surroundings is calculated from the camera images. The structures are then added to the existing map of the environment.
 
-During the third year embedded course, we developed a glove controller using the flex sensor. The last generation of glove controller is from the Nintendo, called Nintendo power glove, which developed in 1989 with flex sensor and no other company had tried to produce such a product publicly again.  
 
-\begin{figure}[H]
-    \centering
-%	\includegraphics[width = 0.6\textwidth]{G1.png}
-	\caption{Image From: https://hothardware.com/news/nintendo-power-glove-hack-control-drones}
-	\label{fig:full}
-\end{figure}
 
-The problem now is to simulate the sense of touch via different method. 
+\section{Eyetracker Control}
 
-\subsubsection{Generate Feed-back via vibrator}
+\section{Augmented Reality Visualization}
 
-Using the vibrator as the feedback is the most likely solution to the current problem, the idea is to allocate vibrator to the finger joints and palm, and use vibration to simulate the sense of touching an object. 
+\section{Competing Products}
 
-\begin{figure}[H]
-    \centering
-%	\includegraphics[width = 0.4\textwidth]{G2.png}
-	\caption{Image From: http://blog.leapmotion.com/getting-started-leap-motion-sdk/}
-	\label{fig:full}
-\end{figure}
+\section{Hardware Specifications}
 
-By place vibrator to all the dot above, ideally, it would reconstruct a sense of touch via vibration when the position of the 3D object is matching the hand position in the physical space. 
-
-\begin{figure}[H]
-    \centering
-%	\includegraphics[width = 0.4\textwidth]{G21.PNG}
-	\caption{Image From: https://www.alibaba.com/product-detail/1020-small-vibration-motor-micro-vibration}
-	\label{fig:full}
-\end{figure}
-
-The plan is to make sure that one vibrator performs with the system, then after one vibrator worked, step by step the amount of vibrator will increase and a multi-IO micro-controller will probably be used to control different vibrator and vibration force.    
-
-\subsubsection{Pin with Electromagnets}
-
-\begin{figure}[H]
-    \centering
-%	\includegraphics[width = 0.4\textwidth]{G3.jpg}
-	\caption{Image From: https://cn.depositphotos.com/97855378/stock-photo-retro-pin-board-toy.html}
-	\label{fig:full}
-\end{figure}
-
-Similar to the idea of a pin-board toy, the glove can be developed as a pin board and the pin can be driven by magnets, so when the virtual object is contacting the physical glove, the part that is contacting can generate a magnetic force to push the pin toward the hand to simulate the sense of touching. However, it is difficult to achieve thus it is still in the idea form. 
-
-\section{Similar Hardware/Product that is currently existed}
-
-\subsection{Oculus Medium}
-
-Oculus Medium is a VR sculpting software for Oculus VR users, the difference between this product and this project is that the project is more focusing on the sense of touch and not rely on the visual data. 
-
-\begin{figure}[H]
-    \centering
-%	\includegraphics[width = 0.8\textwidth]{oc.png}
-	\caption{Image From: https://www.youtube.com/watch?v=XbkPbfTyFvE}
-	\label{fig:full}
-\end{figure}
-
-\subsection{The National Gallery of Prague}
-
-The national gallery of Prague had developed a set of virtual sculpture for historical sculpture and a glove device for people to touch them virtually. The difference here is that the device that the Prague national gallery developed can only track one point and have no ability to reshape the form of an object. 
 
 
 \newpage
