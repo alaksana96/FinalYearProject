@@ -1,5 +1,10 @@
 \begin{thebibliography}{xx}
 
+\harvarditem{Arai \harvardand\ Mardiyanto}{2011}{Arai2011}
+Arai, K. \harvardand\ Mardiyanto, R.  \harvardyearleft 2011\harvardyearright ,
+  `{A prototype of electric wheelchair controlled by eye-only for paralyzed
+  user}', {\em Journal of Robotics and Mechatronics} {\bf 23}(1).
+
 \harvarditem{Bailey \harvardand\ Durrant-Whyte}{2006}{Bailey2006a}
 Bailey, T. \harvardand\ Durrant-Whyte, H.  \harvardyearleft
   2006\harvardyearright , `{Simultaneous localisation and mapping (SLAM): Part
@@ -19,6 +24,12 @@ Carlson, T. \harvardand\ Demiris, Y.  \harvardyearleft 2012\harvardyearright ,
   `{Collaborative control for a robotic wheelchair: Evaluation of performance,
   attention, and workload}', {\em IEEE Transactions on Systems, Man, and
   Cybernetics, Part B: Cybernetics} {\bf 42}(3),~876--888.
+
+\harvarditem{Chac{\'{o}}n-Quesada \harvardand\ Demiris}{2018}{Chacon-Quesada}
+Chac{\'{o}}n-Quesada, R. \harvardand\ Demiris, Y.  \harvardyearleft
+  2018\harvardyearright , `{Augmented Reality Control of Smart Wheelchair Using
+  Eye-Gaze-Enabled Selection of Affordances}',  pp.~1--4.
+\newline\harvardurl{http://www.imperial.ac.uk/personal-robotics/robots/}
 
 \harvarditem{Dalal \harvardand\ Triggs}{2004}{Dalal2004}
 Dalal, N. \harvardand\ Triggs, W.  \harvardyearleft 2004\harvardyearright ,
@@ -54,6 +65,35 @@ Mather, M., Jacobsen, L.~A. \harvardand\ Pollard, K.~M.  \harvardyearleft
   2015\harvardyearright , `{Aging in the United States}', {\em Population
   Bulletin} {\bf 70}(2).
 
+\harvarditem{Microsoft}{2015}{Microsoft2015}
+Microsoft  \harvardyearleft 2015\harvardyearright , `{Microsoft HoloLens
+  HoloLens Device Specifications}'.
+
+\harvarditem{Microsoft}{2018{\em a}}{Microsoft}
+Microsoft  \harvardyearleft 2018{\em a}\harvardyearright , `{Gaze - Mixed
+  Reality | Microsoft Docs}'.
+\newline\harvardurl{https://docs.microsoft.com/en-us/windows/mixed-reality/gaze}
+
+\harvarditem{Microsoft}{2018{\em b}}{Microsofta}
+Microsoft  \harvardyearleft 2018{\em b}\harvardyearright , `{Windows Mixed
+  Reality Documentation}'.
+
+\harvarditem{Milgram \harvardand\ Kishino}{1994}{Milgram1994}
+Milgram, P. \harvardand\ Kishino, F.  \harvardyearleft 1994\harvardyearright ,
+  `{A TAXONOMY OF MIXED REALITY VISUAL DISPLAYS}', {\em IEICE Transactions on
+  Information Systems} {\bf E77}(12),~1--15.
+
+\harvarditem[Montenegro-Couto et~al.]{Montenegro-Couto, {A. Hernandez-Ossa},
+  {L. C. Bissoli}, Sime \harvardand\ {F.
+  Bastos-Filho}}{2018}{H.Montenegro-Couto2018}
+Montenegro-Couto, E.~H., {A. Hernandez-Ossa}, K., {L. C. Bissoli}, A., Sime, M.
+  \harvardand\ {F. Bastos-Filho}, T.  \harvardyearleft 2018\harvardyearright ,
+  `{Towards an Assistive Interface To Command Robotic Wheelchairs and Interact
+  With Environment Through Eye Gaze}', {\em Anais do V Congresso Brasileiro de
+  Eletromiografia e Cinesiologia e X Simp{\'{o}}sio de Engenharia
+  Biom{\'{e}}dica} (January).
+\newline\harvardurl{https://www.even3.com.br/anais/cobecseb/78867}
+
 \harvarditem{Nist{\'{e}}r}{2004}{Nister2004}
 Nist{\'{e}}r, D.  \harvardyearleft 2004\harvardyearright , `{A Minimal Solution
   to the Generalised 3-Point Pose Problem}', {\em Journal of Mathematical
@@ -64,12 +104,24 @@ Quattoni, A. \harvardand\ Torralba, A.  \harvardyearleft 2009\harvardyearright
   , `{Recognizing Indoor Scenes}', {\em International Surgery} {\bf
   56}(3),~182--186.
 
+\harvarditem[Raymond et~al.]{Raymond, Piccini, Subramanian, Pavel \harvardand\
+  Zito}{2018}{Raymond2018}
+Raymond, L.-a., Piccini, M., Subramanian, M., Pavel, O. \harvardand\ Zito, G.
+  \harvardyearleft 2018\harvardyearright , `{Natural Gaze Data-Driven
+  Wheelchair}'.
+
 \harvarditem[Redmon et~al.]{Redmon, Divvala, Girshick \harvardand\
   Farhadi}{2015}{Redmon2015}
 Redmon, J., Divvala, S., Girshick, R. \harvardand\ Farhadi, A.
   \harvardyearleft 2015\harvardyearright , `{You Only Look Once: Unified,
   Real-Time Object Detection}'.
 \newline\harvardurl{http://arxiv.org/abs/1506.02640}
+
+\harvarditem{Rosslin \harvardand\ Tai-hoon}{2010}{Rosslin2010}
+Rosslin, J.~R. \harvardand\ Tai-hoon, K.  \harvardyearleft
+  2010\harvardyearright , `{Applications, Systems and Methods in Smart Home
+  Technology : A Review}', {\em International Journal of Advanced Science and
+  Technology} {\bf 15}(January 2010),~37--48.
 
 \harvarditem[Shinde et~al.]{Shinde, Kothari \harvardand\
   Gupta}{2018}{Shinde2018}
@@ -86,6 +138,14 @@ Taketomi, T., Uchiyama, H. \harvardand\ Ikeda, S.  \harvardyearleft
   9}(1),~16.
 \newline\harvardurl{http://ipsjcva.springeropen.com/articles/10.1186/s41074-017-0027-2}
 
+\harvarditem[van~der Meulen et~al.]{van~der Meulen, Kun \harvardand\
+  Shaer}{2017}{VanderMeulen2017}
+van~der Meulen, H., Kun, A.~L. \harvardand\ Shaer, O.  \harvardyearleft
+  2017\harvardyearright , `{What Are We Missing? Adding Eye- Tracking to the
+  HoloLens to Improve Gaze Estimation Accuracy}', {\em Proceedings of the
+  Interactive Surfaces and Spaces - ISS '17} pp.~396--400.
+\newline\harvardurl{http://dl.acm.org/citation.cfm?doid=3132272.3132278}
+
 \harvarditem{Vidanapathirana}{2018}{Vidanapathirana}
 Vidanapathirana, M.  \harvardyearleft 2018\harvardyearright , `{Real-time Human
   Detection in Computer Vision — Part 2}'.
@@ -96,6 +156,19 @@ Wang, Y.~T., Feng, Y.~C. \harvardand\ Hung, D.~Y.  \harvardyearleft
   2011\harvardyearright , `{Detection and tracking of moving objects in SLAM
   using vision sensors}', {\em Conference Record - IEEE Instrumentation and
   Measurement Technology Conference} pp.~1078--1082.
+
+\harvarditem[W{\"{a}}stlund et~al.]{W{\"{a}}stlund, Sponseller \harvardand\
+  Pettersson}{2010}{Wastlund2010}
+W{\"{a}}stlund, E., Sponseller, K. \harvardand\ Pettersson, O.
+  \harvardyearleft 2010\harvardyearright , `{What you see is where you go}',
+  {\em Proceedings of the 2010 Symposium on Eye-Tracking Research {\&}
+  Applications - ETRA '10} (January),~133.
+\newline\harvardurl{http://portal.acm.org/citation.cfm?doid=1743666.1743699}
+
+\harvarditem{Zeller}{2018}{Zeller}
+Zeller, M.  \harvardyearleft 2018\harvardyearright , `{HoloLens hardware
+  details - Mixed Reality | Microsoft Docs}'.
+\newline\harvardurl{https://docs.microsoft.com/en-us/windows/mixed-reality/hololens-hardware-details}
 
 \harvarditem[Zolotas et~al.]{Zolotas, Elsdon \harvardand\
   Demiris}{2018}{Zolotas2018}

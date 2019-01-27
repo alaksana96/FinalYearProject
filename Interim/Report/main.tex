@@ -202,7 +202,6 @@ Dr. Yiannis Demiris\\
 
 
 \vfill % Fill the rest of the page with whitespace
-Shortcode: apl115 \\
 \end{titlepage}
 
 \addvspace{6em}
@@ -214,6 +213,8 @@ Shortcode: apl115 \\
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{10pt}
+
+\setlength{\belowcaptionskip}{-10pt}
 
 \chapter{Introduction and Requirements}
 
@@ -296,19 +297,11 @@ The YOLO algorithm has been used to recognize human actions by \cite{Shinde2018}
 
 An extension of this work for the purposes of this project would be to detect humans walking towards the camera mounted on the wheelchair, in order to help with navigating through crowded areas.
 
-\section{Camera Pose Estimation}
 
 \section{Simultaneous Localization And Mapping (SLAM)}
 The term mapping refers to a system that will create a map of the surrounding areas, by detecting objects such as walls and other obstacles. In order to help users navigate, the system must analyse the surroundings for potential dangers. As such, it is important to build up a thorough and complete map.
 
 A fundamental method for robot navigation is the Simultaneous Localization And Mapping (SLAM) method. The process allows the system to predict the trajectory of the robot and the location of all objects on-line, without the need of an \textit{a priori} knowledge of the robots location \citep{Bailey2006a}. The method estimates the pose of the robot relative to landmarks which are detected. The popularity of SLAM increased with the emergence of indoor applications of robotic devices. For this project, it is expected that the user will be mostly navigating around the house or indoors, which rules out the use of GPS to bound the localization errors \citep{Cadena2016}.
-
-%\begin{figure}[h!]
-%	\begin{center}
-%		\includegraphics[scale=0.3]{Images/Literature/AdvancedRobotics_Maps.png}
-%	\end{center}
-%	
-%\end{figure}
 
 \subsection{Existing Work}
 A review of SLAM techniques can be found in \cite{Cadena2016}, which also outlines the standard formulation of the SLAM problem as that of a Maximum a posteriori (MAP) estimation. The formulation relies on Bayes theorem, and using the prior knowledge of the robots pose to maximize the likelihood to estimate the current position of the robot. The variables required to estimate the position are the robot poses, the position of landmarks and the calibration parameters of the sensors.
@@ -329,17 +322,111 @@ Here, the reconstructed map is used to estimate the pose of the camera with resp
 \paragraph{Mapping}
 When the robot passes through an environment that has previously not been mapped, the 3D structure of the surroundings is calculated from the camera images. The structures are then added to the existing map of the environment.
 
+\section{Scene Recognition}
+Wheelchair users spend a substantial part of their time at home. An active area of research called assistive domotics \citep{Rosslin2010}, involves developing assistive technology and home automation systems that allow users to interact with common household objects from a seated position in the wheelchair.
+
+The ability for a smart wheelchair to recognize a room in the house would greatly improve the user experience. A map of the surroundings that was previously built of that room can now be loaded when the wheelchair enters the room again, greatly reducing the amount of computational overhead in rebuilding the entire map. The stored maps may contain useful information such as the positions of doorways or other objects of interest that the users can interact with.
+
+\cite{Quattoni2009} proposed a scene recognition model that is specifically built for recognizing indoor scenes, by using image prototypes to learn a distance function to map indoor scenes to their correct labels. Scenes containing similar objects tend to have the same labels, and it was found that some objects are more important than others in determining a scenes identity. For instance, a library will contain many bookshelves, whereas a kitchen is unlikely to. A similar method is proposed by \cite{Espinace2010}, which relies on object detection to correctly classify scenes. The intuition is that objects can be detected in real time, and using contextual relations, it is possible to associate objects with scenes.
+
+\section{Head Mounted Display and Control}
+
+\subsection{Microsoft Hololens}
+The Microsoft Hololens is an untethered holographic computer, allowing for the display of 3D holograms pinned to real world objects. The Hololens is equipped with an array of sensors, making it an ideal choice of hardware for this project.
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[scale=0.4]{Images/Literature/hololens.jpg}
+		\caption{The Microsoft Hololens hardware \citep{Zeller}}
+	\end{center}
+\end{figure}
+
+\paragraph{Hardware Specifications}
+The Microsoft Hololens contains the following sensors:
+
+\begin{itemize}
+	\item 1 Intertial Measurement Unit (IMU)
+	\item 4 Environment understanding cameras
+	\item 1 Depth Camera
+	\item 1 2MP Photo/HD video camera
+	\item Mixed reality capture
+	\item 4 Microphones
+	\item 1 Ambient Light Sensor
+\end{itemize}
+
+A full technical specifications for the hardware is available from \cite{Microsoft2015}.
+
+\paragraph{Development}
+Mixed Reality applications are developed using the Universal Windows Platform. A computer running Windows 10 will be required to develop applications, since programs such as Unity and Microsoft Visual Studio will need to be installed.
+
+\paragraph{Gaze}
+The concept of Gaze is that of a form of targeting in mixed reality applications \citep{Microsoft}. It lets the system to know where the user is looking in the world, and from there, allows the system to discern their intent. Users tend to look at the object or location that they will interact with.
+
+Using the Hololens, a mixed reality application can determine whether a user is currently not looking at an object, allowing the application to give a visual/audio cue to the user to look at the object. This can be used in this project to alert the user to a potential collision with a  person that is approaching the wheelchair if the user has not spotted the person already.
 
 
-\section{Eyetracker Control}
+\paragraph{No Eye Tracker}
+The Hololens can keep track of its location and rotation relative to the environment, but is unable to capture eye gaze data. This is because there are no internally facing cameras. The user can interact with virtual objects by using a virtual cursor, controlled by changing their physical position and head rotations. Applications can be developed to estimate where the user is looking while wearing the device. 
 
-\section{Augmented Reality Visualization}
+Relying on head gaze to estimate the point that a user is looking at is limited in its accuracy, since the users eyes can move away from the centre of the Hololens, so the user is actually looking at something else. In the research by \cite{VanderMeulen2017}, an extra eye-tracker from Pupil Labs was attached to the Hololens. It was found that the addition of the eye-tracker greatly increased the accuracy in gaze location calculations. For virtual targets, the eye-tracker had a minimal effect on the estimation, and can be estimated by head rotation alone.
+
+\subsection{Augmented Reality Visualization}
+The Microsoft Hololens is able to blend real world and virtual content into environments where digital and physical objects can co-exist and interact. The term 'Mixed Reality' was first introduced by \cite{Milgram1994}, and refers to the blending of the physical and virtual worlds.
+
+The Hololens allows the developer to create 'Holograms', which are objects of light and sound that are displayed by the headset. Users are able to interact with the holograms through voice, gaze and gestures. Enhanced environment apps are applications that facilitate the placement of digital information on the user's current environment \citep{Microsofta}. An example of an enhanced environment application is placing markers in augmented reality on objects that the user can interact with in both the physical and digital worlds. 
+
+
+\subsection{Gaze/Eye-Tracking Control}
+The idea of gaze based control has already been explored in the Personal Robotics Lab \citep{Chacon-Quesada}, by also using the Microsoft Hololens as an AR head-mounted display. It was shown that the user could control the smart wheelchair using the AR user interface, allowing them to navigate through doors and approach people.
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[scale=0.4]{Images/Literature/AR_Interface.png}
+		\caption{The AR User Interface demonstrated by  \cite{Chacon-Quesada}}
+		\label{fig:Chacon_AR}
+		
+	\end{center}
+	
+\end{figure}
+
+The implemented system is aware of both humans and other objects in the surroundings, and allowing the user to select various options to interact with the objects, as seen in Figure \ref{fig:Chacon_AR}.
+
+%\newpage
+
+\cite{H.Montenegro-Couto2018} uses a concept whereby they use an eye-tracker to control the wheelchair motors via gaze rather than a joystick. The options to control the wheelchair are displayed on a screen, and the eye-tracker calculates the 2D co-ordinates of where the person is looking at on the screen. Various options are listed such as the ability to manoeuvre the wheelchair, as well as interact with nearby objects.
+
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[scale=0.4]{Images/Literature/Eye_Tracker_Control.png}
+		\caption{The screen displayed to users in \cite{H.Montenegro-Couto2018}}
+	\end{center}
+\end{figure}
+
+\newpage
 
 \section{Competing Products}
+One of the main issues with gaze/eye based control is that of the 'Midas touch' problem, where every gaze does not equal a goal. The user may look at an object for a split second, but may not actually want to move towards that object. To counteract this problem, \cite{Wastlund2010} developed a system which displays on-screen buttons that control the wheelchairs movements. The system also stopped the wheelchair when the device approaches an object.
 
-\section{Hardware Specifications}
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[scale=0.4]{Images/Literature/Wastlund_AR_Screen.png}
+		\caption{The on-screen buttons displayed to users \citep{Wastlund2010}}
+	\end{center}
+\end{figure}
+
+A similar idea was proposed by \cite{Arai2011}, whereby an eye-tracker would detect the position of the pupil and translate it onto an invisible control panel similar to that of \cite{Wastlund2010}. To avoid the Midas touch problem, a sustained gaze at one of the controls was required before the wheelchair would move.
+
+\cite{Raymond2018} proposes a system which utilizes a depth camera in conjunction with an eye tracker. The system identifies between eye movements aimed at the floor as a gaze target and other non-navigational eye movements. This approach is different as it does not rely on an artificial user interface to control the wheelchair as proposed by \cite{Arai2011, Wastlund2010}.
 
 
+\newpage
+\chapter{Implementation Plan}
+
+\newpage
+\chapter{Evaluation Plan}
+
+\newpage
+\chapter{Ethical, Legal \& Safety Plan}
 
 \newpage
 

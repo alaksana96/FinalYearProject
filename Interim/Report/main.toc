@@ -10,14 +10,22 @@
 \contentsline {subsection}{\numberline {2.1.1}Human Detection}{5}% 
 \contentsline {paragraph}{SIFT}{6}% 
 \contentsline {paragraph}{YOLO}{6}% 
-\contentsline {section}{\numberline {2.2}Camera Pose Estimation}{8}% 
-\contentsline {section}{\numberline {2.3}Simultaneous Localization And Mapping (SLAM)}{8}% 
-\contentsline {subsection}{\numberline {2.3.1}Existing Work}{8}% 
-\contentsline {subsection}{\numberline {2.3.2}Visual SLAM}{9}% 
+\contentsline {section}{\numberline {2.2}Simultaneous Localization And Mapping (SLAM)}{7}% 
+\contentsline {subsection}{\numberline {2.2.1}Existing Work}{8}% 
+\contentsline {subsection}{\numberline {2.2.2}Visual SLAM}{8}% 
 \contentsline {paragraph}{Initialization}{9}% 
 \contentsline {paragraph}{Tracking}{9}% 
 \contentsline {paragraph}{Mapping}{9}% 
-\contentsline {section}{\numberline {2.4}Eyetracker Control}{10}% 
-\contentsline {section}{\numberline {2.5}Augmented Reality Visualization}{10}% 
-\contentsline {section}{\numberline {2.6}Competing Products}{10}% 
-\contentsline {section}{\numberline {2.7}Hardware Specifications}{10}% 
+\contentsline {section}{\numberline {2.3}Scene Recognition}{9}% 
+\contentsline {section}{\numberline {2.4}Head Mounted Display and Control}{10}% 
+\contentsline {subsection}{\numberline {2.4.1}Microsoft Hololens}{10}% 
+\contentsline {paragraph}{Hardware Specifications}{10}% 
+\contentsline {paragraph}{Development}{11}% 
+\contentsline {paragraph}{Gaze}{11}% 
+\contentsline {paragraph}{No Eye Tracker}{11}% 
+\contentsline {subsection}{\numberline {2.4.2}Augmented Reality Visualization}{12}% 
+\contentsline {subsection}{\numberline {2.4.3}Gaze/Eye-Tracking Control}{12}% 
+\contentsline {section}{\numberline {2.5}Competing Products}{14}% 
+\contentsline {chapter}{\numberline {3}Implementation Plan}{15}% 
+\contentsline {chapter}{\numberline {4}Evaluation Plan}{16}% 
+\contentsline {chapter}{\numberline {5}Ethical, Legal \& Safety Plan}{17}% 
