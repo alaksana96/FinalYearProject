@@ -25,7 +25,7 @@
 \contentsline {paragraph}{No Eye Tracker}{12}% 
 \contentsline {subsection}{\numberline {2.4.2}Augmented Reality Visualization}{13}% 
 \contentsline {subsection}{\numberline {2.4.3}Gaze/Eye-Tracking Control}{13}% 
-\contentsline {section}{\numberline {2.5}Competing Products}{15}% 
+\contentsline {section}{\numberline {2.5}Competing Products}{14}% 
 \contentsline {chapter}{\numberline {3}Implementation Plan}{16}% 
 \contentsline {section}{\numberline {3.1}Overall Project Goals}{16}% 
 \contentsline {section}{\numberline {3.2}Hardware Analysis}{17}% 
@@ -41,16 +41,22 @@
 \contentsline {subsection}{\numberline {3.4.1}Testing Pre-Trained Models}{19}% 
 \contentsline {subsection}{\numberline {3.4.2}Estimating Moving Human Trajectories}{19}% 
 \contentsline {section}{\numberline {3.5}Obstacle Avoidance System}{20}% 
-\contentsline {subsection}{\numberline {3.5.1}Utilizing Existing Work}{20}% 
-\contentsline {subsection}{\numberline {3.5.2}Hologram Warnings}{20}% 
-\contentsline {section}{\numberline {3.6}Project Timeline}{21}% 
-\contentsline {section}{\numberline {3.7}Fallback}{21}% 
-\contentsline {section}{\numberline {3.8}Extensions}{21}% 
-\contentsline {subsection}{\numberline {3.8.1}Scene Recognition}{21}% 
-\contentsline {section}{\numberline {3.9}Overall System Architecture}{22}% 
-\contentsline {chapter}{\numberline {4}Evaluation Plan}{23}% 
-\contentsline {section}{\numberline {4.1}Human Detection Test}{23}% 
-\contentsline {section}{\numberline {4.2}Eye-Gaze Control Test}{23}% 
-\contentsline {section}{\numberline {4.3}Full System Test}{23}% 
-\contentsline {chapter}{\numberline {5}Ethical, Legal \& Safety Plan}{24}% 
-\contentsline {chapter}{Appendices}{28}% 
+\contentsline {subsection}{\numberline {3.5.1}Utilizing Existing Work}{21}% 
+\contentsline {subsection}{\numberline {3.5.2}Hologram Warnings}{21}% 
+\contentsline {section}{\numberline {3.6}Project Timeline}{22}% 
+\contentsline {section}{\numberline {3.7}Fallback}{22}% 
+\contentsline {section}{\numberline {3.8}Extensions}{22}% 
+\contentsline {subsection}{\numberline {3.8.1}Scene Recognition}{23}% 
+\contentsline {section}{\numberline {3.9}Overall System Architecture}{23}% 
+\contentsline {chapter}{\numberline {4}Evaluation Plan}{24}% 
+\contentsline {section}{\numberline {4.1}Human Detection Test}{24}% 
+\contentsline {subsection}{\numberline {4.1.1}Gathering Test Data}{24}% 
+\contentsline {subsection}{\numberline {4.1.2}Testing with Pre-Recorded Data}{25}% 
+\contentsline {section}{\numberline {4.2}Eye-Gaze Control Test}{26}% 
+\contentsline {subsection}{\numberline {4.2.1}Initial Test: Movement}{26}% 
+\contentsline {subsection}{\numberline {4.2.2}Advanced Tests}{27}% 
+\contentsline {subsection}{\numberline {4.2.3}Safety Concerns}{27}% 
+\contentsline {section}{\numberline {4.3}Obstacle Avoidance Test}{27}% 
+\contentsline {section}{\numberline {4.4}Full System Test}{27}% 
+\contentsline {chapter}{\numberline {5}Ethical, Legal \& Safety Plan}{28}% 
+\contentsline {chapter}{Appendices}{32}% 

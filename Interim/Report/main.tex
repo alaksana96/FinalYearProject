@@ -406,8 +406,6 @@ The implemented system is aware of both humans and other objects in the surround
 	\end{center}
 \end{figure}
 
-\newpage
-
 \section{Competing Products}
 One of the main issues with gaze/eye based control is that of the 'Midas touch' problem, where every gaze does not equal a goal. The user may look at an object for a split second, but may not actually want to move towards that object. To counteract this problem, \cite{Wastlund2010} developed a system which displays on-screen buttons that control the wheelchairs movements. The system also stopped the wheelchair when the device approaches an object.
 
@@ -473,6 +471,14 @@ There are already pre-trained YOLO networks capable of recognizing people. Howev
 \subsection{Estimating Moving Human Trajectories}
 In order for the wheelchair to be aware of potential collisions with humans, the people in the vicinity must be detected and considered as a landmark by the Visual SLAM system. A system utilizing vSlam and a Moving Object Detector similar to the work done by \cite{Wang2011} will be employed to locate the positions of people in the surroundings, and estimate their trajectories.
 
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=.5\linewidth]{Images/Implementation/HMD_Trajectory_Hologram.png}
+		\caption{Bounding Boxes and Arrows indicating trajectory}
+		\label{fig:HMD_Trajectory_Mockup}
+	\end{center}
+\end{figure}
+
 
 \section{Obstacle Avoidance System} \label{section:OAS}
 The goal of the obstacle avoidance system is for the wheelchair to be intelligent in detecting obstacles in the surroundings. The system will encompass the Human Detection System mentioned in Section \ref{section:HDS} as well as using range finders and mapping techniques to prevent the user from colliding with walls and other obstacles.
@@ -486,6 +492,17 @@ An extension of this would be for the system to realize when to take over from t
 Utilizing the display on the Microsoft Hololens, once a human or object is detected, it will be tracked as it moves across the users field of view. However, users may not always spot the oncoming object, due to being distracted or looking elsewhere.
 
 The Hololens and the Pupil Labs eye-tracker allow for a system to be developed which will know when the user has not spotted the oncoming object. When the system realizes this, a warning hologram will be rendered on the HMD, highlighting the oncoming object and alerting the user with a sound from the direction the object is coming from.
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=.55\linewidth]{Images/Implementation/AR_Hologram_Render.png}
+		\caption{A mockup of the hologram rendered on the HMD}
+		\label{fig:HMD_Render_Mockup}
+	\end{center}
+\end{figure}
+
+Figure \ref{fig:HMD_Render_Mockup} shows the potential holograms that will be rendered on the Microsoft Hololens screen. The position of the pink arrow will vary, and will be rendered at the spot where the user is currently looking, in order to attract their attention to the collision.
+
 
 \section{Project Timeline}
 The project timeline is listed in the Appendix Figures \ref{app:fig:timeline1} and \ref{app:fig:timeline2}. The Gantt chart displays the project outline, and what tasks are dependant upon each other.
@@ -514,9 +531,91 @@ The individual units will communicate with the wheelchair control unit running o
 \chapter{Evaluation Plan}
 
 \section{Human Detection Test}
+To be able to accurately test the recognition rate of the Human Detection System, we must gather some test data that the YOLO network was not trained on. 
+
+\subsection{Gathering Test Data}
+Using the Hololens camera, video recordings of people walking in the corridors and walkways around the Imperial College London campus will be gathered. A few sample test locations are shown in Figure \ref{fig:HDS_Test_Locations}. A mixture of indoor and outdoor scenes will be captured, since this will best reflect the possible locations a wheelchair user may visit. These videos will be kept as a test set for the human detection system. 
+
+The reasoning behind using pre-recorded videos to test the system this is so that a small test-bench can be developed, so that after the network is trained, a quick test run can be initiated to see if the recognition accuracy has improved. This will save a large amount of time, since the alternative involves transferring the network onto the onboard Linux computer and communicating with the Microsoft Hololens and live images. Furthermore, it will be difficult to recreate test conditions using live images, and it would involve multiple people who would serve as actors.
+
+\begin{figure}[ht]
+	\begin{subfigure}[b]{.5\textwidth}
+		\centering
+		\includegraphics[width=.8\linewidth]{Images/Evaluation/HumanDetection/IMG_4071.jpg}
+		\caption{Queens Lawn Walkway}
+	\end{subfigure}%
+	\hspace{\fill} 
+	\begin{subfigure}[b]{.5\textwidth}
+		\centering
+		\includegraphics[width=.8\linewidth]{Images/Evaluation/HumanDetection/IMG_4077.jpg}
+		\caption{Senior Common Room Walkway}
+	\end{subfigure}
+
+	\vspace{4ex}  %% extra vertical space
+	
+	\begin{subfigure}[b]{.5\textwidth}
+		\centering
+		\includegraphics[width=.8\linewidth]{Images/Evaluation/HumanDetection/IMG_4080.jpg}
+		\caption{EEE Entrance (Indoors)}
+	\end{subfigure}%
+	\hspace{\fill} 
+	\begin{subfigure}[b]{.5\textwidth}
+		\centering
+		\includegraphics[width=.8\linewidth]{Images/Evaluation/HumanDetection/IMG_4079.jpg}
+		\caption{Sherfield Walkway}
+	\end{subfigure}	
+
+	\begin{center}
+		\caption{Some sample test locations where video can be captured}
+		\label{fig:HDS_Test_Locations}
+	\end{center}
+\end{figure}
+
+\subsection{Testing with Pre-Recorded Data}
+A test-bench will be developed which allows the developer to visually see the results of the object detection. The YOLO method draws bounding boxes around recognized objects, as shown in Figure \ref{fig:HMD_Yolo_Bounding}.
+
+To create the test-bench, after the video is recorded,the number of people walking in each video will have to manually be counted, before labelling each file with that number. This is so that it is possible to test the number of recognitions the algorithm finds in each video.
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=.35\linewidth]{Images/Evaluation/HumanDetection/bounding_boxes.png}
+		\caption{HMD Yolo Bounding Boxes}
+		\label{fig:HMD_Yolo_Bounding}
+	\end{center}
+\end{figure}
 
 \section{Eye-Gaze Control Test}
+To test the Eye-Gaze control, the ARTA wheelchair is required. The user will have to sit in the wheelchair and fully operate the device as if they were a disabled person. 
 
+\subsection{Initial Test: Movement}
+The initial test will be conducted in a corridor within the Electrical and Electronic Engineering Department. The goal of the test will be for the user to operate the wheelchair by fixing their gaze on a marked point at the end of the corridor. The wheelchair will then move along the corridor until it has reached the marked point, before stopping (Figure \ref{fig:EyeGaze_Initial_Test}).
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=.3\linewidth]{Images/Evaluation/EyeGaze/Initial_Test.png}
+		\caption{The marker and the ideal path for the wheelchair to take}
+		\label{fig:EyeGaze_Initial_Test}
+	\end{center}
+\end{figure}
+
+\subsection{Advanced Tests}
+To fully test the navigational capabilities of the eye-gaze system, more complex tests such as turning around corners or entering doors must be conducted. A list of potential indoor tests are listed below:
+
+\begin{itemize}
+	\item Navigate to the end of a corridor and turn left/right.
+	\item Navigate to the end of a corridor through a door.
+	\item Navigate down a corridor and turn left/right into a door.
+	\item Navigate towards a marker, lose sight of point, continue to navigate to that point.
+	\item Navigate down corridor with people around without colliding with anyone.
+\end{itemize}
+
+\subsection{Safety Concerns}
+For safety reasons, the user operating the wheelchair should be physically capable to take over control using the joystick. This is especially important when conducting some of the advanced tests that may have other people walking in vicinity of the powered wheelchair. The user should have access to a kill switch to stop the wheelchair instantaneously.
+
+
+
+\section{Obstacle Avoidance Test}
+hello
 \section{Full System Test}
 
 
@@ -534,8 +633,6 @@ The individual units will communicate with the wheelchair control unit running o
 \fancyhf{}
 \lhead{Final Year Project: Appendix}
 \rhead{Interim Report}
-
-
 
 \appendixpage
 
