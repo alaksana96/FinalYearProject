@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930) (preloaded format=pdflatex 2019.1.15)  28 JAN 2019 18:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930) (preloaded format=pdflatex 2019.1.15)  28 JAN 2019 20:37
 entering extended mode
 **./main.tex
 (main.tex
@@ -1471,15 +1471,35 @@ ith anyone.
  []
 
 
-Overfull \hbox (9.18147pt too wide) in paragraph at lines 613--614
-\OT1/ppl/m/n/12 For safety reasons, the user operating the wheelchair should be
- physically capable
+Overfull \hbox (8.8097pt too wide) in paragraph at lines 613--614
+\OT1/ppl/m/n/12 The obstacle avoidance tests can be divided into two sections, 
+display and control.
  []
 
 
-Overfull \hbox (20.61679pt too wide) in paragraph at lines 613--614
-\OT1/ppl/m/n/12 to take over control using the joystick. This is especially imp
-ortant when conducting
+Overfull \hbox (3.3858pt too wide) in paragraph at lines 616--617
+\OT1/ppl/m/n/12 To test the collision warnings, we can play pre-recorded videos
+ of people moving
+ []
+
+<Images/Evaluation/ObjectAvoidance/Object_Avoidance_Render.png, id=142, 950.551
+25pt x 371.3875pt>
+File: Images/Evaluation/ObjectAvoidance/Object_Avoidance_Render.png Graphic fil
+e (type png)
+<use Images/Evaluation/ObjectAvoidance/Object_Avoidance_Render.png>
+Package pdftex.def Info: Images/Evaluation/ObjectAvoidance/Object_Avoidance_Ren
+der.png  used on input line 622.
+(pdftex.def)             Requested size: 418.25368pt x 163.41666pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27]
+Overfull \hbox (1.16519pt too wide) in paragraph at lines 632--633
+[]\OT1/ppl/m/n/12 An obstacle course of sorts will be setup featuring all the e
+lements from previous
  []
 
 
@@ -1488,14 +1508,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27]
+[28 <./Images/Evaluation/ObjectAvoidance/Object_Avoidance_Render.png>]
 Chapter 5.
-[28
 
-] (main.bbl
-Underfull \hbox (badness 1418) in paragraph at lines 42--46
-\OT1/ppl/m/n/12 through object detection', \OT1/ppl/m/it/12 Proceedings - IEEE 
-International Conference on
+Overfull \hbox (9.18147pt too wide) in paragraph at lines 641--642
+\OT1/ppl/m/n/12 For safety reasons, the user operating the wheelchair should be
+ physically capable
+ []
+
+
+Overfull \hbox (13.77725pt too wide) in paragraph at lines 645--646
+[]\OT1/ppl/m/n/12 The corridors used for testing the wheelchair must be clear o
+f all non-test obstacles,
+ []
+
+
+Overfull \hbox (3.99785pt too wide) in paragraph at lines 650--651
+\OT1/ppl/m/n/12 In order to test the Human Detection System, video recordings o
+f people walking
  []
 
 [29
@@ -1507,7 +1537,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30]
+[30] (main.bbl
+Underfull \hbox (badness 1418) in paragraph at lines 42--46
+\OT1/ppl/m/n/12 through object detection', \OT1/ppl/m/it/12 Proceedings - IEEE 
+International Conference on
+ []
+
+[31
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32]
 Underfull \hbox (badness 1281) in paragraph at lines 145--150
 \OT1/ppl/m/n/12 a survey from 2010 to 2016', \OT1/ppl/m/it/12 IPSJ Transactions
  on Computer Vision and
@@ -1540,36 +1585,36 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31] [32
+[33] [34
 
 ]
-<Images/Implementation/Timeline_Split-0.png, id=161, 1248.665pt x 595.22375pt>
+<Images/Implementation/Timeline_Split-0.png, id=169, 1248.665pt x 595.22375pt>
 File: Images/Implementation/Timeline_Split-0.png Graphic file (type png)
 <use Images/Implementation/Timeline_Split-0.png>
 Package pdftex.def Info: Images/Implementation/Timeline_Split-0.png  used on in
-put line 642.
+put line 680.
 (pdftex.def)             Requested size: 624.33098pt x 297.61115pt.
 
 
-LaTeX Warning: Float too large for page by 47.30077pt on input line 646.
+LaTeX Warning: Float too large for page by 47.30077pt on input line 684.
 
-<Images/Implementation/Timeline_Split-1.png, id=162, 1248.665pt x 595.22375pt>
+<Images/Implementation/Timeline_Split-1.png, id=170, 1248.665pt x 595.22375pt>
 File: Images/Implementation/Timeline_Split-1.png Graphic file (type png)
 <use Images/Implementation/Timeline_Split-1.png>
 Package pdftex.def Info: Images/Implementation/Timeline_Split-1.png  used on in
-put line 651.
+put line 689.
 (pdftex.def)             Requested size: 624.33098pt x 297.61115pt.
 
-LaTeX Warning: Float too large for page by 47.30077pt on input line 655.
+LaTeX Warning: Float too large for page by 47.30077pt on input line 693.
 
-<Images/Implementation/System_Design.png, id=163, 495.8525pt x 527.9725pt>
+<Images/Implementation/System_Design.png, id=171, 495.8525pt x 527.9725pt>
 File: Images/Implementation/System_Design.png Graphic file (type png)
 <use Images/Implementation/System_Design.png>
 Package pdftex.def Info: Images/Implementation/System_Design.png  used on input
- line 661.
+ line 699.
 (pdftex.def)             Requested size: 446.26312pt x 475.17085pt.
 
-Overfull \hbox (28.00945pt too wide) in paragraph at lines 661--662
+Overfull \hbox (28.00945pt too wide) in paragraph at lines 699--700
  [] 
  []
 
@@ -1582,26 +1627,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33 <./Images/Implementation/Timeline_Split-0.png>]
+[35 <./Images/Implementation/Timeline_Split-0.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34 <./Images/Implementation/Timeline_Split-1.png>]
+[36 <./Images/Implementation/Timeline_Split-1.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35 <./Images/Implementation/System_Design.png>] (main.aux) ) 
+[37 <./Images/Implementation/System_Design.png>] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 19140 strings out of 494865
- 354107 string characters out of 3178317
+ 19148 strings out of 494865
+ 354484 string characters out of 3178317
  625029 words of memory out of 3000000
- 22301 multiletter control sequences out of 15000+200000
+ 22307 multiletter control sequences out of 15000+200000
  26111 words of font info for 65 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  62i,12n,92p,813b,568s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1611,9 +1656,9 @@ ll/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/aufar/.miktex/texmfs/instal
 l/fonts/type1/urw/palatino/uplb8a.pfb></home/aufar/.miktex/texmfs/install/fonts
 /type1/urw/palatino/uplr8a.pfb></home/aufar/.miktex/texmfs/install/fonts/type1/
 urw/palatino/uplri8a.pfb>
-Output written on main.pdf (36 pages, 6348492 bytes).
+Output written on main.pdf (38 pages, 6824021 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
+ 201 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 194 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 199 words of extra memory for PDF output out of 10000 (max. 10000000)
 

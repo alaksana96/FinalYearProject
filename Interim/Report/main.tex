@@ -598,7 +598,7 @@ The initial test will be conducted in a corridor within the Electrical and Elect
 	\end{center}
 \end{figure}
 
-\subsection{Advanced Tests}
+\subsection{Advanced Tests} \label{section:Control_Advanced_Tests}
 To fully test the navigational capabilities of the eye-gaze system, more complex tests such as turning around corners or entering doors must be conducted. A list of potential indoor tests are listed below:
 
 \begin{itemize}
@@ -609,18 +609,56 @@ To fully test the navigational capabilities of the eye-gaze system, more complex
 	\item Navigate down corridor with people around without colliding with anyone.
 \end{itemize}
 
-\subsection{Safety Concerns}
-For safety reasons, the user operating the wheelchair should be physically capable to take over control using the joystick. This is especially important when conducting some of the advanced tests that may have other people walking in vicinity of the powered wheelchair. The user should have access to a kill switch to stop the wheelchair instantaneously.
-
-
-
 \section{Obstacle Avoidance Test}
-hello
+The obstacle avoidance tests can be divided into two sections, display and control. The display tests rely solely on the Hololens, rendering holograms and playing sound when a person or object will collide with the wheelchair. The control tests will require the use of the wheelchair, and can be tested in the full system test.
+
+\subsection{Collision Warnings}
+To test the collision warnings, we can play pre-recorded videos of people moving towards the camera. The system will have to detect when the person is getting too close and if a collision is possible. 
+
+If a collision is possible, the Hololens hologram renders would go through a process such as the one shown in Figure \ref{fig:ObsAvoid_Render}, whereby the object is tracked as it moves closer towards the camera.
+
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=1\linewidth]{Images/Evaluation/ObjectAvoidance/Object_Avoidance_Render.png}
+		\caption{The obstacle avoidance render with collision warning}
+		\label{fig:ObsAvoid_Render}
+	\end{center}
+\end{figure}
+
+
 \section{Full System Test}
+The full system test is a combination of all the tests in this section. It tests the smart wheelchairs ability to be controlled by eye-gaze, as well as its human and object detection capabilities to stop the wheelchair from colliding with a landmark.
+
+An obstacle course of sorts will be setup featuring all the elements from previous tests. The goal of the course will be to navigate through the corridor and turn into a doorway, all whilst avoiding moving humans and maneuvering around obstacles in the way, such as cardboard boxes. The wheelchair would should be able to stop before it hits an object, as well as display warnings to the user right before.
 
 
 \newpage
 \chapter{Ethical, Legal \& Safety Plan}
+
+\section{Safety}
+
+\subsection{Physical Safety}
+For safety reasons, the user operating the wheelchair should be physically capable of taking control of the joystick. This is especially important when conducting some of the advanced tests (Section \ref{section:Control_Advanced_Tests}). These tests involve the use of people walking in vicinity of the powered wheelchair. The user should have access to a kill switch to stop the wheelchair instantaneously, should a collision be imminent and the system fail to stop the wheelchair autonomously.
+
+Furthermore, the speed of the wheelchair should be limited to a slow pace, since the wheelchair will be operated indoors and around other people. It is important to make sure that any human participants in the test are aware of the hazards of the wheelchair so they can take appropriate action, such as being ready to step out of the way should the wheelchair not stop.
+
+The corridors used for testing the wheelchair must be clear of all non-test obstacles, and must be cordoned off so that unknowing passer-bys do not enter the testing area and be in danger of collision.
+
+\section{Legal}
+
+\subsection{Recording People for Test Data}
+In order to test the Human Detection System, video recordings of people walking along walkways will need to be taken. To avoid any breaches of GDPR, the following precautions must be taken:
+
+\begin{itemize}
+	\item Before recording, inform people in the area that we will be recording. People who do not wish to be recorded will be given time to leave.
+	\item Ensure there are alternative routes to the paths being recorded, so people can avoid being recorded.
+	\item Should no one want to be recorded, enlist the help of willing students as actors, who will recreate the scene of people walking in and out of the shot.
+	\item Avoid recording in areas where minors frequent. The Queens Tower Lawn often has schoolchildren on their lunch break, so efforts will be made to avoid that location.
+\end{itemize}
+
+If people do not consent to recording after a recording has been completed, effort will be made to blur out the faces of that individual.
+
+
 
 \newpage
 \bibliographystyle{agsm}

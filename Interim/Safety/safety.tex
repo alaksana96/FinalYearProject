@@ -1,0 +1,251 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Imperial Placement Report Template 
+% LaTeX Template
+% Version 1.0 (28/06/16)
+% Version 1.1 (20/01/28) 
+% Modified by Aufar Laksana into a lab report template
+% For academic use only
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt,a4paper]{report}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[toc,page]{appendix}
+\usepackage{listings}
+\usepackage[page]{totalcount}
+\usepackage{color}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage[bottom]{footmisc}
+\usepackage{diagbox}
+\usepackage{gensymb}
+\usepackage{mathpazo}
+
+\usepackage{wrapfig}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{epstopdf}
+
+
+\usepackage{natbib} 
+
+
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{mylilas}{RGB}{170,55,241}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Final Year Project}
+\rhead{Interim Report}
+\rfoot{\thepage\ / \totalpages}
+
+% \geometry{headheight=15pt}
+% \geometry{footskip=0.4in}
+% \geometry{textheight=694pt}
+% \geometry{textwidth=400pt}
+
+
+
+\lstset{ %
+  basicstyle=\small,
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen}\ttfamily\small,    % comment style
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=shadowbox,	                   % adds a frame around the code
+  rulesepcolor=\color{teal},
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=C,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+}
+\lstdefinelanguage{Mymatlab}{
+    language=Matlab,%
+    %basicstyle=\color{red},
+    basicstyle=\ttfamily\footnotesize,
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+\lstdefinelanguage{TI}{
+  sensitive = true,
+  keywords={MVC,MVK,MVKLH,LDDW,LDW,NOP,STW,ZERO,LDDW,MPYDP,ADDDP,SUB,B},
+  otherkeywords={% Operators
+    >, <, ==
+  },
+  keywords = [2]{_circ_FIR_DP,loop,lend},
+  keywordstyle=\color{blue},
+  keywordstyle=[2]\color{purple},% for example
+  numbers=left,
+  numberstyle=\scriptsize,
+  stepnumber=1,
+  numbersep=8pt,
+  showstringspaces=false,
+  breaklines=true,
+  frame=shadowbox,	                   % adds a frame around the code
+  rulesepcolor=\color{teal},
+  comment=[l]{;},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{mygreen}\ttfamily\small,
+  stringstyle=\color{red}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+  }
+
+
+\begin{document}
+
+\begin{titlepage}
+
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+\setlength{\topmargin}{0in}
+\center % Center everything on the page
+ 
+\vspace*{-3cm}
+ 
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\hspace*{-0.5cm}
+%\includegraphics[scale=0.14]{Imperial.png}\\
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.5\textwidth}
+\begin{flushright} \large
+\hspace*{2cm}
+% \includegraphics[scale=0.4]{dsk6713.jpg}\\
+\end{flushright}
+\end{minipage}\\[1cm]
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE Imperial College of Science, Technology and Medicine}\\[1.5cm] % Name of your university/college
+\textsc{\Large Department of Electrical and Electronic Engineering}\\[0.8cm] % Major heading such as course name
+\textsc{\Large  Final Year Project}\\[0.8cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\addvspace{1.8em}
+
+\HRule \\[0.2cm]
+{ \huge \bfseries Safety Assessment:\\ Augmented Reality for Human Robotic Interaction }\\[0.2cm] % Title of your document
+\HRule \\[1cm]
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{flushleft}
+
+\large \emph{Authors:} \\
+Aufar \textsc{Laksana} \\
+CID: 01093575\\
+
+\addvspace{0.6em}
+
+\large \emph{Project Supervisor:} \\
+Dr. Yiannis Demiris\\
+
+\addvspace{0.6em}
+
+%\large \emph{Project Second Marker:} \\
+%Dr. David Thomas\\
+
+\addvspace{1.8em}
+
+\end{flushleft}
+
+% \begin{minipage}{1\textwidth}
+% 	\begin{center}
+% 		\frame{\includegraphics[scale=0.9]{declare.png}}\\
+% 	\end{center}
+% \end{minipage}\\[1cm]
+
+
+\vspace*{3em}
+
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[0.5cm] % Date, change the \today to a set date if you want to be precise
+
+
+\vfill % Fill the rest of the page with whitespace
+\end{titlepage}
+
+\addvspace{6em}
+
+\renewcommand{\abstractname}{\LARGE Abstract}
+
+\tableofcontents
+\newpage
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+
+\setlength{\belowcaptionskip}{-10pt}
+
+
+\chapter{Ethical, Legal \& Safety Plan}
+
+\section{Safety}
+
+\subsection{Physical Safety}
+For safety reasons, the user operating the wheelchair should be physically capable of taking control of the joystick. This is especially important when conducting some of the advanced tests (Section \ref{section:Control_Advanced_Tests}). These tests involve the use of people walking in vicinity of the powered wheelchair. The user should have access to a kill switch to stop the wheelchair instantaneously, should a collision be imminent and the system fail to stop the wheelchair autonomously.
+
+Furthermore, the speed of the wheelchair should be limited to a slow pace, since the wheelchair will be operated indoors and around other people. It is important to make sure that any human participants in the test are aware of the hazards of the wheelchair so they can take appropriate action, such as being ready to step out of the way should the wheelchair not stop.
+
+The corridors used for testing the wheelchair must be clear of all non-test obstacles, and must be cordoned off so that unknowing passer-bys do not enter the testing area and be in danger of collision.
+
+\section{Legal}
+
+\subsection{Recording People for Test Data}
+In order to test the Human Detection System, video recordings of people walking along walkways will need to be taken. To avoid any breaches of GDPR, the following precautions must be taken:
+
+\begin{itemize}
+	\item Before recording, inform people in the area that we will be recording. People who do not wish to be recorded will be given time to leave.
+	\item Ensure there are alternative routes to the paths being recorded, so people can avoid being recorded.
+	\item Should no one want to be recorded, enlist the help of willing students as actors, who will recreate the scene of people walking in and out of the shot.
+	\item Avoid recording in areas where minors frequent. The Queens Tower Lawn often has schoolchildren on their lunch break, so efforts will be made to avoid that location.
+\end{itemize}
+
+If people do not consent to recording after a recording has been completed, effort will be made to blur out the faces of that individual.
+
+\end{document}
