@@ -44,6 +44,12 @@ Espinace, P., Kollar, T., Soto, A. \harvardand\ Roy, N.  \harvardyearleft
   detection}', {\em Proceedings - IEEE International Conference on Robotics and
   Automation} pp.~1406--1413.
 
+\harvarditem[Girshick et~al.]{Girshick, Radosavovic, Gkioxari, Doll\'{a}r
+  \harvardand\ He}{2018}{Detectron2018}
+Girshick, R., Radosavovic, I., Gkioxari, G., Doll\'{a}r, P. \harvardand\ He, K.
+   \harvardyearleft 2018\harvardyearright , `Detectron'.
+\newline\harvardurl{https://github.com/facebookresearch/detectron}
+
 \harvarditem[Kairy et~al.]{Kairy, Rushton, Archambault, Pituch, Torkia, {El
   Fathi}, Stone, Routhier, Forget, Demers, Pineau \harvardand\
   Gourdeau}{2014}{Kairy2014}
@@ -98,6 +104,10 @@ Montenegro-Couto, E.~H., {A. Hernandez-Ossa}, K., {L. C. Bissoli}, A., Sime, M.
 Nist{\'{e}}r, D.  \harvardyearleft 2004\harvardyearright , `{A Minimal Solution
   to the Generalised 3-Point Pose Problem}', {\em Journal of Mathematical
   Imaging and Vision} {\bf 27}(1),~560--567.
+
+\harvarditem{{Pupil Labs}}{n.d.}{PupilLabs}
+{Pupil Labs}  \harvardyearleft n.d.\harvardyearright , `{Pupil Labs - VR AR}'.
+\newline\harvardurl{https://pupil-labs.com/vr-ar/}
 
 \harvarditem{Quattoni \harvardand\ Torralba}{2009}{Quattoni2009}
 Quattoni, A. \harvardand\ Torralba, A.  \harvardyearleft 2009\harvardyearright

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Final Year Project" company="" webLink="http://" view-date="2019-04-22" view-index="0" gantt-divider-location="399" resource-divider-location="300" version="2.8.9" locale="en_GB">
+    <description/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Name" width="216" order="0"/>
+        <field id="tpd4" name="Begin date" width="89" order="1"/>
+        <field id="tpd5" name="End date" width="90" order="2"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Hardware Analysis" meeting="false" start="2019-01-28" duration="5" complete="0" expand="true">
+            <task id="1" name="Wheelchair" color="#8cb6ce" meeting="false" start="2019-01-28" duration="3" complete="0" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true">
+                <depend id="7" type="2" difference="0" hardness="Strong"/>
+                <depend id="16" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="3" name="Hololens" meeting="false" start="2019-01-28" duration="5" complete="0" expand="true">
+                <depend id="5" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="4" name="Augmented Reality Wheelchair Control" meeting="false" start="2019-02-04" duration="20" complete="0" expand="true">
+            <depend id="54" type="2" difference="0" hardness="Strong"/>
+            <depend id="56" type="2" difference="0" hardness="Strong"/>
+            <task id="5" name="Eye-tracking and gaze estimation" color="#8cb6ce" meeting="false" start="2019-02-04" duration="14" complete="0" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true">
+                <depend id="7" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="7" name="Replacing joystick controls" color="#8cb6ce" meeting="false" start="2019-02-22" duration="6" complete="0" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="8" name="Human Detection" color="#8cb6ce" meeting="false" start="2019-03-04" duration="30" complete="0" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true">
+            <depend id="16" type="2" difference="0" hardness="Strong"/>
+            <depend id="61" type="2" difference="0" hardness="Strong"/>
+            <task id="10" name="Test pretrained models" color="#8cb6ce" meeting="false" start="2019-03-04" duration="5" complete="0" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true">
+                <depend id="11" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="11" name="Train YOLO to recognize hololens images" color="#8cb6ce" meeting="false" start="2019-03-11" duration="6" complete="0" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true">
+                <depend id="12" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="12" name="Detect humans" color="#8cb6ce" meeting="false" start="2019-03-19" duration="4" complete="0" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true">
+                <depend id="13" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="13" name="Calculate human trajectories" color="#8cb6ce" meeting="false" start="2019-03-25" duration="15" complete="0" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="16" name="Obstacle Avoidance" color="#8cb6ce" meeting="false" start="2019-04-15" duration="24" complete="0" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true">
+            <depend id="64" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="54" name="Evaluation &amp; Testing" meeting="false" start="2019-03-04" duration="65" complete="0" expand="true">
+            <depend id="52" type="2" difference="0" hardness="Strong"/>
+            <depend id="67" type="2" difference="0" hardness="Strong"/>
+            <task id="56" name="Hololens Wheelchair Control" meeting="false" start="2019-03-04" duration="30" complete="0" expand="true"/>
+            <task id="61" name="Human Detection Testing" meeting="false" start="2019-04-15" duration="15" complete="0" expand="true"/>
+            <task id="64" name="Obstacle Avoidance Testing" color="#8cb6ce" meeting="false" start="2019-05-17" duration="11" complete="0" thirdDate="2019-03-04" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="50" name="Report" color="#8cb6ce" meeting="false" start="2019-05-17" duration="24" complete="0" thirdDate="2019-05-13" thirdDate-constraint="0" expand="true">
+            <task id="53" name="Abstract &amp; Draft Final Report" color="#8cb6ce" meeting="false" start="2019-05-17" duration="11" complete="0" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true">
+                <depend id="52" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="52" name="Work on Report" color="#8cb6ce" meeting="false" start="2019-06-03" duration="12" complete="0" thirdDate="2019-05-17" thirdDate-constraint="0" expand="true">
+                <depend id="42" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="42" name="Final Report Deadline" color="#8cb6ce" meeting="false" start="2019-06-19" duration="1" complete="0" thirdDate="2019-01-28" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="67" name="Presentations" color="#8cb6ce" meeting="false" start="2019-06-03" duration="22" complete="0" thirdDate="2019-04-01" thirdDate-constraint="0" expand="true">
+            <task id="69" name="Prepare Presentation" meeting="false" start="2019-06-03" duration="15" complete="0" expand="true">
+                <depend id="70" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="70" name="Rehearse" color="#8cb6ce" meeting="false" start="2019-06-24" duration="5" complete="0" thirdDate="2019-05-27" thirdDate-constraint="0" expand="true">
+                <depend id="72" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="72" name="Presentation and Demo" meeting="false" start="2019-07-01" duration="2" complete="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>

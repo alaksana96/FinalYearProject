@@ -1,31 +1,56 @@
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}Introduction and Requirements}{2}% 
-\contentsline {section}{\numberline {1.1}Introduction}{2}% 
-\contentsline {section}{\numberline {1.2}Motivation}{2}% 
-\contentsline {section}{\numberline {1.3}Project Specification}{3}% 
-\contentsline {subsection}{\numberline {1.3.1}Robotic Behaviour}{4}% 
-\contentsline {subsection}{\numberline {1.3.2}Augmented Reality Visualization}{4}% 
-\contentsline {chapter}{\numberline {2}Literature Review}{5}% 
-\contentsline {section}{\numberline {2.1}Object Detection}{5}% 
-\contentsline {subsection}{\numberline {2.1.1}Human Detection}{5}% 
-\contentsline {paragraph}{SIFT}{6}% 
-\contentsline {paragraph}{YOLO}{6}% 
-\contentsline {section}{\numberline {2.2}Simultaneous Localization And Mapping (SLAM)}{7}% 
-\contentsline {subsection}{\numberline {2.2.1}Existing Work}{8}% 
-\contentsline {subsection}{\numberline {2.2.2}Visual SLAM}{8}% 
-\contentsline {paragraph}{Initialization}{9}% 
-\contentsline {paragraph}{Tracking}{9}% 
-\contentsline {paragraph}{Mapping}{9}% 
-\contentsline {section}{\numberline {2.3}Scene Recognition}{9}% 
-\contentsline {section}{\numberline {2.4}Head Mounted Display and Control}{10}% 
-\contentsline {subsection}{\numberline {2.4.1}Microsoft Hololens}{10}% 
-\contentsline {paragraph}{Hardware Specifications}{10}% 
-\contentsline {paragraph}{Development}{11}% 
-\contentsline {paragraph}{Gaze}{11}% 
-\contentsline {paragraph}{No Eye Tracker}{11}% 
-\contentsline {subsection}{\numberline {2.4.2}Augmented Reality Visualization}{12}% 
-\contentsline {subsection}{\numberline {2.4.3}Gaze/Eye-Tracking Control}{12}% 
-\contentsline {section}{\numberline {2.5}Competing Products}{14}% 
-\contentsline {chapter}{\numberline {3}Implementation Plan}{15}% 
-\contentsline {chapter}{\numberline {4}Evaluation Plan}{16}% 
-\contentsline {chapter}{\numberline {5}Ethical, Legal \& Safety Plan}{17}% 
+\contentsline {chapter}{\numberline {1}Introduction and Requirements}{3}% 
+\contentsline {section}{\numberline {1.1}Introduction}{3}% 
+\contentsline {section}{\numberline {1.2}Motivation}{3}% 
+\contentsline {section}{\numberline {1.3}Project Specification}{4}% 
+\contentsline {subsection}{\numberline {1.3.1}Robotic Behaviour}{5}% 
+\contentsline {subsection}{\numberline {1.3.2}Augmented Reality Visualization}{5}% 
+\contentsline {chapter}{\numberline {2}Literature Review}{6}% 
+\contentsline {section}{\numberline {2.1}Object Detection}{6}% 
+\contentsline {subsection}{\numberline {2.1.1}Human Detection}{6}% 
+\contentsline {paragraph}{SIFT}{7}% 
+\contentsline {paragraph}{YOLO}{7}% 
+\contentsline {section}{\numberline {2.2}Simultaneous Localization And Mapping (SLAM)}{8}% 
+\contentsline {subsection}{\numberline {2.2.1}Existing Work}{9}% 
+\contentsline {subsection}{\numberline {2.2.2}Visual SLAM}{9}% 
+\contentsline {paragraph}{Initialization}{10}% 
+\contentsline {paragraph}{Tracking}{10}% 
+\contentsline {paragraph}{Mapping}{10}% 
+\contentsline {section}{\numberline {2.3}Scene Recognition}{10}% 
+\contentsline {section}{\numberline {2.4}Head Mounted Display and Control}{11}% 
+\contentsline {subsection}{\numberline {2.4.1}Microsoft Hololens}{11}% 
+\contentsline {paragraph}{Hardware Specifications}{11}% 
+\contentsline {paragraph}{Development}{12}% 
+\contentsline {paragraph}{Gaze}{12}% 
+\contentsline {paragraph}{No Eye Tracker}{12}% 
+\contentsline {subsection}{\numberline {2.4.2}Augmented Reality Visualization}{13}% 
+\contentsline {subsection}{\numberline {2.4.3}Gaze/Eye-Tracking Control}{13}% 
+\contentsline {section}{\numberline {2.5}Competing Products}{15}% 
+\contentsline {chapter}{\numberline {3}Implementation Plan}{16}% 
+\contentsline {section}{\numberline {3.1}Overall Project Goals}{16}% 
+\contentsline {section}{\numberline {3.2}Hardware Analysis}{17}% 
+\contentsline {subsection}{\numberline {3.2.1}Powered Wheelchair}{17}% 
+\contentsline {subsection}{\numberline {3.2.2}Microsoft Hololens}{17}% 
+\contentsline {subsubsection}{Pupil Labs Eye-Tracker}{17}% 
+\contentsline {subsubsection}{Development}{18}% 
+\contentsline {subsection}{\numberline {3.2.3}Hardware Access and Additional Hardware}{18}% 
+\contentsline {section}{\numberline {3.3}Augmented Reality Wheelchair Control}{18}% 
+\contentsline {subsection}{\numberline {3.3.1}Cross Platform Interface}{18}% 
+\contentsline {subsection}{\numberline {3.3.2}Eye-Gaze Estimation}{19}% 
+\contentsline {section}{\numberline {3.4}Human Detection System}{19}% 
+\contentsline {subsection}{\numberline {3.4.1}Testing Pre-Trained Models}{19}% 
+\contentsline {subsection}{\numberline {3.4.2}Estimating Moving Human Trajectories}{19}% 
+\contentsline {section}{\numberline {3.5}Obstacle Avoidance System}{20}% 
+\contentsline {subsection}{\numberline {3.5.1}Utilizing Existing Work}{20}% 
+\contentsline {subsection}{\numberline {3.5.2}Hologram Warnings}{20}% 
+\contentsline {section}{\numberline {3.6}Project Timeline}{21}% 
+\contentsline {section}{\numberline {3.7}Fallback}{21}% 
+\contentsline {section}{\numberline {3.8}Extensions}{21}% 
+\contentsline {subsection}{\numberline {3.8.1}Scene Recognition}{21}% 
+\contentsline {section}{\numberline {3.9}Overall System Architecture}{22}% 
+\contentsline {chapter}{\numberline {4}Evaluation Plan}{23}% 
+\contentsline {section}{\numberline {4.1}Human Detection Test}{23}% 
+\contentsline {section}{\numberline {4.2}Eye-Gaze Control Test}{23}% 
+\contentsline {section}{\numberline {4.3}Full System Test}{23}% 
+\contentsline {chapter}{\numberline {5}Ethical, Legal \& Safety Plan}{24}% 
+\contentsline {chapter}{Appendices}{28}% 

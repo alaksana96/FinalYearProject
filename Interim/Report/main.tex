@@ -31,6 +31,12 @@
 \usepackage{gensymb}
 \usepackage{mathpazo}
 
+\usepackage{wrapfig}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{epstopdf}
+
+
 \usepackage{natbib} 
 
 
@@ -230,7 +236,7 @@ Within the Personal Robotics Lab at the Imperial College London, a lot of work h
 
 This project explores the idea implementing a smart system that would further benefit PWUs, by allowing them to navigate in crowded areas and recognizing locations that are frequently visited, such as at home or the shopping mall, and building a map of the location to allow better navigation assistance. An AR headset can also be utilized to display the internal state of the smart wheelchair, such as highlighting objects that determine the frequently visited location, or alerting the user to people moving towards the wheelchair and rendering a suggested path to avoid collision.
 
-\section{Project Specification}
+\section{Project Specification} \label{Project_Spec}
 The aim of this project is to design and build a system that will allow powered wheelchair users to more easily conduct routine tasks, such as navigating around the house, or other frequently visited locations, such as the grocery store.
 
 This project involves several hardware components, all of which are available within the Personal Robotics Lab. The hardware includes the following, as well as the sensors already mounted on the wheelchair:
@@ -238,21 +244,19 @@ This project involves several hardware components, all of which are available wi
 \begin{itemize}
 	\item Powered Wheelchair
 	\item Microsoft Hololens
-	\item Cameras (Microsoft Kinect)
 \end{itemize}
-
 
 The system being developed is divided into two major parts, Robotic Behaviour and Augmented Reality Visualization.
 
 \subsection{Robotic Behaviour}
 The goal for this section of the project is to design and develop algorithms that will allow for assistive navigation on the powered wheelchair. The system will utilize sensors mounted on the wheelchair to build up a map of the surroundings. Objects in the surrounding area will be detected and marked as potential collisions, depending on the trajectory of the wheelchair. An extension is the ability to detect moving objects, such as people, calculating the trajectory of the object and deciding if a collision is imminent.
 
-A major hardware component of this project is the Microsoft Hololens, a mixed reality headset that can be worn by the powered wheelchair user. The Hololens posses the ability to track the eye movements of the user. An interesting concept that can be explored is the ability to control the powered wheelchair using the eye-tracker, removing the need for a joystick. This would benefit users who lack the motor skills to operate a joystick. This feature can also be utilized to check if the user has noticed an object that may cause a collision. Should the user not see the object, the system will first highlight the object, before taking over from the user and altering the trajectory to avoid the object.
+A major hardware component of this project is the Microsoft Hololens, a mixed reality headset that can be worn by the powered wheelchair user. The Hololens posses the ability to track the eye movements of the user with an eye-tracker addon. An interesting concept that can be explored is the ability to control the powered wheelchair using the eye-tracker, removing the need for a joystick, allowing users who lack the motor skills to operate the wheelchair. This feature can also be used to check if the user has noticed an object that may cause a collision. Should the user not see the object, the system will first highlight the object, before taking over from the user 
 
 \subsection{Augmented Reality Visualization}
 Using the Hololens, the goal of this section is to communicate to the user the internal state of the system controlling the powered wheelchair. Using augmented reality, visualizations will be rendered on the Hololens, allowing the user to understand the trajectory of the wheelchair, what potential collisions may occur. The system will also be able to take over control of the wheelchair, as such, it would be beneficial if a warning was displayed to the user right before the system takes over.
 
-Other visualizations include highlighting moving objects and tracking them as they move across the field of vision of the user. Should the user not notice a moving object that may cause a collision, the Hololens will flash a warning and highlight the offending object in order to attract the attention of the user, allowing them to make adjustments themselves.
+Other visualizations include highlighting moving objects and tracking them as they move across the field of vision of the user. Should the user not notice a moving object that may cause a collision, the Hololens will flash a warning and highlight the object in order to attract the attention of the user, allowing them to make adjustments themselves.
 
 \newpage
 
@@ -322,7 +326,7 @@ Here, the reconstructed map is used to estimate the pose of the camera with resp
 \paragraph{Mapping}
 When the robot passes through an environment that has previously not been mapped, the 3D structure of the surroundings is calculated from the camera images. The structures are then added to the existing map of the environment.
 
-\section{Scene Recognition}
+\section{Scene Recognition} \label{section:Scene_Recognition}
 Wheelchair users spend a substantial part of their time at home. An active area of research called assistive domotics \citep{Rosslin2010}, involves developing assistive technology and home automation systems that allow users to interact with common household objects from a seated position in the wheelchair.
 
 The ability for a smart wheelchair to recognize a room in the house would greatly improve the user experience. A map of the surroundings that was previously built of that room can now be loaded when the wheelchair enters the room again, greatly reducing the amount of computational overhead in rebuilding the entire map. The stored maps may contain useful information such as the positions of doorways or other objects of interest that the users can interact with.
@@ -421,17 +425,148 @@ A similar idea was proposed by \cite{Arai2011}, whereby an eye-tracker would det
 
 \newpage
 \chapter{Implementation Plan}
+This section of the report goes over the overall project goals, as well as the steps that will need to be taken in order to achieve the goals within the given time frame.
+
+\section{Overall Project Goals}
+As mentioned in Section \ref{Project_Spec}, the goal of this project is to develop an intelligent powered wheelchair capable of recognizing objects and humans in its vicinity. By building a map of its surroundings, and through object detection, useful prompts can be displayed to the user. The ability to detect people will greatly decrease the possibility of a collision when navigating through more crowded spaces, and can be achieved by displaying alerts on the head-mounted AR device or through the system taking over control of the wheelchair to avoid the object.
+
+Furthermore, the Microsoft Hololens forms a key part of the overall system design. By making use of the sensors available on the headset, such as the depth camera, as well as the Gaze method to estimate where the user is looking, another goal for this project is to implement a wheelchair control system that solely relies on head pose, rotation and gaze, removing the need for a joystick and allowing users who are paralysed to more easily control their powered wheelchair.
+
+\section{Hardware Analysis}
+Before any algorithms can be developed, it is important to understand the hardware available. For instance, camera resolution will affect the image quality, which may become an issue for object detection. As such, a proper analysis of any cameras, sensors and other pieces of hardware should be conducted.
+
+\subsection{Powered Wheelchair}
+The Personal Robotics Lab have built the Assistive Robotic Transport for Adults (ARTA), a smart powered wheelchair, which has been used for several other research projects \citep{Chacon-Quesada, Zolotas2018}. From the reports, it can be seen that ARTA already has some built-in obstacle avoidance and shared control methodologies.In addition, it is also equipped with laser range finders, which can return depth information. \cite{Chacon-Quesada} also utilizes the Hololens camera to capture images of the surroundings, but the main bulk of the image processing is done on a remote computer, which communicates with the head mounted display (HMD).
+
+Further investigation into the sensors and other hardware on the wheelchair will need to be conducted, by asking members of the Personal Robotics Lab who have worked with the wheelchair. Official documentation for the wheelchair is sparse, and it would be less time consuming to ask people directly. Additionally, more sensors can be mounted on ARTA, should the need arise.
+
+\subsection{Microsoft Hololens}
+The Microsoft Hololens is a key component of the project, as it will be used to both obtain images and display AR visual cues by rendering holograms. The official documentation \citep{Microsofta} is available online, along with many tutorials on websites such as Youtube and Stackoverflow.
+
+\subsubsection{Pupil Labs Eye-Tracker}
+The Personal Robotics Lab also has access to an add-on for the Hololens, an eye-tracker developed by Pupil Labs. The cameras on the add on run at 120hz and low latency eye tracking software is available from the company, allowing for applications that require fast interaction \citep{PupilLabs}.
+
+\subsubsection{Development}
+Developing applications for the Hololens requires a computer running Windows 10, and installations of Microsoft Visual Studio, Unity and several other programs \citep{Microsofta}.
+
+\subsection{Hardware Access and Additional Hardware}
+As ARTA and the Hololens can not leave the Personal Robotics Lab, time slots for development time will need to be arranged with the other members of the lab. Furthermore, after analysing the sensors available on the wheelchair, more sensors may need to be requested. At the time of writing, a Xbox Kinect Camera is being considered as another camera that may be mounted on ARTA.
+
+
+\section{Augmented Reality Wheelchair Control} \label{section:ARWC}
+Utilizing the Microsoft Hololens and the Pupil Labs eye-tracker add-on, the goal of this part of the project is for the user to have the ability to stare at a location in front of the wheelchair, and the system will recognize the intent to move towards a goal. This intent is then converted to wheelchair control signals and the user will be able to navigate the powered wheelchair without the use of a joystick.
+
+\subsection{Cross Platform Interface}
+The wheelchair control relies on the Robotic Operating System (ROS), which runs on a standard Linux distribution such as Ubuntu 16.04. On the other hand, the Hololens runs on the Universal Windows Platform. As such, an interface between the two operating systems is needed. Members of the Personal Robotics Lab have already developed these interfaces for their previous projects.
+
+\subsection{Eye-Gaze Estimation}
+To allow the user to fixate their gaze on a specific point and navigate the wheelchair towards that point, an eye-gaze estimation system will need to be implemented. Using the eye-tracker and depth camera on the Hololens, and approach similar to the one used by \cite{Raymond2018} will be developed. It has been noted that head-gaze can be used to determine a goal destination, but as shown through the research of \cite{VanderMeulen2017}, there is a significant increase in the accuracy when used in conjunction with an eye-tracker, and it will also greatly reduce the Midas touch problem.
+
+\section{Human Detection System} \label{section:HDS}
+Previous research by \cite{Chacon-Quesada} utilizes the Detectron object detection method \citep{Detectron2018} and conducts the processing on a remote computer. For this project, the goal of the human detection would be to detect the human in the image, and using depth cameras or laser range finders, determine if the person is moving closer towards the wheelchair and if a collision is imminent.
+
+A personal interest of mine is to work more with Deep Learning and Neural Networks in order to gain a better, practical understanding of the concept. As such, for this project, I would like to work with the YOLO object detection method to be able to recognize humans and track them across frames \citep{Shinde2018, Redmon2015}.
+
+\subsection{Testing Pre-Trained Models}
+There are already pre-trained YOLO networks capable of recognizing people. However, these need to be tested with the Hololens camera to see if the images produced by the Hololens will allow the networks to recognize people.
+
+\subsection{Estimating Moving Human Trajectories}
+In order for the wheelchair to be aware of potential collisions with humans, the people in the vicinity must be detected and considered as a landmark by the Visual SLAM system. A system utilizing vSlam and a Moving Object Detector similar to the work done by \cite{Wang2011} will be employed to locate the positions of people in the surroundings, and estimate their trajectories.
+
+
+\section{Obstacle Avoidance System} \label{section:OAS}
+The goal of the obstacle avoidance system is for the wheelchair to be intelligent in detecting obstacles in the surroundings. The system will encompass the Human Detection System mentioned in Section \ref{section:HDS} as well as using range finders and mapping techniques to prevent the user from colliding with walls and other obstacles.
+
+\subsection{Utilizing Existing Work}
+Previous work by \cite{Zolotas2018} uses various software and hardware components atop the Robotic Operating System, which estimate the trajectory of the wheelchair and render holograms on the HMD showing the current path, as well as a suggested path should the current trajectory result in a collision.
+
+An extension of this would be for the system to realize when to take over from the user should they not respond to the visual warnings. The system will then manoeuvre the wheelchair into a trajectory it deems safe that will avoid the oncoming object.
+
+\subsection{Hologram Warnings}
+Utilizing the display on the Microsoft Hololens, once a human or object is detected, it will be tracked as it moves across the users field of view. However, users may not always spot the oncoming object, due to being distracted or looking elsewhere.
+
+The Hololens and the Pupil Labs eye-tracker allow for a system to be developed which will know when the user has not spotted the oncoming object. When the system realizes this, a warning hologram will be rendered on the HMD, highlighting the oncoming object and alerting the user with a sound from the direction the object is coming from.
+
+\section{Project Timeline}
+The project timeline is listed in the Appendix Figures \ref{app:fig:timeline1} and \ref{app:fig:timeline2}. The Gantt chart displays the project outline, and what tasks are dependant upon each other.
+
+\section{Fallback}
+Should time constraints become an issue, the part of the project that can be reduced is the Obstacle Avoidance System outlined in Section \ref{section:OAS}. It may become too burdensome to implement a system that will take over control from the user and work reliably. As such, just displaying the warning to the user in the form of a hologram and forcing the wheelchair to stop if they do not pay attention to the warning will be a suitable reduction.
+
+This will leave more time for testing of the Human Detection System ( Section \ref{section:HDS}) and the Augmented Reality Wheelchair control (Section \ref{section:ARWC}), which are considered as core components of this project, and will be demoed during the presentation.
+
+\section{Extensions}
+The following section outlines the possible extensions to the project, should time allow. The technical implementation details have not been fully researched, but a basis has been formed from the literature review.
+
+\subsection{Scene Recognition}
+As mentioned in Section \ref{section:Scene_Recognition}, Scene Recognition can be of used to aid powered wheelchair users conduct routine tasks. For instance, by recognizing the device has returned to an area marked as the user's home, it may be a good idea to turn off the human detection system, since it is unlikely that the user will encounter many people. This would reduce in the amount of computation going on in the background. Another use may be to load stored maps of an area that has been previously explored, such as a map of the house, and only unexplored or changed areas would be updated of the map.
+
+As explored by \cite{Quattoni2009}, as well as \cite{Espinace2010}, object detection algorithms can be used to recognize scenes. By training the YOLO object detector to recognize objects other than humans, we may be able to map a relationship between objects and scenes.
+
+This would involve training another convolutional neural network to recognize objects in an image from the Hololens, and associating that object with a label. An example of this would be recognizing pots and pans and labelling the scene as a kitchen. As such, an indoor scene dataset would be required to train the network, which would have to be gathered manually and labelled. An alternative would be to make use of indoor scene datasets previously used by \cite{Quattoni2009}.
+
+\section{Overall System Architecture}
+The high level overview of the project is displayed in the Appendix, Figure \ref{app:fig:System_Architecture}. An onboard computer running Linux will do most of the processing, such as the gaze-estimation and human detection. The Hololens will provide the Linux system with gaze and eye-tracker data, as well as the images for the YOLO human detector.
+
+The individual units will communicate with the wheelchair control unit running on the Robotic Operating System. Stop signals are sent to the control unit when the human detector estimates that a collision is about to happen. The Eye-Gaze Estimation unit will send driving instructions to reach a point the user is looking at. 
 
 \newpage
 \chapter{Evaluation Plan}
+
+\section{Human Detection Test}
+
+\section{Eye-Gaze Control Test}
+
+\section{Full System Test}
+
 
 \newpage
 \chapter{Ethical, Legal \& Safety Plan}
 
 \newpage
-
 \bibliographystyle{agsm}
 \bibliography{FinalYearProject}
+
+\newpage
+
+\appendix
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Final Year Project: Appendix}
+\rhead{Interim Report}
+
+
+
+\appendixpage
+
+\begin{figure}[ht]
+	\centering
+	\begin{turn}{-90}
+			\includegraphics[scale=0.5]{Images/Implementation/Timeline_Split-0.png}
+	\end{turn}
+	\caption{Project Timeline (Part 1)}
+	\label{app:fig:timeline1}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{turn}{-90}
+		\includegraphics[scale=0.5]{Images/Implementation/Timeline_Split-1.png}
+	\end{turn}
+	\caption{Project Timeline (Part 2)}
+	\label{app:fig:timeline2}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[scale=0.9]{Images/Implementation/System_Design.png}
+		\caption{Overall System Architecture}
+		\label{app:fig:System_Architecture}
+	\end{center}
+\end{figure}
+
 
 
 \end{document}
