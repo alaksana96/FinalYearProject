@@ -1,0 +1,168 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Imperial Placement Report Template 
+% LaTeX Template
+% Version 1.0 (28/06/16)
+% Version 1.1 (20/01/28) 
+% Modified by Aufar Laksana into a lab report template
+% For academic use only
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt,a4paper]{report}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[toc,page]{appendix}
+\usepackage{listings}
+\usepackage[page]{totalcount}
+\usepackage{color}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage[bottom]{footmisc}
+\usepackage{diagbox}
+\usepackage{gensymb}
+\usepackage{mathpazo}
+
+\usepackage{wrapfig}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{epstopdf}
+
+
+\usepackage{natbib} 
+
+
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{mylilas}{RGB}{170,55,241}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Final Year Project}
+\rhead{Interim Report}
+\rfoot{\thepage\ / \totalpages}
+
+% \geometry{headheight=15pt}
+% \geometry{footskip=0.4in}
+% \geometry{textheight=694pt}
+% \geometry{textwidth=400pt}
+
+
+
+\lstset{ %
+  basicstyle=\small,
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen}\ttfamily\small,    % comment style
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=shadowbox,	                   % adds a frame around the code
+  rulesepcolor=\color{teal},
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=C,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+}
+\lstdefinelanguage{Mymatlab}{
+    language=Matlab,%
+    %basicstyle=\color{red},
+    basicstyle=\ttfamily\footnotesize,
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+\lstdefinelanguage{TI}{
+  sensitive = true,
+  keywords={MVC,MVK,MVKLH,LDDW,LDW,NOP,STW,ZERO,LDDW,MPYDP,ADDDP,SUB,B},
+  otherkeywords={% Operators
+    >, <, ==
+  },
+  keywords = [2]{_circ_FIR_DP,loop,lend},
+  keywordstyle=\color{blue},
+  keywordstyle=[2]\color{purple},% for example
+  numbers=left,
+  numberstyle=\scriptsize,
+  stepnumber=1,
+  numbersep=8pt,
+  showstringspaces=false,
+  breaklines=true,
+  frame=shadowbox,	                   % adds a frame around the code
+  rulesepcolor=\color{teal},
+  comment=[l]{;},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{mygreen}\ttfamily\small,
+  stringstyle=\color{red}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+  }
+
+
+\begin{document}
+
+\begin{titlepage}
+	% \newgeometry{top=25mm,bottom=25mm,left=38mm,right=32mm}
+	\setlength{\parindent}{0pt}
+	\setlength{\parskip}{0pt}
+	% \fontfamily{phv}\selectfont
+	
+	{
+		\Large
+		\raggedright
+		Imperial College London\\[17pt]
+		Department of Electrical and Electronic Engineering\\[17pt]
+		Final Year Project Report 2019\\[17pt]
+		
+	}
+	
+	\rule{\columnwidth}{3pt}
+	\vfill
+	\centering
+	\includegraphics[width=0.7\columnwidth,height=60mm,keepaspectratio]{background/iCub_model.jpg}
+	\vfill
+	\setlength{\tabcolsep}{0pt}
+	
+	\begin{tabular}{p{40mm}p{\dimexpr\columnwidth-40mm}}
+		Project Title: & \textbf{Augmented Reality For Human Robotic Interaction} \\[12pt]
+		Student: & \textbf{Aufar P. Laksana} \\[12pt]
+		CID: & \textbf{01093575} \\[12pt]
+		Course: & \textbf{EIE4} \\[12pt]
+		Project Supervisor: & \textbf{Dr Yiannis Demiris} \\[12pt]
+		Second Marker: & \textbf{Dr Tae-Kyun Kim} \\
+	\end{tabular}
+\end{titlepage}
+
+\addvspace{6em}
+
+\renewcommand{\abstractname}{\LARGE Abstract}
+
+\tableofcontents
+
+\end{document}
