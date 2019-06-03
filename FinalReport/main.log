@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  2 JUN 2019 16:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  2 JUN 2019 18:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -765,19 +765,19 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 128.
-LaTeX Font Info:    ... okay on input line 128.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 128.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 129.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
@@ -841,98 +841,104 @@ Package caption Info: float package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \celsius on input line 128.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 128
+LaTeX Info: Redefining \celsius on input line 129.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 129
 .
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 128.
-Package gensymb Info: Using \upOmega for \ohm on input line 128.
+LaTeX Info: Redefining \ohm on input line 129.
+Package gensymb Info: Using \upOmega for \ohm on input line 129.
 
 Package gensymb Warning: Not defining \micro.
 
+(./tex/latex-coversheet.tex
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 22.
 
-LaTeX Warning: File `background/iCub_model.jpg' not found on input line 148.
 
-
-! Package pdftex.def Error: File `background/iCub_model.jpg' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.148 ...epaspectratio]{background/iCub_model.jpg}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 152
-.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 152
-.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 22.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 152
-.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 22.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 152.
+(Font)              scaled to size 12.50409pt on input line 22.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 152.
+(Font)              scaled to size 9.37807pt on input line 22.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 152.
+(Font)              scaled to size 7.29405pt on input line 22.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 152.
+(Font)              scaled to size 12.50409pt on input line 22.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 152.
+(Font)              scaled to size 9.37807pt on input line 22.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 152.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 152
-.
+(Font)              scaled to size 7.29405pt on input line 22.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 22.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 153.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 23.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./tex/abstract.tex)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[1]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 166.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 140.
  (./main.toc)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [1
+ [2
+
+] (./tex/chapter1_introduction.tex
+Chapter 1.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 3.
+) (./tex/chapter2_background.tex [3
+
+]
+Chapter 2.
+) (./tex/chapter3_requirements.tex [4
+
+]
+Chapter 3.
+) [5
 
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 18165 strings out of 493029
- 331909 string characters out of 6136235
- 441761 words of memory out of 5000000
- 21275 multiletter control sequences out of 15000+600000
- 15183 words of font info for 45 fonts, out of 8000000 for 9000
+ 18190 strings out of 493029
+ 332518 string characters out of 6136235
+ 441757 words of memory out of 5000000
+ 21288 multiletter control sequences out of 15000+600000
+ 16003 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,8n,92p,445b,228s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,11n,92p,445b,219s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on main.pdf (2 pages, 41377 bytes).
+r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on main.pdf (6 pages, 43540 bytes).
 PDF statistics:
- 27 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 35 PDF objects out of 1000 (max. 8388607)
+ 24 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
