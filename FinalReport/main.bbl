@@ -1,0 +1,31 @@
+\begin{thebibliography}{1}
+
+\bibitem{Hirabayashi}
+M.~Hirabayashi, S.~Kato, M.~Edahiro, K.~Takeda, T.~Kawano, and S.~Mita.
+\newblock {GPU Implementations of Object Detection using HOG Features and
+  Deformable Models}.
+\newblock Technical report.
+
+\bibitem{Hou2010}
+Y.~L. Hou and G.~K. Pang.
+\newblock {Human detection in crowded scenes}.
+\newblock {\em Proceedings - International Conference on Image Processing,
+  ICIP}, (September 2010):721--724, 2010.
+
+\bibitem{Piccardi2004}
+M.~Piccardi.
+\newblock {Background subtraction techniques: a review*}.
+\newblock 2004.
+
+\bibitem{Redmon}
+J.~Redmon, S.~Divvala, R.~Girshick, and A.~Farhadi.
+\newblock {You Only Look Once: Unified, Real-Time Object Detection}.
+\newblock Technical report.
+
+\bibitem{Zeng2017}
+D.~Zeng, M.~Zhu, T.~Zhou, F.~Xu, and H.~Yang.
+\newblock {Robust Background Subtraction via the Local Similarity Statistical
+  Descriptor}.
+\newblock {\em Applied Sciences}, 7(10):989, 2017.
+
+\end{thebibliography}

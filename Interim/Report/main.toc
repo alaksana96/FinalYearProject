@@ -1,66 +1,66 @@
 \select@language {english}
-\contentsline {chapter}{\numberline {1}Introduction and Requirements}{6}
-\contentsline {section}{\numberline {1.1}Introduction}{6}
-\contentsline {section}{\numberline {1.2}Motivation}{7}
-\contentsline {section}{\numberline {1.3}Project Specification}{9}
-\contentsline {subsection}{\numberline {1.3.1}Robotic Behaviour}{10}
-\contentsline {subsection}{\numberline {1.3.2}Augmented Reality Visualization}{12}
-\contentsline {chapter}{\numberline {2}Literature Review}{13}
-\contentsline {section}{\numberline {2.1}Object Detection}{13}
-\contentsline {subsection}{\numberline {2.1.1}Human Detection}{14}
-\contentsline {paragraph}{SIFT}{15}
-\contentsline {paragraph}{YOLO}{16}
-\contentsline {section}{\numberline {2.2}Simultaneous Localization And Mapping (SLAM)}{18}
-\contentsline {subsection}{\numberline {2.2.1}Existing Work}{19}
-\contentsline {subsection}{\numberline {2.2.2}Visual SLAM}{20}
-\contentsline {paragraph}{Initialization}{21}
-\contentsline {paragraph}{Tracking}{21}
-\contentsline {paragraph}{Mapping}{22}
-\contentsline {section}{\numberline {2.3}Scene Recognition}{22}
-\contentsline {section}{\numberline {2.4}Head Mounted Display and Control}{24}
-\contentsline {subsection}{\numberline {2.4.1}Microsoft Hololens}{24}
-\contentsline {paragraph}{Hardware Specifications}{24}
-\contentsline {paragraph}{Development}{25}
-\contentsline {paragraph}{Gaze}{25}
-\contentsline {paragraph}{No Eye Tracker}{26}
-\contentsline {subsection}{\numberline {2.4.2}Augmented Reality Visualization}{27}
-\contentsline {subsection}{\numberline {2.4.3}Gaze/Eye-Tracking Control}{28}
-\contentsline {section}{\numberline {2.5}Competing Products}{30}
-\contentsline {chapter}{\numberline {3}Implementation Plan}{32}
-\contentsline {section}{\numberline {3.1}Overall Project Goals}{32}
-\contentsline {section}{\numberline {3.2}Hardware Analysis}{33}
-\contentsline {subsection}{\numberline {3.2.1}Powered Wheelchair}{34}
-\contentsline {subsection}{\numberline {3.2.2}Microsoft Hololens}{35}
-\contentsline {subsubsection}{Pupil Labs Eye-Tracker}{36}
-\contentsline {subsubsection}{Development}{36}
-\contentsline {subsection}{\numberline {3.2.3}Hardware Access and Additional Hardware}{36}
-\contentsline {section}{\numberline {3.3}Augmented Reality Wheelchair Control}{37}
-\contentsline {subsection}{\numberline {3.3.1}Cross Platform Interface}{37}
-\contentsline {subsection}{\numberline {3.3.2}Eye-Gaze Estimation}{38}
-\contentsline {section}{\numberline {3.4}Human Detection System}{39}
-\contentsline {subsection}{\numberline {3.4.1}Testing Pre-Trained Models}{40}
-\contentsline {subsection}{\numberline {3.4.2}Estimating Moving Human Trajectories}{40}
-\contentsline {section}{\numberline {3.5}Obstacle Avoidance System}{41}
-\contentsline {subsection}{\numberline {3.5.1}Utilizing Existing Work}{42}
-\contentsline {subsection}{\numberline {3.5.2}Hologram Warnings}{42}
-\contentsline {section}{\numberline {3.6}Project Timeline}{44}
-\contentsline {section}{\numberline {3.7}Fallback}{44}
-\contentsline {section}{\numberline {3.8}Extensions}{45}
-\contentsline {subsection}{\numberline {3.8.1}Scene Recognition}{45}
-\contentsline {section}{\numberline {3.9}Overall System Architecture}{47}
-\contentsline {chapter}{\numberline {4}Evaluation Plan}{48}
-\contentsline {section}{\numberline {4.1}Human Detection Test}{48}
-\contentsline {subsection}{\numberline {4.1.1}Gathering Test Data}{48}
-\contentsline {subsection}{\numberline {4.1.2}Testing with Pre-Recorded Data}{49}
-\contentsline {section}{\numberline {4.2}Eye-Gaze Control Test}{50}
-\contentsline {subsection}{\numberline {4.2.1}Initial Test: Movement}{50}
-\contentsline {subsection}{\numberline {4.2.2}Advanced Tests}{51}
-\contentsline {section}{\numberline {4.3}Obstacle Avoidance Test}{52}
-\contentsline {subsection}{\numberline {4.3.1}Collision Warnings}{52}
-\contentsline {section}{\numberline {4.4}Full System Test}{53}
-\contentsline {chapter}{\numberline {5}Ethical, Legal \& Safety Plan}{56}
-\contentsline {section}{\numberline {5.1}Safety}{56}
-\contentsline {subsection}{\numberline {5.1.1}Physical Safety}{56}
-\contentsline {section}{\numberline {5.2}Legal}{57}
-\contentsline {subsection}{\numberline {5.2.1}Recording People for Test Data}{57}
-\contentsline {chapter}{Appendices}{66}
+\contentsline {chapter}{\numberline {1}Introduction and Requirements}{3}
+\contentsline {section}{\numberline {1.1}Introduction}{3}
+\contentsline {section}{\numberline {1.2}Motivation}{3}
+\contentsline {section}{\numberline {1.3}Project Specification}{4}
+\contentsline {subsection}{\numberline {1.3.1}Robotic Behaviour}{5}
+\contentsline {subsection}{\numberline {1.3.2}Augmented Reality Visualization}{5}
+\contentsline {chapter}{\numberline {2}Literature Review}{6}
+\contentsline {section}{\numberline {2.1}Object Detection}{6}
+\contentsline {subsection}{\numberline {2.1.1}Human Detection}{6}
+\contentsline {paragraph}{SIFT}{7}
+\contentsline {paragraph}{YOLO}{7}
+\contentsline {section}{\numberline {2.2}Simultaneous Localization And Mapping (SLAM)}{8}
+\contentsline {subsection}{\numberline {2.2.1}Existing Work}{9}
+\contentsline {subsection}{\numberline {2.2.2}Visual SLAM}{9}
+\contentsline {paragraph}{Initialization}{10}
+\contentsline {paragraph}{Tracking}{10}
+\contentsline {paragraph}{Mapping}{10}
+\contentsline {section}{\numberline {2.3}Scene Recognition}{10}
+\contentsline {section}{\numberline {2.4}Head Mounted Display and Control}{11}
+\contentsline {subsection}{\numberline {2.4.1}Microsoft Hololens}{11}
+\contentsline {paragraph}{Hardware Specifications}{11}
+\contentsline {paragraph}{Development}{12}
+\contentsline {paragraph}{Gaze}{12}
+\contentsline {paragraph}{No Eye Tracker}{12}
+\contentsline {subsection}{\numberline {2.4.2}Augmented Reality Visualization}{13}
+\contentsline {subsection}{\numberline {2.4.3}Gaze/Eye-Tracking Control}{13}
+\contentsline {section}{\numberline {2.5}Competing Products}{14}
+\contentsline {chapter}{\numberline {3}Implementation Plan}{16}
+\contentsline {section}{\numberline {3.1}Overall Project Goals}{16}
+\contentsline {section}{\numberline {3.2}Hardware Analysis}{17}
+\contentsline {subsection}{\numberline {3.2.1}Powered Wheelchair}{17}
+\contentsline {subsection}{\numberline {3.2.2}Microsoft Hololens}{17}
+\contentsline {subsubsection}{Pupil Labs Eye-Tracker}{17}
+\contentsline {subsubsection}{Development}{18}
+\contentsline {subsection}{\numberline {3.2.3}Hardware Access and Additional Hardware}{18}
+\contentsline {section}{\numberline {3.3}Augmented Reality Wheelchair Control}{18}
+\contentsline {subsection}{\numberline {3.3.1}Cross Platform Interface}{18}
+\contentsline {subsection}{\numberline {3.3.2}Eye-Gaze Estimation}{19}
+\contentsline {section}{\numberline {3.4}Human Detection System}{19}
+\contentsline {subsection}{\numberline {3.4.1}Testing Pre-Trained Models}{19}
+\contentsline {subsection}{\numberline {3.4.2}Estimating Moving Human Trajectories}{19}
+\contentsline {section}{\numberline {3.5}Obstacle Avoidance System}{20}
+\contentsline {subsection}{\numberline {3.5.1}Utilizing Existing Work}{21}
+\contentsline {subsection}{\numberline {3.5.2}Hologram Warnings}{21}
+\contentsline {section}{\numberline {3.6}Project Timeline}{22}
+\contentsline {section}{\numberline {3.7}Fallback}{22}
+\contentsline {section}{\numberline {3.8}Extensions}{22}
+\contentsline {subsection}{\numberline {3.8.1}Scene Recognition}{23}
+\contentsline {section}{\numberline {3.9}Overall System Architecture}{23}
+\contentsline {chapter}{\numberline {4}Evaluation Plan}{24}
+\contentsline {section}{\numberline {4.1}Human Detection Test}{24}
+\contentsline {subsection}{\numberline {4.1.1}Gathering Test Data}{24}
+\contentsline {subsection}{\numberline {4.1.2}Testing with Pre-Recorded Data}{25}
+\contentsline {section}{\numberline {4.2}Eye-Gaze Control Test}{26}
+\contentsline {subsection}{\numberline {4.2.1}Initial Test: Movement}{26}
+\contentsline {subsection}{\numberline {4.2.2}Advanced Tests}{27}
+\contentsline {section}{\numberline {4.3}Obstacle Avoidance Test}{27}
+\contentsline {subsection}{\numberline {4.3.1}Collision Warnings}{27}
+\contentsline {section}{\numberline {4.4}Full System Test}{28}
+\contentsline {chapter}{\numberline {5}Ethical, Legal \& Safety Plan}{29}
+\contentsline {section}{\numberline {5.1}Safety}{29}
+\contentsline {subsection}{\numberline {5.1.1}Physical Safety}{29}
+\contentsline {section}{\numberline {5.2}Legal}{30}
+\contentsline {subsection}{\numberline {5.2.1}Recording People for Test Data}{30}
+\contentsline {chapter}{Appendices}{34}

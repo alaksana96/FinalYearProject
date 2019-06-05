@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  2 JUN 2019 18:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  5 JUN 2019 20:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -917,28 +917,69 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17.28> not available
 
 ]
 Chapter 2.
-) (./tex/chapter3_requirements.tex [4
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 7.
+[4
 
 ]
+<img/chapter2_background/robustBackgroundSubtraction.png, id=23, 329.91255pt x 
+251.13824pt>
+File: img/chapter2_background/robustBackgroundSubtraction.png Graphic file (typ
+e png)
+ <use img/chapter2_background/robustBackgroundSubtraction.png>
+Package pdftex.def Info: img/chapter2_background/robustBackgroundSubtraction.pn
+g used on input line 18.
+(pdftex.def)             Requested size: 188.21286pt x 143.2729pt.
+
+<img/chapter2_background/yoloBBBoxes.png, id=24, 459.7175pt x 459.7175pt>
+File: img/chapter2_background/yoloBBBoxes.png Graphic file (type png)
+
+<use img/chapter2_background/yoloBBBoxes.png>
+Package pdftex.def Info: img/chapter2_background/yoloBBBoxes.png used on input 
+line 24.
+(pdftex.def)             Requested size: 141.16124pt x 141.16412pt.
+
+Overfull \hbox (2.28001pt too wide) in paragraph at lines 16--27
+[][]  [] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5 <./img/chapter2_background/robustBackgroundSubtraction.png> <./img/chapter2_
+background/yoloBBBoxes.png (PNG copy)>]) (./tex/chapter3_requirements.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]
 Chapter 3.
-) [5
+) (./main.bbl [7
+
+]) [8
 
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 18190 strings out of 493029
- 332518 string characters out of 6136235
- 441757 words of memory out of 5000000
- 21288 multiletter control sequences out of 15000+600000
- 16003 words of font info for 46 fonts, out of 8000000 for 9000
+ 18246 strings out of 493029
+ 333675 string characters out of 6136235
+ 443757 words of memory out of 5000000
+ 21333 multiletter control sequences out of 15000+600000
+ 19586 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,11n,92p,445b,219s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,11n,92p,644b,580s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on main.pdf (6 pages, 43540 bytes).
+ive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (9 pages, 1271873 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 52 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

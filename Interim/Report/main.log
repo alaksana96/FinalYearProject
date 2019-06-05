@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  2 JUN 2019 17:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  5 JUN 2019 20:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -891,89 +891,12 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 167.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[1] (./main.toc
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <20.74> not available
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 21.61124pt on input line 3.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 3.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 21.61124pt on input line 3.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 3.
+ [1
 
-Overfull \hbox (10.14908pt too wide) in paragraph at lines 7--7
- [][] []\OT1/ppl/m/n/20.74 Augmented Re-al-ity Vi-su- 
- []
-
-
-Overfull \hbox (0.31804pt too wide) in paragraph at lines 13--13
- [][] []\OT1/ppl/m/n/20.74 Simultaneous Lo-cal-iza-tion And 
- []
-
-
-Overfull \hbox (15.72862pt too wide) in paragraph at lines 20--20
- [][] []\OT1/ppl/m/n/20.74 Head Mounted Dis-play and Con- 
- []
-
-[2
-
-]
-Overfull \hbox (10.14908pt too wide) in paragraph at lines 26--26
- [][] []\OT1/ppl/m/n/20.74 Augmented Re-al-ity Vi-su- 
- []
-
-
-Overfull \hbox (8.65648pt too wide) in paragraph at lines 27--27
- [][] []\OT1/ppl/m/n/20.74 Gaze/Eye-Tracking Con- 
- []
-
-
-Overfull \hbox (18.07321pt too wide) in paragraph at lines 36--36
- [][] []\OT1/ppl/m/n/20.74 Hardware Ac-cess and Ad- 
- []
-
-
-Overfull \hbox (0.29688pt too wide) in paragraph at lines 37--37
- [][] []\OT1/ppl/m/n/20.74 Augmented Re-al-ity Wheelchair 
- []
-
-
-Overfull \hbox (11.4563pt too wide) in paragraph at lines 41--41
- [][] []\OT1/ppl/m/n/20.74 Testing Pre-Trained Mod- 
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[3]
-Overfull \hbox (20.3948pt too wide) in paragraph at lines 54--54
- [][] []\OT1/ppl/m/n/20.74 Testing with Pre-Recorded 
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[4]
-Overfull \hbox (11.02025pt too wide) in paragraph at lines 65--65
- [][] []\OT1/ppl/m/n/20.74 Recording Peo-ple for Test 
- []
-
-)
+])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
@@ -984,110 +907,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5]
+[2]
 Chapter 1.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 230.
-
-Overfull \hbox (59.90154pt too wide) in paragraph at lines 234--235
-\OT1/ppl/m/n/20.74 that there were ap-prox-i-mately 3.6 mil-lion wheelchair
- []
-
-
-Overfull \hbox (4.54742pt too wide) in paragraph at lines 234--235
-\OT1/ppl/m/n/20.74 cord-ing to a re-port ex-am-in-ing the re-cent trends
- []
-
-
-Overfull \hbox (8.57166pt too wide) in paragraph at lines 234--235
-\OT1/ppl/m/n/20.74 amongst adults aged 65 and older in the United
- []
-
-
-Overfull \hbox (9.02682pt too wide) in paragraph at lines 234--235
-\OT1/ppl/m/n/20.74 States, the num-ber of el-derly adults is pro-jected
- []
-
-
-Overfull \hbox (1.85118pt too wide) in paragraph at lines 234--235
-\OT1/ppl/m/n/20.74 pectancy stem-ming from bet-ter health-care and
- []
-
-
-Overfull \hbox (30.43059pt too wide) in paragraph at lines 234--235
-\OT1/ppl/m/n/20.74 a re-duc-tion in mor-tal-ity rate at older ages (Mather
- []
-
-
-Overfull \hbox (2.22346pt too wide) in paragraph at lines 234--235
-\OT1/ppl/m/n/20.74 pop-u-la-tion, it is likely that the num-ber of pow-
- []
-
-[6
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 227.
+[3
 
 ]
-Overfull \hbox (23.21344pt too wide) in paragraph at lines 236--237
-\OT1/ppl/m/n/20.74 the prob-lems faced by pow-ered wheelchair users
- []
-
-
-Overfull \hbox (26.73833pt too wide) in paragraph at lines 236--237
-\OT1/ppl/m/n/20.74 in-tel-li-gent wheelchairs has been pro-posed. These
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[7]
-Overfull \hbox (8.40504pt too wide) in paragraph at lines 240--241
-\OT1/ppl/m/n/20.74 smart sys-tem that would fur-ther ben-e-fit PWUs,
- []
-
-
-Overfull \hbox (18.65071pt too wide) in paragraph at lines 240--241
-\OT1/ppl/m/n/20.74 eas and rec-og-niz-ing lo-ca-tions that are fre-quently
- []
-
-
-Overfull \hbox (2.03712pt too wide) in paragraph at lines 240--241
-\OT1/ppl/m/n/20.74 can also be uti-lized to dis-play the in-ter-nal state
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[8]
-Overfull \hbox (10.18878pt too wide) in paragraph at lines 243--244
-\OT1/ppl/m/n/20.74 users to more eas-ily con-duct rou-tine tasks, such
- []
-
-
-Overfull \hbox (1.56137pt too wide) in paragraph at lines 245--246
-\OT1/ppl/m/n/20.74 Per-sonal Robotics Lab. The hard-ware in-cludes
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[9]
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 248.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 245.
 
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <20.74> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 248.
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 245.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 254.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 251.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1095,103 +938,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10]
-Overfull \hbox (11.01833pt too wide) in paragraph at lines 257--258
-\OT1/ppl/m/n/20.74 set that can be worn by the pow-ered wheelchair
- []
-
-
-Overfull \hbox (0.48218pt too wide) in paragraph at lines 257--258
-\OT1/ppl/m/n/20.74 tracker ad-don. An in-ter-est-ing con-cept that can
- []
-
-
-Overfull \hbox (31.73701pt too wide) in paragraph at lines 260--261
-\OT1/ppl/m/n/20.74 of the sys-tem con-trol-ling the pow-ered wheelchair.
- []
-
-
-Overfull \hbox (2.84685pt too wide) in paragraph at lines 260--261
-\OT1/ppl/m/n/20.74 be ren-dered on the Hololens, al-low-ing the user
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[11]
-Overfull \hbox (8.48701pt too wide) in paragraph at lines 262--263
-[]\OT1/ppl/m/n/20.74 Other vi-su-al-iza-tions in-clude high-light-ing mov-
- []
-
-
-Overfull \hbox (12.74002pt too wide) in paragraph at lines 262--263
-\OT1/ppl/m/n/20.74 cause a col-li-sion, the Hololens will flash a warn-
- []
-
-
-Overfull \hbox (10.45775pt too wide) in paragraph at lines 262--263
-\OT1/ppl/m/n/20.74 the at-ten-tion of the user, al-low-ing them to make
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[12]
+[5]
 Chapter 2.
+[6
 
-Overfull \hbox (3.78085pt too wide) in paragraph at lines 269--270
-\OT1/ppl/m/n/20.74 crowded ar-eas, a sys-tem must be im-ple-mented
- []
-
-
-Overfull \hbox (0.29643pt too wide) in paragraph at lines 271--272
-\OT1/ppl/m/n/20.74 (2018), is a spe-cial case of Ob-ject De-tec-tion and
- []
-
-[13
-
-]
-Overfull \hbox (23.4618pt too wide) in paragraph at lines 273--274
-\OT1/ppl/m/n/20.74 ob-ject de-tec-tion for rec-og-niz-ing the scene around
- []
-
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 278.
-
-Overfull \hbox (20.7873pt too wide) in paragraph at lines 278--279
-\OT1/ppl/m/n/20.74 In-vari-ant Fea-ture Trans-form (SIFT), which trans-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[14]
-Overfull \hbox (3.9446pt too wide) in paragraph at lines 282--283
-\OT1/ppl/m/n/20.74 ing SIFT is the high com-pu-ta-tional cost of com-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[15]
-<Images/Literature/YOLO_Architecture.png, id=60, 953.5625pt x 380.42125pt>
+] <Images/Literature/YOLO_Architecture.png, id=32, 953.5625pt x 380.42125pt>
 File: Images/Literature/YOLO_Architecture.png Graphic file (type png)
 
 <use Images/Literature/YOLO_Architecture.png>
 Package pdftex.def Info: Images/Literature/YOLO_Architecture.png used on input 
-line 289.
+line 286.
 (pdftex.def)             Requested size: 381.41824pt x 152.16579pt.
 
 
@@ -1200,162 +956,44 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16 <./Images/Literature/YOLO_Architecture.png>]
-Overfull \hbox (0.89592pt too wide) in paragraph at lines 296--297
-\OT1/ppl/m/n/20.74 ing the LIRIS Hu-man Ac-tiv-i-ties dataset, which
- []
-
-
-<Images/Literature/YOLO_Action_Recognition.png, id=66, 574.145pt x 479.7925pt>
+[7 <./Images/Literature/YOLO_Architecture.png>]
+<Images/Literature/YOLO_Action_Recognition.png, id=38, 574.145pt x 479.7925pt>
 File: Images/Literature/YOLO_Action_Recognition.png Graphic file (type png)
 
 <use Images/Literature/YOLO_Action_Recognition.png>
 Package pdftex.def Info: Images/Literature/YOLO_Action_Recognition.png used on 
-input line 300.
+input line 297.
 (pdftex.def)             Requested size: 229.65393pt x 191.91359pt.
 
-Overfull \hbox (49.69844pt too wide) in paragraph at lines 305--306
-\OT1/ppl/m/n/20.74 ing to-wards the cam-era mounted on the wheelchair,
- []
-
-
-Overfull \hbox (31.6337pt too wide) in paragraph at lines 305--306
-\OT1/ppl/m/n/20.74 in or-der to help with nav-i-gat-ing through crowded
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[17 <./Images/Literature/YOLO_Action_Recognition.png>]
-Overfull \hbox (10.9794pt too wide) in paragraph at lines 308--308
+Overfull \hbox (10.9794pt too wide) in paragraph at lines 305--305
 []\OT1/ppl/b/n/17.28 Simultaneous Lo-cal-iza-tion And Map-ping (SLAM) 
  []
 
 
-Overfull \hbox (8.03162pt too wide) in paragraph at lines 311--312
-\OT1/ppl/m/n/20.74 tive to land-marks which are de-tected. The pop-
- []
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-
-Overfull \hbox (0.81319pt too wide) in paragraph at lines 311--312
-\OT1/ppl/m/n/20.74 u-lar-ity of SLAM in-creased with the emer-gence
- []
-
-
-Overfull \hbox (3.11542pt too wide) in paragraph at lines 311--312
-\OT1/ppl/m/n/20.74 doors, which rules out the use of GPS to bound
- []
-
+[8 <./Images/Literature/YOLO_Action_Recognition.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18]
-Overfull \hbox (8.65445pt too wide) in paragraph at lines 316--317
-\OT1/ppl/m/n/20.74 data re-turned by the sen-sor may af-fect the com-
- []
-
-
-Overfull \hbox (0.58423pt too wide) in paragraph at lines 316--317
-\OT1/ppl/m/n/20.74 pu-ta-tional com-plex-ity of the SLAM al-go-rithm.
- []
-
+[9]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19]
-Overfull \hbox (40.81963pt too wide) in paragraph at lines 318--319
-[]\OT1/ppl/m/n/20.74 A fairly com-mon as-sump-tion in SLAM ap-proaches
- []
-
-
-Overfull \hbox (21.99007pt too wide) in paragraph at lines 318--319
-\OT1/ppl/m/n/20.74 is that the world is static and re-mains un-changed
- []
-
-
-Overfull \hbox (18.77403pt too wide) in paragraph at lines 318--319
-\OT1/ppl/m/n/20.74 achieve the abil-ity to de-tect hu-man ob-jects walk-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[20]
-Overfull \hbox (20.02765pt too wide) in paragraph at lines 324--325
- \OT1/ppl/b/n/12 Ini-tial-iza-tion[] \OT1/ppl/m/n/20.74 In the ini-tial-iza-tio
-n stage, cam-era pose
- []
-
-
-Overfull \hbox (33.43724pt too wide) in paragraph at lines 324--325
-\OT1/ppl/m/n/20.74 part of the ini-tial map us-ing the global co-ordinate
- []
-
-
-Overfull \hbox (1.16609pt too wide) in paragraph at lines 327--328
-\OT1/ppl/m/n/20.74 the Perspective-n-Point prob-lem (Nist[]er 2004).
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[21]
-Overfull \hbox (21.76122pt too wide) in paragraph at lines 330--331
-\OT1/ppl/m/n/20.74 vi-ron-ment that has pre-vi-ously not been mapped,
- []
-
-
-Overfull \hbox (22.23866pt too wide) in paragraph at lines 335--336
-\OT1/ppl/m/n/20.74 ters the room again, greatly re-duc-ing the amount
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[22]
-Overfull \hbox (7.74168pt too wide) in paragraph at lines 337--338
-\OT1/ppl/m/n/20.74 rec-og-niz-ing in-door scenes, by us-ing im-age pro-
- []
-
-
-Overfull \hbox (3.65509pt too wide) in paragraph at lines 337--338
-\OT1/ppl/m/n/20.74 scenes iden-tity. For in-stance, a li-brary will con-
- []
-
-
-Overfull \hbox (2.41144pt too wide) in paragraph at lines 342--343
-\OT1/ppl/m/n/20.74 The Hololens is equipped with an ar-ray of sen-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[23] <Images/Literature/hololens.jpg, id=90, 301.125pt x 188.20313pt>
+[10] <Images/Literature/hololens.jpg, id=49, 301.125pt x 188.20313pt>
 File: Images/Literature/hololens.jpg Graphic file (type jpg)
 
 <use Images/Literature/hololens.jpg>
-Package pdftex.def Info: Images/Literature/hololens.jpg used on input line 346.
+Package pdftex.def Info: Images/Literature/hololens.jpg used on input line 343.
 
 (pdftex.def)             Requested size: 120.44786pt x 75.2799pt.
 
@@ -1365,24 +1003,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24 <./Images/Literature/hololens.jpg>]
-Overfull \hbox (1.78757pt too wide) in paragraph at lines 364--365
-[]\OT1/ppl/m/n/20.74 A full tech-ni-cal spec-i-fi-ca-tions for the hard-ware
- []
-
-
-Overfull \hbox (25.14127pt too wide) in paragraph at lines 370--371
-\OT1/ppl/m/n/20.74 tar-get-ing in mixed re-al-ity ap-pli-ca-tions (Mi-crosoft
- []
-
-
-Overfull \hbox (2.80472pt too wide) in paragraph at lines 370--371
-\OT1/ppl/m/n/20.74 al-lows the sys-tem to dis-cern their in-tent. Users
- []
-
-
-Overfull \hbox (21.07687pt too wide) in paragraph at lines 372--373
-\OT1/ppl/m/n/20.74 with a per-son that is ap-proach-ing the wheelchair
+[11 <./Images/Literature/hololens.jpg>]
+Overfull \hbox (3.85335pt too wide) in paragraph at lines 361--362
+[]\OT1/ppl/m/n/12 A full tech-ni-cal spec-i-fi-ca-tions for the hard-ware is av
+ail-able from Mi-crosoft (2015). 
  []
 
 
@@ -1391,19 +1015,74 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25]
-Overfull \hbox (3.28183pt too wide) in paragraph at lines 378--379
-[]\OT1/ppl/m/n/20.74 Relying on head gaze to es-ti-mate the point that
+[12]
+Overfull \hbox (5.46211pt too wide) in paragraph at lines 384--385
+\OT1/ppl/m/n/12 The idea of gaze based con-trol has al-ready been ex-plored in 
+the Per-sonal Robotics
  []
 
+<Images/Literature/AR_Interface.png, id=57, 564.1075pt x 407.5225pt>
+File: Images/Literature/AR_Interface.png Graphic file (type png)
 
-Overfull \hbox (18.23613pt too wide) in paragraph at lines 378--379
-\OT1/ppl/m/n/20.74 van der Meulen et al. (2017), an ex-tra eye-tracker
- []
+<use Images/Literature/AR_Interface.png>
+Package pdftex.def Info: Images/Literature/AR_Interface.png used on input line 
+388.
+(pdftex.def)             Requested size: 225.63899pt x 163.0061pt.
 
 
-Overfull \hbox (11.12192pt too wide) in paragraph at lines 378--379
-\OT1/ppl/m/n/20.74 It was found that the ad-di-tion of the eye-tracker
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13 <./Images/Literature/AR_Interface.png>]
+<Images/Literature/Eye_Tracker_Control.png, id=62, 506.89375pt x 417.56pt>
+File: Images/Literature/Eye_Tracker_Control.png Graphic file (type png)
+
+<use Images/Literature/Eye_Tracker_Control.png>
+Package pdftex.def Info: Images/Literature/Eye_Tracker_Control.png used on inpu
+t line 404.
+(pdftex.def)             Requested size: 202.7539pt x 167.02103pt.
+
+<Images/Literature/Wastlund_AR_Screen.png, id=63, 483.8075pt x 345.29pt>
+File: Images/Literature/Wastlund_AR_Screen.png Graphic file (type png)
+
+<use Images/Literature/Wastlund_AR_Screen.png>
+Package pdftex.def Info: Images/Literature/Wastlund_AR_Screen.png used on input
+ line 414.
+(pdftex.def)             Requested size: 193.51956pt x 138.11354pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14 <./Images/Literature/Eye_Tracker_Control.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15 <./Images/Literature/Wastlund_AR_Screen.png>]
+Chapter 3.
+[16
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17]
+Overfull \hbox (14.83345pt too wide) in paragraph at lines 461--462
+\OT1/ppl/m/n/12 To al-low the user to fix-ate their gaze on a spe-cific point a
+nd nav-i-gate the wheelchair
  []
 
 
@@ -1412,21 +1091,159 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26]
-Overfull \hbox (2.70201pt too wide) in paragraph at lines 383--384
-\OT1/ppl/m/n/20.74 sound that are dis-played by the head-set. Users
+[18]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[19]
+<Images/Implementation/HMD_Trajectory_Hologram.png, id=85, 390.45876pt x 521.95
+pt>
+File: Images/Implementation/HMD_Trajectory_Hologram.png Graphic file (type png)
+
+ <use Images/Implementation/HMD_Trajectory_Hologram.png>
+Package pdftex.def Info: Images/Implementation/HMD_Trajectory_Hologram.png used
+ on input line 476.
+(pdftex.def)             Requested size: 209.12683pt x 279.55507pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20 <./Images/Implementation/HMD_Trajectory_Hologram.png>]
+<Images/Implementation/AR_Hologram_Render.png, id=90, 638.385pt x 481.8pt>
+File: Images/Implementation/AR_Hologram_Render.png Graphic file (type png)
+
+<use Images/Implementation/AR_Hologram_Render.png>
+Package pdftex.def Info: Images/Implementation/AR_Hologram_Render.png used on i
+nput line 498.
+(pdftex.def)             Requested size: 230.04079pt x 173.61694pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21 <./Images/Implementation/AR_Hologram_Render.png>]
+Overfull \hbox (1.0573pt too wide) in paragraph at lines 516--517
+\OT1/ppl/m/n/12 time al-low. The tech-ni-cal im-ple-men-ta-tion de-tails have n
+ot been fully re-searched,
  []
 
 
-Overfull \hbox (5.64636pt too wide) in paragraph at lines 383--384
-\OT1/ppl/m/n/20.74 are able to in-ter-act with the holo-grams through
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23]
+Chapter 4.
+
+<Images/Evaluation/HumanDetection/IMG_4071.jpg, id=101, 2023.56pt x 1517.67pt>
+File: Images/Evaluation/HumanDetection/IMG_4071.jpg Graphic file (type jpg)
+
+<use Images/Evaluation/HumanDetection/IMG_4071.jpg>
+Package pdftex.def Info: Images/Evaluation/HumanDetection/IMG_4071.jpg used on 
+input line 544.
+(pdftex.def)             Requested size: 167.3021pt x 125.46869pt.
+
+<Images/Evaluation/HumanDetection/IMG_4077.jpg, id=102, 2023.56pt x 1517.67pt>
+File: Images/Evaluation/HumanDetection/IMG_4077.jpg Graphic file (type jpg)
+
+<use Images/Evaluation/HumanDetection/IMG_4077.jpg>
+Package pdftex.def Info: Images/Evaluation/HumanDetection/IMG_4077.jpg used on 
+input line 550.
+(pdftex.def)             Requested size: 167.3021pt x 125.46869pt.
+
+Overfull \hbox (2.28001pt too wide) in paragraph at lines 542--553
+[][]  [] 
  []
 
 
-Overfull \hbox (1.6855pt too wide) in paragraph at lines 383--384
-\OT1/ppl/m/n/20.74 cur-rent en-vi-ron-ment (Mi-crosoft 2018\OT1/ppl/m/it/20.74 
-b\OT1/ppl/m/n/20.74 ). An ex-
+<Images/Evaluation/HumanDetection/IMG_4080.jpg, id=103, 2023.56pt x 1517.67pt>
+File: Images/Evaluation/HumanDetection/IMG_4080.jpg Graphic file (type jpg)
+
+<use Images/Evaluation/HumanDetection/IMG_4080.jpg>
+Package pdftex.def Info: Images/Evaluation/HumanDetection/IMG_4080.jpg used on 
+input line 558.
+(pdftex.def)             Requested size: 167.3021pt x 125.46869pt.
+
+<Images/Evaluation/HumanDetection/IMG_4079.jpg, id=104, 2023.56pt x 1517.67pt>
+File: Images/Evaluation/HumanDetection/IMG_4079.jpg Graphic file (type jpg)
+
+<use Images/Evaluation/HumanDetection/IMG_4079.jpg>
+Package pdftex.def Info: Images/Evaluation/HumanDetection/IMG_4079.jpg used on 
+input line 564.
+(pdftex.def)             Requested size: 167.3021pt x 125.46869pt.
+
+Overfull \hbox (2.28001pt too wide) in paragraph at lines 556--567
+[][]  [] 
  []
+
+
+Overfull \hbox (2.60536pt too wide) in paragraph at lines 575--576
+\OT1/ppl/m/n/12 re-sults of the ob-ject de-tec-tion. The YOLO method draws boun
+d-ing boxes around
+ []
+
+[24
+
+]
+<Images/Evaluation/HumanDetection/bounding_boxes.png, id=109, 743.77875pt x 559
+.08875pt>
+File: Images/Evaluation/HumanDetection/bounding_boxes.png Graphic file (type pn
+g)
+ <use Images/Evaluation/HumanDetection/bounding_boxes.png>
+Package pdftex.def Info: Images/Evaluation/HumanDetection/bounding_boxes.png us
+ed on input line 581.
+(pdftex.def)             Requested size: 146.39133pt x 110.04132pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25 <./Images/Evaluation/HumanDetection/IMG_4071.jpg> <./Images/Evaluation/Huma
+nDetection/IMG_4077.jpg> <./Images/Evaluation/HumanDetection/IMG_4080.jpg> <./I
+mages/Evaluation/HumanDetection/IMG_4079.jpg>]
+<Images/Evaluation/EyeGaze/Initial_Test.png, id=113, 388.45125pt x 515.9275pt>
+File: Images/Evaluation/EyeGaze/Initial_Test.png Graphic file (type png)
+
+<use Images/Evaluation/EyeGaze/Initial_Test.png>
+Package pdftex.def Info: Images/Evaluation/EyeGaze/Initial_Test.png used on inp
+ut line 595.
+(pdftex.def)             Requested size: 125.47737pt x 166.65103pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26 <./Images/Evaluation/HumanDetection/bounding_boxes.png> <./Images/Evaluatio
+n/EyeGaze/Initial_Test.png>]
+<Images/Evaluation/ObjectAvoidance/Object_Avoidance_Render.png, id=119, 950.551
+25pt x 371.3875pt>
+File: Images/Evaluation/ObjectAvoidance/Object_Avoidance_Render.png Graphic fil
+e (type png)
+
+<use Images/Evaluation/ObjectAvoidance/Object_Avoidance_Render.png>
+Package pdftex.def Info: Images/Evaluation/ObjectAvoidance/Object_Avoidance_Ren
+der.png used on input line 622.
+(pdftex.def)             Requested size: 418.25368pt x 163.41666pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1435,851 +1252,44 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [27]
-Overfull \hbox (8.59267pt too wide) in paragraph at lines 387--388
-\OT1/ppl/m/n/20.74 The idea of gaze based con-trol has al-ready been
- []
-
-
-Overfull \hbox (9.23466pt too wide) in paragraph at lines 387--388
-\OT1/ppl/m/n/20.74 ex-plored in the Per-sonal Robotics Lab (Chac[]on-
- []
-
-<Images/Literature/AR_Interface.png, id=104, 564.1075pt x 407.5225pt>
-File: Images/Literature/AR_Interface.png Graphic file (type png)
-
-<use Images/Literature/AR_Interface.png>
-Package pdftex.def Info: Images/Literature/AR_Interface.png used on input line 
-391.
-(pdftex.def)             Requested size: 225.63899pt x 163.0061pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (8.13445pt too wide) in paragraph at lines 403--404
-\OT1/ppl/m/n/20.74 cal-cu-lates the 2D co-ordinates of where the per-
- []
-
-
-Overfull \hbox (29.24828pt too wide) in paragraph at lines 403--404
-\OT1/ppl/m/n/20.74 vre the wheelchair, as well as in-ter-act with nearby
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28]
-<Images/Literature/Eye_Tracker_Control.png, id=108, 506.89375pt x 417.56pt>
-File: Images/Literature/Eye_Tracker_Control.png Graphic file (type png)
-
-<use Images/Literature/Eye_Tracker_Control.png>
-Package pdftex.def Info: Images/Literature/Eye_Tracker_Control.png used on inpu
-t line 407.
-(pdftex.def)             Requested size: 202.7539pt x 167.02103pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (27.02885pt too wide) in paragraph at lines 413--414
-\OT1/ppl/m/n/20.74 that ob-ject. To coun-ter-act this prob-lem, W[]astlund
- []
-
-
-Overfull \hbox (51.54326pt too wide) in paragraph at lines 413--414
-\OT1/ppl/m/n/20.74 plays on-screen but-tons that con-trol the wheelchairs
- []
-
-
-Overfull \hbox (59.50764pt too wide) in paragraph at lines 413--414
-\OT1/ppl/m/n/20.74 move-ments. The sys-tem also stopped the wheelchair
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[29 <./Images/Literature/AR_Interface.png>]
-<Images/Literature/Wastlund_AR_Screen.png, id=113, 483.8075pt x 345.29pt>
-File: Images/Literature/Wastlund_AR_Screen.png Graphic file (type png)
-
-<use Images/Literature/Wastlund_AR_Screen.png>
-Package pdftex.def Info: Images/Literature/Wastlund_AR_Screen.png used on input
- line 417.
-(pdftex.def)             Requested size: 193.51956pt x 138.11354pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (43.89053pt too wide) in paragraph at lines 422--423
-[]\OT1/ppl/m/n/20.74 A sim-i-lar idea was pro-posed by Arai & Mardiyanto
- []
-
-
-Overfull \hbox (55.25569pt too wide) in paragraph at lines 422--423
-\OT1/ppl/m/n/20.74 an in-vis-i-ble con-trol panel sim-i-lar to that of W[]astlu
-nd
- []
-
-
-Overfull \hbox (23.79446pt too wide) in paragraph at lines 422--423
-\OT1/ppl/m/n/20.74 was re-quired be-fore the wheelchair would move. 
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[30 <./Images/Literature/Eye_Tracker_Control.png>]
-Overfull \hbox (7.1412pt too wide) in paragraph at lines 424--425
-[]\OT1/ppl/m/n/20.74 Raymond et al. (2018) pro-poses a sys-tem which
- []
-
-
-Overfull \hbox (69.52563pt too wide) in paragraph at lines 424--425
-\OT1/ppl/m/n/20.74 trol the wheelchair as pro-posed by Arai & Mardiyanto
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[31 <./Images/Literature/Wastlund_AR_Screen.png>]
-Chapter 3.
-
-Overfull \hbox (4.46317pt too wide) in paragraph at lines 432--433
-\OT1/ppl/m/n/20.74 mounted AR de-vice or through the sys-tem tak-
- []
-
-[32
-
-]
-Overfull \hbox (23.81572pt too wide) in paragraph at lines 437--438
-\OT1/ppl/m/n/20.74 anal-y-sis of any cam-eras, sen-sors and other pieces
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[33]
-Overfull \hbox (19.64648pt too wide) in paragraph at lines 440--441
-\OT1/ppl/m/n/20.74 used for sev-eral other re-search projects (Chac[]on-
- []
-
-
-Overfull \hbox (2.24606pt too wide) in paragraph at lines 440--441
-\OT1/ppl/m/n/20.74 and shared con-trol method-olo-gies.In ad-di-tion,
- []
-
-
-Overfull \hbox (49.5948pt too wide) in paragraph at lines 440--441
-\OT1/ppl/m/n/20.74 Quesada & Demiris (2018) also uti-lizes the Hololens
- []
-
-
-Overfull \hbox (0.39989pt too wide) in paragraph at lines 440--441
-\OT1/ppl/m/n/20.74 cam-era to cap-ture im-ages of the sur-round-ings,
- []
-
-
-Overfull \hbox (10.27089pt too wide) in paragraph at lines 442--443
-[]\OT1/ppl/m/n/20.74 Further in-ves-ti-ga-tion into the sen-sors and other
- []
-
-
-Overfull \hbox (1.70634pt too wide) in paragraph at lines 442--443
-\OT1/ppl/m/n/20.74 con-ducted, by ask-ing mem-bers of the Per-sonal
- []
-
-
-Overfull \hbox (54.07425pt too wide) in paragraph at lines 442--443
-\OT1/ppl/m/n/20.74 Robotics Lab who have worked with the wheelchair.
- []
-
-
-Overfull \hbox (8.90324pt too wide) in paragraph at lines 442--443
-\OT1/ppl/m/n/20.74 sors can be mounted on ARTA, should the need
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[34]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[35]
-Overfull \hbox (30.16096pt too wide) in paragraph at lines 454--455
-\OT1/ppl/m/n/20.74 analysing the sen-sors avail-able on the wheelchair,
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[36]
-Overfull \hbox (16.67978pt too wide) in paragraph at lines 458--459
-\OT1/ppl/m/n/20.74 and the sys-tem will rec-og-nize the in-tent to move
- []
-
-
-Overfull \hbox (6.00018pt too wide) in paragraph at lines 461--462
-\OT1/ppl/m/n/20.74 Op-er-at-ing Sys-tem (ROS), which runs on a stan-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[37]
-Overfull \hbox (9.89827pt too wide) in paragraph at lines 464--465
-\OT1/ppl/m/n/20.74 cific point and nav-i-gate the wheelchair to-wards
- []
-
-
-Overfull \hbox (5.04445pt too wide) in paragraph at lines 464--465
-\OT1/ppl/m/n/20.74 need to be im-ple-mented. Us-ing the eye-tracker
- []
-
-
-Overfull \hbox (1.10489pt too wide) in paragraph at lines 464--465
-\OT1/ppl/m/n/20.74 noted that head-gaze can be used to de-ter-mine
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[38]
-Overfull \hbox (28.15028pt too wide) in paragraph at lines 467--468
-\OT1/ppl/m/n/20.74 Previous re-search by Chac[]on-Quesada & Demiris
- []
-
-
-Overfull \hbox (31.84091pt too wide) in paragraph at lines 467--468
-\OT1/ppl/m/n/20.74 pro-cess-ing on a re-mote com-puter. For this project,
- []
-
-
-Overfull \hbox (11.08043pt too wide) in paragraph at lines 467--468
-\OT1/ppl/m/n/20.74 de-tect the hu-man in the im-age, and us-ing depth
- []
-
-
-Overfull \hbox (45.1352pt too wide) in paragraph at lines 467--468
-\OT1/ppl/m/n/20.74 the per-son is mov-ing closer to-wards the wheelchair
- []
-
-
-Overfull \hbox (3.92482pt too wide) in paragraph at lines 472--473
-\OT1/ppl/m/n/20.74 ca-pa-ble of rec-og-niz-ing peo-ple. How-ever, these
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[39]
-<Images/Implementation/HMD_Trajectory_Hologram.png, id=148, 390.45876pt x 521.9
-5pt>
-File: Images/Implementation/HMD_Trajectory_Hologram.png Graphic file (type png)
-
- <use Images/Implementation/HMD_Trajectory_Hologram.png>
-Package pdftex.def Info: Images/Implementation/HMD_Trajectory_Hologram.png used
- on input line 479.
-(pdftex.def)             Requested size: 209.12683pt x 279.55507pt.
-
-Overfull \hbox (3.30356pt too wide) in paragraph at lines 487--488
-\OT1/ppl/m/n/20.74 men-tioned in Sec-tion 3.4[] as well as us-ing range
- []
-
-
-Overfull \hbox (4.44348pt too wide) in paragraph at lines 487--488
-\OT1/ppl/m/n/20.74 find-ers and map-ping tech-niques to pre-vent the
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[40]
-Overfull \hbox (4.1334pt too wide) in paragraph at lines 490--491
-\OT1/ppl/m/n/20.74 Previous work by Zolotas et al. (2018) uses var-
- []
-
-
-Overfull \hbox (16.76312pt too wide) in paragraph at lines 490--491
-\OT1/ppl/m/n/20.74 the tra-jec-tory of the wheelchair and ren-der holo-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[41 <./Images/Implementation/HMD_Trajectory_Hologram.png>]
-Overfull \hbox (20.97354pt too wide) in paragraph at lines 492--493
-\OT1/ppl/m/n/20.74 to re-al-ize when to take over from the user should
- []
-
-
-Overfull \hbox (10.97618pt too wide) in paragraph at lines 495--496
-\OT1/ppl/m/n/20.74 Utilizing the dis-play on the Mi-crosoft Hololens,
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[42]
-<Images/Implementation/AR_Hologram_Render.png, id=160, 638.385pt x 481.8pt>
-File: Images/Implementation/AR_Hologram_Render.png Graphic file (type png)
-
-<use Images/Implementation/AR_Hologram_Render.png>
-Package pdftex.def Info: Images/Implementation/AR_Hologram_Render.png used on i
-nput line 501.
-(pdftex.def)             Requested size: 230.04079pt x 173.61694pt.
-
-Overfull \hbox (34.6619pt too wide) in paragraph at lines 507--508
-\OT1/ppl/m/n/20.74 will be ren-dered on the Mi-crosoft Hololens screen.
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[43 <./Images/Implementation/AR_Hologram_Render.png>]
-Overfull \hbox (17.57147pt too wide) in paragraph at lines 516--517
-\OT1/ppl/m/n/20.74 the Aug-mented Re-al-ity Wheelchair con-trol (Sec-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[44]
-Overfull \hbox (7.82326pt too wide) in paragraph at lines 519--520
-\OT1/ppl/m/n/20.74 tech-ni-cal im-ple-men-ta-tion de-tails have not been
- []
-
-
-Overfull \hbox (10.76936pt too wide) in paragraph at lines 522--523
-\OT1/ppl/m/n/20.74 many peo-ple. This would re-duce in the amount
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[45]
-Overfull \hbox (1.31184pt too wide) in paragraph at lines 524--525
-\OT1/ppl/m/n/20.74 able to map a re-la-tion-ship be-tween ob-jects and
- []
-
-
-Overfull \hbox (5.95801pt too wide) in paragraph at lines 526--527
-\OT1/ppl/m/n/20.74 pre-vi-ously used by Quat-toni & Tor-ralba (2009). 
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[46]
-Overfull \hbox (37.60573pt too wide) in paragraph at lines 531--532
-\OT1/ppl/m/n/20.74 the wheelchair con-trol unit run-ning on the Robotic
- []
-
-
-Overfull \hbox (13.25761pt too wide) in paragraph at lines 531--532
-\OT1/ppl/m/n/20.74 con-trol unit when the hu-man de-tec-tor es-ti-mates
- []
-
-
-Overfull \hbox (5.83272pt too wide) in paragraph at lines 531--532
-\OT1/ppl/m/n/20.74 Gaze Es-ti-ma-tion unit will send driv-ing in-struc-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[47]
-Chapter 4.
-
-Overfull \hbox (13.67386pt too wide) in paragraph at lines 540--541
-\OT1/ppl/m/n/20.74 ways around the Im-pe-rial Col-lege Lon-don cam-
- []
-
-
-Overfull \hbox (5.99902pt too wide) in paragraph at lines 540--541
-\OT1/ppl/m/n/20.74 tions a wheelchair user may visit. These videos
- []
-
-[48
-
-]
-Overfull \hbox (20.2893pt too wide) in paragraph at lines 542--543
-[]\OT1/ppl/m/n/20.74 The rea-son-ing be-hind us-ing pre-recorded videos
- []
-
-
-Overfull \hbox (7.59639pt too wide) in paragraph at lines 542--543
-\OT1/ppl/m/n/20.74 net-work onto the on-board Linux com-puter and
- []
-
-
-<Images/Evaluation/HumanDetection/IMG_4071.jpg, id=181, 2023.56pt x 1517.67pt>
-File: Images/Evaluation/HumanDetection/IMG_4071.jpg Graphic file (type jpg)
-
-<use Images/Evaluation/HumanDetection/IMG_4071.jpg>
-Package pdftex.def Info: Images/Evaluation/HumanDetection/IMG_4071.jpg used on 
-input line 547.
-(pdftex.def)             Requested size: 167.3021pt x 125.46869pt.
-
-<Images/Evaluation/HumanDetection/IMG_4077.jpg, id=182, 2023.56pt x 1517.67pt>
-File: Images/Evaluation/HumanDetection/IMG_4077.jpg Graphic file (type jpg)
-
-<use Images/Evaluation/HumanDetection/IMG_4077.jpg>
-Package pdftex.def Info: Images/Evaluation/HumanDetection/IMG_4077.jpg used on 
-input line 553.
-(pdftex.def)             Requested size: 167.3021pt x 125.46869pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 545--556
-[][]
- []
-
-
-<Images/Evaluation/HumanDetection/IMG_4080.jpg, id=183, 2023.56pt x 1517.67pt>
-File: Images/Evaluation/HumanDetection/IMG_4080.jpg Graphic file (type jpg)
-
-<use Images/Evaluation/HumanDetection/IMG_4080.jpg>
-Package pdftex.def Info: Images/Evaluation/HumanDetection/IMG_4080.jpg used on 
-input line 561.
-(pdftex.def)             Requested size: 167.3021pt x 125.46869pt.
-
-<Images/Evaluation/HumanDetection/IMG_4079.jpg, id=184, 2023.56pt x 1517.67pt>
-File: Images/Evaluation/HumanDetection/IMG_4079.jpg Graphic file (type jpg)
-
-<use Images/Evaluation/HumanDetection/IMG_4079.jpg>
-Package pdftex.def Info: Images/Evaluation/HumanDetection/IMG_4079.jpg used on 
-input line 567.
-(pdftex.def)             Requested size: 167.3021pt x 125.46869pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 559--570
-[][]
- []
-
-
-LaTeX Warning: Float too large for page by 24.90619pt on input line 575.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[49]
-Overfull \hbox (70.31291pt too wide) in paragraph at lines 580--581
-[]\OT1/ppl/m/n/20.74 To cre-ate the test-bench, af-ter the video is recorded,th
-e
- []
-
-
-<Images/Evaluation/HumanDetection/bounding_boxes.png, id=189, 743.77875pt x 559
-.08875pt>
-File: Images/Evaluation/HumanDetection/bounding_boxes.png Graphic file (type pn
-g)
- <use Images/Evaluation/HumanDetection/bounding_boxes.png>
-Package pdftex.def Info: Images/Evaluation/HumanDetection/bounding_boxes.png us
-ed on input line 584.
-(pdftex.def)             Requested size: 146.39133pt x 110.04132pt.
-
-Overfull \hbox (36.44353pt too wide) in paragraph at lines 591--592
-\OT1/ppl/m/n/20.74 To test the Eye-Gaze con-trol, the ARTA wheelchair
- []
-
-
-Overfull \hbox (27.73456pt too wide) in paragraph at lines 594--595
-\OT1/ppl/m/n/20.74 along the cor-ri-dor un-til it has reached the marked
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[50]
-<Images/Evaluation/EyeGaze/Initial_Test.png, id=193, 388.45125pt x 515.9275pt>
-File: Images/Evaluation/EyeGaze/Initial_Test.png Graphic file (type png)
-
-<use Images/Evaluation/EyeGaze/Initial_Test.png>
-Package pdftex.def Info: Images/Evaluation/EyeGaze/Initial_Test.png used on inp
-ut line 598.
-(pdftex.def)             Requested size: 125.47737pt x 166.65103pt.
-
-Overfull \hbox (0.68846pt too wide) in paragraph at lines 605--606
-\OT1/ppl/m/n/20.74 To fully test the nav-i-ga-tional ca-pa-bil-i-ties of the
- []
-
-
-Overfull \hbox (3.75946pt too wide) in paragraph at lines 605--606
-\OT1/ppl/m/n/20.74 turn-ing around cor-ners or en-ter-ing doors must
- []
-
-
-Overfull \hbox (19.03093pt too wide) in paragraph at lines 610--611
-[]\OT1/ppl/m/n/20.74 Navigate down a cor-ri-dor and turn left-/right
- []
-
-
-Overfull \hbox (14.36467pt too wide) in paragraph at lines 612--613
-[]\OT1/ppl/m/n/20.74 Navigate down cor-ri-dor with peo-ple around
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[51]
-Overfull \hbox (17.55034pt too wide) in paragraph at lines 616--617
-\OT1/ppl/m/n/20.74 per-son or ob-ject will col-lide with the wheelchair.
- []
-
-
-Overfull \hbox (1.4779pt too wide) in paragraph at lines 619--620
-\OT1/ppl/m/n/20.74 To test the col-li-sion warn-ings, we can play pre-
- []
-
-
-Overfull \hbox (2.43243pt too wide) in paragraph at lines 619--620
-\OT1/ppl/m/n/20.74 recorded videos of peo-ple mov-ing to-wards the
- []
-
-
-Overfull \hbox (5.2122pt too wide) in paragraph at lines 621--622
-\OT1/ppl/m/n/20.74 gram ren-ders would go through a pro-cess such
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[52]
-<Images/Evaluation/ObjectAvoidance/Object_Avoidance_Render.png, id=200, 950.551
-25pt x 371.3875pt>
-File: Images/Evaluation/ObjectAvoidance/Object_Avoidance_Render.png Graphic fil
-e (type png)
-
-<use Images/Evaluation/ObjectAvoidance/Object_Avoidance_Render.png>
-Package pdftex.def Info: Images/Evaluation/ObjectAvoidance/Object_Avoidance_Ren
-der.png used on input line 625.
-(pdftex.def)             Requested size: 418.25368pt x 163.41666pt.
-
-Overfull \hbox (23.39912pt too wide) in paragraph at lines 633--634
-\OT1/ppl/m/n/20.74 tests in this sec-tion. It tests the smart wheelchairs
- []
-
-
-Overfull \hbox (7.38792pt too wide) in paragraph at lines 635--636
-\OT1/ppl/m/n/20.74 tur-ing all the el-e-ments from pre-vi-ous tests. The
- []
-
-
-Overfull \hbox (3.65587pt too wide) in paragraph at lines 635--636
-\OT1/ppl/m/n/20.74 the cor-ri-dor and turn into a door-way, all whilst
- []
-
-
-Overfull \hbox (3.44957pt too wide) in paragraph at lines 635--636
-\OT1/ppl/m/n/20.74 around ob-sta-cles in the way, such as card-board
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[53]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[54 <./Images/Evaluation/HumanDetection/IMG_4071.jpg> <./Images/Evaluation/Huma
-nDetection/IMG_4077.jpg> <./Images/Evaluation/HumanDetection/IMG_4080.jpg> <./I
-mages/Evaluation/HumanDetection/IMG_4079.jpg>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[55 <./Images/Evaluation/HumanDetection/bounding_boxes.png> <./Images/Evaluatio
-n/EyeGaze/Initial_Test.png> <./Images/Evaluation/ObjectAvoidance/Object_Avoidan
-ce_Render.png>]
+[28 <./Images/Evaluation/ObjectAvoidance/Object_Avoidance_Render.png>]
 Chapter 5.
-
-Overfull \hbox (56.00272pt too wide) in paragraph at lines 644--645
-\OT1/ppl/m/n/20.74 For safety rea-sons, the user op-er-at-ing the wheelchair
- []
-
-
-Overfull \hbox (54.65424pt too wide) in paragraph at lines 644--645
-\OT1/ppl/m/n/20.74 the sys-tem fail to stop the wheelchair au-tonomously. 
- []
-
-
-Overfull \hbox (21.51239pt too wide) in paragraph at lines 646--647
-[]\OT1/ppl/m/n/20.74 Furthermore, the speed of the wheelchair should
- []
-
-
-Overfull \hbox (8.98604pt too wide) in paragraph at lines 646--647
-\OT1/ppl/m/n/20.74 will be op-er-ated in-doors and around other peo-
- []
-
-[56
+[29
 
 ]
-Overfull \hbox (9.69083pt too wide) in paragraph at lines 648--649
-\OT1/ppl/m/n/20.74 must be clear of all non-test ob-sta-cles, and must
- []
-
-
-Overfull \hbox (13.0095pt too wide) in paragraph at lines 653--654
-\OT1/ppl/m/n/20.74 video record-ings of peo-ple walk-ing along walk-
- []
-
-
-Overfull \hbox (30.45209pt too wide) in paragraph at lines 653--654
-\OT1/ppl/m/n/20.74 ways will need to be taken. To avoid any breaches
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[57]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[58] (./main.bbl
-Underfull \hbox (badness 1668) in paragraph at lines 9--13
-\OT1/ppl/m/n/20.74 Part I - The es-sen-tial al-go-rithms.', \OT1/ppl/m/it/20.74
- IEEE
- []
-
-[59
+[30] (./main.bbl [31
 
 ]
-Underfull \hbox (badness 1147) in paragraph at lines 29--33
-[]\OT1/ppl/m/n/20.74 Chac[]on-Quesada, R. & Demiris, Y. (2018),
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--33
-\OT1/ppl/m/n/20.74 `Aug-mented Re-al-ity Con-trol of Smart
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--33
-\OT1/ppl/b/n/20.74 URL: \OT1/ppl/m/it/20.74 http://www.imperial.ac.uk/personal-
-
- []
-
-
-Underfull \hbox (badness 1048) in paragraph at lines 35--39
-\OT1/ppl/m/n/20.74 of Ori-ented Gra-di-ents for Hu-man De-tec-
- []
-
-
-Underfull \hbox (badness 1033) in paragraph at lines 42--46
-\OT1/ppl/m/n/20.74 (2010), `In-door scene recog-ni-tion through
- []
-
-
-Overfull \hbox (25.79541pt too wide) in paragraph at lines 49--52
-\OT1/ppl/b/n/20.74 URL: \OT1/ppl/m/it/20.74 https://github.com/facebookresearch
-/detectron 
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[60]
-Underfull \hbox (badness 10000) in paragraph at lines 75--77
-[]\OT1/ppl/m/n/20.74 Microsoft (2015), `Mi-crosoft HoloLens
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--82
-\OT1/ppl/b/n/20.74 URL: \OT1/ppl/m/it/20.74 https://docs.microsoft.com/en-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[61]
-Underfull \hbox (badness 1502) in paragraph at lines 88--91
-\OT1/ppl/m/n/20.74 PLAYS', \OT1/ppl/m/it/20.74 IE-ICE Trans-ac-tions on In-for-
-ma-tion
- []
-
-
-Underfull \hbox (badness 2302) in paragraph at lines 95--102
-[]\OT1/ppl/m/n/20.74 Montenegro-Couto, E. H., A. Hernandez-
- []
-
-
-Underfull \hbox (badness 2042) in paragraph at lines 95--102
-\OT1/ppl/m/n/20.74 Bastos-Filho, T. (2018), `To-wards an As-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--102
-\OT1/ppl/m/n/20.74 sis-tive In-ter-face To Com-mand Robotic
- []
-
-
-Overfull \hbox (49.27339pt too wide) in paragraph at lines 95--102
-\OT1/ppl/b/n/20.74 URL: \OT1/ppl/m/it/20.74 https://www.even3.com.br/anais/cobe
-cseb/78867 
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[62]
-Underfull \hbox (badness 2951) in paragraph at lines 125--129
-[]\OT1/ppl/m/n/20.74 Redmon, J., Div-vala, S., Gir-shick, R. &
- []
-
-
-Overfull \hbox (7.58871pt too wide) in paragraph at lines 138--142
-\OT1/ppl/b/n/20.74 URL: \OT1/ppl/m/it/20.74 https://doi.org/10.1016/j.procs.201
-8.07.112 
- []
-
-
-Overfull \hbox (122.60976pt too wide) in paragraph at lines 145--150
-\OT1/ppl/b/n/20.74 URL: \OT1/ppl/m/it/20.74 http://ipsjcva.springeropen.com/art
-icles/10.1186/s41074-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[63]
-Overfull \hbox (100.39888pt too wide) in paragraph at lines 153--158
-\OT1/ppl/b/n/20.74 URL: \OT1/ppl/m/it/20.74 http://dl.acm.org/citation.cfm?doid
-=3132272.3132278 
- []
-
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
+[32] (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-Overfull \hbox (95.44029pt too wide) in paragraph at lines 160--163
-\OT1/ppl/b/n/20.74 URL: \OT1/ppl/m/it/20.74 https://medium.com/@madhawavidanapa
-thirana/real-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--163
-\OT1/ppl/m/it/20.74 time-human-detection-in-computer-vision-part-
- []
-
-
-Underfull \hbox (badness 1997) in paragraph at lines 172--177
-\OT1/ppl/m/n/20.74 O. (2010), `What you see is where you
- []
-
-
-Overfull \hbox (133.78975pt too wide) in paragraph at lines 172--177
-\OT1/ppl/b/n/20.74 URL: \OT1/ppl/m/it/20.74 http://portal.acm.org/citation.cfm?
-doid=1743666.1743699 
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[64]
-Underfull \hbox (badness 10000) in paragraph at lines 179--182
-\OT1/ppl/b/n/20.74 URL: \OT1/ppl/m/it/20.74 https://docs.microsoft.com/en-
+Underfull \hbox (badness 1540) in paragraph at lines 160--163
+\OT1/ppl/b/n/12 URL: \OT1/ppl/m/it/12 https://medium.com/@madhawavidanapathiran
+a/real-time-human-detection-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 179--182
-\OT1/ppl/m/it/20.74 us/windows/mixed-reality/hololens-hardware-
+\OT1/ppl/b/n/12 URL: \OT1/ppl/m/it/12 https://docs.microsoft.com/en-us/windows/
+mixed-reality/hololens-hardware-
  []
 
 )
@@ -2289,41 +1299,41 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[65] [66
+[33] [34
 
 ]
-<Images/Implementation/Timeline_Split-0.png, id=249, 1248.665pt x 595.22375pt>
+<Images/Implementation/Timeline_Split-0.png, id=146, 1248.665pt x 595.22375pt>
 File: Images/Implementation/Timeline_Split-0.png Graphic file (type png)
 
 <use Images/Implementation/Timeline_Split-0.png>
 Package pdftex.def Info: Images/Implementation/Timeline_Split-0.png used on inp
-ut line 683.
+ut line 680.
 (pdftex.def)             Requested size: 624.33098pt x 297.61115pt.
 
 
-LaTeX Warning: Float too large for page by 47.30077pt on input line 687.
+LaTeX Warning: Float too large for page by 47.30077pt on input line 684.
 
 
-<Images/Implementation/Timeline_Split-1.png, id=250, 1248.665pt x 595.22375pt>
+<Images/Implementation/Timeline_Split-1.png, id=147, 1248.665pt x 595.22375pt>
 File: Images/Implementation/Timeline_Split-1.png Graphic file (type png)
 
 <use Images/Implementation/Timeline_Split-1.png>
 Package pdftex.def Info: Images/Implementation/Timeline_Split-1.png used on inp
-ut line 692.
+ut line 689.
 (pdftex.def)             Requested size: 624.33098pt x 297.61115pt.
 
 
-LaTeX Warning: Float too large for page by 47.30077pt on input line 696.
+LaTeX Warning: Float too large for page by 47.30077pt on input line 693.
 
-<Images/Implementation/System_Design.png, id=251, 495.8525pt x 527.9725pt>
+<Images/Implementation/System_Design.png, id=148, 495.8525pt x 527.9725pt>
 File: Images/Implementation/System_Design.png Graphic file (type png)
 
 <use Images/Implementation/System_Design.png>
 Package pdftex.def Info: Images/Implementation/System_Design.png used on input 
-line 702.
+line 699.
 (pdftex.def)             Requested size: 446.26312pt x 475.17085pt.
 
-Overfull \hbox (28.00945pt too wide) in paragraph at lines 702--703
+Overfull \hbox (28.00945pt too wide) in paragraph at lines 699--700
  [] 
  []
 
@@ -2336,39 +1346,39 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[67 <./Images/Implementation/Timeline_Split-0.png>]
+[35 <./Images/Implementation/Timeline_Split-0.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[68 <./Images/Implementation/Timeline_Split-1.png>]
+[36 <./Images/Implementation/Timeline_Split-1.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[69 <./Images/Implementation/System_Design.png>] (./main.aux) ) 
+[37 <./Images/Implementation/System_Design.png>] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 18714 strings out of 493029
- 342239 string characters out of 6136235
- 444761 words of memory out of 5000000
- 21781 multiletter control sequences out of 15000+600000
- 31269 words of font info for 80 fonts, out of 8000000 for 9000
+ 18698 strings out of 493029
+ 341972 string characters out of 6136235
+ 445761 words of memory out of 5000000
+ 21766 multiletter control sequences out of 15000+600000
+ 26111 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,12n,92p,811b,556s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,12n,92p,811b,548s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texl
 ive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatin
 o/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pf
 b>
-Output written on main.pdf (70 pages, 7032749 bytes).
+Output written on main.pdf (38 pages, 6996126 bytes).
 PDF statistics:
- 281 PDF objects out of 1000 (max. 8388607)
- 173 compressed objects within 2 object streams
+ 180 PDF objects out of 1000 (max. 8388607)
+ 104 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  103 words of extra memory for PDF output out of 10000 (max. 10000000)
 
