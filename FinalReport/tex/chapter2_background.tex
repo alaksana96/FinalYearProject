@@ -27,7 +27,7 @@ Despite the disadvantage, similar techniques can be used to detect humans in vid
 	
 	\begin{center}
 		\caption{Comparison of Foreground Detection and Scanning Windows}
-		\label{fig:HDS_Test_Locations}
+		\label{fig:foregroundVsScanning}
 	\end{center}
 \end{figure}
 
@@ -39,10 +39,47 @@ Background subtraction is a widely used approach for detecting moving objects \c
 \subsubsection{Scanning Windows}
 Due to the ever-changing surroundings of a mobile robot, a better approach for object detection is to exhaustively search an image using scanning windows and determining if an object was detected in each window. However, it must be noted that this method is computationally expensive. In order to achieve real-time detection on a mobile robot, the use of a graphics processing unit (GPU) should be considered \cite{Hirabayashi}.
 
+\subsubsection{Classical Object Detection}
 
-% Object Detection
-% Traditional methods vs CNN
+\paragraph{Haar Cascades}
+Haar cascades classifies images based on the value of simple features \cite{Viola2001}, which are variants of the difference between the sum of pixel values in rectangular regions. An intermediate representation of the original image is used to rapidly compute a small set of representative rectangular features.
 
+\paragraph{}A cascade of classifiers is then used to determine if the region is detected as a human. The detection process is that of a degenerate decision tree, where a positive result in the first cascade will trigerr an evaluation in the second, more successful classifier. As such, the initial classifier can eliminate a large number of negative examples with very little processing. After several stages, the number of sub-windows has been reduced radically
+
+\paragraph{Histograms of Oriented Gradients}
+The method proposed is implemented by dividing the image window into small spatial regions and calculating a local 1-D histogram of gradient directions for all the pixels in the region. The combined local histograms form the overall feature representation of the image.
+
+\paragraph{}The detection window is tiled with the Histogram of Oriented Gradient (HOG) descriptors. In the original paper \cite{Dalal2005}, these feature vectors were then used in a conventional SVM based window classifier  to give human detections.
+
+\subsubsection{Deep Learning Object Detection}
+Modern approaches for human detection largely depend on Deep Convolutional Neural Networks (CNN). The approach provides the best in class performance, as well as scaling effectively with more data. An added advantage of using CNN based object detection systems for this project is that they are also capable of detecting multiple classes of objects.
+
+\paragraph{}An issue with CNN approaches is that the methods are trying to draw bounding boxes around objects of interest in images. However, we do not know the number of objects in the image beforehand. As such, to be completely sure every object has been detected, a naive solution is to take a huge number of regions and attempt to classify all the objects in the region, a computationaly expensive process.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=.9\linewidth]{img/chapter2_background/rcnn.png}
+	\caption{R-CNN Approach}
+\end{figure}
+
+\paragraph{R-CNN} The R-CNN method uses a selective search to extract 2000 regions from an image \cite{Girshick2014}. The regions are selected by generating a large number of candidate regions and using a greedy algorithm to recursively combine similar regions into larger ones. The regions are then fed into a CNN that acts as a feature extractor and the output dense layer consists of the features extracted from the image, which are then fed into an SVM to classify the presence of objects in the region.
+
+\paragraph{}The major disadvantage to this approach is the amount of time required to train the network. Each training image has to be classied once for each of the 2000 region proposals. Furthermore, the selective search algorithm is a fixed algorithm (no learning is done), and as such, could lead to generation of bad candidate region proposals.
+
+\paragraph{YOLO} Whereas R-CNN uses regions to localize the object within an image, You Only Look Once (YOLO) looks at the image as a whole and uses a single CNN to predict the bounding box and the class probabilities \cite{Redmon}. By looking at the image as a whole, the network can use features from the entire image to predict each bounding box.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=.6\linewidth]{img/chapter2_background/yoloApproach.png}
+	\caption{YOLO Approach}
+\end{figure}
+
+The model divides the image into an $S \times S$ grid, and for each cell, predicts a number of bounding boxes, the confidence for those boxes and the class probabilities.
+
+\subsection{Comments}
+As seen from the research, we can clearly see that there are many ways to solve the human detection problem. The classical approaches, although computationally efficient, are siginficiantly outperformed by the deep learning approaches. For a mobile robot in a public area, we want to be able to detect almost all humans in the surroundings to better inform the PWU.
+
+\paragraph{}However, the major disadvantage of the deep learning approach is the time taken to train the network, as well as the requirement of a GPU to achieve real-time performance. These issues will be addressed in a later section of the report.
 
 \section{Object Tracking}
 % Object tracking

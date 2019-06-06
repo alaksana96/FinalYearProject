@@ -9,9 +9,21 @@
 \contentsline {subsubsection}{Foreground Detection}{5}
 \contentsline {paragraph}{}{5}
 \contentsline {subsubsection}{Scanning Windows}{6}
-\contentsline {section}{\numberline {2.2}Object Tracking}{6}
-\contentsline {section}{\numberline {2.3}Head Pose Estimation}{6}
-\contentsline {section}{\numberline {2.4}Body Pose Estimation}{6}
-\contentsline {section}{\numberline {2.5}SLAM}{6}
-\contentsline {section}{\numberline {2.6}Augmented Reality Headsets}{6}
-\contentsline {chapter}{\numberline {3}Requirements Capture}{7}
+\contentsline {subsubsection}{Classical Object Detection}{6}
+\contentsline {paragraph}{Haar Cascades}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{Histograms of Oriented Gradients}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {subsubsection}{Deep Learning Object Detection}{6}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{R-CNN}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{YOLO}{7}
+\contentsline {subsection}{\numberline {2.1.3}Comments}{8}
+\contentsline {paragraph}{}{8}
+\contentsline {section}{\numberline {2.2}Object Tracking}{9}
+\contentsline {section}{\numberline {2.3}Head Pose Estimation}{9}
+\contentsline {section}{\numberline {2.4}Body Pose Estimation}{9}
+\contentsline {section}{\numberline {2.5}SLAM}{9}
+\contentsline {section}{\numberline {2.6}Augmented Reality Headsets}{9}
+\contentsline {chapter}{\numberline {3}Requirements Capture}{10}

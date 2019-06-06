@@ -9,45 +9,46 @@ Warning--empty year in Redmon
 Warning--empty booktitle in Piccardi2004
 Warning--empty institution in Hirabayashi
 Warning--empty year in Hirabayashi
-You've used 5 entries,
+Warning--empty institution in Viola2001
+You've used 8 entries,
             1791 wiz_defined-function locations,
-            475 strings with 4335 characters,
-and the built_in function-call counts, 1005 in all, are:
-= -- 72
-> -- 63
-< -- 0
-+ -- 23
-- -- 18
-* -- 76
-:= -- 180
-add.period$ -- 15
-call.type$ -- 5
-change.case$ -- 7
+            494 strings with 4964 characters,
+and the built_in function-call counts, 1913 in all, are:
+= -- 156
+> -- 99
+< -- 2
++ -- 36
+- -- 28
+* -- 126
+:= -- 305
+add.period$ -- 24
+call.type$ -- 8
+change.case$ -- 11
 chr.to.int$ -- 0
-cite$ -- 11
-duplicate$ -- 41
-empty$ -- 92
-format.name$ -- 18
-if$ -- 205
+cite$ -- 15
+duplicate$ -- 89
+empty$ -- 180
+format.name$ -- 28
+if$ -- 422
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 3
-newline$ -- 28
-num.names$ -- 5
-pop$ -- 19
+int.to.str$ -- 8
+missing$ -- 5
+newline$ -- 43
+num.names$ -- 8
+pop$ -- 34
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 10
+skip$ -- 44
 stack$ -- 0
-substring$ -- 34
-swap$ -- 3
-text.length$ -- 0
+substring$ -- 98
+swap$ -- 25
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 6
-while$ -- 8
-width$ -- 6
-write$ -- 51
-(There were 6 warnings)
+warning$ -- 7
+while$ -- 17
+width$ -- 9
+write$ -- 83
+(There were 7 warnings)

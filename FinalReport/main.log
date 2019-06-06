@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  6 JUN 2019 10:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  6 JUN 2019 13:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -762,23 +762,7 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-) (./main.aux
-
-! Package natbib Error: Bibliography not compatible with author-year citations.
-
-(natbib)                Press <return> to continue in numerical citation style.
-
-
-See the natbib package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.45 ...mand\NAT@force@numbers{}\NAT@force@numbers
-                                                  
-Check the bibliography entries for non-compliant syntax,
-or select author-year BibTeX style, e.g. plainnat
-
-)
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 129.
@@ -795,7 +779,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 129.
 LaTeX Font Info:    ... okay on input line 129.
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 129.
 
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
@@ -965,36 +950,84 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5 <./img/chapter2_background/robustBackgroundSubtraction.png> <./img/chapter2_
-background/yoloBBBoxes.png (PNG copy)>]) (./tex/chapter3_requirements.tex
+background/yoloBBBoxes.png (PNG copy)>]
+Overfull \hbox (4.78967pt too wide) in paragraph at lines 52--53
+ [] \OT1/ppl/m/n/12 The de-tec-tion win-dow is tiled with the His-togram of Ori
+-ented Gra-di-ent (HOG)
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6]
+[6] <img/chapter2_background/rcnn.png, id=32, 991.705pt x 367.3725pt>
+File: img/chapter2_background/rcnn.png Graphic file (type png)
+
+<use img/chapter2_background/rcnn.png>
+Package pdftex.def Info: img/chapter2_background/rcnn.png used on input line 61
+.
+(pdftex.def)             Requested size: 376.42575pt x 139.44603pt.
+
+<img/chapter2_background/yoloApproach.png, id=33, 803.0pt x 525.965pt>
+File: img/chapter2_background/yoloApproach.png Graphic file (type png)
+
+<use img/chapter2_background/yoloApproach.png>
+Package pdftex.def Info: img/chapter2_background/yoloApproach.png used on input
+ line 73.
+(pdftex.def)             Requested size: 250.95476pt x 164.37167pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7 <./img/chapter2_background/rcnn.png (PNG copy)>])
+(./tex/chapter3_requirements.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8 <./img/chapter2_background/yoloApproach.png (PNG copy)>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9]
 Chapter 3.
-) (./main.bbl [7
+) (./main.bbl [10
 
-]) [8
+]) [11
 
-] (./main.aux) ) 
+]
+
+Package totalcount Warning: Total counter(s) have changed.
+(totalcount)                Rerun to get them right.
+
+(./main.aux) ) 
 Here is how much of TeX's memory you used:
- 18246 strings out of 493029
- 333675 string characters out of 6136235
+ 18269 strings out of 493029
+ 334212 string characters out of 6136235
  443757 words of memory out of 5000000
- 21333 multiletter control sequences out of 15000+600000
- 19586 words of font info for 53 fonts, out of 8000000 for 9000
+ 21350 multiletter control sequences out of 15000+600000
+ 20713 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,92p,644b,580s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
-r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (9 pages, 1271903 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (12 pages, 1749071 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 67 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

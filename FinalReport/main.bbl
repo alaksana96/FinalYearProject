@@ -29,4 +29,22 @@ Manato Hirabayashi, Shinpei Kato, Masato Edahiro, Kazuya Takeda, Taiki Kawano,
   Deformable Models}.
 \newblock Technical report.
 
+\bibitem{Viola2001}
+Paul Viola and Michael Jones.
+\newblock {Rapid Object Detection using a Boosted Cascade of Simple Features}.
+\newblock Technical report, 2001.
+
+\bibitem{Dalal2005}
+Navneet Dalal, Bill Triggs, Navneet Dalal, and Bill Triggs.
+\newblock {Histograms of Oriented Gradients for Human Detection}.
+\newblock In {\em IEEE Computer Society Conference on Computer Vision and
+  Pattern Recognition}, pages 886--893, 2005.
+
+\bibitem{Girshick2014}
+Ross Girshick, Jeff Donahue, Trevor Darrell, and Jitendra Malik.
+\newblock {Rich feature hierarchies for accurate object detection and semantic
+  segmentation}.
+\newblock In {\em Proceedings of the IEEE Computer Society Conference on
+  Computer Vision and Pattern Recognition}, pages 580--587, 2014.
+
 \end{thebibliography}
