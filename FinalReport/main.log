@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  6 JUN 2019 13:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  8 JUN 2019 16:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -893,7 +893,13 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 23.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./tex/abstract.tex)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./tex/abstract.tex
+Overfull \hbox (0.72205pt too wide) in paragraph at lines 1--2
+ \OT1/ppl/b/n/12 Ab-stract[] \OT1/ppl/m/n/12 Pow-ered wheelchairs are be-com-in
+g in-creas-ingly com-mon-place in the
+ []
+
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -970,7 +976,14 @@ Package pdftex.def Info: img/chapter2_background/rcnn.png used on input line 61
 .
 (pdftex.def)             Requested size: 376.42575pt x 139.44603pt.
 
-<img/chapter2_background/yoloApproach.png, id=33, 803.0pt x 525.965pt>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7 <./img/chapter2_background/rcnn.png (PNG copy)>]
+<img/chapter2_background/yoloApproach.png, id=36, 803.0pt x 525.965pt>
 File: img/chapter2_background/yoloApproach.png Graphic file (type png)
 
 <use img/chapter2_background/yoloApproach.png>
@@ -978,14 +991,6 @@ Package pdftex.def Info: img/chapter2_background/yoloApproach.png used on input
  line 73.
 (pdftex.def)             Requested size: 250.95476pt x 164.37167pt.
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[7 <./img/chapter2_background/rcnn.png (PNG copy)>])
-(./tex/chapter3_requirements.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1000,34 +1005,56 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
+Overfull \hbox (0.42151pt too wide) in paragraph at lines 108--109
+ \OT1/ppl/b/n/12 Method-ol-ogy[] \OT1/ppl/m/n/12 The track-ing and Kalman fil-t
+er-ing in Deep SORT is mostly iden-
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10]) (./tex/chapter3_requirements.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
 Chapter 3.
-) (./main.bbl [10
+) (./main.bbl [12
 
-]) [11
+] [13
 
-]
+])
 
-Package totalcount Warning: Total counter(s) have changed.
-(totalcount)                Rerun to get them right.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-(./main.aux) ) 
+[14] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 18269 strings out of 493029
- 334212 string characters out of 6136235
+ 18286 strings out of 493029
+ 334452 string characters out of 6136235
  443757 words of memory out of 5000000
- 21350 multiletter control sequences out of 15000+600000
- 20713 words of font info for 57 fonts, out of 8000000 for 9000
+ 21362 multiletter control sequences out of 15000+600000
+ 22973 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,11n,92p,644b,580s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (12 pages, 1749071 bytes).
+ 62i,11n,92p,672b,580s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}<
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (15 pages, 1764637 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

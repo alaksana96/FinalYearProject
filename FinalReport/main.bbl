@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Hou2010}
 Ya~Li Hou and Grantham~K.H. Pang.
@@ -46,5 +46,29 @@ Ross Girshick, Jeff Donahue, Trevor Darrell, and Jitendra Malik.
   segmentation}.
 \newblock In {\em Proceedings of the IEEE Computer Society Conference on
   Computer Vision and Pattern Recognition}, pages 580--587, 2014.
+
+\bibitem{Dicle2013}
+Caglayan Dicle, Octavia~I Camps, and Mario Sznaier.
+\newblock {The way they move: Tracking multiple targets with similar
+  appearance}.
+\newblock In {\em Proceedings of the IEEE International Conference on Computer
+  Vision}, pages 2304--2311, 2013.
+
+\bibitem{Bewley2016}
+Alex Bewley, Zongyuan Ge, Lionel Ott, Fabio Ramos, and Ben Upcroft.
+\newblock {Simple online and realtime tracking}.
+\newblock In {\em Proceedings - International Conference on Image Processing,
+  ICIP}, volume 2016-Augus, pages 3464--3468, 2016.
+
+\bibitem{Kalman1961}
+R.~E. Kalman and R.~S. Bucy.
+\newblock {New Results in Linear Filtering and Prediction Theory}.
+\newblock {\em Journal of Basic Engineering}, 83(1):95, 1961.
+
+\bibitem{Wojke2018}
+Nicolai Wojke, Alex Bewley, and Dietrich Paulus.
+\newblock {Simple online and realtime tracking with a deep association metric}.
+\newblock In {\em Proceedings - International Conference on Image Processing,
+  ICIP}, volume 2017-Septe, pages 3645--3649, 2018.
 
 \end{thebibliography}

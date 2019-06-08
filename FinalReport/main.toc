@@ -1,4 +1,6 @@
 \select@language {english}
+\contentsline {paragraph}{Abstract}{1}
+\contentsline {paragraph}{}{1}
 \contentsline {chapter}{\numberline {1}Introduction and Requirements}{3}
 \contentsline {section}{\numberline {1.1}Introduction}{3}
 \contentsline {section}{\numberline {1.2}Motivation}{3}
@@ -21,9 +23,20 @@
 \contentsline {paragraph}{YOLO}{7}
 \contentsline {subsection}{\numberline {2.1.3}Comments}{8}
 \contentsline {paragraph}{}{8}
-\contentsline {section}{\numberline {2.2}Object Tracking}{9}
-\contentsline {section}{\numberline {2.3}Head Pose Estimation}{9}
-\contentsline {section}{\numberline {2.4}Body Pose Estimation}{9}
-\contentsline {section}{\numberline {2.5}SLAM}{9}
-\contentsline {section}{\numberline {2.6}Augmented Reality Headsets}{9}
-\contentsline {chapter}{\numberline {3}Requirements Capture}{10}
+\contentsline {section}{\numberline {2.2}Object Tracking}{8}
+\contentsline {subsection}{\numberline {2.2.1}Definition of Requirements}{9}
+\contentsline {subsection}{\numberline {2.2.2}Review of Exisiting Methodologies}{9}
+\contentsline {subsubsection}{SORT}{9}
+\contentsline {paragraph}{Methodology}{9}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{Limitations}{10}
+\contentsline {subsubsection}{Deep SORT}{10}
+\contentsline {paragraph}{Methodology}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{Limitations}{10}
+\contentsline {subsection}{\numberline {2.2.3}Comments}{11}
+\contentsline {section}{\numberline {2.3}Head Pose Estimation}{11}
+\contentsline {section}{\numberline {2.4}Body Pose Estimation}{11}
+\contentsline {section}{\numberline {2.5}SLAM}{11}
+\contentsline {section}{\numberline {2.6}Augmented Reality Headsets}{11}
+\contentsline {chapter}{\numberline {3}Requirements Capture}{12}
