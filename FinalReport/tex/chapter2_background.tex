@@ -115,9 +115,23 @@ Although the accuracy of the the tracking is improved and the issue of occlusion
 \subsection{Comments}
 For this project, we have limited ourselves to researching simple object tracking methods that work in real-time. We can clearly see a trade-off between accuracy of tracking and computational power. Further investigation into the hardware available and the importance of object tracker accuracy will be needed to decide what method would be best for the augmented reality system.
 
-\section{Head Pose Estimation}
+\section{Head and Body Pose Estimation}
+Pose estimation is a general computer vision problem where we attempt to detect the position and orientation of an object. This process can be achieved by detecting keypoint locations that describe the pose of the object. For instance, in body pose estimation, we identify the joints in the body.
 
-\section{Body Pose Estimation}
+\subsection{Definition of Requirements}
+An interesting concept to explore is that of head and body pose estimation as a way of infering the direction a person is walking in. For instance, people tend to look in the direction they are currently walking, but should they want to change direction, they also tend to look in that direction before changing. Similarly, if we can determine the body pose of a person, the system will be able to tell if a person is walking to or away from the PWU without relying on depth sensors.
+
+\subsection{Review of Existing Methodologies}
+
+\subsubsection{Head Pose Estimation}
+Head pose estimation is intrinsically linked with visual gaze estimation \cite{Murphy-Chutorian2009}. If we can characterize the direction and focus of a person's eyes, it may be possible to determine the direction they will walk in next.
+
+\paragraph{Facial Landmark Detection}
+Before head pose estimation can be done, keypoints on the face must be detected \cite{Kazemi2014}. These points will then be used to solve a Perspective-n-Point (PnP) problem to determine the head pose. There are many facial landmark detection techniques, depending on the number of landmarks to be detected. As the number of landmarks increase, the more accurate the pose estimation can be. However, it also increases the complexity of the detection, and as such, it becomes a trade-off between the two factors.
+
+\paragraph{Gaze Estimation}
+
+\subsubsection{Body Pose Estimation}
 % Human body pose estimation
 % The pose of the shoulders and body can be used to determine the direction
 

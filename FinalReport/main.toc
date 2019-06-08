@@ -35,8 +35,13 @@
 \contentsline {paragraph}{}{10}
 \contentsline {paragraph}{Limitations}{10}
 \contentsline {subsection}{\numberline {2.2.3}Comments}{11}
-\contentsline {section}{\numberline {2.3}Head Pose Estimation}{11}
-\contentsline {section}{\numberline {2.4}Body Pose Estimation}{11}
-\contentsline {section}{\numberline {2.5}SLAM}{11}
-\contentsline {section}{\numberline {2.6}Augmented Reality Headsets}{11}
-\contentsline {chapter}{\numberline {3}Requirements Capture}{12}
+\contentsline {section}{\numberline {2.3}Head and Body Pose Estimation}{11}
+\contentsline {subsection}{\numberline {2.3.1}Definition of Requirements}{11}
+\contentsline {subsection}{\numberline {2.3.2}Review of Existing Methodologies}{11}
+\contentsline {subsubsection}{Head Pose Estimation}{11}
+\contentsline {paragraph}{Facial Landmark Detection}{11}
+\contentsline {paragraph}{Gaze Estimation}{12}
+\contentsline {subsubsection}{Body Pose Estimation}{12}
+\contentsline {section}{\numberline {2.4}SLAM}{12}
+\contentsline {section}{\numberline {2.5}Augmented Reality Headsets}{12}
+\contentsline {chapter}{\numberline {3}Requirements Capture}{13}

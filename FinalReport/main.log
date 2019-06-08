@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  8 JUN 2019 16:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  8 JUN 2019 17:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1016,18 +1016,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10]) (./tex/chapter3_requirements.tex
+[10]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11]
-Chapter 3.
-) (./main.bbl [12
+[11]) (./tex/chapter3_requirements.tex
 
-] [13
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
+Chapter 3.
+) (./main.bbl [13
+
+] [14
 
 ])
 
@@ -1036,12 +1043,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14] (./main.aux) ) 
+[15] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 18286 strings out of 493029
- 334452 string characters out of 6136235
+ 18292 strings out of 493029
+ 334590 string characters out of 6136235
  443757 words of memory out of 5000000
- 21362 multiletter control sequences out of 15000+600000
+ 21368 multiletter control sequences out of 15000+600000
  22973 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,92p,672b,580s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1051,10 +1058,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (15 pages, 1764637 bytes).
+Output written on main.pdf (16 pages, 1767340 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+ 84 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
