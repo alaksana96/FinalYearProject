@@ -77,3 +77,4 @@
 \contentsline {section}{\numberline {3.3}Obstacle Mapping \& Visualization }{18}
 \contentsline {paragraph}{Features}{18}
 \contentsline {section}{\numberline {3.4}Reactive Control}{18}
+\contentsline {chapter}{\numberline {4}Analysis and Design}{19}

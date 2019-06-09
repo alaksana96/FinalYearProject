@@ -13,45 +13,45 @@ Warning--empty institution in Viola2001
 Warning--empty journal in Microsoft2015
 Warning--empty journal in Zolotas2018
 Warning--empty journal in Chacon-Quesada
-You've used 30 entries,
+You've used 29 entries,
             1791 wiz_defined-function locations,
-            637 strings with 8909 characters,
-and the built_in function-call counts, 8595 in all, are:
-= -- 778
-> -- 356
-< -- 19
-+ -- 130
-- -- 100
-* -- 571
-:= -- 1238
-add.period$ -- 89
-call.type$ -- 30
-change.case$ -- 33
+            630 strings with 8687 characters,
+and the built_in function-call counts, 8175 in all, are:
+= -- 736
+> -- 345
+< -- 17
++ -- 126
+- -- 97
+* -- 546
+:= -- 1188
+add.period$ -- 86
+call.type$ -- 29
+change.case$ -- 32
 chr.to.int$ -- 0
-cite$ -- 40
-duplicate$ -- 410
-empty$ -- 821
-format.name$ -- 100
-if$ -- 1974
+cite$ -- 39
+duplicate$ -- 387
+empty$ -- 780
+format.name$ -- 97
+if$ -- 1870
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 26
-newline$ -- 152
-num.names$ -- 30
-pop$ -- 112
+int.to.str$ -- 29
+missing$ -- 25
+newline$ -- 147
+num.names$ -- 29
+pop$ -- 107
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 270
+skip$ -- 250
 stack$ -- 0
-substring$ -- 653
-swap$ -- 162
-text.length$ -- 19
+substring$ -- 613
+swap$ -- 148
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 10
-while$ -- 85
-width$ -- 32
-write$ -- 324
+while$ -- 81
+width$ -- 31
+write$ -- 312
 (There were 10 warnings)
