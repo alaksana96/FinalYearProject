@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  9 JUN 2019 15:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  9 JUN 2019 17:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1080,15 +1080,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [16]
 Chapter 3.
-) (./main.bbl [17
+[17
 
-]
+]) (./main.bbl
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18]
 Underfull \hbox (badness 1442) in paragraph at lines 26--31
 []\OT1/ppl/m/n/10.95 Manato Hirabayashi, Shin-pei Kato, Masato Edahiro, Kazuya 
 Takeda, Taiki
  []
 
-[18
+[19
 
 ]
 
@@ -1097,18 +1104,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19])
+[20])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20] (./main.aux) ) 
+[21] (./main.aux) ) 
 Here is how much of TeX's memory you used:
  18374 strings out of 493029
  336246 string characters out of 6136235
- 444757 words of memory out of 5000000
+ 445757 words of memory out of 5000000
  21444 multiletter control sequences out of 15000+600000
  24648 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1119,10 +1126,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (21 pages, 2302741 bytes).
+Output written on main.pdf (22 pages, 2306137 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
+ 107 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
