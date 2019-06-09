@@ -10,38 +10,60 @@
 \contentsline {subsection}{\numberline {2.1.2}Review of Existing Methodologies}{4}
 \contentsline {subsubsection}{Foreground Detection}{5}
 \contentsline {paragraph}{}{5}
-\contentsline {subsubsection}{Scanning Windows}{6}
+\contentsline {subsubsection}{Scanning Windows}{5}
 \contentsline {subsubsection}{Classical Object Detection}{6}
 \contentsline {paragraph}{Haar Cascades}{6}
 \contentsline {paragraph}{}{6}
 \contentsline {paragraph}{Histograms of Oriented Gradients}{6}
 \contentsline {paragraph}{}{6}
 \contentsline {subsubsection}{Deep Learning Object Detection}{6}
-\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{6}
 \contentsline {paragraph}{R-CNN}{7}
 \contentsline {paragraph}{}{7}
 \contentsline {paragraph}{YOLO}{7}
-\contentsline {subsection}{\numberline {2.1.3}Comments}{8}
-\contentsline {paragraph}{}{8}
+\contentsline {subsection}{\numberline {2.1.3}Comments}{7}
+\contentsline {paragraph}{}{7}
 \contentsline {section}{\numberline {2.2}Object Tracking}{8}
-\contentsline {subsection}{\numberline {2.2.1}Definition of Requirements}{9}
-\contentsline {subsection}{\numberline {2.2.2}Review of Exisiting Methodologies}{9}
-\contentsline {subsubsection}{SORT}{9}
+\contentsline {subsection}{\numberline {2.2.1}Definition of Requirements}{8}
+\contentsline {subsection}{\numberline {2.2.2}Review of Exisiting Methodologies}{8}
+\contentsline {subsubsection}{SORT}{8}
+\contentsline {paragraph}{Methodology}{8}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{Limitations}{9}
+\contentsline {subsubsection}{Deep SORT}{9}
 \contentsline {paragraph}{Methodology}{9}
-\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{9}
 \contentsline {paragraph}{Limitations}{10}
-\contentsline {subsubsection}{Deep SORT}{10}
-\contentsline {paragraph}{Methodology}{10}
-\contentsline {paragraph}{}{10}
-\contentsline {paragraph}{Limitations}{10}
-\contentsline {subsection}{\numberline {2.2.3}Comments}{11}
-\contentsline {section}{\numberline {2.3}Head and Body Pose Estimation}{11}
-\contentsline {subsection}{\numberline {2.3.1}Definition of Requirements}{11}
-\contentsline {subsection}{\numberline {2.3.2}Review of Existing Methodologies}{11}
-\contentsline {subsubsection}{Head Pose Estimation}{11}
-\contentsline {paragraph}{Facial Landmark Detection}{11}
-\contentsline {paragraph}{Gaze Estimation}{12}
-\contentsline {subsubsection}{Body Pose Estimation}{12}
+\contentsline {subsection}{\numberline {2.2.3}Comments}{10}
+\contentsline {section}{\numberline {2.3}Head and Body Pose Estimation}{10}
+\contentsline {subsection}{\numberline {2.3.1}Definition of Requirements}{10}
+\contentsline {subsection}{\numberline {2.3.2}Review of Existing Methodologies}{10}
+\contentsline {subsubsection}{Head Pose Estimation}{10}
+\contentsline {paragraph}{Facial Landmark Detection}{10}
+\contentsline {subsubsection}{Body Pose Estimation}{11}
+\contentsline {paragraph}{PoseNet}{11}
+\contentsline {paragraph}{OpenPose}{11}
+\contentsline {paragraph}{}{12}
+\contentsline {subsection}{\numberline {2.3.3}Comments}{12}
 \contentsline {section}{\numberline {2.4}SLAM}{12}
-\contentsline {section}{\numberline {2.5}Augmented Reality Headsets}{12}
-\contentsline {chapter}{\numberline {3}Requirements Capture}{13}
+\contentsline {paragraph}{}{12}
+\contentsline {subsection}{\numberline {2.4.1}Definition of Requirements}{12}
+\contentsline {subsection}{\numberline {2.4.2}Review of Existing Methodologies}{12}
+\contentsline {paragraph}{}{13}
+\contentsline {paragraph}{}{13}
+\contentsline {subsubsection}{Visual SLAM}{13}
+\contentsline {paragraph}{Initialization}{13}
+\contentsline {paragraph}{Tracking}{13}
+\contentsline {paragraph}{Mapping}{13}
+\contentsline {subsection}{\numberline {2.4.3}Comments}{13}
+\contentsline {section}{\numberline {2.5}Augmented Reality Headsets}{14}
+\contentsline {subsection}{\numberline {2.5.1}Definition of Requirements}{14}
+\contentsline {subsection}{\numberline {2.5.2}Review of Existing Methods}{14}
+\contentsline {subsubsection}{Microsoft Hololens}{14}
+\contentsline {paragraph}{Holograms}{14}
+\contentsline {paragraph}{}{14}
+\contentsline {paragraph}{Hardware Specifications}{15}
+\contentsline {paragraph}{}{15}
+\contentsline {paragraph}{Personal Robotics Lab}{15}
+\contentsline {subsection}{\numberline {2.5.3}Comments}{16}
+\contentsline {chapter}{\numberline {3}Requirements Capture}{17}

@@ -71,6 +71,12 @@ Nicolai Wojke, Alex Bewley, and Dietrich Paulus.
 \newblock In {\em Proceedings - International Conference on Image Processing,
   ICIP}, volume 2017-Septe, pages 3645--3649, 2018.
 
+\bibitem{Valenti2012}
+Roberto Valenti, Nicu Sebe, and Theo Gevers.
+\newblock {Combining head pose and eye location information for gaze
+  estimation}.
+\newblock {\em IEEE Transactions on Image Processing}, 21(2):802--815, 2012.
+
 \bibitem{Murphy-Chutorian2009}
 Erik Murphy-Chutorian and Mohan~Manubhai Trivedi.
 \newblock {Head pose estimation in computer vision: A survey}.
@@ -83,5 +89,100 @@ Vahid Kazemi and Josephine Sullivan.
   Trees}.
 \newblock In {\em Proceedings of the IEEE Computer Society Conference on
   Computer Vision and Pattern Recognition}, pages 1867--1874, 2014.
+
+\bibitem{Papandreou2017}
+George Papandreou, Tyler Zhu, Nori Kanazawa, Alexander Toshev, Jonathan
+  Tompson, Chris Bregler, and Kevin Murphy.
+\newblock {Towards accurate multi-person pose estimation in the wild}.
+\newblock In {\em Proceedings - 30th IEEE Conference on Computer Vision and
+  Pattern Recognition, CVPR 2017}, volume 2017-Janua, pages 3711--3719, jan
+  2017.
+
+\bibitem{Ren2017}
+Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun.
+\newblock {Faster R-CNN: Towards Real-Time Object Detection with Region
+  Proposal Networks}.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  39(6):1137--1149, 2017.
+
+\bibitem{He2016}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock {Deep residual learning for image recognition}.
+\newblock In {\em Proceedings of the IEEE Computer Society Conference on
+  Computer Vision and Pattern Recognition}, volume 2016-Decem, pages 770--778,
+  2016.
+
+\bibitem{Pishchulin}
+Leonid Pishchulin, Eldar Insafutdinov, Siyu Tang, Bjoern Andres, Mykhaylo
+  Andriluka, Peter Gehler, and Bernt Schiele.
+\newblock {DeepCut: Joint subset partition and labeling for multi person pose
+  estimation}.
+\newblock In {\em Proceedings of the IEEE Computer Society Conference on
+  Computer Vision and Pattern Recognition}, volume 2016-Decem, pages
+  4929--4937, 2016.
+
+\bibitem{Cao2017}
+Zhe Cao, Tomas Simon, Shih~En Wei, and Yaser Sheikh.
+\newblock {Realtime multi-person 2D pose estimation using part affinity
+  fields}.
+\newblock In {\em Proceedings - 30th IEEE Conference on Computer Vision and
+  Pattern Recognition, CVPR 2017}, volume 2017-Janua, pages 1302--1310, 2017.
+
+\bibitem{Bailey2006a}
+T~Bailey and H~Durrant-Whyte.
+\newblock {Simultaneous localisation and mapping (SLAM): Part I - The essential
+  algorithms.}
+\newblock {\em IEEE Robotics and Automation Magazine}, 13(2):99--108, 2006.
+
+\bibitem{Cadena2016}
+Cesar Cadena, Luca Carlone, Henry Carrillo, Yasir Latif, Davide Scaramuzza,
+  Jose Neira, Ian Reid, and John~J. Leonard.
+\newblock {Past, present, and future of simultaneous localization and mapping:
+  Toward the robust-perception age}.
+\newblock {\em IEEE Transactions on Robotics}, 32(6):1309--1332, 2016.
+
+\bibitem{Taketomi2017}
+Takafumi Taketomi, Hideaki Uchiyama, and Sei Ikeda.
+\newblock {Visual SLAM algorithms: a survey from 2010 to 2016}.
+\newblock {\em IPSJ Transactions on Computer Vision and Applications}, 9(1):16,
+  2017.
+
+\bibitem{Nister2004}
+David Nist{\'{e}}r.
+\newblock {A Minimal Solution to the Generalised 3-Point Pose Problem}.
+\newblock {\em Journal of Mathematical Imaging and Vision}, 27(1):560--567,
+  2004.
+
+\bibitem{Milgram1994}
+Paul Milgram and Fumio Kishino.
+\newblock {A TAXONOMY OF MIXED REALITY VISUAL DISPLAYS}.
+\newblock {\em IEICE Transactions on Information Systems}, E77(12):1--15, 1994.
+
+\bibitem{Microsofta}
+Microsoft.
+\newblock {Windows Mixed Reality Documentation}, 2018.
+
+\bibitem{Microsoft2015}
+Microsoft.
+\newblock {Microsoft HoloLens HoloLens Device Specifications}.
+\newblock 2015.
+
+\bibitem{Zolotas2018}
+Mark Zolotas, Joshua Elsdon, and Yiannis Demiris.
+\newblock {Head-Mounted Augmented Reality for Explainable Robotic Wheelchair
+  Assistance}.
+\newblock 2018.
+
+\bibitem{Chacon-Quesada}
+Rodrigo Chac{\'{o}}n-Quesada and Yiannis Demiris.
+\newblock {Augmented Reality Control of Smart Wheelchair Using Eye-Gaze-Enabled
+  Selection of Affordances}.
+\newblock pages 1--4, 2018.
+
+\bibitem{Ruiz2018}
+Nataniel Ruiz, Eunji Chong, and James~M Rehg.
+\newblock {Fine-grained head pose estimation without keypoints}.
+\newblock In {\em IEEE Computer Society Conference on Computer Vision and
+  Pattern Recognition Workshops}, volume 2018-June, pages 2155--2164, 2018.
 
 \end{thebibliography}
