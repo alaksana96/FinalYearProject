@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  9 JUN 2019 17:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  9 JUN 2019 22:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -907,28 +907,35 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [1]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 140.
- (./main.toc)
+ (./main.toc [2
+
+])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [2
 
-] (./tex/chapter1_introduction.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3] (./tex/chapter1_introduction.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <20.74> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 3.
-) (./tex/chapter2_background.tex [3
+) (./tex/chapter2_background.tex [4
 
 ]
 Chapter 2.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 7.
-[4
+[5
 
 ]
-<img/chapter2_background/robustBackgroundSubtraction.png, id=26, 329.91255pt x 
+<img/chapter2_background/robustBackgroundSubtraction.png, id=29, 329.91255pt x 
 251.13824pt>
 File: img/chapter2_background/robustBackgroundSubtraction.png Graphic file (typ
 e png)
@@ -937,7 +944,7 @@ Package pdftex.def Info: img/chapter2_background/robustBackgroundSubtraction.pn
 g used on input line 18.
 (pdftex.def)             Requested size: 188.21286pt x 143.2729pt.
 
-<img/chapter2_background/yoloBBBoxes.png, id=27, 459.7175pt x 459.7175pt>
+<img/chapter2_background/yoloBBBoxes.png, id=30, 459.7175pt x 459.7175pt>
 File: img/chapter2_background/yoloBBBoxes.png Graphic file (type png)
 
 <use img/chapter2_background/yoloBBBoxes.png>
@@ -955,9 +962,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5 <./img/chapter2_background/robustBackgroundSubtraction.png> <./img/chapter2_
+[6 <./img/chapter2_background/robustBackgroundSubtraction.png> <./img/chapter2_
 background/yoloBBBoxes.png (PNG copy)>]
-<img/chapter2_background/rcnn.png, id=31, 991.705pt x 367.3725pt>
+<img/chapter2_background/rcnn.png, id=35, 991.705pt x 367.3725pt>
 File: img/chapter2_background/rcnn.png Graphic file (type png)
 
 <use img/chapter2_background/rcnn.png>
@@ -971,7 +978,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6] <img/chapter2_background/yoloApproach.png, id=36, 803.0pt x 525.965pt>
+[7] <img/chapter2_background/yoloApproach.png, id=39, 803.0pt x 525.965pt>
 File: img/chapter2_background/yoloApproach.png Graphic file (type png)
 
 <use img/chapter2_background/yoloApproach.png>
@@ -985,28 +992,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7 <./img/chapter2_background/rcnn.png (PNG copy)>]
+[8 <./img/chapter2_background/rcnn.png (PNG copy)>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8 <./img/chapter2_background/yoloApproach.png (PNG copy)>]
+[9 <./img/chapter2_background/yoloApproach.png (PNG copy)>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9]
+[10]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10] <img/chapter2_background/openpose.jpg, id=52, 1284.8pt x 722.7pt>
+[11] <img/chapter2_background/openpose.jpg, id=55, 1284.8pt x 722.7pt>
 File: img/chapter2_background/openpose.jpg Graphic file (type jpg)
 
 <use img/chapter2_background/openpose.jpg>
@@ -1025,14 +1032,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11 <./img/chapter2_background/openpose.jpg>]
+[12 <./img/chapter2_background/openpose.jpg>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12]
+[13]
 Overfull \hbox (1.26852pt too wide) in paragraph at lines 169--170
  \OT1/ppl/b/n/10.95 Ini-tial-iza-tion[] \OT1/ppl/m/n/10.95 In the ini-tial-iza-
 tion stage, cam-era pose es-ti-ma-tion is con-ducted, to trans-
@@ -1044,14 +1051,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
+[14]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14]
+[15]
 LaTeX Font Info:    Try loading font information for OMS+ppl on input line 198.
 
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
@@ -1060,7 +1067,7 @@ File: omsppl.fd
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 198.
 
-<img/chapter2_background/AR_Interface.png, id=66, 564.1075pt x 407.5225pt>
+<img/chapter2_background/AR_Interface.png, id=69, 564.1075pt x 407.5225pt>
 File: img/chapter2_background/AR_Interface.png Graphic file (type png)
 
 <use img/chapter2_background/AR_Interface.png>
@@ -1075,16 +1082,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15 <./img/chapter2_background/AR_Interface.png>]
+[16 <./img/chapter2_background/AR_Interface.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]
+[17]
 Chapter 3.
-[17
+[18
 
 ]) (./tex/chapter4_analysis.tex
 
@@ -1093,17 +1100,58 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18]
+[19]
 Chapter 4.
-) (./main.bbl [19
 
-]
+<img/chapter4_analysis/simpleSystemDiagram.png, id=84, 829.6596pt x 150.8034pt>
+File: img/chapter4_analysis/simpleSystemDiagram.png Graphic file (type png)
+<use img/chapter4_analysis/simpleSystemDiagram.png>
+Package pdftex.def Info: img/chapter4_analysis/simpleSystemDiagram.png used on 
+input line 14.
+(pdftex.def)             Requested size: 418.25368pt x 76.0228pt.
+ [20
+
+ <./img/chapter4_analysis/simpleSystemDiagram.png>]
+Overfull \hbox (2.59314pt too wide) in paragraph at lines 35--36
+\OT1/ppl/m/n/10.95 ered wheelchair, ARTA, is con-trolled by a lap-top, which is
+ re-spon-si-ble for the wheelchair
+ []
+
+
+Overfull \hbox (3.64398pt too wide) in paragraph at lines 39--40
+\OT1/ppl/m/n/10.95 Since the sys-tem spans mul-ti-ple op-er-at-ing sys-tems, we
+ have cho-sen to uti-lize the Robotic
+ []
+
+
+<img/chapter4_analysis/detailedSystemDiagram.png, id=89, 608.5134pt x 250.536pt
+>
+File: img/chapter4_analysis/detailedSystemDiagram.png Graphic file (type png)
+ <use img/chapter4_analysis/detailedSystemDiagram.png>
+Package pdftex.def Info: img/chapter4_analysis/detailedSystemDiagram.png used o
+n input line 43.
+(pdftex.def)             Requested size: 418.25368pt x 172.20483pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21 <./img/chapter4_analysis/detailedSystemDiagram.png>]) (./main.bbl
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22]
 Underfull \hbox (badness 1442) in paragraph at lines 26--31
 []\OT1/ppl/m/n/10.95 Manato Hirabayashi, Shin-pei Kato, Masato Edahiro, Kazuya 
 Takeda, Taiki
  []
 
-[20
+[23
 
 ]
 
@@ -1112,32 +1160,32 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21])
+[24])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22] (./main.aux) ) 
+[25] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 18380 strings out of 493029
- 336353 string characters out of 6136235
+ 18395 strings out of 493029
+ 336894 string characters out of 6136235
  445757 words of memory out of 5000000
- 21445 multiletter control sequences out of 15000+600000
+ 21457 multiletter control sequences out of 15000+600000
  24648 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,11n,92p,742b,580s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,14n,92p,742b,580s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}<
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (23 pages, 2655566 bytes).
+Output written on main.pdf (26 pages, 2769534 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
+ 126 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 
