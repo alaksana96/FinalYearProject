@@ -12,14 +12,14 @@
 \contentsline {subsubsection}{Foreground Detection}{6}
 \contentsline {paragraph}{}{6}
 \contentsline {subsubsection}{Scanning Windows}{6}
-\contentsline {subsubsection}{Classical Object Detection}{7}
-\contentsline {paragraph}{Haar Cascades}{7}
+\contentsline {subsubsection}{Classical Object Detection}{6}
+\contentsline {paragraph}{Haar Cascades}{6}
 \contentsline {paragraph}{}{7}
 \contentsline {paragraph}{Histograms of Oriented Gradients}{7}
 \contentsline {paragraph}{}{7}
 \contentsline {subsubsection}{Deep Learning Object Detection}{7}
 \contentsline {paragraph}{}{7}
-\contentsline {paragraph}{R-CNN}{8}
+\contentsline {paragraph}{R-CNN}{7}
 \contentsline {paragraph}{}{8}
 \contentsline {paragraph}{YOLO}{8}
 \contentsline {subsection}{\numberline {2.1.3}Comments}{8}
@@ -29,65 +29,69 @@
 \contentsline {subsection}{\numberline {2.2.2}Review of Exisiting Methodologies}{9}
 \contentsline {subsubsection}{SORT}{9}
 \contentsline {paragraph}{Methodology}{9}
-\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{9}
 \contentsline {paragraph}{Limitations}{10}
 \contentsline {subsubsection}{Deep SORT}{10}
 \contentsline {paragraph}{Methodology}{10}
 \contentsline {paragraph}{}{10}
-\contentsline {paragraph}{Limitations}{11}
-\contentsline {subsection}{\numberline {2.2.3}Comments}{11}
-\contentsline {section}{\numberline {2.3}Head and Body Pose Estimation}{11}
+\contentsline {paragraph}{Limitations}{10}
+\contentsline {subsection}{\numberline {2.2.3}Comments}{10}
+\contentsline {section}{\numberline {2.3}Head and Body Pose Estimation}{10}
 \contentsline {subsection}{\numberline {2.3.1}Direction of Research}{11}
 \contentsline {subsection}{\numberline {2.3.2}Review of Existing Methodologies}{11}
 \contentsline {subsubsection}{Head Pose Estimation}{11}
 \contentsline {paragraph}{Facial Landmark Detection}{11}
-\contentsline {subsubsection}{Body Pose Estimation}{12}
-\contentsline {paragraph}{PoseNet}{12}
-\contentsline {paragraph}{OpenPose}{12}
-\contentsline {paragraph}{}{13}
-\contentsline {subsection}{\numberline {2.3.3}Comments}{13}
-\contentsline {section}{\numberline {2.4}SLAM}{13}
-\contentsline {paragraph}{}{13}
+\contentsline {subsubsection}{Body Pose Estimation}{11}
+\contentsline {paragraph}{PoseNet}{11}
+\contentsline {paragraph}{OpenPose}{11}
+\contentsline {paragraph}{}{12}
+\contentsline {subsection}{\numberline {2.3.3}Comments}{12}
+\contentsline {section}{\numberline {2.4}SLAM}{12}
+\contentsline {paragraph}{}{12}
 \contentsline {subsection}{\numberline {2.4.1}Direction of Research}{13}
 \contentsline {subsection}{\numberline {2.4.2}Review of Existing Methodologies}{13}
-\contentsline {paragraph}{}{14}
-\contentsline {paragraph}{}{14}
-\contentsline {subsubsection}{Visual SLAM}{14}
-\contentsline {paragraph}{Initialization}{14}
-\contentsline {paragraph}{Tracking}{14}
+\contentsline {paragraph}{}{13}
+\contentsline {paragraph}{}{13}
+\contentsline {subsubsection}{Visual SLAM}{13}
+\contentsline {paragraph}{Initialization}{13}
+\contentsline {paragraph}{Tracking}{13}
 \contentsline {paragraph}{Mapping}{14}
 \contentsline {subsection}{\numberline {2.4.3}Comments}{14}
-\contentsline {section}{\numberline {2.5}Augmented Reality Headsets}{15}
-\contentsline {subsection}{\numberline {2.5.1}Direction of Research}{15}
-\contentsline {subsection}{\numberline {2.5.2}Review of Existing Methods}{15}
-\contentsline {subsubsection}{Microsoft Hololens}{15}
-\contentsline {paragraph}{Holograms}{15}
+\contentsline {section}{\numberline {2.5}Augmented Reality Headsets}{14}
+\contentsline {subsection}{\numberline {2.5.1}Direction of Research}{14}
+\contentsline {subsection}{\numberline {2.5.2}Review of Existing Methods}{14}
+\contentsline {subsubsection}{Microsoft Hololens}{14}
+\contentsline {paragraph}{Holograms}{14}
 \contentsline {paragraph}{}{15}
-\contentsline {paragraph}{Hardware Specifications}{16}
-\contentsline {paragraph}{}{16}
-\contentsline {paragraph}{Personal Robotics Lab}{16}
-\contentsline {subsection}{\numberline {2.5.3}Comments}{17}
-\contentsline {chapter}{\numberline {3}Requirements Capture}{18}
-\contentsline {section}{\numberline {3.1}Project Deliverable}{18}
-\contentsline {paragraph}{}{18}
-\contentsline {paragraph}{}{18}
-\contentsline {section}{\numberline {3.2}Human Detection and Direction}{18}
-\contentsline {paragraph}{}{19}
-\contentsline {paragraph}{Features}{19}
-\contentsline {section}{\numberline {3.3}Obstacle Mapping \& Visualization }{19}
-\contentsline {paragraph}{Features}{19}
-\contentsline {section}{\numberline {3.4}Reactive Control}{19}
-\contentsline {chapter}{\numberline {4}Analysis and Design}{20}
-\contentsline {section}{\numberline {4.1}Design Overview}{20}
-\contentsline {subsection}{\numberline {4.1.1}Hardware}{21}
-\contentsline {subsection}{\numberline {4.1.2}System Communication}{21}
-\contentsline {subsubsection}{Robotic Operating System}{21}
-\contentsline {paragraph}{ROS Topics}{22}
-\contentsline {section}{\numberline {4.2}Human Detection \& Direction System}{22}
-\contentsline {subsection}{\numberline {4.2.1}YOLO Object Detector}{23}
-\contentsline {subsubsection}{Choice of Detector}{23}
-\contentsline {paragraph}{}{23}
-\contentsline {subsubsection}{Pre-trained model vs Training}{23}
+\contentsline {paragraph}{Hardware Specifications}{15}
+\contentsline {paragraph}{}{15}
+\contentsline {paragraph}{Personal Robotics Lab}{15}
+\contentsline {subsection}{\numberline {2.5.3}Comments}{16}
+\contentsline {chapter}{\numberline {3}Requirements Capture}{17}
+\contentsline {section}{\numberline {3.1}Project Deliverable}{17}
+\contentsline {paragraph}{}{17}
+\contentsline {paragraph}{}{17}
+\contentsline {section}{\numberline {3.2}Human Detection and Direction}{17}
+\contentsline {paragraph}{}{17}
+\contentsline {paragraph}{Features}{18}
+\contentsline {section}{\numberline {3.3}Obstacle Mapping \& Visualization }{18}
+\contentsline {paragraph}{Features}{18}
+\contentsline {section}{\numberline {3.4}Reactive Control}{18}
+\contentsline {paragraph}{Features}{18}
+\contentsline {chapter}{\numberline {4}Analysis and Design}{19}
+\contentsline {section}{\numberline {4.1}Design Overview}{19}
+\contentsline {subsection}{\numberline {4.1.1}Hardware}{20}
+\contentsline {subsection}{\numberline {4.1.2}System Communication}{20}
+\contentsline {subsubsection}{Robotic Operating System}{20}
+\contentsline {paragraph}{ROS Topics}{20}
+\contentsline {section}{\numberline {4.2}Human Detection \& Direction System}{21}
+\contentsline {subsection}{\numberline {4.2.1}YOLO Object Detector}{21}
+\contentsline {subsubsection}{Choice of Detector}{22}
+\contentsline {paragraph}{}{22}
+\contentsline {subsubsection}{Pre-trained Model vs Training}{22}
+\contentsline {paragraph}{Comparing Models}{22}
+\contentsline {paragraph}{Pedestrian Dataset}{23}
+\contentsline {subsubsection}{Analysis}{23}
 \contentsline {subsection}{\numberline {4.2.2}YACT: Yet Another Crowd Tracker}{23}
 \contentsline {subsubsection}{Object Tracking}{23}
 \contentsline {subsubsection}{Body Pose Estimation}{23}

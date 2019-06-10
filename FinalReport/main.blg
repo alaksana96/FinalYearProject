@@ -15,45 +15,47 @@ Warning--empty journal in Zolotas2018
 Warning--empty journal in Chacon-Quesada
 Warning--there's a number but no volume in Jin2017
 Warning--empty institution in Redmon2018
-You've used 33 entries,
+Warning--can't use both volume and number fields in Lin
+Warning--empty journal in Shao
+You've used 36 entries,
             1791 wiz_defined-function locations,
-            652 strings with 9538 characters,
-and the built_in function-call counts, 9155 in all, are:
-= -- 812
-> -- 413
-< -- 19
-+ -- 150
-- -- 117
-* -- 616
-:= -- 1348
-add.period$ -- 98
-call.type$ -- 33
-change.case$ -- 37
+            667 strings with 10081 characters,
+and the built_in function-call counts, 10102 in all, are:
+= -- 886
+> -- 476
+< -- 21
++ -- 172
+- -- 136
+* -- 694
+:= -- 1496
+add.period$ -- 107
+call.type$ -- 36
+change.case$ -- 40
 chr.to.int$ -- 0
-cite$ -- 45
-duplicate$ -- 426
-empty$ -- 865
-format.name$ -- 117
-if$ -- 2084
+cite$ -- 50
+duplicate$ -- 464
+empty$ -- 943
+format.name$ -- 136
+if$ -- 2289
 int.to.chr$ -- 0
-int.to.str$ -- 33
-missing$ -- 27
-newline$ -- 167
-num.names$ -- 33
-pop$ -- 123
+int.to.str$ -- 36
+missing$ -- 30
+newline$ -- 182
+num.names$ -- 36
+pop$ -- 133
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 270
+skip$ -- 293
 stack$ -- 0
-substring$ -- 650
-swap$ -- 160
-text.length$ -- 19
+substring$ -- 713
+swap$ -- 174
+text.length$ -- 21
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 12
-while$ -- 90
-width$ -- 35
-write$ -- 355
-(There were 12 warnings)
+warning$ -- 14
+while$ -- 98
+width$ -- 38
+write$ -- 387
+(There were 14 warnings)

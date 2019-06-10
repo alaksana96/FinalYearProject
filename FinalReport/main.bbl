@@ -203,9 +203,30 @@ Ross Girshick, Ilija Radosavovic, Georgia Gkioxari, Piotr Doll{\'{a}}r, and
 \newblock $\backslash$url{\{}https://github.com/facebookresearch/detectron{\}},
   2018.
 
+\bibitem{Rena}
+Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun.
+\newblock {Faster R-CNN: Towards Real-Time Object Detection with Region
+  Proposal Networks.}
+\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
+  39(6):1137--1149, 2017.
+
 \bibitem{Redmon2018}
 Joseph Redmon and Ali Farhadi.
 \newblock {YOLOv3: An Incremental Improvement}.
 \newblock Technical report, 2018.
+
+\bibitem{Lin}
+Tsung~Yi Lin, Michael Maire, Serge Belongie, James Hays, Pietro Perona, Deva
+  Ramanan, Piotr Doll{\'{a}}r, and C~Lawrence Zitnick.
+\newblock {Microsoft COCO: Common objects in context}.
+\newblock In {\em Lecture Notes in Computer Science (including subseries
+  Lecture Notes in Artificial Intelligence and Lecture Notes in
+  Bioinformatics)}, volume 8693 LNCS, pages 740--755, 2014.
+
+\bibitem{Shao}
+Shuai Shao, Zijian Zhao, Boxun Li, Tete Xiao, Gang Yu, Xiangyu Zhang, and Jian
+  Sun.
+\newblock {CrowdHuman: A Benchmark for Detecting Human in a Crowd}.
+\newblock 2018.
 
 \end{thebibliography}
