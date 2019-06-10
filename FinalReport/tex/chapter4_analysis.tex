@@ -89,7 +89,7 @@ An advantage of using the YOLO Darknet framework is that it provides models whic
 	\end{subfigure}
 	\vspace{-2\baselineskip}
 	\begin{center}
-		\caption{Comparison of COCO model and our model trained on a pedestrian dataset.}
+		\caption{Model comparison on a video from Sherfield Walkway at Imperial College London}
 		\label{fig:yoloCHvsCoco}
 	\end{center}
 	\vspace{-2\baselineskip}
@@ -105,7 +105,7 @@ The bounding boxes produced by the object detector are consumed by the \textbf{Y
 
 \paragraph{}In the following sections, we briefly explain the  methods used to infer the directions people are walking in. We also explore the use of head pose estimation, and the limitations that prevented it from making it to the final product.
 
-\subsubsection{Object Tracking}
+\subsubsection{YACHT Tracker: Object Tracking}
 We explored existing object tracking methods in Section \ref{sec:objectTrack}. We further discussed our choices in \ref{sec:objectTrackComments}, where we express the need for an online object tracking system. As such, we chose to investigate two related methods, SORT \cite{Bewley2016} and Deep SORT \cite{Wojke2018}.
 
 \paragraph{SORT}  The Simple Online and Realtime Tracking (SORT) method is a fast online object tracker. The initial implementation of YACHT used the SORT algorithm due to its speed. However, it was quickly realized that due to the simplicity of the association metric, object tracking was not very accurate, especially for occluded objects. When two objects crossed paths, the tracker was unable to recognize the act, and re-labeled the objects with brand new tracking IDs.
@@ -117,14 +117,112 @@ We explored existing object tracking methods in Section \ref{sec:objectTrack}. W
 	\includegraphics[width=1.0\linewidth]{img/chapter4_analysis/deepSortMOT.png}
 	\caption{MOT16 benchmark \cite{Milan} (L) using our YOLO model (M) for Deep SORT (R)}
 	\label{fig:deepSortMOT}
-	\vspace{-2\baselineskip}
+	\vspace{-1\baselineskip}
 \end{figure}
 
 \paragraph{Analysis} The generation and storage of feature descriptors for tracks is an expensive process. For the system to run in real-time, a GPU is needed to accelerate the network. We have made changes to the Deep SORT implementation so it can run on Tensorflow-GPU, which we explain later in this report. This improves the speed significantly, but uses up precious memory. As a result, we had to consider the amount of memory avaiable on the GPU, since the YOLO detector and OpenPose networks also rely on GPU acceleration. After testing, we found that it was possible to run both networks on the GPU at the same time, and we chose to use the Deep Sort method.
 
-\subsubsection{Body Pose Estimation}
+\subsubsection{Object Tracking for Direction Inference} \label{sec:objecTrackingDirection}
+An idea we explored was to use the previous image co-ordinates of each detection to predict the direction a person would walk in. This involved storing the previous states of each track and extrapolating the centroids of each track to determine a direction.
+
+\paragraph{Algorithm} For each tracked object in a frame:
+
+\begin{algorithm}[ht] 
+	\KwData{(x,y) centroid image co-ordinates up to the previous 5 states}
+	\KwResult{(x,y) of extrapolated point}
+	
+	\For{Frame}
+	{
+		\For{Tracker}
+		{
+			\If{Tracker existed in previous frame}
+			{
+				Extrapolate over the centroids of previous states; \\
+				Return linear extrapolation (x,y);
+			}
+			\If{Tracker has no previous states}
+			{
+				Add (x,y) centroid of tracker to queue of previous states;	\\
+				Return current centroid (x,y);
+			}
+		}
+	
+	}
+\end{algorithm}
+
+\begin{figure}[ht]
+	\begin{subfigure}[b]{.45\textwidth}
+		\centering
+		\includegraphics[width=1.0\linewidth]{img/chapter4_analysis/linExDirection.png}
+		\caption{Tracks with horizontal motion}
+	\end{subfigure}%
+	\hspace{\fill} 
+	\begin{subfigure}[b]{.45\textwidth}
+		\centering
+		\includegraphics[width=1.0\linewidth]{img/chapter4_analysis/linExDirectionAmb.png}
+		\caption{Tracks with mostly vertical motion}
+	\end{subfigure}
+	\vspace{-1\baselineskip}
+	\begin{center}
+		\caption{Linear extrapolation works for objects that move across the frame, but it becomes difficult to determine the direction when mostly vertical motion occurs}
+		\label{fig:linExProblem}
+	\end{center}
+	\vspace{-2\baselineskip}
+\end{figure}
+
+\paragraph{Issues} The problems with this method occurs when the centroid of the tracked objects does not move much horizontally. As such, linear extrapolation is not possible, and this leads to an ambigious definition of the direction. Since the object is not moving across the screen, it is not possible to differentiate between a person standing still, moving directly towards the PWU or walking away.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\linewidth]{img/chapter4_analysis/pinholecamera.png}
+	\caption{Pinhole Camera projection and the loss of the z-axis \cite{Leutenegger2019}}
+	\label{fig:pinhole}
+	\vspace{-1\baselineskip}
+\end{figure}
+
+\paragraph{} In the pinhole camera model, when an object in the real world is projected onto a 2D image, we lose the distance along the z-axis. The issue with world-to-camera projection is when we want to obtain the world co-ordinate of the object, the best we can do is to calculate a ray through the 2D image point. However, as shown in Figure \ref{fig:pinhole}, it becomes impossible to tell how far away the object is without a depth camera, since the object could exist anywhere along that ray.
+
+\subsubsection{YACHT Direction: Body Pose Estimation}
+To solve the direction ambiguity brought up in Section \ref{sec:objecTrackingDirection}, we proposed the use of body pose estimation techniques to determine whether a person is walking towards or away from the camera of the PWU. We researched several body pose implementations in Section \ref{sec:backBodyPoseEstimation}, but we ultimately decided on OpenPose, due to its well documented implementation on Github \cite{Cao2017}.
+
+\paragraph{Object Detectors \& Bottom-Up Approaches} The output of the YOLO object detector is the original image and the associated bounding box co-ordinates of detections. Since OpenPose is a bottom-up approach to the body pose estimation problem, we admit that it is counter-intuitive to use an object detector to detect individual people when OpenPose determines the body part keypoints across the whole image. This will be explored more in the evaluation of the report.
+
+\paragraph{Keypoint Estimation}
+We use OpenPose to estimate the positions of the keypoints. The Github implementation provides several pre-trained models for body pose estimation. From our tests, we found that the \textit{BODY\_25} model was the fastest, suiting our real-time requirements. Figure \ref{fig:bodyKeyPoints} shows the keypoints generated by the model.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.3\linewidth]{img/chapter4_analysis/keypoints_pose_25.png}
+	\caption{Keypoints produced by the BODY\_25 model \cite{Cao2017}}
+	\label{fig:bodyKeyPoints}
+\end{figure}
+
+The model is able to differentiate between the left and right limbs of the human body, making it a suitable choice to determine if a person is facing the camera or not. We further explain the methodology in the implementation section of the report.
 
 \subsubsection{Head Pose Estimation}
+We initially began the project by exploring the use of head-gaze estimation as another way of infering where someone will walk. We researched the concept of head pose estimation in Section \ref{sec:backHeadPoseEstimation}, with the logic being people tend to look in the direction where they are walking. We leveraged the use of the DeepGaze library as an initial starting point \cite{Patacchiola2017a}, since the library has a built in head-pose estimator. 
+
+\begin{figure}[ht]
+	\begin{subfigure}[b]{.5\textwidth}
+		\centering
+		\includegraphics[width=0.675\linewidth]{img/chapter4_analysis/headPose.jpeg}
+		\caption{Head pose estimation on close-up of face}
+	\end{subfigure}%
+	\hspace{\fill} 
+	\begin{subfigure}[b]{.5\textwidth}
+		\centering
+		\includegraphics[width=1.0\linewidth]{img/chapter4_analysis/deepgazeWhole.png}
+		\caption{Head pose estimation on smaller people}
+	\end{subfigure}
+	\vspace{-1\baselineskip}
+	\begin{center}
+		\caption{DeepGaze head pose estimator}
+		\label{fig:deepGaze}
+	\end{center}
+	\vspace{-2\baselineskip}
+\end{figure}
+
+\paragraph{Reasons for removal} We noticed from our research that the head pose estimation was not very accurate, as can be seen in Figure \ref{fig:deepGaze}. A close up image of a face still returns an inaccurate estimation of the head pose. For smaller faces with multiple detections, the head pose estimation was not performed in real-time and once again had inaccurate estimations. Finally, as we will explain in the implementation section, the quality of the images received from the Hololens was too low, and as such, facial landmark detectors required for head pose estimation were unable to detect the keypoints.
 
 \section{Hololens}
 \subsection{Breakdown}

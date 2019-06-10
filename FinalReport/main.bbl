@@ -234,4 +234,15 @@ Anton Milan, Laura Leal-Taixe, Ian Reid, Stefan Roth, and Konrad Schindler.
 \newblock {MOT16: A Benchmark for Multi-Object Tracking}.
 \newblock 2016.
 
+\bibitem{Leutenegger2019}
+Stefan Leutenegger.
+\newblock {Representations and Sensors}.
+\newblock 2019.
+
+\bibitem{Patacchiola2017a}
+Massimiliano Patacchiola and Angelo Cangelosi.
+\newblock {Head pose estimation in the wild using Convolutional Neural Networks
+  and adaptive gradient methods}.
+\newblock {\em Pattern Recognition}, 71:132--143, 2017.
+
 \end{thebibliography}

@@ -125,13 +125,13 @@ An interesting concept to explore is that of head and body pose estimation as a 
 
 \subsection{Review of Existing Methodologies}
 
-\subsubsection{Head Pose Estimation}
+\subsubsection{Head Pose Estimation} \label{sec:backHeadPoseEstimation}
 Head pose estimation is intrinsically linked with visual gaze estimation \cite{Murphy-Chutorian2009}. If we can characterize the direction and focus of a person's eyes, it may be possible to determine the direction they will walk in next.
 
 \paragraph{Facial Landmark Detection}
 Before head pose estimation can be done, keypoints on the face must be detected \cite{Kazemi2014}. These points will then be used to solve a Perspective-n-Point (PnP) problem to determine the head pose. There are many facial landmark detection techniques, depending on the number of landmarks to be detected. As the number of landmarks increase, the more accurate the pose estimation can be. However, it also increases the complexity of the detection, and as such, it becomes a trade-off between the two factors.
 
-\subsubsection{Body Pose Estimation}
+\subsubsection{Body Pose Estimation} \label{sec:backBodyPoseEstimation}
 An idea we wish to explore is using the body pose of an individual to estimate the direction they are walking in. If the system can discern between a person's back or front, we can infer the motion, since people do not normally walk backwards. A limitation of our system is that it has to be done in real time for it to be effective. As such, the techniques we can explore are limited by the hardware available.
 
 \paragraph{PoseNet} A common approach for body pose estimation is to employ a person detector and perform single-person pose estimation for each detection, known as a top-down approach. PoseNet is a real-time human pose estimator with a web-browser implementation that runs on Tensorflow.js, making it easily available to anyone. The implementation is based on the works of Papanderou and Zhu \cite{Papandreou2017} in building a network that utilizes the Faster-RCNN model as an object detector to obtain accurate bounding boxes of people in an image \cite{Ren2017}. The keypoints are then calculated using a a ResNet \cite{He2016} by predicting activation heatmaps and offsets.

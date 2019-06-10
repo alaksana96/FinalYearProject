@@ -82,8 +82,10 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Direction of Research}{11}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Review of Existing Methodologies}{11}}
 \@writefile{toc}{\contentsline {subsubsection}{Head Pose Estimation}{11}}
+\newlabel{sec:backHeadPoseEstimation}{{2.3.2}{11}}
 \@writefile{toc}{\contentsline {paragraph}{Facial Landmark Detection}{11}}
 \@writefile{toc}{\contentsline {subsubsection}{Body Pose Estimation}{11}}
+\newlabel{sec:backBodyPoseEstimation}{{2.3.2}{11}}
 \@writefile{toc}{\contentsline {paragraph}{PoseNet}{11}}
 \@writefile{toc}{\contentsline {paragraph}{OpenPose}{11}}
 \citation{Cao2017}
@@ -168,7 +170,7 @@
 \@writefile{toc}{\contentsline {paragraph}{}{22}}
 \@writefile{toc}{\contentsline {subsubsection}{Pre-trained Model vs Training}{22}}
 \@writefile{toc}{\contentsline {paragraph}{Comparing Models}{22}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Comparison of COCO model and our model trained on a pedestrian dataset.\relax }}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Model comparison on a video from Sherfield Walkway at Imperial College London\relax }}{22}}
 \newlabel{fig:yoloCHvsCoco}{{4.4}{22}}
 \citation{Wojke2018}
 \citation{Cao2017}
@@ -178,22 +180,44 @@
 \@writefile{toc}{\contentsline {paragraph}{Analysis}{23}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}YACHT: Yet Another Crowd Human Tracker}{23}}
 \@writefile{toc}{\contentsline {paragraph}{}{23}}
-\@writefile{toc}{\contentsline {subsubsection}{Object Tracking}{23}}
+\@writefile{toc}{\contentsline {subsubsection}{YACHT Tracker: Object Tracking}{23}}
 \@writefile{toc}{\contentsline {paragraph}{SORT}{23}}
 \@writefile{toc}{\contentsline {paragraph}{Deep SORT}{23}}
 \citation{Milan}
 \citation{Milan}
-\bibstyle{unsrt}
-\bibdata{fyp_report.bib}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces MOT16 benchmark \cite  {Milan} (L) using our YOLO model (M) for Deep SORT (R)\relax }}{24}}
 \newlabel{fig:deepSortMOT}{{4.5}{24}}
 \@writefile{toc}{\contentsline {paragraph}{Analysis}{24}}
-\@writefile{toc}{\contentsline {subsubsection}{Body Pose Estimation}{24}}
-\@writefile{toc}{\contentsline {subsubsection}{Head Pose Estimation}{24}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Hololens}{24}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Breakdown}{24}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}ARTA}{24}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Breakdown}{24}}
+\@writefile{toc}{\contentsline {subsubsection}{Object Tracking for Direction Inference}{24}}
+\newlabel{sec:objecTrackingDirection}{{4.2.2}{24}}
+\@writefile{toc}{\contentsline {paragraph}{Algorithm}{24}}
+\citation{Leutenegger2019}
+\citation{Leutenegger2019}
+\citation{Cao2017}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Linear extrapolation works for objects that move across the frame, but it becomes difficult to determine the direction when mostly vertical motion occurs\relax }}{25}}
+\newlabel{fig:linExProblem}{{4.6}{25}}
+\@writefile{toc}{\contentsline {paragraph}{Issues}{25}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Pinhole Camera projection and the loss of the z-axis \cite  {Leutenegger2019}\relax }}{25}}
+\newlabel{fig:pinhole}{{4.7}{25}}
+\@writefile{toc}{\contentsline {paragraph}{}{25}}
+\@writefile{toc}{\contentsline {subsubsection}{YACHT Direction: Body Pose Estimation}{25}}
+\citation{Cao2017}
+\citation{Cao2017}
+\citation{Patacchiola2017a}
+\@writefile{toc}{\contentsline {paragraph}{Object Detectors \& Bottom-Up Approaches}{26}}
+\@writefile{toc}{\contentsline {paragraph}{Keypoint Estimation}{26}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Keypoints produced by the BODY\_25 model \cite  {Cao2017}\relax }}{26}}
+\newlabel{fig:bodyKeyPoints}{{4.8}{26}}
+\@writefile{toc}{\contentsline {subsubsection}{Head Pose Estimation}{26}}
+\@writefile{toc}{\contentsline {paragraph}{Reasons for removal}{26}}
+\bibstyle{unsrt}
+\bibdata{fyp_report.bib}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces DeepGaze head pose estimator\relax }}{27}}
+\newlabel{fig:deepGaze}{{4.9}{27}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Hololens}{27}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Breakdown}{27}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}ARTA}{27}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Breakdown}{27}}
 \bibcite{Hou2010}{{1}{}{{}}{{}}}
 \bibcite{Zeng2017}{{2}{}{{}}{{}}}
 \bibcite{Redmon}{{3}{}{{}}{{}}}
@@ -231,6 +255,8 @@
 \bibcite{Lin}{{35}{}{{}}{{}}}
 \bibcite{Shao}{{36}{}{{}}{{}}}
 \bibcite{Milan}{{37}{}{{}}{{}}}
+\bibcite{Leutenegger2019}{{38}{}{{}}{{}}}
+\bibcite{Patacchiola2017a}{{39}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
 \providecommand\totalcount@set[2]{}
-\totalcount@set{page}{28}
+\totalcount@set{page}{32}

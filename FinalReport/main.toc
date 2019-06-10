@@ -94,13 +94,20 @@
 \contentsline {paragraph}{Analysis}{23}
 \contentsline {subsection}{\numberline {4.2.2}YACHT: Yet Another Crowd Human Tracker}{23}
 \contentsline {paragraph}{}{23}
-\contentsline {subsubsection}{Object Tracking}{23}
+\contentsline {subsubsection}{YACHT Tracker: Object Tracking}{23}
 \contentsline {paragraph}{SORT}{23}
 \contentsline {paragraph}{Deep SORT}{23}
 \contentsline {paragraph}{Analysis}{24}
-\contentsline {subsubsection}{Body Pose Estimation}{24}
-\contentsline {subsubsection}{Head Pose Estimation}{24}
-\contentsline {section}{\numberline {4.3}Hololens}{24}
-\contentsline {subsection}{\numberline {4.3.1}Breakdown}{24}
-\contentsline {section}{\numberline {4.4}ARTA}{24}
-\contentsline {subsection}{\numberline {4.4.1}Breakdown}{24}
+\contentsline {subsubsection}{Object Tracking for Direction Inference}{24}
+\contentsline {paragraph}{Algorithm}{24}
+\contentsline {paragraph}{Issues}{25}
+\contentsline {paragraph}{}{25}
+\contentsline {subsubsection}{YACHT Direction: Body Pose Estimation}{25}
+\contentsline {paragraph}{Object Detectors \& Bottom-Up Approaches}{26}
+\contentsline {paragraph}{Keypoint Estimation}{26}
+\contentsline {subsubsection}{Head Pose Estimation}{26}
+\contentsline {paragraph}{Reasons for removal}{26}
+\contentsline {section}{\numberline {4.3}Hololens}{27}
+\contentsline {subsection}{\numberline {4.3.1}Breakdown}{27}
+\contentsline {section}{\numberline {4.4}ARTA}{27}
+\contentsline {subsection}{\numberline {4.4.1}Breakdown}{27}
