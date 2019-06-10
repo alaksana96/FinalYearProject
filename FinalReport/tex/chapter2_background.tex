@@ -89,7 +89,7 @@ Object tracking can be defined as the ability to detect objects in consecutive f
 \subsection{Direction of Research}
  A common scenario for PWU in public spaces is having multiple people walking in the surroundings. Ideally, the augmented reality system should be able to track the same people across frames to be able to determine their direction of motion. As such, we focus our research on the multiple object tracking (MOT) problem in real-time. For an augmented reality system for a PWU, the object tracking must be done in real-time in order to feedback to the PWU. This narrows our field of research to online object tracking techniques.
  
-\subsection{Review of Exisiting Methodologies}
+\subsection{Review of Exisiting Methodologies} \label{sec:objectTrack}
  Pedestrian detection is often achieved by using a high quality object detector and associating the detections across frames \cite{Dicle2013}. The associations are based on the appearance and location similarity. Furthermore, it is possible to discern simple motion patterns from the tracked pedestrians, allowing for more accurate tracking.
  
 \subsubsection{SORT}
@@ -114,7 +114,7 @@ The original SORT suffered from a high number of identity switches, since the as
 \paragraph{Limitations}
 Although the accuracy of the the tracking is improved and the issue of occlusions is reduced, the increased complexity of the algorithm requires more computational power. As stated in the paper, a modern GPU would be required to run this in real-time, due to the need for an appearance descriptor to be calculated for each detection.
 
-\subsection{Comments}
+\subsection{Comments} \label{sec:objectTrackComments}
 For this project, we have limited ourselves to researching simple object tracking methods that work in real-time. We can clearly see a trade-off between accuracy of tracking and computational power. Further investigation into the hardware available and the importance of object tracker accuracy will be needed to decide what method would be best for the augmented reality system.
 
 \section{Head and Body Pose Estimation}

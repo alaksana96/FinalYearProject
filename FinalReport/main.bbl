@@ -229,4 +229,9 @@ Shuai Shao, Zijian Zhao, Boxun Li, Tete Xiao, Gang Yu, Xiangyu Zhang, and Jian
 \newblock {CrowdHuman: A Benchmark for Detecting Human in a Crowd}.
 \newblock 2018.
 
+\bibitem{Milan}
+Anton Milan, Laura Leal-Taixe, Ian Reid, Stefan Roth, and Konrad Schindler.
+\newblock {MOT16: A Benchmark for Multi-Object Tracking}.
+\newblock 2016.
+
 \end{thebibliography}

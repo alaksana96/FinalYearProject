@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  10 JUN 2019 14:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  10 JUN 2019 16:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -757,7 +757,59 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count160
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+(/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+\c@AlgoLine=\count161
+\algocf@hangindent=\skip64
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+********************************************************
+Package `algorithm2e' Release 5.1 -- october 19 2015 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (christophe.fiorio@umontpellier.fr)
+********************************************************
+\skiptotal=\skip65
+\skiplinenumber=\skip66
+\skiprule=\skip67
+\skiphlne=\skip68
+\skiptext=\skip69
+\skiplength=\skip70
+\algomargin=\skip71
+\skipalgocfslide=\skip72
+\algowidth=\dimen196
+\inoutsize=\dimen197
+\inoutindent=\dimen198
+\interspacetitleruled=\dimen199
+\interspacealgoruled=\dimen256
+\interspacetitleboxruled=\dimen257
+\algocf@ruledwidth=\skip73
+\algocf@inoutbox=\box48
+\algocf@inputbox=\box49
+\AlCapSkip=\skip74
+\AlCapHSkip=\skip75
+\algoskipindent=\skip76
+\algocf@nlbox=\box50
+\algocf@hangingbox=\box51
+\algocf@untilbox=\box52
+\algocf@skipuntil=\skip77
+\algocf@capbox=\box53
+\algoheightruledefault=\skip78
+\algoheightrule=\skip79
+\algotitleheightruledefault=\skip80
+\algotitleheightrule=\skip81
+\c@algocfline=\count162
+\c@algocfproc=\count163
+\c@algocf=\count164
+\algocf@algoframe=\box54
+\algocf@algobox=\box55
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
@@ -765,19 +817,19 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 127.
-LaTeX Font Info:    ... okay on input line 127.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 127.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 129.
+LaTeX Font Info:    ... okay on input line 129.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 129.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
@@ -788,19 +840,19 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count161
-\scratchdimen=\dimen196
-\scratchbox=\box48
-\nofMPsegments=\count162
-\nofMParguments=\count163
+\scratchcounter=\count165
+\scratchdimen=\dimen258
+\scratchbox=\box56
+\nofMPsegments=\count166
+\nofMParguments=\count167
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count164
-\MPscratchDim=\dimen197
-\MPnumerator=\count165
-\makeMPintoPDFobject=\count166
+\MPscratchCnt=\count168
+\MPscratchDim=\dimen259
+\MPnumerator=\count169
+\makeMPintoPDFobject=\count170
 \everyMPtoPDFconversion=\toks49
 ) ABD: EveryShipout initializing macros
-\c@lstlisting=\count167
+\c@lstlisting=\count171
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -841,14 +893,14 @@ Package caption Info: float package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \celsius on input line 127.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 127
+LaTeX Info: Redefining \celsius on input line 129.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 129
 .
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 127.
-Package gensymb Info: Using \upOmega for \ohm on input line 127.
+LaTeX Info: Redefining \ohm on input line 129.
+Package gensymb Info: Using \upOmega for \ohm on input line 129.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -906,7 +958,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 138.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 140.
  (./main.toc [2
 
 ])
@@ -1155,7 +1207,7 @@ File: img/chapter4_analysis/yoloCoco.png Graphic file (type png)
 <use img/chapter4_analysis/yoloCoco.png>
 Package pdftex.def Info: img/chapter4_analysis/yoloCoco.png used on input line 
 81.
-(pdftex.def)             Requested size: 209.12683pt x 118.20084pt.
+(pdftex.def)             Requested size: 198.66985pt x 112.29132pt.
 
 <img/chapter4_analysis/yoloCH.png, id=97, 1223.57124pt x 689.57625pt>
 File: img/chapter4_analysis/yoloCH.png Graphic file (type png)
@@ -1163,7 +1215,7 @@ File: img/chapter4_analysis/yoloCH.png Graphic file (type png)
 <use img/chapter4_analysis/yoloCH.png>
 Package pdftex.def Info: img/chapter4_analysis/yoloCH.png used on input line 87
 .
-(pdftex.def)             Requested size: 209.12683pt x 117.85773pt.
+(pdftex.def)             Requested size: 198.66985pt x 111.96536pt.
 
 Overfull \hbox (2.08049pt too wide) in paragraph at lines 79--91
 [][]  []
@@ -1176,20 +1228,34 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [22 <./img/chapter4_analysis/yoloCoco.png> <./img/chapter4_analysis/yoloCH.png>
-]) (./main.bbl
+]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23]
+[23] <img/chapter4_analysis/deepSortMOT.png, id=104, 1814.78pt x 473.77pt>
+File: img/chapter4_analysis/deepSortMOT.png Graphic file (type png)
+
+<use img/chapter4_analysis/deepSortMOT.png>
+Package pdftex.def Info: img/chapter4_analysis/deepSortMOT.png used on input li
+ne 117.
+(pdftex.def)             Requested size: 418.25368pt x 109.1889pt.
+) (./main.bbl
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24 <./img/chapter4_analysis/deepSortMOT.png>]
 Underfull \hbox (badness 1442) in paragraph at lines 26--31
 []\OT1/ppl/m/n/10.95 Manato Hirabayashi, Shin-pei Kato, Masato Edahiro, Kazuya 
 Takeda, Taiki
  []
 
-[24
+[25
 
 ]
 
@@ -1198,19 +1264,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25])
+[26])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26] (./main.aux) ) 
+[27] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 18437 strings out of 493029
- 337844 string characters out of 6136235
- 445772 words of memory out of 5000000
- 21496 multiletter control sequences out of 15000+600000
+ 19360 strings out of 493029
+ 352884 string characters out of 6136235
+ 470887 words of memory out of 5000000
+ 22409 multiletter control sequences out of 15000+600000
  24648 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,14n,92p,759b,580s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1220,10 +1286,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (27 pages, 5914231 bytes).
+Output written on main.pdf (28 pages, 7453747 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
+ 137 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 

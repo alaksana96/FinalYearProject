@@ -78,13 +78,13 @@ An advantage of using the YOLO Darknet framework is that it provides models whic
 \begin{figure}[ht]
 	\begin{subfigure}[b]{.5\textwidth}
 		\centering
-		\includegraphics[width=1.0\linewidth]{img/chapter4_analysis/yoloCoco.png}
+		\includegraphics[width=0.95\linewidth]{img/chapter4_analysis/yoloCoco.png}
 		\caption{COCO YOLOv3-tiny}
 	\end{subfigure}%
 	\hspace{\fill} 
 	\begin{subfigure}[b]{.5\textwidth}
 		\centering
-		\includegraphics[width=1.0\linewidth]{img/chapter4_analysis/yoloCH.png}
+		\includegraphics[width=0.95\linewidth]{img/chapter4_analysis/yoloCH.png}
 		\caption{Trained YOLOv3-tiny}
 	\end{subfigure}
 	\vspace{-2\baselineskip}
@@ -97,12 +97,30 @@ An advantage of using the YOLO Darknet framework is that it provides models whic
 
 \paragraph{Pedestrian Dataset} A common case in pedestrian detection is occlusion, where only certain body parts are visible.  To resolve this issue, we decided to train the YOLOv3-tiny model on the \textbf{CrowdHuman} dataset \cite{Shao}, which contains annotated images of crowds, including bounding boxes for the head, visible human region and full-body. The annotations for partially visible people allows the network to detect occlusions, solving the issue of people being close to each other. We also trained the network to detect heads, since we initially wanted to use head pose estimation to determine direction.
 
-\subsubsection{Analysis}
-The result of training the YOLOv3-tiny model on the CrowdHuman dataset is that the system is able to detect smaller figures who are occluded. We go into further detail on the training process in the Implementation section of this report.
+\paragraph{Analysis}
+The result of training the YOLOv3-tiny model on the CrowdHuman dataset is that the system is able to detect smaller figures who are occluded. The additional ability to detect heads allowed us to explore the use of head pose estimation for direction inference. We go into further detail on the training process in the Implementation section of this report.
 
-\subsection{YACT: Yet Another Crowd Tracker}
+\subsection{YACHT: Yet Another Crowd Human Tracker}
+The bounding boxes produced by the object detector are consumed by the \textbf{Yet Another Crowd Human Tracker} (YACHT) module. As shown in Figure \ref{fig:detailedHDD}, we can see that the YACHT module is made up of two seperate nodes. The tracker node uses the Deep SORT algorithm to track detected individuals \cite{Wojke2018}, while the pose estimator node uses the OpenPose \cite{Cao2017} network to determine whether a person is walking towards or away from the PWU.
+
+\paragraph{}In the following sections, we briefly explain the  methods used to infer the directions people are walking in. We also explore the use of head pose estimation, and the limitations that prevented it from making it to the final product.
 
 \subsubsection{Object Tracking}
+We explored existing object tracking methods in Section \ref{sec:objectTrack}. We further discussed our choices in \ref{sec:objectTrackComments}, where we express the need for an online object tracking system. As such, we chose to investigate two related methods, SORT \cite{Bewley2016} and Deep SORT \cite{Wojke2018}.
+
+\paragraph{SORT}  The Simple Online and Realtime Tracking (SORT) method is a fast online object tracker. The initial implementation of YACHT used the SORT algorithm due to its speed. However, it was quickly realized that due to the simplicity of the association metric, object tracking was not very accurate, especially for occluded objects. When two objects crossed paths, the tracker was unable to recognize the act, and re-labeled the objects with brand new tracking IDs.
+
+\paragraph{Deep SORT} Deep SORT is an extension of the original SORT algorithm, but uses a deep network to generate feature descriptors for the predicted bounding boxes. We explain the algorithm in Section \ref{sec:objectTrack}, but to repeat, instead of using the Intersection-over-Union association metric to compare bounding boxes, a Neareast-Neighbours is used to compare the feature vector of the new detection with a library of feature vectors for the tracked object. This additional step allows for the problem of occlusions to be reduced.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1.0\linewidth]{img/chapter4_analysis/deepSortMOT.png}
+	\caption{MOT16 benchmark \cite{Milan} (L) using our YOLO model (M) for Deep SORT (R)}
+	\label{fig:deepSortMOT}
+	\vspace{-2\baselineskip}
+\end{figure}
+
+\paragraph{Analysis} The generation and storage of feature descriptors for tracks is an expensive process. For the system to run in real-time, a GPU is needed to accelerate the network. We have made changes to the Deep SORT implementation so it can run on Tensorflow-GPU, which we explain later in this report. This improves the speed significantly, but uses up precious memory. As a result, we had to consider the amount of memory avaiable on the GPU, since the YOLO detector and OpenPose networks also rely on GPU acceleration. After testing, we found that it was possible to run both networks on the GPU at the same time, and we chose to use the Deep Sort method.
 
 \subsubsection{Body Pose Estimation}
 
