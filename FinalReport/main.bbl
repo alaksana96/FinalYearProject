@@ -179,4 +179,33 @@ Rodrigo Chac{\'{o}}n-Quesada and Yiannis Demiris.
   Selection of Affordances}.
 \newblock pages 1--4, 2018.
 
+\bibitem{Jin2017}
+Sheng Jin, Xujie Ma, Zhipeng Han, Yue Wu, Wei Yang, Wentao Liu, Chen Qian, and
+  Wanli Ouyang.
+\newblock {Towards Multi-Person Pose Tracking : Bottom-up and Top-down
+  Methods}.
+\newblock {\em Proceedings of the IEEE International Conference on Computer
+  Vision}, (2):4--7, 2017.
+
+\bibitem{Insafutdinov}
+Eldar Insafutdinov, Leonid Pishchulin, Bjoern Andres, Mykhaylo Andriluka, and
+  Bernt Schiele.
+\newblock {Deepercut: A deeper, stronger, and faster multi-person pose
+  estimation model}.
+\newblock In {\em Lecture Notes in Computer Science (including subseries
+  Lecture Notes in Artificial Intelligence and Lecture Notes in
+  Bioinformatics)}, volume 9910 LNCS, pages 34--50, 2016.
+
+\bibitem{Detectron2018}
+Ross Girshick, Ilija Radosavovic, Georgia Gkioxari, Piotr Doll{\'{a}}r, and
+  Kaiming He.
+\newblock {Detectron}.
+\newblock $\backslash$url{\{}https://github.com/facebookresearch/detectron{\}},
+  2018.
+
+\bibitem{Redmon2018}
+Joseph Redmon and Ali Farhadi.
+\newblock {YOLOv3: An Incremental Improvement}.
+\newblock Technical report, 2018.
+
 \end{thebibliography}

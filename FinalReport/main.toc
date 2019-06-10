@@ -80,12 +80,19 @@
 \contentsline {chapter}{\numberline {4}Analysis and Design}{20}
 \contentsline {section}{\numberline {4.1}Design Overview}{20}
 \contentsline {subsection}{\numberline {4.1.1}Hardware}{21}
-\contentsline {subsection}{\numberline {4.1.2}Communication}{21}
+\contentsline {subsection}{\numberline {4.1.2}System Communication}{21}
 \contentsline {subsubsection}{Robotic Operating System}{21}
 \contentsline {paragraph}{ROS Topics}{22}
 \contentsline {section}{\numberline {4.2}Human Detection \& Direction System}{22}
-\contentsline {subsection}{\numberline {4.2.1}Breakdown}{22}
-\contentsline {section}{\numberline {4.3}Hololens}{22}
-\contentsline {subsection}{\numberline {4.3.1}Breakdown}{22}
-\contentsline {section}{\numberline {4.4}ARTA}{22}
-\contentsline {subsection}{\numberline {4.4.1}Breakdown}{22}
+\contentsline {subsection}{\numberline {4.2.1}YOLO Object Detector}{23}
+\contentsline {subsubsection}{Choice of Detector}{23}
+\contentsline {paragraph}{}{23}
+\contentsline {subsubsection}{Pre-trained model vs Training}{23}
+\contentsline {subsection}{\numberline {4.2.2}YACT: Yet Another Crowd Tracker}{23}
+\contentsline {subsubsection}{Object Tracking}{23}
+\contentsline {subsubsection}{Body Pose Estimation}{23}
+\contentsline {subsubsection}{Head Pose Estimation}{23}
+\contentsline {section}{\numberline {4.3}Hololens}{23}
+\contentsline {subsection}{\numberline {4.3.1}Breakdown}{23}
+\contentsline {section}{\numberline {4.4}ARTA}{23}
+\contentsline {subsection}{\numberline {4.4.1}Breakdown}{23}

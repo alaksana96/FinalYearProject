@@ -34,9 +34,10 @@ From a very high level view, we can map these requirements to the respective dev
 
 Table. \ref{tab:hardware} summarises the hardware overall system is implemented on. The powered wheelchair, ARTA, is controlled by a laptop, which is responsible for the wheelchair speed, wheel rotations, navigation and localisation. The Hololens is a self contained augmented reality headset, running the Universal Windows Platform (UWP) operating system. Finally, the Human Detection \& Direction system is implemented on a desktop computer with a GTX 1050Ti GPU, allowing it to run real time object detectors.
 
-\subsection{Communication}
+\subsection{System 
+	Communication}
 
-\subsubsection{Robotic Operating System} Since the system spans multiple operating systems, we have chosen to utilize the Robotic Operating System (ROS) as a means of communication between the devices. ROS defines a \textit{node} as a process that performs a computation, and every node can be made of smaller nodes that perform specific computations that serve the needs of the parent node. 
+\subsubsection{Robotic Operating System} Since the project spans multiple operating systems, we have chosen to utilize the Robotic Operating System (ROS) as a means of communication between the devices. In ROS, a \textit{node} is defined as a process that performs a computation. A node can be made up of smaller nodes that perform specific computations that serve the needs of the parent node. 
 
 \begin{figure}[ht]
 	\centering
@@ -47,11 +48,39 @@ Table. \ref{tab:hardware} summarises the hardware overall system is implemented 
 
 We can think of the three major systems as large ROS nodes that consists of smaller nodes that run individiual tasks, such as creating the camera stream, or detecting objects. We visualize the breakdown of the system into nodes in Figure. \ref{fig:detailedHL}.
 
-\paragraph{ROS Topics} Nodes in ROS communicate with one another by publishing data in the form of \textit{messages} which get broadcasted over a \textit{topic}. Nodes can subscribe to topics that they want to receive data from. This method allows for nodes running on different devices to communicate with each other, regardless of the operating system, without even realizing that the nodes are running on a seperate computer.
+\paragraph{ROS Topics} Nodes in ROS communicate with one another by publishing data in the form of \textit{messages} which get broadcasted over a \textit{topic}. Nodes can choose what data they receive by subscribing to topics. This method allows for nodes running on different devices to communicate with each other, regardless of the operating system. The nodes are unaware that the data it receives is published from a node running on a seperate computer, making ROS a perfect choice for communication in this design.
 
 \section{Human Detection \& Direction System}
+The HDD system is reponsible for detecting and predicting the directions of people in the surroundings of the wheelchair. By taking visual inputs in the form of images from the Hololens, we run an object detector trained on a dataset of pedestrians to detect people and heads. The bounding boxes produced by the object detector are fed as inputs to an object tracker and a body pose estimator. We use the results of these two nodes to infer the direction a detected person is moving in, and publish the results back to the Hololens.
 
-\subsection{Breakdown}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1.0\linewidth]{img/chapter4_analysis/hddSystemDiagram.png}
+	\caption{Individual nodes in HDD System}
+	\label{fig:detailedHDD}
+\end{figure}
+
+We present an overall view of the HDD System, covering the purpose and design of individual components. We also propose the reasoning behind certain design choices, which we cover in more depth later in this report.
+
+\subsection{YOLO Object Detector}
+Object detectors often form the input to an object tracker or pose estimation system \cite{Bewley2016, Jin2017}. In the case of top-down body pose estimation methods, detections can be the first point of failure \cite{Insafutdinov}. As such, the accuracy of the chosen object detector must be considered, together with the choice of using a pre-trained model or training on a more relevant dataset. Finally, we must also consider the use-case of the detector, which must be able to operate in real-time and detect moving objects as they pass by.
+
+\subsubsection{Choice of Detector}
+As commented on in Section \ref{sec:detector}, modern deep learning techniques outperform classical object detectors in accuracy, but are limited by the requirement of a GPU to perform in real-time. Since the Hololens does not have built in support to run object detection networks, Microsoft provides the Azure Cognitive Services API to allow developers to query their system for object detections. The limitation is that this service is not free, and abstracts away the implementation of an object detector. Furthermore, one of the personal goals for this project was to learn more about CNNs in computer vision.
+
+\paragraph{} Taking this into account, we compared several deep learning architectures for object detection. Previous work done in the PRL used Facebook AI Research's (FAIR) Detectron to detect objects \cite{Chacon-Quesada, Detectron2018}. Further discussions with members of the Imperial Computer Vision \& Learning Lab suggested the use of the YOLO object detector \cite{Redmon}, due to its speed and having a lightweight implementation that could be run on lower end GPUS at relatively high frame rates. This prompted the design decision to use the Darknet framework to run the \textbf{YoloV3-Tiny} architecture as the object detection method of choice for this project \cite{Redmon2018}.
+
+\subsubsection{Pre-trained model vs Training}
+
+
+
+\subsection{YACT: Yet Another Crowd Tracker}
+
+\subsubsection{Object Tracking}
+
+\subsubsection{Body Pose Estimation}
+
+\subsubsection{Head Pose Estimation}
 
 \section{Hololens}
 \subsection{Breakdown}
