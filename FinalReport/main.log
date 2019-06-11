@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  10 JUN 2019 22:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  11 JUN 2019 10:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1252,7 +1252,7 @@ File: img/chapter4_analysis/linExDirection.png Graphic file (type png)
 
 <use img/chapter4_analysis/linExDirection.png>
 Package pdftex.def Info: img/chapter4_analysis/linExDirection.png used on input
- line 156.
+ line 131.
 (pdftex.def)             Requested size: 188.21288pt x 141.1575pt.
 
 <img/chapter4_analysis/linExDirectionAmb.png, id=106, 591.6504pt x 444.2196pt>
@@ -1260,7 +1260,7 @@ File: img/chapter4_analysis/linExDirectionAmb.png Graphic file (type png)
 
 <use img/chapter4_analysis/linExDirectionAmb.png>
 Package pdftex.def Info: img/chapter4_analysis/linExDirectionAmb.png used on in
-put line 162.
+put line 137.
 (pdftex.def)             Requested size: 188.21288pt x 141.31267pt.
 
 
@@ -1269,8 +1269,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24 <./img/chapter4_analysis/deepSortMOT.png>]
-<img/chapter4_analysis/pinholecamera.png, id=111, 506.3718pt x 167.6664pt>
+[24 <./img/chapter4_analysis/deepSortMOT.png> <./img/chapter4_analysis/linExDir
+ection.png> <./img/chapter4_analysis/linExDirectionAmb.png>]
+<img/chapter4_analysis/pinholecamera.png, id=113, 506.3718pt x 167.6664pt>
 File: img/chapter4_analysis/pinholecamera.png Graphic file (type png)
 
 <use img/chapter4_analysis/pinholecamera.png>
@@ -1284,8 +1285,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25 <./img/chapter4_analysis/linExDirection.png> <./img/chapter4_analysis/linEx
-DirectionAmb.png> <./img/chapter4_analysis/pinholecamera.png>]
+[25 <./img/chapter4_analysis/pinholecamera.png>]
 <img/chapter4_analysis/keypoints_pose_25.png, id=118, 348.8232pt x 607.5498pt>
 File: img/chapter4_analysis/keypoints_pose_25.png Graphic file (type png)
 
@@ -1294,47 +1294,63 @@ Package pdftex.def Info: img/chapter4_analysis/keypoints_pose_25.png used on in
 put line 195.
 (pdftex.def)             Requested size: 125.47737pt x 218.54163pt.
 
-<img/chapter4_analysis/headPose.jpeg, id=119, 297.11pt x 297.11pt>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26 <./img/chapter4_analysis/keypoints_pose_25.png>]
+<img/chapter4_analysis/hddSystemHeadPose.png, id=123, 787.2612pt x 297.7524pt>
+File: img/chapter4_analysis/hddSystemHeadPose.png Graphic file (type png)
+
+<use img/chapter4_analysis/hddSystemHeadPose.png>
+Package pdftex.def Info: img/chapter4_analysis/hddSystemHeadPose.png used on in
+put line 207.
+(pdftex.def)             Requested size: 418.25368pt x 158.18965pt.
+
+<img/chapter4_analysis/headPose.jpeg, id=124, 297.11pt x 297.11pt>
 File: img/chapter4_analysis/headPose.jpeg Graphic file (type jpg)
 
 <use img/chapter4_analysis/headPose.jpeg>
 Package pdftex.def Info: img/chapter4_analysis/headPose.jpeg used on input line
- 208.
+ 218.
 (pdftex.def)             Requested size: 141.16124pt x 141.16498pt.
 
-<img/chapter4_analysis/deepgazeWhole.png, id=120, 371.3875pt x 252.945pt>
+<img/chapter4_analysis/deepgazeWhole.png, id=125, 371.3875pt x 252.945pt>
 File: img/chapter4_analysis/deepgazeWhole.png Graphic file (type png)
 
 <use img/chapter4_analysis/deepgazeWhole.png>
 Package pdftex.def Info: img/chapter4_analysis/deepgazeWhole.png used on input 
-line 214.
+line 224.
 (pdftex.def)             Requested size: 209.12683pt x 142.4356pt.
 
-Overfull \hbox (2.08049pt too wide) in paragraph at lines 206--218
+Overfull \hbox (2.08049pt too wide) in paragraph at lines 216--228
 [][]  []
  []
 
+) (./main.bbl
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26 <./img/chapter4_analysis/keypoints_pose_25.png>]) (./main.bbl
+[27 <./img/chapter4_analysis/hddSystemHeadPose.png> <./img/chapter4_analysis/he
+adPose.jpeg> <./img/chapter4_analysis/deepgazeWhole.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27 <./img/chapter4_analysis/headPose.jpeg> <./img/chapter4_analysis/deepgazeWh
-ole.png>]
+[28]
 Underfull \hbox (badness 1442) in paragraph at lines 26--31
 []\OT1/ppl/m/n/10.95 Manato Hirabayashi, Shin-pei Kato, Masato Edahiro, Kazuya 
 Takeda, Taiki
  []
 
-[28
+[29
 
 ]
 
@@ -1343,39 +1359,39 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29]
+[30]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30])
+[31])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31] (./main.aux) ) 
+[32] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 19436 strings out of 493029
- 354881 string characters out of 6136235
+ 19442 strings out of 493029
+ 355110 string characters out of 6136235
  474098 words of memory out of 5000000
- 22475 multiletter control sequences out of 15000+600000
+ 22480 multiletter control sequences out of 15000+600000
  24648 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,15n,92p,759b,580s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,15n,92p,772b,580s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}<
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (32 pages, 10521767 bytes).
+Output written on main.pdf (33 pages, 10808734 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
+ 166 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 108 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
