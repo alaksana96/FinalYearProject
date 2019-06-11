@@ -43,16 +43,10 @@ Table. \ref{tab:hardware} summarises the hardware overall system is implemented 
 \section{Human Detection \& Direction System}
 The HDD system is reponsible for detecting and predicting the directions of people in the surroundings of the wheelchair. By taking visual inputs in the form of images from the Hololens, we run an object detector trained on a dataset of pedestrians to detect people and heads. The bounding boxes produced by the object detector are fed as inputs to an object tracker and a body pose estimator. We use the results of these two nodes to infer the direction a detected person is moving in, and publish the results back to the Hololens.
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.85\linewidth]{img/chapter4_analysis/hddSystemDiagram.png}
-	\caption{Individual nodes in HDD System}
-	\label{fig:detailedHDD}
-\end{figure}
 
 We present an overall view of the HDD System, covering the purpose and design of individual components. We also propose the reasoning behind certain design choices, which we cover in more depth later in this report.
 
-\subsection{YOLO Object Detector}
+\subsection{YOLO Object Detector} \label{sec:yolo}
 Object detectors often form the input to an object tracker or pose estimation system \cite{Bewley2016, Jin2017}. In the case of top-down body pose estimation methods, detections can be the first point of failure \cite{Insafutdinov}. As such, the accuracy of the chosen object detector must be considered, together with the choice of using a pre-trained model or training on a more relevant dataset. Finally, we must also consider the use-case of the detector, which must be able to operate in real-time and detect moving objects as they pass by.
 
 \subsubsection{Choice of Detector}
@@ -90,10 +84,8 @@ An advantage of using the YOLO Darknet framework is that it provides trained mod
 \paragraph{Analysis}
 The result of training the YOLOv3-tiny model on the CrowdHuman dataset is that the system is able to better detect smaller figures with obscured bodyparts. The additional ability to detect heads allowed us to explore the use of head pose estimation for direction inference. We go into further detail on the training process in the Implementation section of this report.
 
-\newpage
-
 \subsection{YACHT: Yet Another Crowd Human Tracker}
-The bounding boxes produced by the object detector are consumed by the \textbf{Yet Another Crowd Human Tracker} (YACHT) module. As shown in Figure \ref{fig:detailedHDD}, we can see that the YACHT module is made up of two seperate nodes. The tracker node uses the Deep SORT algorithm to track detected individuals \cite{Wojke2018}, while the pose estimator node uses the OpenPose \cite{Cao2017} network to determine whether a person is walking towards or away from the PWU.
+The bounding boxes produced by the object detector are consumed by the \textbf{Yet Another Crowd Human Tracker} (YACHT) module, which is made up of two nodes. The tracker node uses the Deep SORT algorithm to track detected individuals \cite{Wojke2018}, while the pose estimator node uses the OpenPose \cite{Cao2017} network to determine whether a person is walking towards or away from the PWU.
 
 \paragraph{}In the following sections, we briefly explain the  methods used to infer the directions people are walking in. We also explore the use of head pose estimation, and the limitations that prevented it from making it to the final design.
 
@@ -114,6 +106,7 @@ We explored existing object tracking methods in Section \ref{sec:objectTrack} an
 
 \paragraph{Analysis} The generation and storage of feature descriptors for tracks is an expensive process. For the system to run in real-time, a GPU is needed to accelerate the network. We have made changes to the Deep SORT implementation so it can run on Tensorflow-GPU, which we explain later in this report. This improves the speed significantly, but uses up precious memory. As a result, we had to consider the amount of memory avaiable on the GPU, since the YOLO detector and OpenPose networks also rely on GPU acceleration. After testing, we found that it was possible to run both networks on the GPU at the same time, and we chose to use the Deep Sort method.
 
+\newpage
 \subsubsection{Object Tracking for Direction Inference} \label{sec:objecTrackingDirection}
 An idea we explored was to use the previous image co-ordinates of a tracker to predict the direction a person will walk in. This involved storing the previous states of each track and extrapolating the centroids of each track to determine a direction.
 
@@ -228,15 +221,7 @@ We initially began the project by exploring the use of head-gaze estimation as a
 
 \section{Hololens Unity Application}
 The Microsoft Hololens is a key component of this project since it acts as the main input, visualization and mapping device. To begin, we utilize the world-facing camera, which sees what the PWU is looking at as the input to the HDD system. Further along the processing pipeline, the Hololens Unity application receives the image co-ordinates of human detections and respective directions to build up a map of the objects in the surroundings. The application manages the holograms, keeping track of the world co-ordinates of the objects, which it sends to ARTA for the reactive control of the wheelchair.
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.85\linewidth]{img/chapter4_analysis/hololensSystemDiagram.png}
-	\caption{Unity application running on the Hololens}
-	\label{fig:detailedHololens}
-\end{figure}
-
-%This section covers how the system was designed so that it could be used in conjuction with other ROS nodes despite being a Unity application. It also describes the approach used to develop a front-camera stream, as well as a high level description of the modules responsible for the world mapping and hologram visualization.
+This section covers how the system was designed so that it could be used in conjuction with other ROS nodes despite being a Unity application. It also describes the approach used to develop a front-camera stream, as well as a high level description of the modules responsible for the world mapping and hologram visualization.
 
 \subsection{ROS Node}
 Both ARTA and the HDD are implemented on the Robotic Operating System as ROS nodes, and communicate with their sub-nodes using ROS messages across topics. As explained in Section \ref{sec:systemComms}, we view each of the three sub-systems as individual ROS nodes. However, the Hololens does not natively support ROS.
@@ -254,7 +239,7 @@ Both ARTA and the HDD are implemented on the Robotic Operating System as ROS nod
 \subsection{HoloCamera}
 We begin the Unity application analysis by starting at the beginning of the system pipeline. The HoloCamera is the main visual input to the whole system, prompting the need for a video camera stream to be developed. Previous work done in the PRL have used stationary images taken with the Hololens, but the process of streaming live video from the front camera is a new direction of development. Due to the importance of this step, we spent time researching methods of video streaming to an external computer.
 
-\subsubsection{Video Streaming Choices} 
+\subsubsection{Video Streaming Choices} \label{sec:videoStreaming}
 
 \paragraph{Windows Device Portal} Microsoft provides a portal to access the Hololens device configuration from a web browser. From the portal, we can manage the connection, control what applications are running and most importantly, access a video stream of the front-facing camera. However, after some testing, we realized that there is a delay of 1-2 seconds between the camera and the video rendered on the computer, making it unsuitable for this project.
 
@@ -263,7 +248,7 @@ We begin the Unity application analysis by starting at the beginning of the syst
 \paragraph{Unity Camera Stream} From our research, we found the \textbf{Vulcan Technologies Hololens Camera Stream} Unity addon library. The community support for Unity development on the Hololens is immense, with various libraries such as the Mixed Reality Toolkit (MRTK) and many other Hololens specific tools. Furthermore, the 3D world modelling and spatial mapping capabilities available in Unity extend the capabilities of an augmented reality system. It abstracts away the complexities of the raw Hololens sensor data, reducing the time to market of applications. Finally, previous work in the PRL involving the Hololens have relied on Unity, making it an ideal choice for this project.
 
 \subsubsection{Module Description}
-The HoloCamera module is responsible for accessing the front-camera of the Hololens, compressing the raw image data into a JPEG format and streaming the video frames over the network. Figure \ref{fig:detailedHololens} shows the steps taken by the application to produce a ROS Compressed Image message that is sent to the HDD for object detection. We provide a complete explanation of the process in the implementation part of this report.
+The HoloCamera module is responsible for accessing the front-camera of the Hololens, compressing the raw image data into a JPEG format and streaming the video frames over the network. The application produces a ROS Compressed Image message that is sent to the HDD for object detection. We provide a complete explanation of the process in the implementation part of this report.
 
 \subsection{HoloWorld}
 The goal of this project was to develop an augmented reality system that will assist PWU in navigation by providing visual cues of people in the surroundings. Unity applications have the ability to place holograms in the users surroundings, and render them on the Hololens screen for the user to see. While the majority of the object detection and inference is done on an external computer, the Unity application on the Hololens is used to convert the image co-ordinates of objects into their 3D position in the world. Furthermore, the map of the surroundings is used by the reactive control component of ARTA to avoid collisions with the detected object, making the HoloWorld module a key component of the overall system.
@@ -272,7 +257,7 @@ The goal of this project was to develop an augmented reality system that will as
 Since the Hololens is the intermediary, the World Manager sub-module is responsible for managing all the ROS topics between the Hololens, the HDD system and ARTA. The module receives the image co-ordinates from the HDD system and projects the detected points into the world frame. This returns a set of world co-ordinates which we can assign holographic visualizations and map in the Unity world surrounding the Hololens.
 
 \subsubsection{ARTA Alignment} 
-With most visual SLAM implementations, the camera attached to the mobile robot is fixed to the robots frame. This simplifies the conversion of the image co-ordiates to the robot frame, and then to the world frame. However, when a PWU wears the Hololens, the front-camera has the ability to move in 6 degrees of freedom. Most importantly, the PWU can turn their head to look left and right. This brings up the issue of not knowing whether a detected object is actually infront of the powered wheelchair, or if the PWU is looking at an object to the side. We visualize this problem in Figure \ref{fig:holoArtaAlignment}. When the Hololens camera and wheelchair frames are aligned, it is easy to tell if an object is in the path of the wheelchair.
+With most visual SLAM implementations, the camera attached to the mobile robot is fixed to the robots frame. This simplifies the conversion of the image co-ordiates to the robot frame, and then to the world frame. However, when a PWU wears the Hololens, the front-camera has the ability to move in 6 degrees of freedom. Most importantly, the PWU can turn their head to look left and right. This brings up the issue of not knowing whether a detected object is actually infront of the powered wheelchair, or if the PWU is looking at an object to the side. 
 
 \begin{figure}[ht!]
 	\centering
@@ -281,7 +266,7 @@ With most visual SLAM implementations, the camera attached to the mobile robot i
 	\label{fig:holoArtaAlignment}
 \end{figure}
 
-\paragraph{}For the reactive control component of ARTA, we need to know if an object is in ARTAs current trajectory to determine if a collision will occur. As such, This module is responsible for discerning between people being in front of the wheelchair or to the side. 
+\paragraph{}We visualize this problem in Figure \ref{fig:holoArtaAlignment}. When the Hololens camera and wheelchair frames are aligned, it is easy to tell if an object is in the path of the wheelchair. For the reactive control component of ARTA, we need to know if an object is in ARTAs current trajectory to determine if a collision will occur. As such, This module is responsible for discerning between people being in front of the wheelchair or to the side. 
 
 \section{ARTA}
 The Personal Robotics Lab (PRL) at Imperial College London have built and developed an original smart powered wheelchair known as the Assitive Robotic Transport for Adults (ARTA). The wheelchair was designed to assist adults with mobility issues, and is frequently used in the PRL as a research topic in conjunction with exotic control interfaces such as the Hololens \cite{Zolotas2018, Chacon-Quesada}.

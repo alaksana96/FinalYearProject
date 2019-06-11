@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  11 JUN 2019 17:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  11 JUN 2019 20:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -809,9 +809,8 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \c@algocf=\count164
 \algocf@algoframe=\box54
 \algocf@algobox=\box55
-) (./pythonhighlight.sty
-Package: pythonhighlight 2011/09/19 python code highlighting; provided by Olivi
-er Verdier <olivier.verdier@gmail.com>
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
@@ -821,19 +820,19 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 135.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 151.
+LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 151.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
@@ -897,14 +896,14 @@ Package caption Info: float package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \celsius on input line 135.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 135
+LaTeX Info: Redefining \celsius on input line 151.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 151
 .
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 135.
-Package gensymb Info: Using \upOmega for \ohm on input line 135.
+LaTeX Info: Redefining \ohm on input line 151.
+Package gensymb Info: Using \upOmega for \ohm on input line 151.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -962,7 +961,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 146.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 162.
  (./main.toc [2
 
 ])
@@ -1174,45 +1173,29 @@ Overfull \hbox (2.7131pt too wide) in paragraph at lines 39--40
  have cho-sen to uti-lize the Robotic
  []
 
-<img/chapter4_analysis/hddSystemDiagram.png, id=86, 942.8826pt x 436.029pt>
-File: img/chapter4_analysis/hddSystemDiagram.png Graphic file (type png)
-
-<use img/chapter4_analysis/hddSystemDiagram.png>
-Package pdftex.def Info: img/chapter4_analysis/hddSystemDiagram.png used on inp
-ut line 48.
-(pdftex.def)             Requested size: 355.51817pt x 164.402pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[21 <./img/chapter4_analysis/hddSystemDiagram.png>]
-<img/chapter4_analysis/yoloCoco.png, id=94, 1223.57124pt x 691.58376pt>
+[20] <img/chapter4_analysis/yoloCoco.png, id=89, 1223.57124pt x 691.58376pt>
 File: img/chapter4_analysis/yoloCoco.png Graphic file (type png)
 
 <use img/chapter4_analysis/yoloCoco.png>
 Package pdftex.def Info: img/chapter4_analysis/yoloCoco.png used on input line 
-71.
+65.
 (pdftex.def)             Requested size: 198.66985pt x 112.29132pt.
 
-<img/chapter4_analysis/yoloCH.png, id=95, 1223.57124pt x 689.57625pt>
+<img/chapter4_analysis/yoloCH.png, id=90, 1223.57124pt x 689.57625pt>
 File: img/chapter4_analysis/yoloCH.png Graphic file (type png)
 
 <use img/chapter4_analysis/yoloCH.png>
-Package pdftex.def Info: img/chapter4_analysis/yoloCH.png used on input line 77
+Package pdftex.def Info: img/chapter4_analysis/yoloCH.png used on input line 71
 .
 (pdftex.def)             Requested size: 198.66985pt x 111.96536pt.
 
-Overfull \hbox (2.08049pt too wide) in paragraph at lines 69--81
+Overfull \hbox (2.08049pt too wide) in paragraph at lines 63--75
 [][]  []
  []
 
@@ -1222,13 +1205,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
+[21]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [22 <./img/chapter4_analysis/yoloCoco.png> <./img/chapter4_analysis/yoloCH.png>
-] <img/chapter4_analysis/deepSortMOT.png, id=99, 1814.78pt x 473.77pt>
+] <img/chapter4_analysis/deepSortMOT.png, id=97, 1814.78pt x 473.77pt>
 File: img/chapter4_analysis/deepSortMOT.png Graphic file (type png)
 
 <use img/chapter4_analysis/deepSortMOT.png>
 Package pdftex.def Info: img/chapter4_analysis/deepSortMOT.png used on input li
-ne 109.
+ne 101.
 (pdftex.def)             Requested size: 418.25368pt x 109.1889pt.
 
 
@@ -1238,21 +1228,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [23 <./img/chapter4_analysis/deepSortMOT.png>]
-<img/chapter4_analysis/linExDirection.png, id=103, 481.8pt x 361.35pt>
+<img/chapter4_analysis/linExDirection.png, id=101, 481.8pt x 361.35pt>
 File: img/chapter4_analysis/linExDirection.png Graphic file (type png)
 
 <use img/chapter4_analysis/linExDirection.png>
 Package pdftex.def Info: img/chapter4_analysis/linExDirection.png used on input
- line 123.
+ line 116.
 (pdftex.def)             Requested size: 188.21288pt x 141.1575pt.
 
-<img/chapter4_analysis/linExDirectionAmb.png, id=104, 591.6504pt x 444.2196pt>
+<img/chapter4_analysis/linExDirectionAmb.png, id=102, 591.6504pt x 444.2196pt>
 File: img/chapter4_analysis/linExDirectionAmb.png Graphic file (type png)
 
 <use img/chapter4_analysis/linExDirectionAmb.png>
 Package pdftex.def Info: img/chapter4_analysis/linExDirectionAmb.png used on in
-put line 129.
+put line 122.
 (pdftex.def)             Requested size: 188.21288pt x 141.31267pt.
+
+<img/chapter4_analysis/pinholecamera.png, id=103, 506.3718pt x 167.6664pt>
+File: img/chapter4_analysis/pinholecamera.png Graphic file (type png)
+
+<use img/chapter4_analysis/pinholecamera.png>
+Package pdftex.def Info: img/chapter4_analysis/pinholecamera.png used on input 
+line 162.
+(pdftex.def)             Requested size: 334.60422pt x 110.79575pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1262,20 +1260,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [24 <./img/chapter4_analysis/linExDirection.png> <./img/chapter4_analysis/linEx
 DirectionAmb.png>]
-<img/chapter4_analysis/pinholecamera.png, id=111, 506.3718pt x 167.6664pt>
-File: img/chapter4_analysis/pinholecamera.png Graphic file (type png)
-
-<use img/chapter4_analysis/pinholecamera.png>
-Package pdftex.def Info: img/chapter4_analysis/pinholecamera.png used on input 
-line 169.
-(pdftex.def)             Requested size: 334.60422pt x 110.79575pt.
-
-<img/chapter4_analysis/keypoints_pose_25.png, id=112, 348.8232pt x 607.5498pt>
+<img/chapter4_analysis/keypoints_pose_25.png, id=110, 348.8232pt x 607.5498pt>
 File: img/chapter4_analysis/keypoints_pose_25.png Graphic file (type png)
 
 <use img/chapter4_analysis/keypoints_pose_25.png>
 Package pdftex.def Info: img/chapter4_analysis/keypoints_pose_25.png used on in
-put line 187.
+put line 180.
 (pdftex.def)             Requested size: 83.64944pt x 145.68513pt.
 
 
@@ -1285,31 +1275,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [25 <./img/chapter4_analysis/pinholecamera.png>]
-<img/chapter4_analysis/hddSystemHeadPose.png, id=117, 825.3234pt x 297.7524pt>
+<img/chapter4_analysis/hddSystemHeadPose.png, id=115, 825.3234pt x 297.7524pt>
 File: img/chapter4_analysis/hddSystemHeadPose.png Graphic file (type png)
 
 <use img/chapter4_analysis/hddSystemHeadPose.png>
 Package pdftex.def Info: img/chapter4_analysis/hddSystemHeadPose.png used on in
-put line 199.
+put line 192.
 (pdftex.def)             Requested size: 418.25368pt x 150.89307pt.
 
-<img/chapter4_analysis/headPose.jpeg, id=118, 297.11pt x 297.11pt>
+<img/chapter4_analysis/headPose.jpeg, id=116, 297.11pt x 297.11pt>
 File: img/chapter4_analysis/headPose.jpeg Graphic file (type jpg)
 
 <use img/chapter4_analysis/headPose.jpeg>
 Package pdftex.def Info: img/chapter4_analysis/headPose.jpeg used on input line
- 210.
+ 203.
 (pdftex.def)             Requested size: 141.16124pt x 141.16498pt.
 
-<img/chapter4_analysis/deepgazeWhole.png, id=119, 371.3875pt x 252.945pt>
+<img/chapter4_analysis/deepgazeWhole.png, id=117, 371.3875pt x 252.945pt>
 File: img/chapter4_analysis/deepgazeWhole.png Graphic file (type png)
 
 <use img/chapter4_analysis/deepgazeWhole.png>
 Package pdftex.def Info: img/chapter4_analysis/deepgazeWhole.png used on input 
-line 216.
+line 209.
 (pdftex.def)             Requested size: 209.12683pt x 142.4356pt.
 
-Overfull \hbox (2.08049pt too wide) in paragraph at lines 208--220
+Overfull \hbox (2.08049pt too wide) in paragraph at lines 201--213
 [][]  []
  []
 
@@ -1321,27 +1311,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [26 <./img/chapter4_analysis/keypoints_pose_25.png> <./img/chapter4_analysis/hd
 dSystemHeadPose.png>]
-<img/chapter4_analysis/hololensSystemDiagram.png, id=125, 849.8952pt x 375.804p
-t>
-File: img/chapter4_analysis/hololensSystemDiagram.png Graphic file (type png)
- <use img/chapter4_analysis/hololensSystemDiagram.png>
-Package pdftex.def Info: img/chapter4_analysis/hololensSystemDiagram.png used o
-n input line 234.
-(pdftex.def)             Requested size: 355.51817pt x 157.20009pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[27 <./img/chapter4_analysis/headPose.jpeg> <./img/chapter4_analysis/deepgazeWh
-ole.png> <./img/chapter4_analysis/hololensSystemDiagram.png>]
-<img/chapter4_analysis/holoROSSharpWrapper.png, id=131, 648.021pt x 247.6452pt>
+<img/chapter4_analysis/holoROSSharpWrapper.png, id=123, 648.021pt x 247.6452pt>
 File: img/chapter4_analysis/holoROSSharpWrapper.png Graphic file (type png)
 <use img/chapter4_analysis/holoROSSharpWrapper.png>
 Package pdftex.def Info: img/chapter4_analysis/holoROSSharpWrapper.png used on 
-input line 246.
+input line 231.
 (pdftex.def)             Requested size: 334.60422pt x 127.87311pt.
 
 
@@ -1350,8 +1324,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28 <./img/chapter4_analysis/holoROSSharpWrapper.png>]
-Overfull \hbox (6.48216pt too wide) in paragraph at lines 263--264
+[27 <./img/chapter4_analysis/headPose.jpeg> <./img/chapter4_analysis/deepgazeWh
+ole.png> <./img/chapter4_analysis/holoROSSharpWrapper.png>]
+Overfull \hbox (6.48216pt too wide) in paragraph at lines 248--249
  \OT1/ppl/b/n/10.95 Unity Cam-era Stream[] \OT1/ppl/m/n/10.95 From our re-searc
 h, we found the \OT1/ppl/b/n/10.95 Vul-can Tech-nolo-gies Hololens
  []
@@ -1362,15 +1337,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29]
-<img/chapter4_analysis/holoArtaAligned.png, id=139, 535.2798pt x 180.675pt>
+[28]
+<img/chapter4_analysis/holoArtaAligned.png, id=132, 535.2798pt x 180.675pt>
 File: img/chapter4_analysis/holoArtaAligned.png Graphic file (type png)
 
 <use img/chapter4_analysis/holoArtaAligned.png>
 Package pdftex.def Info: img/chapter4_analysis/holoArtaAligned.png used on inpu
-t line 279.
+t line 264.
 (pdftex.def)             Requested size: 376.42575pt x 127.0616pt.
-)
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29 <./img/chapter4_analysis/holoArtaAligned.png>])
 (./tex/chapter5_implementation.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1378,10 +1360,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30 <./img/chapter4_analysis/holoArtaAligned.png>]
+[30]
 Chapter 5.
 
-<img/chapter5_implementation/detailedSystemDiagram.png, id=145, 608.5134pt x 25
+<img/chapter5_implementation/detailedSystemDiagram.png, id=141, 608.5134pt x 25
 0.536pt>
 File: img/chapter5_implementation/detailedSystemDiagram.png Graphic file (type 
 png)
@@ -1389,16 +1371,84 @@ png)
 Package pdftex.def Info: img/chapter5_implementation/detailedSystemDiagram.png 
 used on input line 6.
 (pdftex.def)             Requested size: 418.25368pt x 172.20483pt.
-)
-(./main.bbl [31
+ [31
 
  <./img/chapter5_implementation/detailedSystemDiagram.png>]
+<img/chapter5_implementation/hddSystemDiagram.png, id=146, 942.8826pt x 436.029
+pt>
+File: img/chapter5_implementation/hddSystemDiagram.png Graphic file (type png)
+ <use img/chapter5_implementation/hddSystemDiagram.png>
+Package pdftex.def Info: img/chapter5_implementation/hddSystemDiagram.png used 
+on input line 22.
+(pdftex.def)             Requested size: 418.25368pt x 193.41685pt.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 27.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 27.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 27.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 27.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 27.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 5.21004pt on input line 27.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32 <./img/chapter5_implementation/hddSystemDiagram.png>]
+Overfull \hbox (2.65942pt too wide) in paragraph at lines 54--55
+\OT1/ppl/m/n/10.95 As men-tioned in Sec-tion 4.2.1[], we chose to use the YOLOv
+3-tiny ar-chi-tec-ture and trained
+ []
+
+
+Overfull \hbox (7.08296pt too wide) in paragraph at lines 62--63
+ [] \OT1/ppl/m/n/10.95 Dark-net has ba-sic Python wrap-pers around the com-pile
+d li-brary which con-vert Python
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33]
+<img/chapter5_implementation/hololensSystemDiagram.png, id=154, 849.8952pt x 37
+5.804pt>
+File: img/chapter5_implementation/hololensSystemDiagram.png Graphic file (type 
+png)
+ <use img/chapter5_implementation/hololensSystemDiagram.png>
+Package pdftex.def Info: img/chapter5_implementation/hololensSystemDiagram.png 
+used on input line 91.
+(pdftex.def)             Requested size: 355.51817pt x 157.20009pt.
+)
+(./main.bbl
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35 <./img/chapter5_implementation/hololensSystemDiagram.png>]
 Underfull \hbox (badness 1442) in paragraph at lines 26--31
 []\OT1/ppl/m/n/10.95 Manato Hirabayashi, Shin-pei Kato, Masato Edahiro, Kazuya 
 Takeda, Taiki
  []
 
-[32
+[36
 
 ]
 
@@ -1407,39 +1457,46 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33]
+[37]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34])
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 249--252
+[]\OT1/ppl/m/n/10.95 Joseph Red-mon.  Dark-net: Open Source Neu-ral Net-works i
+n C.
+ []
+
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35] (./main.aux) ) 
+[39] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 19466 strings out of 493029
- 356000 string characters out of 6136235
- 474098 words of memory out of 5000000
- 22497 multiletter control sequences out of 15000+600000
- 24648 words of font info for 66 fonts, out of 8000000 for 9000
+ 19966 strings out of 493029
+ 360765 string characters out of 6136235
+ 524547 words of memory out of 5000000
+ 22995 multiletter control sequences out of 15000+600000
+ 33228 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,15n,92p,871b,580s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,15n,92p,871b,1380s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}<
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (36 pages, 11243768 bytes).
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
+rw/palatino/uplri8a.pfb>
+Output written on main.pdf (40 pages, 11241090 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
+ 201 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  128 words of extra memory for PDF output out of 10000 (max. 10000000)
 

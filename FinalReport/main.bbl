@@ -245,4 +245,9 @@ Massimiliano Patacchiola and Angelo Cangelosi.
   and adaptive gradient methods}.
 \newblock {\em Pattern Recognition}, 71:132--143, 2017.
 
+\bibitem{darknet13}
+Joseph Redmon.
+\newblock {Darknet: Open Source Neural Networks in C}.
+\newblock $\backslash$url{\{}http://pjreddie.com/darknet/{\}}.
+
 \end{thebibliography}
