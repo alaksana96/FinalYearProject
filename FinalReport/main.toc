@@ -133,5 +133,22 @@
 \contentsline {subsubsection}{Darknet in ROS}{33}
 \contentsline {paragraph}{}{34}
 \contentsline {paragraph}{}{34}
-\contentsline {subsubsection}{YOLO algorithm}{34}
-\contentsline {section}{\numberline {5.2}Hololens Unity Application}{34}
+\contentsline {subsubsection}{YOLO Detection Algorithm}{34}
+\contentsline {subsubsection}{YOLOv3 Tiny vs YOLOv3}{34}
+\contentsline {subsubsection}{Training YOLOv3 Tiny}{35}
+\contentsline {paragraph}{CrowdHuman}{35}
+\contentsline {paragraph}{Annotations}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {paragraph}{Converting Annotations}{36}
+\contentsline {paragraph}{Training Parameters}{36}
+\contentsline {paragraph}{Training Process}{37}
+\contentsline {subsubsection}{Evaluating Trained Model}{37}
+\contentsline {subsubsection}{ROS Node}{37}
+\contentsline {paragraph}{Visualization and FPS}{37}
+\contentsline {paragraph}{ROS Topic}{37}
+\contentsline {subsection}{\numberline {5.1.3}YACHT Tracker}{37}
+\contentsline {subsection}{\numberline {5.1.4}YACHT Direction}{37}

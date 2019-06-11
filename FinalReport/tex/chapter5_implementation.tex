@@ -79,16 +79,100 @@ def nparray_to_image(img):
 	return image
 \end{lstlisting}
 
-We also wrote wrappers for the detection and return of the image bounding box co-ordinates which are used in the rest of the HDD system. The full code listing can be found in the appendix \footnote{https://github.com/alaksana96/darknet-crowdhuman}\footnote{https://github.com/alaksana96/fyp\_yolo}.
+Python wrappers were written for the detection and return of the image bounding box co-ordinates which are used in the rest of the HDD system. We also created ROS messages for the bounding box detections, which allows the Darknet YOLO node to communicate with other nodes in the HDD system. The full code listing can be found in the appendix \footnote{https://github.com/alaksana96/darknet-crowdhuman}\footnote{https://github.com/alaksana96/fyp\_yolo}.
 
-\subsubsection{YOLO algorithm}
-The YOLO algorithm divides an input image into an $S\times S$ grid. Each grid cell can predict one object
+\subsubsection{YOLO Detection Algorithm}
+The YOLO algorithm divides an input image into an $S\times S$ grid. Each grid cell can predict one object, and a cell can predict a fixed number of bounding boxes $B$, which we visualize in Figure \ref{fig:yoloViz}. The predicted bounding box is chosen from the set of $B$ boxes with the highest box confidence score, which is a measure of how likely the box contains an object and how accurate the boundry box is. It also predicts the conditional class probability, which is the probability a detected object belongs to a certain class. 
 
-\section{Hololens Unity Application}
+\begin{figure}[ht]
+	\begin{subfigure}[b]{.45\textwidth}
+		\centering
+		\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/yoloAlgo1.png}
+		\caption{A grid cell can make $B$ predictions, in this example $B=2$}
+	\end{subfigure}%
+	\hspace{\fill} 
+	\begin{subfigure}[b]{.45\textwidth}
+		\centering
+		\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/yoloAlgo.png}
+		\caption{The bounding box with higher box confidence score is used}
+	\end{subfigure}
+	\vspace{-1\baselineskip}
+	\begin{center}
+		\caption{Visualization of YOLO person detection}
+		\label{fig:yoloViz}
+	\end{center}
+	\vspace{-2\baselineskip}
+\end{figure}
+
+
+\subsubsection{YOLOv3 Tiny vs YOLOv3}
+While testing out the different models, we noticed that the YOLOv3 model was consistently crashing and causing segmentation faults. On further investigation, we noticed that this was due to the network using up all 4GB of video memory available on the GPU. Looking at the architectures, YOLOv3, in comparison to its predecessors, YOLO and YOLOv2, is a much larger network which has 106 fully convolutional layers. This also reduces the framerates that can be achieved on video. As such, we decided to use YOLOv3 Tiny, a shallower variant of the network that is suitable for real-time image detection. Although the tiny version is not as accurate, it is much lighter on memory, using less than 1GB video RAM, making it a suitable choice for this project.
+
+\subsubsection{Training YOLOv3 Tiny}
+\paragraph{CrowdHuman} The CrowdHuman dataset \cite{Shao} is a benchmark dataset to better evaluate detectors in crowd scenarios. The most important features of the dataset are the size, the quality of the annotations and the diversity. Each image contains multiple people with varying degrees of occlusion, which allows for object detectors to better learn partial human repesentations. 
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.85\linewidth]{img/chapter5_implementation/hololensSystemDiagram.png}
-	\caption{Unity application running on the Hololens}
-	\label{fig:detailedHololens}
+	\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/crowdHumanStats.png}
+	\caption{A comparison of CrowdHuman to other person image datasets \cite{Shao}}
+	\label{fig:crowdHumanStats}
 \end{figure}
+
+As can be seen from Figure \ref{fig:crowdHumanStats}, the dataset contains far more diversity in people. By examining the dataset, we can see that it contains people in a wide array of situations, at varying distances with different body poses.
+
+\paragraph{Annotations} The CrowdHuman dataset provides its annotations in the \code{.odtg} format, which is a variant of JSON. Each line in the annotation file corresponds to a JSON containing the image ID and the bounding boxes. The annotations include boxes for the \textit{visible box}, \textit{full body box} and \textit{head box}. For the purposes of this training, we chose to use the full body and head boxes only. We wanted the detector be able to learn to predict occluded individuals, and we also wanted to experiment with head pose estimation. Each bounding box is annotated as such:
+
+\paragraph{}\code{[x, y, width, height]} 
+
+\paragraph{} Where \code{x,y} is the top-left corner of the bounding box. The \code{width} and \code{height} are also given in image co-ordinate pixels.
+
+\paragraph{}On the other hand, to train YOLO on Darknet, the annotations must be given in a completely different format. The Darknet annotation format is as such:
+
+\paragraph{}\code{<object-class> <x> <y> <width> <height>}
+
+\paragraph{}Since Darknet accepts images of any size, it works with image units which are scaled relative to the size of the image. As such, all the values for the bounding boxes are between $0$ and $1$. Furthermore, the \code{x, y} values in the annotation are measured from the centre of the bounding box.  
+
+\paragraph{Converting Annotations} To be able to use the CrowdHuman dataset as a training set for the YOLOv3-tiny model, we had to write several scripts that converted the annotations to the Darknet format. We have included these scripts in the Appendix should the reader wish to convert the dataset themselves\footnote{https://github.com/alaksana96/darknet-crowdhuman/blob/master/README.md}.
+
+\paragraph{Training Parameters} Before beginning training, we set up the model configuration file to learn 2 classes, head and body, as well as to use batches of 32 divided into subdivision of 8 images. This means that only 8 images will be loaded into memory at a time, so as not to run out of GPU memory. However, this does mean the training process will take longer. We also reduce the size of the training images to $416\times 416$ pixels, to further reduce the GPU usage.
+
+\begin{lstlisting}[language=Mymatlab,caption={Training parameters}]
+	batch=32 %Training parameters for YOLO Tiny
+	subdivisions=8
+	width=416
+	height=416
+	channels=3
+	momentum=0.9
+	decay=0.0005
+\end{lstlisting}
+
+Resizing the input training images allows the algorithm to divide the image into a $S\times S$ grid. Generally, the larger the height and width, the better the predictions, since the image can be divided into more grid cells. This is a trade-off we had to make in order to be able to train the network on a mid-range GPU.
+
+\paragraph{Training Process} We left the model to train overnight, creating backups of the weights every 1000 iterations. The following day, after reaching 30,000 iterations, we decided to stop training the network. This is because the average loss error and total loss had stopped decreasing for several hours, and was hovering around $29.134$. We reasoned that the network had reached a minima, and further training would be redundant, since it would just overfit the dataset. The final weights are available in the file \code{yolov3-tiny-crowdhuman.backup} .
+
+\subsubsection{Evaluating Trained Model}
+
+
+\subsubsection{ROS Node}
+
+\paragraph{Visualization and FPS}
+
+\paragraph{ROS Topic}
+
+
+\subsection{YACHT Tracker}
+
+
+\subsection{YACHT Direction}
+
+
+
+
+%\section{Hololens Unity Application}
+%
+%\begin{figure}[ht]
+%	\centering
+%	\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/hololensSystemDiagram.png}
+%	\caption{Unity application running on the Hololens}
+%	\label{fig:detailedHololens}
+%\end{figure}
