@@ -108,7 +108,18 @@
 \contentsline {subsubsection}{Head Pose Estimation}{27}
 \contentsline {paragraph}{Head Detection}{27}
 \contentsline {paragraph}{Reasons for removal}{27}
-\contentsline {section}{\numberline {4.3}Hololens}{28}
-\contentsline {subsection}{\numberline {4.3.1}Breakdown}{28}
-\contentsline {section}{\numberline {4.4}ARTA}{28}
-\contentsline {subsection}{\numberline {4.4.1}Breakdown}{28}
+\contentsline {section}{\numberline {4.3}Hololens Unity Application}{28}
+\contentsline {subsection}{\numberline {4.3.1}ROS}{28}
+\contentsline {paragraph}{}{28}
+\contentsline {subsection}{\numberline {4.3.2}HoloCamera}{29}
+\contentsline {subsubsection}{Video Streaming Choices}{29}
+\contentsline {paragraph}{Windows Device Portal}{29}
+\contentsline {paragraph}{Microsoft HoloLensForCV}{29}
+\contentsline {paragraph}{Unity Camera Stream}{29}
+\contentsline {subsubsection}{Module Description}{30}
+\contentsline {subsection}{\numberline {4.3.3}HoloWorld}{30}
+\contentsline {subsubsection}{World Manager}{30}
+\contentsline {subsubsection}{ARTA Alignment}{30}
+\contentsline {paragraph}{}{31}
+\contentsline {section}{\numberline {4.4}ARTA}{31}
+\contentsline {subsection}{\numberline {4.4.1}Breakdown}{31}
