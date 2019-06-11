@@ -84,14 +84,14 @@
 \contentsline {subsection}{\numberline {4.1.2}System Communication}{20}
 \contentsline {subsubsection}{Robotic Operating System}{20}
 \contentsline {paragraph}{ROS Topics}{20}
-\contentsline {section}{\numberline {4.2}Human Detection \& Direction System}{21}
+\contentsline {section}{\numberline {4.2}Human Detection \& Direction System}{20}
 \contentsline {subsection}{\numberline {4.2.1}YOLO Object Detector}{21}
-\contentsline {subsubsection}{Choice of Detector}{22}
-\contentsline {paragraph}{}{22}
+\contentsline {subsubsection}{Choice of Detector}{21}
+\contentsline {paragraph}{}{21}
 \contentsline {subsubsection}{Pre-trained Model vs Training}{22}
 \contentsline {paragraph}{Comparing Models}{22}
-\contentsline {paragraph}{Pedestrian Dataset}{23}
-\contentsline {paragraph}{Analysis}{23}
+\contentsline {paragraph}{Pedestrian Dataset}{22}
+\contentsline {paragraph}{Analysis}{22}
 \contentsline {subsection}{\numberline {4.2.2}YACHT: Yet Another Crowd Human Tracker}{23}
 \contentsline {paragraph}{}{23}
 \contentsline {subsubsection}{YACHT Tracker: Object Tracking}{23}
@@ -99,27 +99,28 @@
 \contentsline {paragraph}{Deep SORT}{23}
 \contentsline {paragraph}{Analysis}{24}
 \contentsline {subsubsection}{Object Tracking for Direction Inference}{24}
-\contentsline {paragraph}{Algorithm}{25}
+\contentsline {paragraph}{Algorithm}{24}
 \contentsline {paragraph}{Issues}{25}
 \contentsline {paragraph}{}{25}
-\contentsline {subsubsection}{YACHT Direction: Body Pose Estimation}{26}
-\contentsline {paragraph}{Object Detectors \& Bottom-Up Approaches}{26}
-\contentsline {paragraph}{Keypoint Estimation}{26}
-\contentsline {subsubsection}{Head Pose Estimation}{27}
+\contentsline {subsubsection}{YACHT Direction: Body Pose Estimation}{25}
+\contentsline {paragraph}{Object Detectors \& Bottom-Up Approaches}{25}
+\contentsline {paragraph}{Keypoint Estimation}{25}
+\contentsline {subsubsection}{Head Pose Estimation}{26}
 \contentsline {paragraph}{Head Detection}{27}
 \contentsline {paragraph}{Reasons for removal}{27}
-\contentsline {section}{\numberline {4.3}Hololens Unity Application}{28}
-\contentsline {subsection}{\numberline {4.3.1}ROS}{28}
+\contentsline {section}{\numberline {4.3}Hololens Unity Application}{27}
+\contentsline {subsection}{\numberline {4.3.1}ROS Node}{27}
 \contentsline {paragraph}{}{28}
-\contentsline {subsection}{\numberline {4.3.2}HoloCamera}{29}
+\contentsline {subsection}{\numberline {4.3.2}HoloCamera}{28}
 \contentsline {subsubsection}{Video Streaming Choices}{29}
 \contentsline {paragraph}{Windows Device Portal}{29}
 \contentsline {paragraph}{Microsoft HoloLensForCV}{29}
 \contentsline {paragraph}{Unity Camera Stream}{29}
-\contentsline {subsubsection}{Module Description}{30}
-\contentsline {subsection}{\numberline {4.3.3}HoloWorld}{30}
+\contentsline {subsubsection}{Module Description}{29}
+\contentsline {subsection}{\numberline {4.3.3}HoloWorld}{29}
 \contentsline {subsubsection}{World Manager}{30}
 \contentsline {subsubsection}{ARTA Alignment}{30}
-\contentsline {paragraph}{}{31}
-\contentsline {section}{\numberline {4.4}ARTA}{31}
+\contentsline {paragraph}{}{30}
+\contentsline {section}{\numberline {4.4}ARTA}{30}
 \contentsline {subsection}{\numberline {4.4.1}Breakdown}{31}
+\contentsline {chapter}{\numberline {5}Implementation}{32}

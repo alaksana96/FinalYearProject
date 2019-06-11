@@ -1,4 +1,4 @@
-\chapter{Analysis and Design}
+\chapter{Analysis and Design} \label{chapter:4}
 This chapter gives an overview of the overall system and explains the design choices made. Throughout the project, we explored various methods to implement a real-time augmented reality system for PWUs operating a wheelchair. Naturally, the structure and goals of the project have developed since the interim report, and we review the differences between the initial goals and final product .
 
 \section{Design Overview}
@@ -36,16 +36,7 @@ Table. \ref{tab:hardware} summarises the hardware overall system is implemented 
 
 \subsection{System Communication} \label{sec:systemComms}
 
-\subsubsection{Robotic Operating System} Since the project spans multiple operating systems, we have chosen to utilize the Robotic Operating System (ROS) as a means of communication between the devices. In ROS, a \textit{node} is defined as a process that performs a computation. A node can be made up of smaller nodes that perform specific computations that serve the needs of the parent node. 
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=1.0\linewidth]{img/chapter4_analysis/detailedSystemDiagram.png}
-	\caption{System diagram detailing individual components}
-	\label{fig:detailedHL}
-\end{figure}
-
-We can think of the three major systems as large ROS nodes that consists of smaller nodes that run individiual tasks, such as creating the camera stream, or detecting objects. We visualize the breakdown of the system into nodes in Figure. \ref{fig:detailedHL}.
+\subsubsection{Robotic Operating System} Since the project spans multiple operating systems, we have chosen to utilize the Robotic Operating System (ROS) as a means of communication between the devices. In ROS, a \textit{node} is defined as a process that performs a computation. A node can be made up of smaller nodes that perform specific computations that serve the needs of the parent node. We can think of the three major systems as large ROS nodes that consists of smaller nodes that run individiual tasks, such as creating the camera stream, or detecting objects.
 
 \paragraph{ROS Topics} Nodes in ROS communicate with one another by publishing data in the form of \textit{messages} which get broadcasted over a \textit{topic}. Nodes can choose what data they receive by subscribing to topics. This method allows for nodes running on different devices to communicate with each other, regardless of the operating system. The nodes are unaware that the data it receives is published from a node running on a seperate computer, making ROS a perfect choice for communication in this design.
 
@@ -98,6 +89,8 @@ An advantage of using the YOLO Darknet framework is that it provides trained mod
 
 \paragraph{Analysis}
 The result of training the YOLOv3-tiny model on the CrowdHuman dataset is that the system is able to better detect smaller figures with obscured bodyparts. The additional ability to detect heads allowed us to explore the use of head pose estimation for direction inference. We go into further detail on the training process in the Implementation section of this report.
+
+\newpage
 
 \subsection{YACHT: Yet Another Crowd Human Tracker}
 The bounding boxes produced by the object detector are consumed by the \textbf{Yet Another Crowd Human Tracker} (YACHT) module. As shown in Figure \ref{fig:detailedHDD}, we can see that the YACHT module is made up of two seperate nodes. The tracker node uses the Deep SORT algorithm to track detected individuals \cite{Wojke2018}, while the pose estimator node uses the OpenPose \cite{Cao2017} network to determine whether a person is walking towards or away from the PWU.
@@ -245,7 +238,7 @@ The Microsoft Hololens is a key component of this project since it acts as the m
 
 This section covers how the system was designed so that it could be used in conjuction with other ROS nodes despite being a Unity application. It also describes the approach used to develop a front-camera stream, as well as a high level description of the modules responsible for the world mapping and hologram visualization.
 
-\subsection{ROS}
+\subsection{ROS Node}
 Both ARTA and the HDD are implemented on the Robotic Operating System as ROS nodes, and communicate with their sub-nodes using ROS messages across topics. As explained in Section \ref{sec:systemComms}, we view each of the three sub-systems as individual ROS nodes. However, the Hololens does not natively support ROS.
 
 \paragraph{} Since ROS is unable to be run on UWP, we had to use the \textbf{ROS\#} library implemented by Siemens. This allows Unity/UWP applications to send and receive data in the form of ROS messages across topics. Figure \ref{fig:holoROSWrapper} shows how the Unity application is viewed from other ROS nodes as just another node which it can communicate with using topics. The full implementation details of the ROS wrapping are covered later in this report. 
@@ -290,6 +283,8 @@ With most visual SLAM implementations, the camera attached to the mobile robot i
 \paragraph{}For the reactive control component of ARTA, we need to know if an object is in ARTAs current trajectory to determine if a collision will occur. As such, This module is responsible for discerning between people being in front of the wheelchair or to the side. 
 
 \section{ARTA}
+The Personal Robotics Lab (PRL) at Imperial College London have built and developed an original smart powered wheelchair known as the Assitive Robotic Transport for Adults (ARTA). The wheelchair was designed to assist adults with mobility issues, and is frequently used in the PRL as a research topic in conjunction with exotic control interfaces such as the Hololens \cite{Zolotas2018, Chacon-Quesada}.
+
 \subsection{Breakdown}
 
-
+To Write
