@@ -88,7 +88,7 @@
 \contentsline {subsection}{\numberline {4.2.1}YOLO Object Detector}{21}
 \contentsline {subsubsection}{Choice of Detector}{21}
 \contentsline {paragraph}{}{21}
-\contentsline {subsubsection}{Pre-trained Model vs Training}{22}
+\contentsline {subsubsection}{Pre-trained Model vs Training}{21}
 \contentsline {paragraph}{Comparing Models}{22}
 \contentsline {paragraph}{Pedestrian Dataset}{22}
 \contentsline {paragraph}{Analysis}{22}
@@ -106,21 +106,21 @@
 \contentsline {paragraph}{Object Detectors \& Bottom-Up Approaches}{25}
 \contentsline {paragraph}{Keypoint Estimation}{25}
 \contentsline {subsubsection}{Head Pose Estimation}{26}
-\contentsline {paragraph}{Head Detection}{27}
+\contentsline {paragraph}{Head Detection}{26}
 \contentsline {paragraph}{Reasons for removal}{27}
 \contentsline {section}{\numberline {4.3}Hololens Unity Application}{27}
-\contentsline {subsection}{\numberline {4.3.1}ROS Node}{27}
+\contentsline {subsection}{\numberline {4.3.1}ROS Node}{28}
 \contentsline {paragraph}{}{28}
 \contentsline {subsection}{\numberline {4.3.2}HoloCamera}{28}
-\contentsline {subsubsection}{Video Streaming Choices}{29}
-\contentsline {paragraph}{Windows Device Portal}{29}
-\contentsline {paragraph}{Microsoft HoloLensForCV}{29}
+\contentsline {subsubsection}{Video Streaming Choices}{28}
+\contentsline {paragraph}{Windows Device Portal}{28}
+\contentsline {paragraph}{Microsoft HoloLensForCV}{28}
 \contentsline {paragraph}{Unity Camera Stream}{29}
 \contentsline {subsubsection}{Module Description}{29}
 \contentsline {subsection}{\numberline {4.3.3}HoloWorld}{29}
-\contentsline {subsubsection}{World Manager}{30}
+\contentsline {subsubsection}{World Manager}{29}
 \contentsline {subsubsection}{ARTA Alignment}{30}
 \contentsline {paragraph}{}{30}
 \contentsline {section}{\numberline {4.4}ARTA}{30}
-\contentsline {subsection}{\numberline {4.4.1}Breakdown}{31}
-\contentsline {chapter}{\numberline {5}Implementation}{32}
+\contentsline {subsection}{\numberline {4.4.1}Breakdown}{30}
+\contentsline {chapter}{\numberline {5}Implementation}{31}

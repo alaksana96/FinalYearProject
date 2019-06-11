@@ -45,7 +45,7 @@ The HDD system is reponsible for detecting and predicting the directions of peop
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=1.0\linewidth]{img/chapter4_analysis/hddSystemDiagram.png}
+	\includegraphics[width=0.85\linewidth]{img/chapter4_analysis/hddSystemDiagram.png}
 	\caption{Individual nodes in HDD System}
 	\label{fig:detailedHDD}
 \end{figure}
@@ -184,7 +184,7 @@ The OpenPose framework provides several pre-trained models for body pose keypoin
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.3\linewidth]{img/chapter4_analysis/keypoints_pose_25.png}
+	\includegraphics[width=0.2\linewidth]{img/chapter4_analysis/keypoints_pose_25.png}
 	\caption{Keypoints produced by the BODY\_25 model \cite{Cao2017}}
 	\label{fig:bodyKeyPoints}
 \end{figure}
@@ -231,24 +231,25 @@ The Microsoft Hololens is a key component of this project since it acts as the m
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=1.0\linewidth]{img/chapter4_analysis/hololensSystemDiagram.png}
+	\includegraphics[width=0.85\linewidth]{img/chapter4_analysis/hololensSystemDiagram.png}
 	\caption{Unity application running on the Hololens}
 	\label{fig:detailedHololens}
 \end{figure}
 
-This section covers how the system was designed so that it could be used in conjuction with other ROS nodes despite being a Unity application. It also describes the approach used to develop a front-camera stream, as well as a high level description of the modules responsible for the world mapping and hologram visualization.
+%This section covers how the system was designed so that it could be used in conjuction with other ROS nodes despite being a Unity application. It also describes the approach used to develop a front-camera stream, as well as a high level description of the modules responsible for the world mapping and hologram visualization.
 
 \subsection{ROS Node}
 Both ARTA and the HDD are implemented on the Robotic Operating System as ROS nodes, and communicate with their sub-nodes using ROS messages across topics. As explained in Section \ref{sec:systemComms}, we view each of the three sub-systems as individual ROS nodes. However, the Hololens does not natively support ROS.
-
-\paragraph{} Since ROS is unable to be run on UWP, we had to use the \textbf{ROS\#} library implemented by Siemens. This allows Unity/UWP applications to send and receive data in the form of ROS messages across topics. Figure \ref{fig:holoROSWrapper} shows how the Unity application is viewed from other ROS nodes as just another node which it can communicate with using topics. The full implementation details of the ROS wrapping are covered later in this report. 
 
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=0.8\linewidth]{img/chapter4_analysis/holoROSSharpWrapper.png}
 	\caption{ROS\# acts as a ROS wrapper around the Unity application, allowing for seamless communication with other ROS nodes}
 	\label{fig:holoROSWrapper}
+	\vspace{-1\baselineskip}
 \end{figure}
+
+\paragraph{} Since ROS is unable to be run on UWP, we had to use the \textbf{ROS\#} library implemented by Siemens. This allows Unity/UWP applications to send and receive data in the form of ROS messages across topics. Figure \ref{fig:holoROSWrapper} shows how the Unity application is viewed from other ROS nodes as just another node which it can communicate with using topics. The full implementation details of the ROS wrapping are covered later in this report. 
 
 \subsection{HoloCamera}
 We begin the Unity application analysis by starting at the beginning of the system pipeline. The HoloCamera is the main visual input to the whole system, prompting the need for a video camera stream to be developed. Previous work done in the PRL have used stationary images taken with the Hololens, but the process of streaming live video from the front camera is a new direction of development. Due to the importance of this step, we spent time researching methods of video streaming to an external computer.
