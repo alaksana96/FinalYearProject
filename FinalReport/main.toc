@@ -134,11 +134,10 @@
 \contentsline {paragraph}{}{34}
 \contentsline {paragraph}{}{34}
 \contentsline {subsubsection}{YOLO Detection Algorithm}{34}
-\contentsline {subsubsection}{YOLOv3 Tiny vs YOLOv3}{34}
+\contentsline {subsubsection}{YOLOv3 Tiny vs YOLOv3}{35}
 \contentsline {subsubsection}{Training YOLOv3 Tiny}{35}
 \contentsline {paragraph}{CrowdHuman}{35}
 \contentsline {paragraph}{Annotations}{36}
-\contentsline {paragraph}{}{36}
 \contentsline {paragraph}{}{36}
 \contentsline {paragraph}{}{36}
 \contentsline {paragraph}{}{36}
@@ -147,8 +146,22 @@
 \contentsline {paragraph}{Training Parameters}{36}
 \contentsline {paragraph}{Training Process}{37}
 \contentsline {subsubsection}{Evaluating Trained Model}{37}
-\contentsline {subsubsection}{ROS Node}{37}
-\contentsline {paragraph}{Visualization and FPS}{37}
-\contentsline {paragraph}{ROS Topic}{37}
-\contentsline {subsection}{\numberline {5.1.3}YACHT Tracker}{37}
-\contentsline {subsection}{\numberline {5.1.4}YACHT Direction}{37}
+\contentsline {paragraph}{Hololens Videos}{37}
+\contentsline {paragraph}{}{37}
+\contentsline {subsubsection}{ROS Node}{38}
+\contentsline {paragraph}{ROS Topics}{38}
+\contentsline {paragraph}{}{38}
+\contentsline {subsection}{\numberline {5.1.3}YACHT Package}{39}
+\contentsline {paragraph}{ROS Communication}{39}
+\contentsline {subsection}{\numberline {5.1.4}YACHT: Tracker}{39}
+\contentsline {subsubsection}{Deep SORT}{39}
+\contentsline {paragraph}{Installation \& Setup}{39}
+\contentsline {subsubsection}{Deep Association Metric}{39}
+\contentsline {subsubsection}{Tracking}{39}
+\contentsline {subsubsection}{ROS Topic}{39}
+\contentsline {subsection}{\numberline {5.1.5}YACHT: Direction}{39}
+\contentsline {subsubsection}{OpenPose}{39}
+\contentsline {paragraph}{Installation \& Setup}{39}
+\contentsline {subsubsection}{KeyPoint Estimation}{39}
+\contentsline {subsubsection}{Detection Matching}{39}
+\contentsline {subsubsection}{ROS Topic}{39}

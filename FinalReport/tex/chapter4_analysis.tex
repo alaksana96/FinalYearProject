@@ -54,7 +54,7 @@ As commented on in Section \ref{sec:detector}, modern deep learning techniques o
 
 \paragraph{} Taking this into account, we compared several deep learning architectures for object detection. Previous work done in the PRL used Facebook AI Research's (FAIR) Detectron to detect objects \cite{Chacon-Quesada, Detectron2018, Rena}. Further discussions with members of the Imperial Computer Vision \& Learning Lab suggested the use of the YOLO object detector \cite{Redmon}, due to its speed and having a lightweight implementation that could be run on lower end GPUS at relatively high frame rates. This prompted the design decision to use the Darknet framework to use the \textbf{YOLOv3-tiny} architecture as the object detection method of choice for this project \cite{Redmon2018}.
 
-\subsubsection{Pre-trained Model vs Training}
+\subsubsection{Pre-trained Model vs Training} \label{sec:designYOLO}
 An advantage of using the YOLO Darknet framework is that it provides trained models which can detect multiple object classes, including the class \textit{Person}. One of the pre-trained models is the YOLOv3-tiny architecture trained on the Common Objects in Context (COCO) dataset \cite{Lin}.
 
 \paragraph{Comparing Models} To compare the accuracy of the bounding boxes produced by pre-trained model, sample videos were recorded using the Hololens and used as a base comparison point. It was quickly shown that although the COCO trained model can detect individuals, or multiple people who are well spaced out, it had difficulty in differentiating between people who are close together or slighlty occluded. Figure \ref{fig:yoloCHvsCoco} highlights the issue of the COCO model failing to detect small people close together.
@@ -207,7 +207,7 @@ We initially began the project by exploring the use of head-gaze estimation as a
 	\begin{subfigure}[b]{.5\textwidth}
 		\centering
 		\includegraphics[width=1.0\linewidth]{img/chapter4_analysis/deepgazeWhole.png}
-		\caption{Head pose estimation on smaller people}
+		\caption{Estimation on people at a distance}
 	\end{subfigure}
 	\vspace{-2\baselineskip}
 	\begin{center}

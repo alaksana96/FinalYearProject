@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  11 JUN 2019 22:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  12 JUN 2019 12:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1379,20 +1379,20 @@ pt>
 File: img/chapter5_implementation/hddSystemDiagram.png Graphic file (type png)
  <use img/chapter5_implementation/hddSystemDiagram.png>
 Package pdftex.def Info: img/chapter5_implementation/hddSystemDiagram.png used 
-on input line 22.
+on input line 21.
 (pdftex.def)             Requested size: 418.25368pt x 193.41685pt.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 27.
+(Font)              scaled to size 9.37807pt on input line 26.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 27.
+(Font)              scaled to size 7.29405pt on input line 26.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 27.
+(Font)              scaled to size 5.21004pt on input line 26.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 27.
+(Font)              scaled to size 9.37807pt on input line 26.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 27.
+(Font)              scaled to size 7.29405pt on input line 26.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 27.
+(Font)              scaled to size 5.21004pt on input line 26.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1401,13 +1401,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [32 <./img/chapter5_implementation/hddSystemDiagram.png>]
-Overfull \hbox (2.65942pt too wide) in paragraph at lines 54--55
-\OT1/ppl/m/n/10.95 As men-tioned in Sec-tion 4.2.1[], we chose to use the YOLOv
-3-tiny ar-chi-tec-ture and trained
- []
-
-
-Overfull \hbox (7.08296pt too wide) in paragraph at lines 62--63
+Overfull \hbox (7.08296pt too wide) in paragraph at lines 61--62
  [] \OT1/ppl/m/n/10.95 Dark-net has ba-sic Python wrap-pers around the com-pile
 d li-brary which con-vert Python
  []
@@ -1419,28 +1413,32 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [33]
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
+
 <img/chapter5_implementation/yoloAlgo1.png, id=154, 173.9298pt x 182.6022pt>
 File: img/chapter5_implementation/yoloAlgo1.png Graphic file (type png)
 
 <use img/chapter5_implementation/yoloAlgo1.png>
 Package pdftex.def Info: img/chapter5_implementation/yoloAlgo1.png used on inpu
-t line 90.
+t line 91.
 (pdftex.def)             Requested size: 188.21288pt x 197.60587pt.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 91.
+(Font)              scaled to size 10.42007pt on input line 92.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 91.
+(Font)              scaled to size 7.91925pt on input line 92.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 91.
+(Font)              scaled to size 10.42007pt on input line 92.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 91.
+(Font)              scaled to size 7.91925pt on input line 92.
 
 <img/chapter5_implementation/yoloAlgo.png, id=155, 173.9298pt x 182.6022pt>
 File: img/chapter5_implementation/yoloAlgo.png Graphic file (type png)
 
 <use img/chapter5_implementation/yoloAlgo.png>
 Package pdftex.def Info: img/chapter5_implementation/yoloAlgo.png used on input
- line 96.
+ line 97.
 (pdftex.def)             Requested size: 188.21288pt x 197.60587pt.
 
 
@@ -1456,7 +1454,7 @@ File: img/chapter5_implementation/crowdHumanStats.png Graphic file (type png)
  <use img/chapter5_implementation/crowdHumanStats.png>
 Package pdftex.def Info: img/chapter5_implementation/crowdHumanStats.png used o
 n input line 116.
-(pdftex.def)             Requested size: 418.25368pt x 86.25204pt.
+(pdftex.def)             Requested size: 334.60422pt x 69.00163pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1466,6 +1464,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [35 <./img/chapter5_implementation/yoloAlgo1.png> <./img/chapter5_implementatio
 n/yoloAlgo.png> <./img/chapter5_implementation/crowdHumanStats.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+
+ []
+
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -1475,20 +1477,55 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36]) (./main.bbl
+[36]
+<img/chapter5_implementation/yoloWalkwayMultiple.png, id=171, 963.6pt x 366.168
+pt>
+File: img/chapter5_implementation/yoloWalkwayMultiple.png Graphic file (type pn
+g)
+ <use img/chapter5_implementation/yoloWalkwayMultiple.png>
+Package pdftex.def Info: img/chapter5_implementation/yoloWalkwayMultiple.png us
+ed on input line 156.
+(pdftex.def)             Requested size: 397.3397pt x 150.9847pt.
+
+<img/chapter5_implementation/yoloWalkway.png, id=172, 581.17125pt x 328.22626pt
+>
+File: img/chapter5_implementation/yoloWalkway.png Graphic file (type png)
+ <use img/chapter5_implementation/yoloWalkway.png>
+Package pdftex.def Info: img/chapter5_implementation/yoloWalkway.png used on in
+put line 165.
+(pdftex.def)             Requested size: 334.60422pt x 188.97403pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37]
+[37 <./img/chapter5_implementation/yoloWalkwayMultiple.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38 <./img/chapter5_implementation/yoloWalkway.png>]) (./main.bbl
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39]
 Underfull \hbox (badness 1442) in paragraph at lines 26--31
 []\OT1/ppl/m/n/10.95 Manato Hirabayashi, Shin-pei Kato, Masato Edahiro, Kazuya 
 Takeda, Taiki
  []
 
-[38
+[40
 
 ]
 
@@ -1497,14 +1534,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39]
+[41]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40]
+[42]
 Underfull \hbox (badness 10000) in paragraph at lines 249--252
 []\OT1/ppl/m/n/10.95 Joseph Red-mon.  Dark-net: Open Source Neu-ral Net-works i
 n C.
@@ -1517,15 +1554,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41] (./main.aux) ) 
+[43] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 20581 strings out of 493029
- 368103 string characters out of 6136235
- 533760 words of memory out of 5000000
- 23599 multiletter control sequences out of 15000+600000
+ 20632 strings out of 493029
+ 369013 string characters out of 6136235
+ 537509 words of memory out of 5000000
+ 23648 multiletter control sequences out of 15000+600000
  40065 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,15n,93p,871b,1781s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,15n,93p,867b,1781s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}<
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
@@ -1534,10 +1571,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pala
 tino/uplri8a.pfb>
-Output written on main.pdf (42 pages, 11509715 bytes).
+Output written on main.pdf (44 pages, 15356186 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
+ 225 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 148 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -46,6 +46,7 @@
 \@writefile{toc}{\contentsline {paragraph}{R-CNN}{7}}
 \citation{Redmon}
 \@writefile{toc}{\contentsline {paragraph}{}{8}}
+\newlabel{sec:backYOLO}{{2.1.2}{8}}
 \@writefile{toc}{\contentsline {paragraph}{YOLO}{8}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces YOLO Approach\relax }}{8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Comments}{8}}
@@ -168,6 +169,7 @@
 \@writefile{toc}{\contentsline {subsubsection}{Choice of Detector}{21}}
 \@writefile{toc}{\contentsline {paragraph}{}{21}}
 \@writefile{toc}{\contentsline {subsubsection}{Pre-trained Model vs Training}{21}}
+\newlabel{sec:designYOLO}{{4.2.1}{21}}
 \@writefile{toc}{\contentsline {paragraph}{Comparing Models}{21}}
 \@writefile{toc}{\contentsline {paragraph}{Pedestrian Dataset}{21}}
 \citation{Wojke2018}
@@ -253,13 +255,14 @@
 \@writefile{toc}{\contentsline {subsubsection}{Darknet in ROS}{33}}
 \@writefile{toc}{\contentsline {paragraph}{}{34}}
 \@writefile{toc}{\contentsline {paragraph}{}{34}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.1}Darknet IMAGE Python wrappers}{34}}
 \@writefile{toc}{\contentsline {subsubsection}{YOLO Detection Algorithm}{34}}
-\@writefile{toc}{\contentsline {subsubsection}{YOLOv3 Tiny vs YOLOv3}{34}}
 \citation{Shao}
 \citation{Shao}
 \citation{Shao}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Visualization of YOLO person detection\relax }}{35}}
 \newlabel{fig:yoloViz}{{5.3}{35}}
+\@writefile{toc}{\contentsline {subsubsection}{YOLOv3 Tiny vs YOLOv3}{35}}
 \@writefile{toc}{\contentsline {subsubsection}{Training YOLOv3 Tiny}{35}}
 \@writefile{toc}{\contentsline {paragraph}{CrowdHuman}{35}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces A comparison of CrowdHuman to other person image datasets \cite  {Shao}\relax }}{35}}
@@ -269,19 +272,38 @@
 \@writefile{toc}{\contentsline {paragraph}{}{36}}
 \@writefile{toc}{\contentsline {paragraph}{}{36}}
 \@writefile{toc}{\contentsline {paragraph}{}{36}}
-\@writefile{toc}{\contentsline {paragraph}{}{36}}
 \@writefile{toc}{\contentsline {paragraph}{Converting Annotations}{36}}
 \@writefile{toc}{\contentsline {paragraph}{Training Parameters}{36}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.1}Training parameters}{36}}
-\bibstyle{unsrt}
-\bibdata{fyp_report.bib}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.2}Training parameters}{36}}
 \@writefile{toc}{\contentsline {paragraph}{Training Process}{37}}
 \@writefile{toc}{\contentsline {subsubsection}{Evaluating Trained Model}{37}}
-\@writefile{toc}{\contentsline {subsubsection}{ROS Node}{37}}
-\@writefile{toc}{\contentsline {paragraph}{Visualization and FPS}{37}}
-\@writefile{toc}{\contentsline {paragraph}{ROS Topic}{37}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.3}YACHT Tracker}{37}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.4}YACHT Direction}{37}}
+\@writefile{toc}{\contentsline {paragraph}{Hololens Videos}{37}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Evaluating the model on Sherfield Walkway test video\relax }}{37}}
+\newlabel{fig:yoloSherfield}{{5.5}{37}}
+\@writefile{toc}{\contentsline {paragraph}{}{37}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Trained model detects people and heads at different ranges\relax }}{38}}
+\newlabel{fig:yoloRange}{{5.6}{38}}
+\@writefile{toc}{\contentsline {subsubsection}{ROS Node}{38}}
+\newlabel{sec:nodeYOLO}{{5.1.2}{38}}
+\@writefile{toc}{\contentsline {paragraph}{ROS Topics}{38}}
+\@writefile{toc}{\contentsline {paragraph}{}{38}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.3}Training parameters}{38}}
+\bibstyle{unsrt}
+\bibdata{fyp_report.bib}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.3}YACHT Package}{39}}
+\@writefile{toc}{\contentsline {paragraph}{ROS Communication}{39}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.4}YACHT: Tracker}{39}}
+\@writefile{toc}{\contentsline {subsubsection}{Deep SORT}{39}}
+\@writefile{toc}{\contentsline {paragraph}{Installation \& Setup}{39}}
+\@writefile{toc}{\contentsline {subsubsection}{Deep Association Metric}{39}}
+\@writefile{toc}{\contentsline {subsubsection}{Tracking}{39}}
+\@writefile{toc}{\contentsline {subsubsection}{ROS Topic}{39}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.5}YACHT: Direction}{39}}
+\@writefile{toc}{\contentsline {subsubsection}{OpenPose}{39}}
+\@writefile{toc}{\contentsline {paragraph}{Installation \& Setup}{39}}
+\@writefile{toc}{\contentsline {subsubsection}{KeyPoint Estimation}{39}}
+\@writefile{toc}{\contentsline {subsubsection}{Detection Matching}{39}}
+\@writefile{toc}{\contentsline {subsubsection}{ROS Topic}{39}}
 \bibcite{Hou2010}{{1}{}{{}}{{}}}
 \bibcite{Zeng2017}{{2}{}{{}}{{}}}
 \bibcite{Redmon}{{3}{}{{}}{{}}}
@@ -324,4 +346,4 @@
 \bibcite{darknet13}{{40}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
 \providecommand\totalcount@set[2]{}
-\totalcount@set{page}{42}
+\totalcount@set{page}{44}
