@@ -174,7 +174,7 @@ The Python wrappers for Darknet allow us to access the detection and image conve
 
 \paragraph{} Darknet produces bounding box co-ordinates and class probabilities for each detection in an image. For every received frame, the node publishes the original image and a list of associated bounding boxes. The bounding box message contains the following information: \\
 
-\begin{lstlisting}[language=Mymatlab,caption={Training parameters}]
+\begin{lstlisting}[language=Mymatlab,caption={BoundingBox.msg},label={bbmsg}]
 string Class
 float64 probability
 int64 xmin % Top Left Corner
@@ -190,16 +190,68 @@ The major contribution of this project is in the form of the Yet Another Crowd H
 \paragraph{ROS Communication} As seen in Section \ref{sec:nodeYOLO}, the YOLO object detector node publishes a topic which contains the image and associated bounding boxes. Figure \ref{fig:detailedHL} shows that both YACHT nodes subscribe to the same output topic. The reason we decided to include the original image in the message and not just the bounding boxes is so that we can be sure the bounding boxes were detected for that frame, without having to subscribe to two seperate topics and comparing timestamps on individiual messages.
 
 \subsection{YACHT: Tracker}
+As explained in Section \ref{sec:YACHT}, the YACHT tracker depends on the Deep SORT algorithm \cite{Wojke2018}. Using the detections produced by the YOLO node, we assign IDs and match them across video frames to produce a track. These tracking IDs are then sent to the HoloLens for visualizaiton.
 
-\subsubsection{Deep SORT}
-\paragraph{Installation \& Setup}
 
-\subsubsection{Deep Association Metric}
+\subsubsection{Deep SORT} 
 
-\subsubsection{Tracking}
+\paragraph{Modifications} We have modified\footnote{https://github.com/alaksana96/deep\_sort} Nicolai Wojke's original implementation of Deep SORT to run on Tensorflow-GPU. In the original, as the number of detections increased, so does the delay in tracking. This issue is more prevalent when tested on the MOT dataset, which has a large number of objects in each frame. Figure \ref{fig:deepSortCPU} visualizes the delay on the MOT16-06 video. We can see that the algorithm is operating at a very low FPS, causing it to be delayed in time. 
 
-\subsubsection{ROS Topic}
+\begin{figure}[ht]
+	\begin{subfigure}[b]{.45\textwidth}
+		\centering
+		\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/deepSortCPU.png}
+		\caption{Output of YOLO. The image frame and bounding boxes are fed to Deep SORT}
+	\end{subfigure}%
+	\hspace{\fill} 
+	\begin{subfigure}[b]{.45\textwidth}
+		\centering
+		\includegraphics[width=0.935\linewidth]{img/chapter5_implementation/deepSortCPU1.png}
+		\caption{Deep SORT is several frames behind since it runs at 4 FPS}
+	\end{subfigure}
+	\vspace{-1\baselineskip}
+	\begin{center}
+		\caption{Visualization of delay on CPU bound Deep SORT}
+		\label{fig:deepSortCPU}
+	\end{center}
+\end{figure}
 
+
+\paragraph{Deep Association Metric} Through code profiling, we noticed that the program was spending a lot of time in the generation of feature vectors. Upon inspection, we noticed that this process was run on a CPU bound version of Tensorflow. The \code{ImageEncoder} class uses a pre-trained deep network that generates the feature vectors for each bounding box. By using Tensorflow-gpu, we were able to run the network on system GPU, removing the delay. \\
+
+\begin{lstlisting}[language=Python, caption={Deep SORT Tensorflow GPU modifications}]
+class ImageEncoder(object):
+
+	def __init__(self, checkpoint_filename, input_name="images",
+				 output_name="features"):
+				 
+        # Tensorflow-GPU
+        gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction = 0.2)
+        self.session = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
+\end{lstlisting}
+
+%The tracker crops the image and generates feature vectors for the detection. The vectors are then compared with the history of feature vectors associated with each tracker.
+
+\paragraph{Trackers \& Tracking} For each detection, we generate a feature vector using the image pixels within the bounding box. A matching cascade with Nearest Neighbour metric is used to best match the detection with existing confirmed tracks. Some detections will not get matched since the distance to confirmed tracks is above the \code{matching\ threshold}. The algorithm then attempts to match the detections to unconfirmed tracks using a simple Intersection-over-Union metric. These are newly created tracks that have existed for less than the last $n$ frames. If the detection is still unmatched, the algorithm creates a new tracker for the detection and adds it to the pool of unconfirmed tracks.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\linewidth]{img/chapter5_implementation/deepSortMatching.png}
+	\caption{Deep SORT matching visualized}
+	\label{fig:deepSortMatch}
+\end{figure}
+
+Any pre-existing tracks which are not matched are checked. If the number of frames since the previous match is greater than the \code{max\_age} parameter, the track is considered dead and is deleted. This is done so as to prevent the number of tracks from growing unboundedly. A Kalman filter is used to update the bounding box states of each track, as well as the time since the last update.
+ 
+\subsubsection{Linear Extrapolation}
+We experimented with linear extrapolation across frames as a way of infering the direction travelled by the detection. As the project progressed, we encountered issues with this method, as explained in Section \ref{sec:objecTrackingDirection}. By searching for alternative methods, it was found that the depth camera on the Hololens can determine the distance between the PWU and an object relatively accurately. As such, we abandoned the pure computer vision approach in favour of using the Hololens.
+
+\subsubsection{ROS Topic} The decision to use the Hololens depth cameras as a way of determining distance prompted the need for ROS messages to be sent to the device. As seen in Figure \ref{fig:detailedHDD}, the  tracker node publishes the bounding box and tracker ID to the Hololens. The \code{BoundingBox} data structure is defined in Listing \ref{bbmsg}, and is the same bounding boxes generated by the YOLO detector.
+
+\begin{lstlisting}[language=Mymatlab,caption={BoundingBoxID.msg}]
+BoundingBox boundingBox
+int64 id
+\end{lstlisting}
 
 \subsection{YACHT: Direction}
 

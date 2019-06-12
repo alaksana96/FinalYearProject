@@ -155,13 +155,14 @@
 \contentsline {paragraph}{ROS Communication}{39}
 \contentsline {subsection}{\numberline {5.1.4}YACHT: Tracker}{39}
 \contentsline {subsubsection}{Deep SORT}{39}
-\contentsline {paragraph}{Installation \& Setup}{39}
-\contentsline {subsubsection}{Deep Association Metric}{39}
-\contentsline {subsubsection}{Tracking}{39}
-\contentsline {subsubsection}{ROS Topic}{39}
-\contentsline {subsection}{\numberline {5.1.5}YACHT: Direction}{39}
-\contentsline {subsubsection}{OpenPose}{39}
-\contentsline {paragraph}{Installation \& Setup}{39}
-\contentsline {subsubsection}{KeyPoint Estimation}{39}
-\contentsline {subsubsection}{Detection Matching}{39}
-\contentsline {subsubsection}{ROS Topic}{39}
+\contentsline {paragraph}{Modifications}{39}
+\contentsline {paragraph}{Deep Association Metric}{40}
+\contentsline {paragraph}{Trackers \& Tracking}{40}
+\contentsline {subsubsection}{Linear Extrapolation}{41}
+\contentsline {subsubsection}{ROS Topic}{41}
+\contentsline {subsection}{\numberline {5.1.5}YACHT: Direction}{41}
+\contentsline {subsubsection}{OpenPose}{41}
+\contentsline {paragraph}{Installation \& Setup}{41}
+\contentsline {subsubsection}{KeyPoint Estimation}{41}
+\contentsline {subsubsection}{Detection Matching}{41}
+\contentsline {subsubsection}{ROS Topic}{41}

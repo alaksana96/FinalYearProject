@@ -89,7 +89,7 @@ The bounding boxes produced by the object detector are consumed by the \textbf{Y
 
 \paragraph{}In the following sections, we briefly explain the  methods used to infer the directions people are walking in. We also explore the use of head pose estimation, and the limitations that prevented it from making it to the final design.
 
-\subsubsection{YACHT Tracker: Object Tracking}
+\subsubsection{YACHT Tracker: Object Tracking} \label{sec:YACHT}
 We explored existing object tracking methods in Section \ref{sec:objectTrack} and discussed our choices in \ref{sec:objectTrackComments}. For moving object tracking on a powered wheelchair, we express the need for an online object tracking system. As such, we chose to investigate two related real-time methods, SORT \cite{Bewley2016} and Deep SORT \cite{Wojke2018}.
 
 \paragraph{SORT}  The Simple Online and Realtime Tracking (SORT) method is a fast online object tracker. The initial implementation of YACHT used the SORT algorithm due to its speed. However, it was quickly realized that due to the simplicity of the association metric, object tracking was not very accurate, especially for occluded objects. When two objects crossed paths, the tracker was unable to recognize the act, and re-labeled the objects with brand new tracking IDs.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  12 JUN 2019 12:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  12 JUN 2019 15:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1512,20 +1512,62 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38 <./img/chapter5_implementation/yoloWalkway.png>]) (./main.bbl
+[38 <./img/chapter5_implementation/yoloWalkway.png>]
+<img/chapter5_implementation/deepSortCPU.png, id=181, 683.55376pt x 479.7925pt>
+File: img/chapter5_implementation/deepSortCPU.png Graphic file (type png)
+<use img/chapter5_implementation/deepSortCPU.png>
+Package pdftex.def Info: img/chapter5_implementation/deepSortCPU.png used on in
+put line 203.
+(pdftex.def)             Requested size: 188.21288pt x 132.10806pt.
+
+<img/chapter5_implementation/deepSortCPU1.png, id=182, 622.325pt x 469.755pt>
+File: img/chapter5_implementation/deepSortCPU1.png Graphic file (type png)
+
+<use img/chapter5_implementation/deepSortCPU1.png>
+Package pdftex.def Info: img/chapter5_implementation/deepSortCPU1.png used on i
+nput line 209.
+(pdftex.def)             Requested size: 175.97858pt x 132.83505pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39]
+[39 <./img/chapter5_implementation/deepSortCPU.png> <./img/chapter5_implementat
+ion/deepSortCPU1.png>]
+<img/chapter5_implementation/deepSortMatching.png, id=186, 596.4684pt x 199.947
+pt>
+File: img/chapter5_implementation/deepSortMatching.png Graphic file (type png)
+ <use img/chapter5_implementation/deepSortMatching.png>
+Package pdftex.def Info: img/chapter5_implementation/deepSortMatching.png used 
+on input line 239.
+(pdftex.def)             Requested size: 334.60422pt x 112.17091pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[40 <./img/chapter5_implementation/deepSortMatching.png>]) (./main.bbl
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[41]
 Underfull \hbox (badness 1442) in paragraph at lines 26--31
 []\OT1/ppl/m/n/10.95 Manato Hirabayashi, Shin-pei Kato, Masato Edahiro, Kazuya 
 Takeda, Taiki
  []
 
-[40
+[42
 
 ]
 
@@ -1534,14 +1576,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41]
+[43]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42]
+[44]
 Underfull \hbox (badness 10000) in paragraph at lines 249--252
 []\OT1/ppl/m/n/10.95 Joseph Red-mon.  Dark-net: Open Source Neu-ral Net-works i
 n C.
@@ -1554,12 +1596,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[43] (./main.aux) ) 
+[45] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 20632 strings out of 493029
- 369013 string characters out of 6136235
- 537509 words of memory out of 5000000
- 23648 multiletter control sequences out of 15000+600000
+ 20723 strings out of 493029
+ 370791 string characters out of 6136235
+ 537595 words of memory out of 5000000
+ 23736 multiletter control sequences out of 15000+600000
  40065 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,15n,93p,867b,1781s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1571,10 +1613,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pala
 tino/uplri8a.pfb>
-Output written on main.pdf (44 pages, 15356186 bytes).
+Output written on main.pdf (46 pages, 16407855 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
- 126 compressed objects within 2 object streams
+ 235 PDF objects out of 1000 (max. 8388607)
+ 130 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 148 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 163 words of extra memory for PDF output out of 10000 (max. 10000000)
 
