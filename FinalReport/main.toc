@@ -169,5 +169,5 @@
 \contentsline {subsubsection}{Defining Direction}{43}
 \contentsline {paragraph}{Method}{43}
 \contentsline {subsubsection}{Implementation \& Detection Matching}{44}
-\contentsline {subsubsection}{}{44}
-\contentsline {subsection}{\numberline {5.1.6}YACHT ROS Communication}{44}
+\contentsline {subsubsection}{ROS Topic}{44}
+\contentsline {section}{\numberline {5.2}Hololens Unity Application}{45}
