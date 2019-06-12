@@ -19,36 +19,37 @@ Warning--can't use both volume and number fields in Lin
 Warning--empty journal in Shao
 Warning--empty journal in Milan
 Warning--empty note in Leutenegger2019
-You've used 40 entries,
+Warning--empty journal in Jia
+You've used 41 entries,
             1791 wiz_defined-function locations,
-            688 strings with 10654 characters,
-and the built_in function-call counts, 10747 in all, are:
-= -- 940
-> -- 509
+            692 strings with 10874 characters,
+and the built_in function-call counts, 10971 in all, are:
+= -- 951
+> -- 535
 < -- 21
-+ -- 185
-- -- 145
-* -- 725
-:= -- 1608
-add.period$ -- 119
-call.type$ -- 40
-change.case$ -- 44
++ -- 194
+- -- 153
+* -- 743
+:= -- 1652
+add.period$ -- 122
+call.type$ -- 41
+change.case$ -- 45
 chr.to.int$ -- 0
-cite$ -- 56
-duplicate$ -- 490
-empty$ -- 1006
-format.name$ -- 145
-if$ -- 2426
+cite$ -- 58
+duplicate$ -- 498
+empty$ -- 1020
+format.name$ -- 153
+if$ -- 2469
 int.to.chr$ -- 0
-int.to.str$ -- 40
-missing$ -- 32
-newline$ -- 202
-num.names$ -- 40
-pop$ -- 145
+int.to.str$ -- 41
+missing$ -- 33
+newline$ -- 207
+num.names$ -- 41
+pop$ -- 150
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 306
+skip$ -- 309
 stack$ -- 0
 substring$ -- 738
 swap$ -- 176
@@ -56,8 +57,8 @@ text.length$ -- 21
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 16
-while$ -- 104
-width$ -- 42
-write$ -- 425
-(There were 16 warnings)
+warning$ -- 17
+while$ -- 105
+width$ -- 43
+write$ -- 434
+(There were 17 warnings)

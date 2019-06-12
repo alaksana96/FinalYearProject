@@ -69,16 +69,6 @@
 % \geometry{textheight=694pt}
 % \geometry{textwidth=400pt}
 
-\lstset{language=Python, 
-	basicstyle=\ttfamily\small, 
-	keywordstyle=\color{deepblue},
-	commentstyle=\color{deepgreen},
-	stringstyle=\color{deepred},
-	showstringspaces=false,
-%	identifierstyle=\color{},
-	procnamekeys={def,class, for, if}}
-
-
 \lstset{ %
 	basicstyle=\small,
 	backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
@@ -101,6 +91,19 @@
 	stringstyle=\color{mymauve},     % string literal style
 	tabsize=2,	                   % sets default tabsize to 2 spaces
 }
+
+\lstset{language=Python, 
+	basicstyle=\ttfamily\footnotesize, 
+	keywordstyle=\color{deepblue},
+	commentstyle=\color{deepgreen},
+	stringstyle=\color{deepred},
+	showstringspaces=false,
+%	identifierstyle=\color{},
+	procnamekeys={def,class, for, if}
+	tabsize=3,
+	showstringspaces=false}
+
+
 \lstdefinelanguage{Mymatlab}{
 	language=Matlab,%
 	%basicstyle=\color{red},

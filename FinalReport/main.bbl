@@ -250,4 +250,10 @@ Joseph Redmon.
 \newblock {Darknet: Open Source Neural Networks in C}.
 \newblock $\backslash$url{\{}http://pjreddie.com/darknet/{\}}.
 
+\bibitem{Jia}
+Yangqing Jia, Evan Shelhamer, Jeff Donahue, Sergey Karayev, Jonathan Long, Ross
+  Girshick, Sergio Guadarrama, and Trevor Darrell.
+\newblock {Caffe: Convolutional Architecture for Fast Feature Embedding}.
+\newblock 2014.
+
 \end{thebibliography}

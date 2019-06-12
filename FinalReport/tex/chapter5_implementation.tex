@@ -254,17 +254,128 @@ int64 id
 \end{lstlisting}
 
 \subsection{YACHT: Direction}
+The second node in the YACHT package is the direction node, which uses the OpenPose framework to determine if a person is facing the camera or not. Earlier in Section \ref{des:YACHTBody}, we outlined the problem of not being able to determine the distance to an object with a regular pinhole camera model. We initally wanted to be able to determine the distance using only a video stream and computer vision techniques. However, we quickly realized that this was beyond the scope of the project, and decided to use the depth cameras on the Hololens.
 
-
+\paragraph{} This section outlines the installation and setup of the OpenPose network \cite{Shao}. We also explain how we use the keypoint detections to determine whether an individual is facing the PWU or not. Furthermore, we also explain how the bottom-up approach of OpenPose differs from the top-down approach that may have been more suitable, and the reasons for our implementation choices.
 
 \subsubsection{OpenPose}
-\paragraph{Installation \& Setup}
+OpenPose is developed and maintained by the Carnegie Mellon University Perceptual Computing Lab. The implementation is made available on Github\footnote{https://github.com/CMU-Perceptual-Computing-Lab/openpose} to encourage body pose estimation research.
 
-\subsubsection{KeyPoint Estimation}
+\paragraph{Installation \& Setup} The OpenPose library runs on a modified version of the convolutional neural network framework Caffe \cite{Jia}. The library is well documented, and provides its own instructions on how to setup the library. We direct the reader to the OpenPose Github repository if they wish to install the library themselves.
 
-\subsubsection{Detection Matching}
+\paragraph{Model} As stated in Section \ref{des:body_25}, we use the \code{BODY\_25} keypoint estimation model for this project. The documentation states that this model is the fastest when it comes to real-time application, compared to the \code{MPI\_4} or \code{COCO} models. We also reduce the network resolution to $176\times 176$ to reduce the GPU usage and speed up the keypoint estimation. However, this reduces the accuracy of the detections, as discussed in this section.
 
-\subsubsection{ROS Topic}
+\subsubsection{KeyPoint Estimation} \label{sec:bottomUp} 
+Due to the bottom-up approach used by OpenPose, the network predicts keypoints for individual body parts across the whole image. Through our testing on the MOT dataset, we noticed several points:
+
+\begin{itemize}
+	\item The model is good at detecting keypoints of people close to the camera.
+	\item People who are smaller and further away are not always detected.
+	\item When people are close together or overlap, the keypoint estimation has difficulty differentiating between people.
+	\item The more people in the image, the more network slows down and begins to lag behind the source video.
+\end{itemize}
+
+\begin{figure}[ht]
+	\begin{subfigure}[b]{.32\textwidth}
+		\centering
+		\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/openposeKP.png}
+		\caption{People close-up}
+	\end{subfigure}%
+	\hspace{\fill} 
+	\begin{subfigure}[b]{.32\textwidth}
+		\centering
+		\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/openposeKP1.png}
+		\caption{People at different scales}
+	\end{subfigure}
+	\hspace{\fill} 
+	\begin{subfigure}[b]{.32\textwidth}
+		\centering
+		\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/openposeKP2.png}
+		\caption{People close together}
+	\end{subfigure}
+	\vspace{-1\baselineskip}
+	\begin{center}
+		\caption{Comparison of keypoint estimation at different scales}
+		\label{fig:openposeKP}
+	\end{center}
+		\vspace{-1.5\baselineskip}
+\end{figure}
+
+We highlight the issues in Figure \ref{fig:openposeKP}. The reason for the decrease in accuracy on people further away is due to the network resolution being lowered. Using a higher resolution allows us to detect people further away, but the delay between the arrival of the frame and the detection is more than 0.5 seconds. As such, to achieve real-time operation, we chose to use a lower network resolution.
+
+\subsubsection{Defining Direction}
+By comparing the relative positions of certain keypoints, we can determine if a person is facing towards the camera or if they are walking away. This information is important, since it will allow for better visualization of where a person is walking, since people tend to walk in the direction they are facing. This also partially solves the direction problem brought up in Section \ref{sec:objecTrackingDirection}.
+
+\begin{figure}[ht]
+	\begin{subfigure}[b]{.32\textwidth}
+		\centering
+		\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/shreyFront.png}
+		\caption{Frontal View}
+	\end{subfigure}%
+	\hspace{\fill} 
+	\begin{subfigure}[b]{.32\textwidth}
+		\centering
+		\includegraphics[width=0.765\linewidth]{img/chapter5_implementation/keypoints_pose_25.png}
+		\caption{Keypoint References}
+	\end{subfigure}
+	\hspace{\fill} 
+	\begin{subfigure}[b]{.32\textwidth}
+		\centering
+		\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/shreyBack.png}
+		\caption{Back View}
+	\end{subfigure}
+	\vspace{-1\baselineskip}
+	\begin{center}
+		\caption{Body keypoint estimation of different views}
+		\label{fig:keypointShrey}
+	\end{center}
+	\vspace{-2\baselineskip}
+\end{figure}
+
+\paragraph{Method} Pixels are measured from the top left corner of the image, with the x-axis extending horizontally to the right and the y-axis extending downwards. Figure \ref{fig:keypointShrey}.b shows the keypoint references for the body. The model is able to differentiate between the left and right limbs on a person. Figure \ref{fig:keypointShrey}.(a,c) show a full frontal and back keypoint detection on a person in the ideal detection position. 
+
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{|l|l|}
+		\hline
+		Body Part  & Key Points \\ \hline
+		Right Arm  & 2, 3, 4    \\ \hline
+		Left Arm   & 5, 6, 7    \\ \hline
+		Head/Spine & 0, 1, 8    \\ \hline
+	\end{tabular}
+	\caption{Significant keypoints for direction}
+	\label{tab:keypoints}
+\end{table}
+
+We can use the ability to differentiate between the left and right arms to determine if a person is facing the camera. Table \ref{tab:keypoints} presents the keypoints for the relevant bodyparts. If the image co-ordinates of the left shoulder is further along the x-axis than the right shoulder, we can predict the direction as facing towards the camera. From testing, we know this simple method works most of the time. However, problems arise when a person is standing perpendicular to the camera. OpenPose has trouble detecting the torso and predicting the positions of the limbs, and it becomes difficult to decide if they are facing left or right.
+
+\subsubsection{Implementation \& Detection Matching}
+As mentioned in Section \ref{sec:bottomUp}, OpenPose uses a bottom-up approach by detecting individual body parts across the whole image. We need to match the OpenPose keypoint predictions with existing bounding boxes from YOLO, since these are assigned track IDs by the tracker node. This is done in Listing \ref{lst:matchDetPose} \\
+
+\begin{lstlisting}[language=Python, caption={Direction and Detection Matching}, label={lst:matchDetPose}]
+def matchDetectionAndPose(self, detections, poses):
+    for pose in poses:
+        # Check torso, right/left shoulder
+        torso, rshoulder, lshoulder = pose[1], pose[2], pose[5]
+
+        for bbox in detections:
+            if( self.withinBB(bbox, torso[0], torso[1]) or
+                self.withinBB(bbox, rshoulder[0], rshoulder[1]) or
+                self.withinBB(bbox, lshoulder[0], lshoulder[1])):
+   
+                if(rshoulder[0] > lshoulder[0]):
+                    directionTowardsCamera = False
+                else:
+                    directionTowardsCamera = True
+
+                publishDetectionDirection() 
+                break # Once matched, move onto next pose 
+\end{lstlisting}
+
+\subsubsection{}
+
+
+\subsection{YACHT ROS Communication}
 
 
 %\section{Hololens Unity Application}

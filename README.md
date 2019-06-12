@@ -12,3 +12,9 @@ In this project, you will design and implement algorithms to allow the user to i
 Students should have very strong programming skills (C/C++/Python) and strong interest in machine learning, computer vision, and virtual/augmented reality. You will be using multiple SDKs to program the robots and the MS Hololens in diverse operating systems (both Linux and Windows), and you will need to be very experienced in software development to safely take this project. 
 
 ___
+
+### HACKY SCRIPT
+
+```
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=foo-compressed.pdf main.pdf
+```
