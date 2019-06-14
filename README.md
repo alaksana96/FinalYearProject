@@ -16,5 +16,5 @@ ___
 ### HACKY SCRIPT
 
 ```
-gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=foo-compressed.pdf main.pdf
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=apl115.pdf FinalReport/main.pdf
 ```

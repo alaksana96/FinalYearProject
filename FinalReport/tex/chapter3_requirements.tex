@@ -1,7 +1,7 @@
 \chapter{Requirements Capture}
 
 \section{Project Deliverable}
-The objective of this project is to develop an augmented reality system that can be used by powered wheelchair users (PWUs) to assist them in navigating their powered wheelchairs in public spaces with many people walking in the surroundings. The system should be able to detect the presence of individuals and infer their position relative to the PWU, and by extenions, estimate their direction of travel.
+The objective of this project is to develop an augmented reality system that can be used by powered wheelchair users (PWUs) to assist them in navigating their powered wheelchairs in public spaces with many people walking in the surroundings. The system should be able to detect the presence of individuals and infer their position relative to the PWU, and by extensions, estimate their direction of travel.
 
 \paragraph{}We propose a system that uses the Microsoft Hololens augmented reality headset as the main input and visualization tool. The PWU would wear the headset as they operate the powered wheelchair, allowing the system to create visualizations of potential obstacles and collisions. Furthermore, the system would also encompasses the reactive control aspect of the powered wheelchair. Should an individual be detected as walking in the wheelchairs trajectory, the system will send control signals to the powered wheelchair to slow down or completely stop depending on how far the target is from the wheelchair.
 
@@ -10,7 +10,7 @@ The objective of this project is to develop an augmented reality system that can
 \section{Human Detection and Direction}
 The requirements of the Human Detection and Direction (HDD) system is to be able to use a video stream of the surroundings to determine the position and direction of people. The Hololens has a built in camera that can be used to take photos of the surroundings of the user \cite{Chacon-Quesada}. We will leverage this ability to create a video stream.
 
-\paragraph{}The actual HDD sytem is implemented on another computer with access to a GPU. We utilize the GPU to be able to do real-time object detection and pose estimation of detected individuals. The system should be able to infer the direction individuals are walking in, as well as their real-world positions relative to the PWU.
+\paragraph{}The actual HDD system is implemented on another computer with access to a GPU. We utilize the GPU to be able to do real-time object detection and pose estimation of detected individuals. The system should be able to infer the direction individuals are walking in, as well as their real-world positions relative to the PWU.
 
 \paragraph{Features} 
 \begin{itemize}
@@ -23,11 +23,11 @@ The requirements of the Human Detection and Direction (HDD) system is to be able
 \end{itemize}
 
 \section{Obstacle Mapping \& Visualization }
-This project utilizes the Microsoft Hololens as a visualization and spatial mapping tool. The HDD system will output its detections and directions to the Hololens, which is used to create visualizations that will help the PWU. Examples of the visualzation include arrows that indicate direction of movement, as well as alerting the user to potential collisions.
+This project utilizes the Microsoft Hololens as a visualization and spatial mapping tool. The HDD system will output its detections and directions to the Hololens, which is used to create visualizations that will help the PWU. Examples of the visualization include arrows that indicate direction of movement, as well as alerting the user to potential collisions.
 
 \paragraph{Features}
 \begin{itemize}
-	\item Receving detection/direction data from HDD system.
+	\item Receiving detection/direction data from HDD system.
 	\item Utilize Camera to World transforms of the Hololens Camera to get World co-ordinates of people.
 	\item Create holographic visualizations to help PWU understand the direction people are walking in.
 	\item Create a map of obstacles for Reactive Control.
@@ -38,6 +38,6 @@ The powered wheelchair (ARTA) available in the Personal Robotics Lab (PRL) can b
 
 \paragraph{Features}
 \begin{itemize}
-	\item Receving object detections in front of wheelchair.
+	\item Receiving object detections in front of wheelchair.
 	\item Prevent wheelchairs from driving into objects.
 \end{itemize}

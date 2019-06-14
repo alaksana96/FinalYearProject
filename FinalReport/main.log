@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  12 JUN 2019 19:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  14 JUN 2019 19:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1063,7 +1063,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10] <img/chapter2_background/openpose.jpg, id=52, 1284.8pt x 722.7pt>
+[10]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11] <img/chapter2_background/openpose.jpg, id=55, 1284.8pt x 722.7pt>
 File: img/chapter2_background/openpose.jpg Graphic file (type jpg)
 
 <use img/chapter2_background/openpose.jpg>
@@ -1071,16 +1078,9 @@ Package pdftex.def Info: img/chapter2_background/openpose.jpg used on input lin
 e 143.
 (pdftex.def)             Requested size: 292.77629pt x 164.68468pt.
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[11]
 Overfull \hbox (5.69235pt too wide) in paragraph at lines 147--148
  [] \OT1/ppl/m/n/10.95 As such, Open-Pose presents a method of multi-person pos
-e es-im-ta-tion us-ing a bottom-
+e es-ti-ma-tion us-ing a bottom-
  []
 
 
@@ -1132,14 +1132,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15 <./img/chapter2_background/AR_Interface.png>]
+[15]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]
+[16 <./img/chapter2_background/AR_Interface.png>]
 Chapter 3.
 [17
 
@@ -1343,7 +1343,7 @@ File: img/chapter4_analysis/holoArtaAligned.png Graphic file (type png)
 
 <use img/chapter4_analysis/holoArtaAligned.png>
 Package pdftex.def Info: img/chapter4_analysis/holoArtaAligned.png used on inpu
-t line 264.
+t line 266.
 (pdftex.def)             Requested size: 376.42575pt x 127.0616pt.
 
 
@@ -1352,15 +1352,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29 <./img/chapter4_analysis/holoArtaAligned.png>])
-(./tex/chapter5_implementation.tex
+[29]) (./tex/chapter5_implementation.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30]
+[30 <./img/chapter4_analysis/holoArtaAligned.png>]
 Chapter 5.
 
 <img/chapter5_implementation/detailedSystemDiagram.png, id=141, 608.5134pt x 25
@@ -1642,14 +1641,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [44]
-<img/chapter5_implementation/hololensSystemDiagram.png, id=214, 849.8952pt x 37
+<img/chapter5_implementation/hololensSystemDiagram.png, id=214, 849.4134pt x 37
 5.804pt>
 File: img/chapter5_implementation/hololensSystemDiagram.png Graphic file (type 
 png)
  <use img/chapter5_implementation/hololensSystemDiagram.png>
 Package pdftex.def Info: img/chapter5_implementation/hololensSystemDiagram.png 
 used on input line 388.
-(pdftex.def)             Requested size: 418.25368pt x 184.94264pt.
+(pdftex.def)             Requested size: 418.25368pt x 185.04585pt.
 )
 (./main.bbl
 
@@ -1697,11 +1696,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Here is how much of TeX's memory you used:
  20838 strings out of 493029
  373372 string characters out of 6136235
- 600219 words of memory out of 5000000
+ 600223 words of memory out of 5000000
  23845 multiletter control sequences out of 15000+600000
  39897 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,15n,93p,867b,1776s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,15n,93p,865b,1776s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}<
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
@@ -1710,7 +1709,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pala
 tino/uplri8a.pfb>
-Output written on main.pdf (50 pages, 20070813 bytes).
+Output written on main.pdf (50 pages, 20094592 bytes).
 PDF statistics:
  260 PDF objects out of 1000 (max. 8388607)
  139 compressed objects within 2 object streams

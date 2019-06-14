@@ -1,5 +1,5 @@
 \chapter{Implementation}
-This chapter is concerned with the implementation details of the individidual components introduced in Chapter \ref{chapter:4}. This includes the development of the Unity application responsible for producing the front-facing camera video stream and displaying the visual cues, the development of the human detection and direction system, as well as the reactive control systems implemented on ARTA. Previous work in the PRL had utilized the Hololens camera to capture images that were then processed on an external computer, but where this project differs is that a video stream is required to perform real-time object detection. As such, a large amount of time was spent at the very beginning of the project trying to produce a video stream, since the whole project depended on this form of visual input.
+This chapter is concerned with the implementation details of the individual components introduced in Chapter \ref{chapter:4}. This includes the development of the Unity application responsible for producing the front-facing camera video stream and displaying the visual cues, the development of the human detection and direction system, as well as the reactive control systems implemented on ARTA. Previous work in the PRL had utilized the Hololens camera to capture images that were then processed on an external computer, but where this project differs is that a video stream is required to perform real-time object detection. As such, a large amount of time was spent at the very beginning of the project trying to produce a video stream, since the whole project depended on this form of visual input.
 
 \begin{figure}[ht]
 	\centering
@@ -8,7 +8,7 @@ This chapter is concerned with the implementation details of the individidual co
 	\label{fig:detailedHL}
 \end{figure}
 
-Figure \ref{fig:detailedHL} is a more detailed diagram of the high level system digram presented in Figure \ref{fig:simplifiedHL}. We show the communication between the three seperate devices, and how each node can be broken down into smaller nodes running specific computations. For the rest of this report, we represent the ARTA, Hololens and HDD system components with the colours blue, red and green respectively.
+Figure \ref{fig:detailedHL} is a more detailed diagram of the high level system digram presented in Figure \ref{fig:simplifiedHL}. We show the communication between the three separate devices, and how each node can be broken down into smaller nodes running specific computations. For the rest of this report, we represent the ARTA, Hololens and HDD system components with the colours blue, red and green respectively.
 
 %\section{Hololens Video Camera Stream}
 %For this project to begin, it was absolutely essential to stream the front-facing camera on the Hololens to another PC. Once it had been proven that this was possible, work on the rest of the project could begin. As such, the first month of the project was spent comparing different camera streaming methods. As mentioned in Section \ref{sec:videoStreaming}, we briefly spent some time attempting to use the HoloLensForCV library from Microsoft. However, after speaking with several members of the PRL, it was decided the best method would be to use the Unity application approach as a base.
@@ -53,12 +53,12 @@ Due to the deep learning component of the project, the following software depend
 As mentioned in Section \ref{sec:yolo}, we chose to use the YOLOv3 Tiny architecture and trained it on the CrowdHuman dataset. We begin this section by introducing the reader to \textbf{Darknet}, the neural network framework YOLO is implemented on, and how we integrated it into ROS. We also briefly explain how the network detects objects, and compare YOLOv3-tiny with the more memory intensive YOLOv3. We then guide the reader through the training process, and the analysis we did to validate the human detection improvements compared to pre-trained models.
 
 \subsubsection{Darknet}
-Darknet\footnote{https://pjreddie.com/darknet/} is an open source neural network framework written in C and CUDA which supports both CPU and GPU computation \cite{darknet13}. The source code for the framework is freely available on Github, and it can be used to train different neural network architectures in a manner similar to more conventional deep learning frameworks such as Tensorflow or Caffe.
+Darknet\footnote{https://pjreddie.com/darknet/} is an open source neural network framework written in C and CUDA which supports both CPU and GPU computation \cite{darknet13}. The source code for the framework is freely available on GitHub, and it can be used to train different neural network architectures in a manner similar to more conventional deep learning frameworks such as Tensorflow or Caffe.
 
 \subsubsection{Darknet in ROS}
 By definition, ROS is language-independent, although at the time of writing, three main libraries have been defined for ROS, making it possible to program ROS in Python, Lisp or C++. On the other hand, Darknet is implemented in C, due to the speed of compiled low-level languages in conjunction with CUDA. However, the Darknet framework is compiled into \textit{Shared Object (.so)} file, which is analogous to a Windows DLL. As such, it becomes possible to access the framework by writing wrappers around the compiled library file.
 
-\paragraph{}Darknet has basic Python wrappers around the compiled library which convert Python datatypes into C and vice versa. However, the original wrappers for detection are written to run on images that are saved on disk. Darknet converts the saved images into a C data structure \code{IMAGE} and performs the detections. To integrate the framework into ROS, the node must be able to receive data from image topics with \code{CompressedImage} or raw \code{Image} messages.
+\paragraph{}Darknet has basic Python wrappers around the compiled library which convert Python data types into C and vice versa. However, the original wrappers for detection are written to run on images that are saved on disk. Darknet converts the saved images into a C data structure \code{IMAGE} and performs the detections. To integrate the framework into ROS, the node must be able to receive data from image topics with \code{CompressedImage} or raw \code{Image} messages.
 
 \paragraph{}In ROS Python, the JPG or PNG images received from the \code{CompressedImage} message can be converted to numpy arrays which store the RGB values, without the need to be saved on disk. As such, we wrote Python wrappers for Darknet that allow the framework to support images in the form of numpy arrays as well as images saved on disk. The following listing defines the \code{IMAGE} data structure, and the conversion of an image numpy array to the Darknet format: \\
 
@@ -83,7 +83,7 @@ def nparray_to_image(img):
 Further Python wrappers were written for the detection and return of the image bounding box co-ordinates. We also created ROS messages for the bounding box detections, which allows the Darknet YOLO node to communicate with other nodes in the HDD system. The full code listing can be found in the Appendix \footnote{https://github.com/alaksana96/darknet-crowdhuman}\footnote{https://github.com/alaksana96/fyp\_yolo}.
 
 \subsubsection{YOLO Detection Algorithm}
-As researched in Section \ref{sec:backYOLO}, the algorithm divides an input image into an $S\times S$ grid. Each grid cell can predict one object, and a cell can predict a fixed number of bounding boxes $B$, which we visualize in Figure \ref{fig:yoloViz}. The predicted bounding box is chosen from the set of $B$ boxes with the highest box confidence score, which is a measure of how likely the box contains an object and how accurate the boundry box is. It also predicts the conditional class probability, which is the probability a detected object belongs to a certain class. 
+As researched in Section \ref{sec:backYOLO}, the algorithm divides an input image into an $S\times S$ grid. Each grid cell can predict one object, and a cell can predict a fixed number of bounding boxes $B$, which we visualize in Figure \ref{fig:yoloViz}. The predicted bounding box is chosen from the set of $B$ boxes with the highest box confidence score, which is a measure of how likely the box contains an object and how accurate the boundary box is. It also predicts the conditional class probability, which is the probability a detected object belongs to a certain class. 
 
 \begin{figure}[ht]
 	\begin{subfigure}[b]{.45\textwidth}
@@ -106,7 +106,7 @@ As researched in Section \ref{sec:backYOLO}, the algorithm divides an input imag
 \end{figure}
 
 \subsubsection{YOLOv3 Tiny vs YOLOv3}
-While testing out the different models, we noticed that the YOLOv3 model was consistently crashing and causing segmentation faults. On further investigation, we noticed that this was due to the network using up all 4GB of video memory available on the GPU. In comparison to its predecessors YOLO and YOLOv2, YOLOv3 is a much larger network which has 106 fully convolutional layers. Although it is far more accurate at predicting bounding boxes, it reduces the framerates that can be achieved on video. As such, we decided to use YOLOv3 Tiny, a shallower variant of the network that is suitable for real-time image detection. Although the tiny version is not as accurate, it is much lighter on memory, using less than 1GB video RAM, making it a suitable choice for this project.
+While testing out the different models, we noticed that the YOLOv3 model was consistently crashing and causing segmentation faults. On further investigation, we noticed that this was due to the network using up all 4GB of video memory available on the GPU. In comparison to its predecessors YOLO and YOLOv2, YOLOv3 is a much larger network which has 106 fully convolutional layers. Although it is far more accurate at predicting bounding boxes, it reduces the frame rates that can be achieved on video. As such, we decided to use YOLOv3 Tiny, a shallower variant of the network that is suitable for real-time image detection. Although the tiny version is not as accurate, it is much lighter on memory, using less than 1GB video RAM, making it a suitable choice for this project.
 
 \subsubsection{Training YOLOv3 Tiny}
 \paragraph{CrowdHuman} The CrowdHuman dataset \cite{Shao} is a benchmark dataset to better evaluate detectors in crowd scenarios. The most important features of the dataset are the size, quality of the annotations and the diversity. Each image contains multiple people with varying degrees of occlusion, which allows for object detectors to better learn the representation of obscured people. 
@@ -146,10 +146,10 @@ As can be seen from Figure \ref{fig:crowdHumanStats}, the dataset contains far m
 
 These optimizations were done in order to maximize the amount of GPU memory used for training, without a sudden surge in usage causing a segmentation fault. Resizing the input training images allows the algorithm to divide the image into a $S\times S$ grid. Generally, the larger the height and width, the better the predictions, since the image can be divided into more grid cells. This is a trade-off we had to make in order to be able to train the network on a mid-range GPU.
 
-\paragraph{Training Process} We left the model to train overnight, creating backups of the weights every 1000 iterations. The following day, after reaching 30,000 iterations, we decided to stop training the network. The average loss error and total loss had stopped decreasing for several hours, and was hovering around $29.134$. We reasoned that the network had reached a minima, and further training would be redundant, since it would overfit the dataset. The final weights are available in the file \code{yolov3-tiny-crowdhuman.backup} .
+\paragraph{Training Process} We left the model to train overnight, creating backups of the weights every 1000 iterations. The following day, after reaching 30,000 iterations, we decided to stop training the network. The average loss error and total loss had stopped decreasing for several hours, and was hovering around $29.134$. We reasoned that the network had reached a minima, and further training would be redundant, since it would over-fit the dataset. The final weights are available in the file \code{yolov3-tiny-crowdhuman.backup} .
 
 \subsubsection{Evaluating Trained Model}
-\paragraph{Hololens Videos} As mentioned in Section \ref{sec:backYOLO}, we recorded several test videos using the Microsofto Hololens. These videos were capture in various locations on the Imperial College campus. A common area where lots of people frequent is the Sherfield walkway. As seen in Figure \ref{fig:yoloSherfield}, this was an ideal place to capture a video since it features a lot of people walking around in different directions. We captured several more videos outside the EEE building and inside the 5th floor ICRS lab. 
+\paragraph{Hololens Videos} As mentioned in Section \ref{sec:backYOLO}, we recorded several test videos using the Microsoft Hololens. These videos were capture in various locations on the Imperial College campus. A common area where lots of people frequent is the Sherfield walkway. As seen in Figure \ref{fig:yoloSherfield}, this was an ideal place to capture a video since it features a lot of people walking around in different directions. We captured several more videos outside the EEE building and inside the 5th floor ICRS lab. 
 
 \begin{figure}[ht]
 	\centering
@@ -190,7 +190,7 @@ The major contribution of this project is in the form of the Yet Another Crowd H
 \paragraph{ROS Communication} As seen in Section \ref{sec:nodeYOLO}, the YOLO object detector node publishes a topic which contains the image and associated bounding boxes. Figure \ref{fig:detailedHL} shows that both YACHT nodes subscribe to the same output topic. The reason we decided to include the original image in the message and not just the bounding boxes is so that we can be sure the bounding boxes were detected for that frame, without having to subscribe to two seperate topics and comparing timestamps on individiual messages.
 
 \subsection{YACHT: Tracker}
-As explained in Section \ref{sec:YACHT}, the YACHT tracker depends on the Deep SORT algorithm \cite{Wojke2018}. Using the detections produced by the YOLO node, we assign IDs and match them across video frames to produce a track. These tracking IDs are then sent to the HoloLens for visualizaiton.
+As explained in Section \ref{sec:YACHT}, the YACHT tracker depends on the Deep SORT algorithm \cite{Wojke2018}. Using the detections produced by the YOLO node, we assign IDs and match them across video frames to produce a track. These tracking IDs are then sent to the Hololens for visualization.
 
 
 \subsubsection{Deep SORT} 
@@ -241,10 +241,10 @@ class ImageEncoder(object):
 	\label{fig:deepSortMatch}
 \end{figure}
 
-Any pre-existing tracks which are not matched are checked. If the number of frames since the previous match is greater than the \code{max\_age} parameter, the track is considered dead and is deleted. This is done so as to prevent the number of tracks from growing unboundedly. A Kalman filter is used to update the bounding box states of each track, as well as the time since the last update.
+Any pre-existing tracks which are not matched are checked. If the number of frames since the previous match is greater than the \code{max\_age} parameter, the track is considered dead and is deleted. This is done so as to prevent the number of tracks from growing infinitely. A Kalman filter is used to update the bounding box states of each track, as well as the time since the last update.
  
 \subsubsection{Linear Extrapolation}
-We experimented with linear extrapolation across frames as a way of infering the direction travelled by the detection. As the project progressed, we encountered issues with this method, as explained in Section \ref{sec:objecTrackingDirection}. By searching for alternative methods, it was found that the depth camera on the Hololens can determine the distance between the PWU and an object relatively accurately. As such, we abandoned the pure computer vision approach in favour of using the Hololens.
+We experimented with linear extrapolation across frames as a way of inferring the direction travelled by the detection. As the project progressed, we encountered issues with this method, as explained in Section \ref{sec:objecTrackingDirection}. By searching for alternative methods, it was found that the depth camera on the Hololens can determine the distance between the PWU and an object relatively accurately. As such, we abandoned the pure computer vision approach in favour of using the Hololens.
 
 \subsubsection{ROS Topic} The decision to use the Hololens depth cameras as a way of determining distance prompted the need for ROS messages to be sent to the device. As seen in Figure \ref{fig:detailedHDD}, the  tracker node publishes the bounding box and tracker ID to the Hololens. The \code{BoundingBox} data structure is defined in Listing \ref{bbmsg}, and is the same bounding boxes generated by the YOLO detector.
 
@@ -254,22 +254,22 @@ int64       id
 \end{lstlisting}
 
 \subsection{YACHT: Direction}
-The second node in the YACHT package is the direction node, which uses the OpenPose framework to determine if a person is facing the camera or not. Earlier in Section \ref{des:YACHTBody}, we outlined the problem of not being able to determine the distance to an object with a regular pinhole camera model. We initally wanted to be able to determine the distance using only a video stream and computer vision techniques. However, we quickly realized that this was beyond the scope of the project, and decided to use the depth cameras on the Hololens.
+The second node in the YACHT package is the direction node, which uses the OpenPose framework to determine if a person is facing the camera or not. Earlier in Section \ref{des:YACHTBody}, we outlined the problem of not being able to determine the distance to an object with a regular pinhole camera model. We initially wanted to be able to determine the distance using only a video stream and computer vision techniques. However, we quickly realized that this was beyond the scope of the project, and decided to use the depth cameras on the Hololens.
 
-\paragraph{} This section outlines the installation and setup of the OpenPose network \cite{Shao}. We also explain how we use the keypoint detections to determine whether an individual is facing the PWU or not. Furthermore, we also explain how the bottom-up approach of OpenPose differs from the top-down approach that may have been more suitable, and the reasons for our implementation choices.
+\paragraph{} This section outlines the installation and setup of the OpenPose network \cite{Shao}. We also explain how we use the key-point detections to determine whether an individual is facing the PWU or not. Furthermore, we also explain how the bottom-up approach of OpenPose differs from the top-down approach that may have been more suitable, and the reasons for our implementation choices.
 
 \subsubsection{OpenPose}
 OpenPose is developed and maintained by the Carnegie Mellon University Perceptual Computing Lab. The implementation is made available on Github\footnote{https://github.com/CMU-Perceptual-Computing-Lab/openpose} to encourage body pose estimation research.
 
-\paragraph{Installation \& Setup} The OpenPose library runs on a modified version of the convolutional neural network framework Caffe \cite{Jia}. The library is well documented, and provides its own instructions on how to setup the library. We direct the reader to the OpenPose Github repository if they wish to install the library themselves.
+\paragraph{Installation \& Setup} The OpenPose library runs on a modified version of the convolutional neural network framework Caffe \cite{Jia}. The library is well documented, and provides its own instructions on how to setup the library. We direct the reader to the OpenPose GitHub repository if they wish to install the library themselves.
 
 \paragraph{Model} As stated in Section \ref{des:body_25}, we use the \code{BODY\_25} keypoint estimation model for this project. The documentation states that this model is the fastest when it comes to real-time application, compared to the \code{MPI\_4} or \code{COCO} models. We also reduce the network resolution to $176\times 176$ to reduce the GPU usage and speed up the keypoint estimation. However, this reduces the accuracy of the detections, as discussed in this section.
 
 \subsubsection{KeyPoint Estimation} \label{sec:bottomUp} 
-Due to the bottom-up approach used by OpenPose, the network predicts keypoints for individual body parts across the whole image. Through our testing on the MOT dataset, we noticed several points:
+Due to the bottom-up approach used by OpenPose, the network predicts key-points for individual body parts across the whole image. Through our testing on the MOT dataset, we noticed several points:
 
 \begin{itemize}
-	\item The model is good at detecting keypoints of people close to the camera.
+	\item The model is good at detecting key-points of people close to the camera.
 	\item People who are smaller and further away are not always detected.
 	\item When people are close together or overlap, the keypoint estimation has difficulty differentiating between people.
 	\item The more people in the image, the more network slows down and begins to lag behind the source video.
@@ -304,7 +304,7 @@ Due to the bottom-up approach used by OpenPose, the network predicts keypoints f
 We highlight the issues in Figure \ref{fig:openposeKP}. The reason for the decrease in accuracy on people further away is due to the network resolution being lowered. Using a higher resolution allows us to detect people further away, but the delay between the arrival of the frame and the detection is more than 0.5 seconds. As such, to achieve real-time operation, we chose to use a lower network resolution.
 
 \subsubsection{Defining Direction}
-By comparing the relative positions of certain keypoints, we can determine if a person is facing towards the camera or if they are walking away. This information is important, since it will allow for better visualization of where a person is walking, since people tend to walk in the direction they are facing. This also partially solves the direction problem brought up in Section \ref{sec:objecTrackingDirection}.
+By comparing the relative positions of certain key-points, we can determine if a person is facing towards the camera or if they are walking away. This information is important, since it will allow for better visualization of where a person is walking, since people tend to walk in the direction they are facing. This also partially solves the direction problem brought up in Section \ref{sec:objecTrackingDirection}.
 
 \begin{figure}[ht]
 	\begin{subfigure}[b]{.32\textwidth}
@@ -316,7 +316,7 @@ By comparing the relative positions of certain keypoints, we can determine if a 
 	\begin{subfigure}[b]{.32\textwidth}
 		\centering
 		\includegraphics[width=0.765\linewidth]{img/chapter5_implementation/keypoints_pose_25.png}
-		\caption{Keypoint References}
+		\caption{Key-point References}
 	\end{subfigure}
 	\hspace{\fill} 
 	\begin{subfigure}[b]{.32\textwidth}
@@ -347,7 +347,7 @@ By comparing the relative positions of certain keypoints, we can determine if a 
 	\label{tab:keypoints}
 \end{table}
 
-We can use the ability to differentiate between the left and right arms to determine if a person is facing the camera. Table \ref{tab:keypoints} presents the keypoints for the relevant bodyparts. If the image co-ordinates of the left shoulder is further along the x-axis than the right shoulder, we can predict the direction as facing towards the camera. From testing, we know this simple method works most of the time. However, problems arise when a person is standing perpendicular to the camera. OpenPose has trouble detecting the torso and predicting the positions of the limbs, and it becomes difficult to decide if they are facing left or right.
+We can use the ability to differentiate between the left and right arms to determine if a person is facing the camera. Table \ref{tab:keypoints} presents the key-points for the relevant body parts. If the image co-ordinates of the left shoulder is further along the x-axis than the right shoulder, we can predict the direction as facing towards the camera. From testing, we know this simple method works most of the time. However, problems arise when a person is standing perpendicular to the camera. OpenPose has trouble detecting the torso and predicting the positions of the limbs, and it becomes difficult to decide if they are facing left or right.
 
 \subsubsection{Implementation \& Detection Matching}
 As mentioned in Section \ref{sec:bottomUp}, OpenPose uses a bottom-up approach by detecting individual body parts across the whole image. We need to match the OpenPose keypoint predictions with existing bounding boxes from YOLO, since these are assigned track IDs by the tracker node. This is done in Listing \ref{lst:matchDetPose} \\
@@ -389,3 +389,4 @@ bool        directionTowardsCamera
 	\caption{Unity application running on the Hololens}
 	\label{fig:detailedHololens}
 \end{figure}
+

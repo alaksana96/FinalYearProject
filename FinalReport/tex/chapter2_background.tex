@@ -36,7 +36,7 @@ A related field of research is that of people counting and human detection in vi
 \subsubsection{Foreground Detection}
 Background subtraction is a widely used approach for detecting moving objects \cite{Piccardi2004}. A temporal average filter can be used to find the median of all the pixels in an image to form a reference image. Frames with moving objects can then be compared pixelwise to the reference, and a threshold set to determines if the pixel is part of the background or foreground. People counting and human detection can then be achieved by segmenting the foreground image into individuals.
 
-\paragraph{} However, this technique often relies on a static camera in a well placed location. This brings up several reasons as to why this method would not be suitable for this project. Firstly, the camera available is part of a head-mounted augmented reality device. The wearer has the ability to move the camera in 6 degrees of freedom. Secondly, the wearer will also be navigating a powered wheelchair. As a result, the background is constantly changing, and the reference image would require constant recomputation before human detection can even begin.
+\paragraph{} However, this technique often relies on a static camera in a well placed location. This brings up several reasons as to why this method would not be suitable for this project. Firstly, the camera available is part of a head-mounted augmented reality device. The wearer has the ability to move the camera in 6 degrees of freedom. Secondly, the wearer will also be navigating a powered wheelchair. As a result, the background is constantly changing, and the reference image would require constant re-computation before human detection can even begin.
 
 \subsubsection{Scanning Windows}
 Due to the ever-changing surroundings of a mobile robot, a better approach for object detection is to exhaustively search an image using scanning windows and determining if an object was detected in each window. However, it must be noted that this method is computationally expensive. In order to achieve real-time detection on a mobile robot, the use of a graphics processing unit (GPU) should be considered \cite{Hirabayashi}.
@@ -46,7 +46,7 @@ Due to the ever-changing surroundings of a mobile robot, a better approach for o
 \paragraph{Haar Cascades}
 Haar cascades classifies images based on the value of simple features \cite{Viola2001}, which are variants of the difference between the sum of pixel values in rectangular regions. An intermediate representation of the original image is used to rapidly compute a small set of representative rectangular features.
 
-\paragraph{}A cascade of classifiers is then used to determine if the region is detected as a human. The detection process is that of a degenerate decision tree, where a positive result in the first cascade will trigerr an evaluation in the second, more successful classifier. As such, the initial classifier can eliminate a large number of negative examples with very little processing. After several stages, the number of sub-windows has been reduced radically
+\paragraph{}A cascade of classifiers is then used to determine if the region is detected as a human. The detection process is that of a degenerate decision tree, where a positive result in the first cascade will trigger an evaluation in the second, more successful classifier. As such, the initial classifier can eliminate a large number of negative examples with very little processing. After several stages, the number of sub-windows has been reduced radically
 
 \paragraph{Histograms of Oriented Gradients}
 The method proposed is implemented by dividing the image window into small spatial regions and calculating a local 1-D histogram of gradient directions for all the pixels in the region. The combined local histograms form the overall feature representation of the image.
@@ -56,7 +56,7 @@ The method proposed is implemented by dividing the image window into small spati
 \subsubsection{Deep Learning Object Detection}
 Modern approaches for human detection largely depend on Deep Convolutional Neural Networks (CNN). The approach provides the best in class performance, as well as scaling effectively with more data. An added advantage of using CNN based object detection systems for this project is that they are also capable of detecting multiple classes of objects.
 
-\paragraph{}An issue with CNN approaches is that the methods are trying to draw bounding boxes around objects of interest in images. However, we do not know the number of objects in the image beforehand. As such, to be completely sure every object has been detected, a naive solution is to take a huge number of regions and attempt to classify all the objects in the region, a computationaly expensive process.
+\paragraph{}An issue with CNN approaches is that the methods are trying to draw bounding boxes around objects of interest in images. However, we do not know the number of objects in the image beforehand. As such, to be completely sure every object has been detected, a naive solution is to take a huge number of regions and attempt to classify all the objects in the region, a computationally expensive process.
 
 \begin{figure}[ht]
 	\centering
@@ -66,7 +66,7 @@ Modern approaches for human detection largely depend on Deep Convolutional Neura
 
 \paragraph{R-CNN} The R-CNN method uses a selective search to extract 2000 regions from an image \cite{Girshick2014}. The regions are selected by generating a large number of candidate regions and using a greedy algorithm to recursively combine similar regions into larger ones. The regions are then fed into a CNN that acts as a feature extractor and the output dense layer consists of the features extracted from the image, which are then fed into an SVM to classify the presence of objects in the region.
 
-\paragraph{}The major disadvantage to this approach is the amount of time required to train the network. Each training image has to be classied once for each of the 2000 region proposals. Furthermore, the selective search algorithm is a fixed algorithm (no learning is done), and as such, could lead to generation of bad candidate region proposals.
+\paragraph{}The major disadvantage to this approach is the amount of time required to train the network. Each training image has to be classified once for each of the 2000 region proposals. Furthermore, the selective search algorithm is a fixed algorithm (no learning is done), and as such, could lead to generation of bad candidate region proposals.
 
 \paragraph{YOLO} \label{sec:backYOLO} Whereas R-CNN uses regions to localize the object within an image, You Only Look Once (YOLO) looks at the image as a whole and uses a single CNN to predict the bounding box and the class probabilities \cite{Redmon}. By looking at the image as a whole, the network can use features from the entire image to predict each bounding box.
 
@@ -79,7 +79,7 @@ Modern approaches for human detection largely depend on Deep Convolutional Neura
 The model divides the image into an $S \times S$ grid, and for each cell, predicts a number of bounding boxes, the confidence for those boxes and the class probabilities.
 
 \subsection{Comments} \label{sec:detector}
-As seen from the research, we can clearly see that there are many ways to solve the human detection problem. The classical approaches, although computationally efficient, are siginficiantly outperformed by the deep learning approaches. For a mobile robot in a public area, we want to be able to detect almost all humans in the surroundings to better inform the PWU.
+As seen from the research, we can clearly see that there are many ways to solve the human detection problem. The classical approaches, although computationally efficient, are significantly outperformed by the deep learning approaches. For a mobile robot in a public area, we want to be able to detect almost all humans in the surroundings to better inform the PWU.
 
 \paragraph{}However, the major disadvantage of the deep learning approach is the time taken to train the network, as well as the requirement of a GPU to achieve real-time performance. These issues will be addressed in a later section of the report.
 
@@ -93,13 +93,13 @@ Object tracking can be defined as the ability to detect objects in consecutive f
  Pedestrian detection is often achieved by using a high quality object detector and associating the detections across frames \cite{Dicle2013}. The associations are based on the appearance and location similarity. Furthermore, it is possible to discern simple motion patterns from the tracked pedestrians, allowing for more accurate tracking.
  
 \subsubsection{SORT}
-\paragraph{Methodology} The Simple Online and Realtime Tracking (SORT) method relies on the accurate detections of a CNN to calculate bounding boxes of the tracked objects across frames \cite{Bewley2016}. The technique estimates the inter-frame displacements of each detected objects with a linear constant velocity model. The state of each tracked object is modelled using the bounding box centroids $u$ and $v$, the scale and aspect ratio, $s$ and $r$.
+\paragraph{Methodology} The Simple Online and Real-time Tracking (SORT) method relies on the accurate detections of a CNN to calculate bounding boxes of the tracked objects across frames \cite{Bewley2016}. The technique estimates the inter-frame displacements of each detected objects with a linear constant velocity model. The state of each tracked object is modelled using the bounding box centroids $u$ and $v$, the scale and aspect ratio, $s$ and $r$.
 
 \[x = [u, v, s, r, \dot{u}, \dot{v}, \dot{s}] \]
 
 When a new detection is associated with a tracked object, the bounding box of the new detection is used to update the tracked object state, and using a Kalman filter to update the velocity components \cite{Kalman1961}. To determine associations between new detections and tracked targets, the SORT algorithm relies on the intersection-over-union (IOU) distance between each detection and the predicted bounding boxes of all the existing targets.
 
-\paragraph{} For every detection to be tracked, a uniqe tracker identity must be created and destroyed when the object enters and leaves the image. The original implmentation of the algorithm relied on a $IOU_{min}$ value to signify the existence of an untracked object. The tracks are then terminated if they are not detected for an allotted number of frames, to prevent the unbounded growth of trackers.
+\paragraph{} For every detection to be tracked, a unique tracker identity must be created and destroyed when the object enters and leaves the image. The original implementation of the algorithm relied on a $IOU_{min}$ value to signify the existence of an untracked object. The tracks are then terminated if they are not detected for an allotted number of frames, to prevent the unbounded growth of trackers.
 
 \paragraph{Limitations}
 Due to the simplicity of the association metric, the significant overhead and complexity of object re-identification is removed, allowing for the system to work in real-time applications. However, this also reduces the accuracy of the tracking, since occlusions will spawn new trackers for the same objects. Furthermore, the accuracy of the tracking is largely dependent on the object detector providing accurate bounding boxes.
@@ -107,21 +107,21 @@ Due to the simplicity of the association metric, the significant overhead and co
 \subsubsection{Deep SORT}
 The original SORT suffered from a high number of identity switches, since the association metric was only accurate if the state estimation uncertainty was low. Wokje proposed a solution to the issue by learning a deep association metric on a re-identification dataset \cite{Wojke2018}. 
 
-\paragraph{Methodology} The tracking and Kalman filtering in Deep SORT is mostly identical to the original SORT implementation. However, Deep SORT uses a Mahalonibis distance as an association metric between the Kalman predicted states and new detections. It further uses a second metric, whereby an appearance descriptor is calculated for each bounding box. A gallery of the previous $L_{k} = 100$ descriptors are kept for each track. The algorithm then iterates and measures the smallest cosine distance between the existing tracks and the detection.
+\paragraph{Methodology} The tracking and Kalman filtering in Deep SORT is mostly identical to the original SORT implementation. However, Deep SORT uses a Mahalanobis distance as an association metric between the Kalman predicted states and new detections. It further uses a second metric, whereby an appearance descriptor is calculated for each bounding box. A gallery of the previous $L_{k} = 100$ descriptors are kept for each track. The algorithm then iterates and measures the smallest cosine distance between the existing tracks and the detection.
 
-\paragraph{} The appearance descriptor is implemented using a CNN that has been trained offline on a person re-identification dataset. The Github implementation of the Deep SORT algorithm uses a simple nearest neighbour query without any additional metric learning.
+\paragraph{} The appearance descriptor is implemented using a CNN that has been trained offline on a person re-identification dataset. The GitHub implementation of the Deep SORT algorithm uses a simple nearest neighbour query without any additional metric learning.
 
 \paragraph{Limitations}
-Although the accuracy of the the tracking is improved and the issue of occlusions is reduced, the increased complexity of the algorithm requires more computational power. As stated in the paper, a modern GPU would be required to run this in real-time, due to the need for an appearance descriptor to be calculated for each detection.
+Although the accuracy of tracking is improved and the issue of occlusions is reduced, the increased complexity of the algorithm requires more computational power. As stated in the paper, a modern GPU would be required to run this in real-time, due to the need for an appearance descriptor to be calculated for each detection.
 
 \subsection{Comments} \label{sec:objectTrackComments}
 For this project, we have limited ourselves to researching simple object tracking methods that work in real-time. We can clearly see a trade-off between accuracy of tracking and computational power. Further investigation into the hardware available and the importance of object tracker accuracy will be needed to decide what method would be best for the augmented reality system.
 
 \section{Head and Body Pose Estimation}
-Pose estimation is a general computer vision problem where we attempt to detect the position and orientation of an object. This process can be achieved by detecting keypoint locations that describe the pose of the object. For instance, in body pose estimation, we identify the joints in the body.
+Pose estimation is a general computer vision problem where we attempt to detect the position and orientation of an object. This process can be achieved by detecting key-point locations that describe the pose of the object. For instance, in body pose estimation, we identify the joints in the body.
 
 \subsection{Direction of Research}
-An interesting concept to explore is that of head and body pose estimation as a way of infering the direction a person is walking in. For instance, people tend to look in the direction they are currently walking, but should they want to change direction, they also tend to look in that direction before changing \cite{Valenti2012}. Similarly, if we can determine the body pose of a person, the system will be able to tell if a person is walking to or away from the PWU without relying on depth sensors.
+An interesting concept to explore is that of head and body pose estimation as a way of inferring the direction a person is walking in. For instance, people tend to look in the direction they are currently walking, but should they want to change direction, they also tend to look in that direction before changing \cite{Valenti2012}. Similarly, if we can determine the body pose of a person, the system will be able to tell if a person is walking to or away from the PWU without relying on depth sensors.
 
 \subsection{Review of Existing Methodologies}
 
@@ -129,14 +129,14 @@ An interesting concept to explore is that of head and body pose estimation as a 
 Head pose estimation is intrinsically linked with visual gaze estimation \cite{Murphy-Chutorian2009}. If we can characterize the direction and focus of a person's eyes, it may be possible to determine the direction they will walk in next.
 
 \paragraph{Facial Landmark Detection}
-Before head pose estimation can be done, keypoints on the face must be detected \cite{Kazemi2014}. These points will then be used to solve a Perspective-n-Point (PnP) problem to determine the head pose. There are many facial landmark detection techniques, depending on the number of landmarks to be detected. As the number of landmarks increase, the more accurate the pose estimation can be. However, it also increases the complexity of the detection, and as such, it becomes a trade-off between the two factors.
+Before head pose estimation can be done, key-points on the face must be detected \cite{Kazemi2014}. These points will then be used to solve a Perspective-n-Point (PnP) problem to determine the head pose. There are many facial landmark detection techniques, depending on the number of landmarks to be detected. As the number of landmarks increase, the more accurate the pose estimation can be. However, it also increases the complexity of the detection, and as such, it becomes a trade-off between the two factors.
 
 \subsubsection{Body Pose Estimation} \label{sec:backBodyPoseEstimation}
 An idea we wish to explore is using the body pose of an individual to estimate the direction they are walking in. If the system can discern between a person's back or front, we can infer the motion, since people do not normally walk backwards. A limitation of our system is that it has to be done in real time for it to be effective. As such, the techniques we can explore are limited by the hardware available.
 
-\paragraph{PoseNet} A common approach for body pose estimation is to employ a person detector and perform single-person pose estimation for each detection, known as a top-down approach. PoseNet is a real-time human pose estimator with a web-browser implementation that runs on Tensorflow.js, making it easily available to anyone. The implementation is based on the works of Papanderou and Zhu \cite{Papandreou2017} in building a network that utilizes the Faster-RCNN model as an object detector to obtain accurate bounding boxes of people in an image \cite{Ren2017}. The keypoints are then calculated using a a ResNet \cite{He2016} by predicting activation heatmaps and offsets.
+\paragraph{PoseNet} A common approach for body pose estimation is to employ a person detector and perform single-person pose estimation for each detection, known as a top-down approach. PoseNet is a real-time human pose estimator with a web-browser implementation that runs on Tensorflow.js, making it easily available to anyone. The implementation is based on the works of Papanderou and Zhu \cite{Papandreou2017} in building a network that utilizes the Faster-RCNN model as an object detector to obtain accurate bounding boxes of people in an image \cite{Ren2017}. The key-points are then calculated using a a ResNet \cite{He2016} by predicting activation heatmaps and offsets.
 
-\paragraph{OpenPose} Top-down approaches can be limited by the failure of the person detector. This is especially common when two individuals are very close to each other, and the detector is unable to differentiate between them. In contrast the bottom-up approach, which is based on partitioning and labeling an initial pool of body part candidates into subsets \cite{Pishchulin}, is able to deal with an unknown number of people, and can infer that number by linking the part hypotheses.
+\paragraph{OpenPose} Top-down approaches can be limited by the failure of the person detector. This is especially common when two individuals are very close to each other, and the detector is unable to differentiate between them. In contrast the bottom-up approach, which is based on partitioning and labelling an initial pool of body part candidates into subsets \cite{Pishchulin}, is able to deal with an unknown number of people, and can infer that number by linking the part hypotheses.
 
 \begin{figure}[ht]
 	\centering
@@ -144,7 +144,7 @@ An idea we wish to explore is using the body pose of an individual to estimate t
 	\caption{OpenPose body pose detection \cite{Cao2017}}
 \end{figure}
 
-\paragraph{} As such, OpenPose presents a method of multi-person pose esimtation using a bottom-up approach \cite{Cao2017}. The method relies on \textit{partial affinity fields} (PAFs), a representation that encodes unstructured pairwise relationships between body parts. The network produces the 2D confidence maps of body part locations and PAFs, and through greedy inference, the network outputs the 2D keypoints for all people in the image.
+\paragraph{} As such, OpenPose presents a method of multi-person pose estimation using a bottom-up approach \cite{Cao2017}. The method relies on \textit{partial affinity fields} (PAFs), a representation that encodes unstructured pairwise relationships between body parts. The network produces the 2D confidence maps of body part locations and PAFs, and through greedy inference, the network outputs the 2D key-points for all people in the image.
 
 \subsection{Comments}
 Head and body pose estimation is a vast field of research, with dozens of effective real-time estimation methods. This project is not focused on achieving the best body/head pose estimation, but rather, in utilizing existing frameworks to infer directions of individuals. As such, we have refrained from delving too deep into the theory of body pose estimation, and instead, have attempted to choose a method from available implementations.
@@ -171,7 +171,7 @@ Visual SLAM (vSLAM) is an implementation of SLAM that relies on visual inputs on
 In the initialization stage, camera pose estimation is conducted, to transform objects in a 2D image from the camera into a 3D co-ordinate system that the robot understands. This process determines the position and orientation of the camera relative to the object. A part of the environment is reconstructed as part of the initial map using the global co-ordinate system of the robot.
 
 \paragraph{Tracking}
-Here, the reconstructed map is used to estimate the pose of the camera with respect to the map. Feature mapping or feature tracking is conducted on the images in order to get a 2D-3D correspondence between the image and the map. The camera pose can then be calculated from the correspondences by solving the Perspective-n-Point problem \citep{Nister2004}. This allows the system to identify where on the map the robot currently is.
+Here, the reconstructed map is used to estimate the pose of the camera with respect to the map. Feature mapping or tracking is conducted on the images in order to get a 2D-3D correspondence between the image and the map. The camera pose can then be calculated from the correspondences by solving the Perspective-n-Point problem \citep{Nister2004}. This allows the system to identify where on the map the robot currently is.
 
 \paragraph{Mapping}
 When the robot passes through an environment that has previously not been mapped, the 3D structure of the surroundings is calculated from the camera images. The structures are then added to the existing map of the environment.
@@ -197,7 +197,7 @@ The Microsoft Hololens is an untethered holographic computer, allowing for the d
 \paragraph{Hardware Specifications} As part of our research, we highlight the sensors on the device that may be relevant to the project. A full hardware specification is available online \cite{Microsoft2015}. 
 
 \begin{itemize}
-	\item 1 Intertial Measurement Unit (IMU)
+	\item 1 Inertial Measurement Unit (IMU)
 	\item 4 Environment understanding cameras
 	\item 1 Depth Camera
 	\item 1 2MP Photo/HD video camera

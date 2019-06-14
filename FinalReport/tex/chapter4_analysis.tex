@@ -5,7 +5,7 @@ This chapter gives an overview of the overall system and explains the design cho
 As stated in the requirements, this project consists of three major components:
 \begin{itemize}
 	\item Human Detection and Direction (HDD)
-	\item Object Mapping and Visualization (OMV)
+	\item Object Mapping and Visualization
 	\item Reactive Control on ARTA
 \end{itemize}
 
@@ -36,12 +36,12 @@ Table. \ref{tab:hardware} summarises the hardware overall system is implemented 
 
 \subsection{System Communication} \label{sec:systemComms}
 
-\subsubsection{Robotic Operating System} Since the project spans multiple operating systems, we have chosen to utilize the Robotic Operating System (ROS) as a means of communication between the devices. In ROS, a \textit{node} is defined as a process that performs a computation. A node can be made up of smaller nodes that perform specific computations that serve the needs of the parent node. We can think of the three major systems as large ROS nodes that consists of smaller nodes that run individiual tasks, such as creating the camera stream, or detecting objects.
+\subsubsection{Robotic Operating System} Since the project spans multiple operating systems, we have chosen to utilize the Robotic Operating System (ROS) as a means of communication between the devices. In ROS, a \textit{node} is defined as a process that performs a computation. A node can be made up of smaller nodes that perform specific computations that serve the needs of the parent node. We can think of the three major systems as large ROS nodes that consists of smaller nodes that run individual tasks, such as creating the camera stream, or detecting objects.
 
-\paragraph{ROS Topics} Nodes in ROS communicate with one another by publishing data in the form of \textit{messages} which get broadcasted over a \textit{topic}. Nodes can choose what data they receive by subscribing to topics. This method allows for nodes running on different devices to communicate with each other, regardless of the operating system. The nodes are unaware that the data it receives is published from a node running on a seperate computer, making ROS a perfect choice for communication in this design.
+\paragraph{ROS Topics} Nodes in ROS communicate with one another by publishing data in the form of \textit{messages} which get broadcasted over a \textit{topic}. Nodes can choose what data they receive by subscribing to topics. This method allows for nodes running on different devices to communicate with each other, regardless of the operating system. The nodes are unaware that the data it receives is published from a node running on a separate computer, making ROS a perfect choice for communication in this design.
 
 \section{Human Detection \& Direction System}
-The HDD system is reponsible for detecting and predicting the directions of people in the surroundings of the wheelchair. By taking visual inputs in the form of images from the Hololens, we run an object detector trained on a dataset of pedestrians to detect people and heads. The bounding boxes produced by the object detector are fed as inputs to an object tracker and a body pose estimator. We use the results of these two nodes to infer the direction a detected person is moving in, and publish the results back to the Hololens.
+The HDD system is responsible for detecting and predicting the directions of people in the surroundings of the wheelchair. By taking visual inputs in the form of images from the Hololens, we run an object detector trained on a dataset of pedestrians to detect people and heads. The bounding boxes produced by the object detector are fed as inputs to an object tracker and a body pose estimator. We use the results of these two nodes to infer the direction a detected person is moving in, and publish the results back to the Hololens.
 
 
 We present an overall view of the HDD System, covering the purpose and design of individual components. We also propose the reasoning behind certain design choices, which we cover in more depth later in this report.
@@ -57,7 +57,7 @@ As commented on in Section \ref{sec:detector}, modern deep learning techniques o
 \subsubsection{Pre-trained Model vs Training} \label{sec:designYOLO}
 An advantage of using the YOLO Darknet framework is that it provides trained models which can detect multiple object classes, including the class \textit{Person}. One of the pre-trained models is the YOLOv3-tiny architecture trained on the Common Objects in Context (COCO) dataset \cite{Lin}.
 
-\paragraph{Comparing Models} To compare the accuracy of the bounding boxes produced by pre-trained model, sample videos were recorded using the Hololens and used as a base comparison point. It was quickly shown that although the COCO trained model can detect individuals, or multiple people who are well spaced out, it had difficulty in differentiating between people who are close together or slighlty occluded. Figure \ref{fig:yoloCHvsCoco} highlights the issue of the COCO model failing to detect small people close together.
+\paragraph{Comparing Models} To compare the accuracy of the bounding boxes produced by pre-trained model, sample videos were recorded using the Hololens and used as a base comparison point. It was quickly shown that although the COCO trained model can detect individuals, or multiple people who are well spaced out, it had difficulty in differentiating between people who are close together or slightly occluded. Figure \ref{fig:yoloCHvsCoco} highlights the issue of the COCO model failing to detect small people close together.
 
 \begin{figure}[ht]
 	\begin{subfigure}[b]{.5\textwidth}
@@ -92,9 +92,9 @@ The bounding boxes produced by the object detector are consumed by the \textbf{Y
 \subsubsection{YACHT Tracker: Object Tracking} \label{sec:YACHT}
 We explored existing object tracking methods in Section \ref{sec:objectTrack} and discussed our choices in \ref{sec:objectTrackComments}. For moving object tracking on a powered wheelchair, we express the need for an online object tracking system. As such, we chose to investigate two related real-time methods, SORT \cite{Bewley2016} and Deep SORT \cite{Wojke2018}.
 
-\paragraph{SORT}  The Simple Online and Realtime Tracking (SORT) method is a fast online object tracker. The initial implementation of YACHT used the SORT algorithm due to its speed. However, it was quickly realized that due to the simplicity of the association metric, object tracking was not very accurate, especially for occluded objects. When two objects crossed paths, the tracker was unable to recognize the act, and re-labeled the objects with brand new tracking IDs.
+\paragraph{SORT}  The Simple Online and Real-time Tracking (SORT) method is a fast online object tracker. The initial implementation of YACHT used the SORT algorithm due to its speed. However, it was quickly realized that due to the simplicity of the association metric, object tracking was not very accurate, especially for occluded objects. When two objects crossed paths, the tracker was unable to recognize the act, and re-labelled the objects with brand new tracking IDs.
 
-\paragraph{Deep SORT} Deep SORT is an extension of the original SORT algorithm, but uses a deep network to generate feature descriptors for the predicted bounding boxes. We explain the algorithm in Section \ref{sec:objectTrack}, but to repeat, instead of using the Intersection-over-Union association metric to compare bounding boxes, the deep network genereates feature descriptors for the bounding box, and a Neareast-Neighbours is used to compare the features with a library of feature vectors for each tracked object. This is a form of person re-identification, and this additional step reduced the problem of trackers being lost due to occlusion.
+\paragraph{Deep SORT} Deep SORT is an extension of the original SORT algorithm, but uses a deep network to generate feature descriptors for the predicted bounding boxes. We explain the algorithm in Section \ref{sec:objectTrack}, but to repeat, instead of using the Intersection-over-Union association metric to compare bounding boxes, the deep network generates feature descriptors for the bounding box, and a Nearest-Neighbours is used to compare the features with a library of feature vectors for each tracked object. This is a form of person re-identification, and this additional step reduced the problem of trackers being lost due to occlusion.
 
 \begin{figure}[ht]
 	\centering
@@ -104,7 +104,7 @@ We explored existing object tracking methods in Section \ref{sec:objectTrack} an
 	\vspace{-1\baselineskip}
 \end{figure}
 
-\paragraph{Analysis} The generation and storage of feature descriptors for tracks is an expensive process. For the system to run in real-time, a GPU is needed to accelerate the network. We have made changes to the Deep SORT implementation so it can run on Tensorflow-GPU, which we explain later in this report. This improves the speed significantly, but uses up precious memory. As a result, we had to consider the amount of memory avaiable on the GPU, since the YOLO detector and OpenPose networks also rely on GPU acceleration. After testing, we found that it was possible to run both networks on the GPU at the same time, and we chose to use the Deep Sort method.
+\paragraph{Analysis} The generation and storage of feature descriptors for tracks is an expensive process. For the system to run in real-time, a GPU is needed to accelerate the network. We have made changes to the Deep SORT implementation so it can run on Tensorflow-GPU, which we explain later in this report. This improves the speed significantly, but uses up precious memory. As a result, we had to consider the amount of memory available on the GPU, since the YOLO detector and OpenPose networks also rely on GPU acceleration. After testing, we found that it was possible to run both networks on the GPU at the same time, and we chose to use the Deep Sort method.
 
 \newpage
 \subsubsection{Object Tracking for Direction Inference} \label{sec:objecTrackingDirection}
@@ -155,7 +155,7 @@ An idea we explored was to use the previous image co-ordinates of a tracker to p
 	}
 \end{algorithm}
 
-\paragraph{Issues} Although the method works for trackers which cover large distances across the frame, linear extrapolation of image co-ordinates suffers when the tracked centroid does not have much horizontal motion. As such, this leads to an ambigious definition of the direction. Since the object is not moving across the screen, it is not possible to differentiate between a person standing still, moving directly towards the PWU or walking away.
+\paragraph{Issues} Although the method works for trackers which cover large distances across the frame, linear extrapolation of image co-ordinates suffers when the tracked centroid does not have much horizontal motion. As such, this leads to an ambiguous definition of the direction. Since the object is not moving across the screen, it is not possible to differentiate between a person standing still, moving directly towards the PWU or walking away.
 
 \begin{figure}[ht]
 	\centering
@@ -168,12 +168,12 @@ An idea we explored was to use the previous image co-ordinates of a tracker to p
 \paragraph{} In the pinhole camera model, when an object in the real world is projected onto a 2D image, we lose the distance along the z-axis. The issue of a world-to-camera image projection occurs when we want to obtain the world co-ordinate of an object from the image. Due to the loss of z-axis information, the best we can do is to calculate a ray through the 2D image point. However, as shown in Figure \ref{fig:pinhole}, it becomes impossible to tell how far away the object is without a depth camera, since the object can exist anywhere along that ray.
 
 \subsubsection{YACHT Direction: Body Pose Estimation} \label{des:YACHTBody}
-To solve the direction ambiguity brought up in Section \ref{sec:objecTrackingDirection}, we proposed the use of body pose estimation techniques to determine whether a person is walking towards or away from the camera of the PWU. We researched several body pose implementations in Section \ref{sec:backBodyPoseEstimation}, but we ultimately decided on OpenPose, due to its well documented implementation on Github \cite{Cao2017}.
+To solve the direction ambiguity brought up in Section \ref{sec:objecTrackingDirection}, we proposed the use of body pose estimation techniques to determine whether a person is walking towards or away from the camera of the PWU. We researched several body pose implementations in Section \ref{sec:backBodyPoseEstimation}, but we ultimately decided on OpenPose, due to its well documented implementation on GitHub \cite{Cao2017}.
 
-\paragraph{Object Detectors \& Bottom-Up Approaches} The YOLO object detector outputs the original image and the associated bounding box co-ordinates of detections. The OpenPose node consumes the image and performs body pose estimation on the whole image, before matching poses with the object detections. Since OpenPose is a bottom-up approach, we admit that it is counter-intuitive to use an object detector to detect individual people when OpenPose determines the body part keypoints across the whole image. This will be explored more in the evaluation of the report.
+\paragraph{Object Detectors \& Bottom-Up Approaches} The YOLO object detector outputs the original image and the associated bounding box co-ordinates of detections. The OpenPose node consumes the image and performs body pose estimation on the whole image, before matching poses with the object detections. Since OpenPose is a bottom-up approach, we admit that it is counter-intuitive to use an object detector to detect individual people when OpenPose determines the body part key-points across the whole image. This will be explored more in the evaluation of the report.
 
 \paragraph{Keypoint Estimation} \label{des:body_25}
-The OpenPose framework provides several pre-trained models for body pose keypoint estimation. From our tests, we found that the \textit{BODY\_25} model was the fastest, suiting our real-time requirements. Figure \ref{fig:bodyKeyPoints} shows the keypoints generated by the model.
+The OpenPose framework provides several pre-trained models for body pose keypoint estimation. From our tests, we found that the \textit{BODY\_25} model was the fastest, suiting our real-time requirements. Figure \ref{fig:bodyKeyPoints} shows the key-points generated by the model.
 
 \begin{figure}[ht]
 	\centering
@@ -182,15 +182,15 @@ The OpenPose framework provides several pre-trained models for body pose keypoin
 	\label{fig:bodyKeyPoints}
 \end{figure}
 
-The model identifies 25 keypoints on the human body, and can differentiate between the left and right limbs on the human body. This makes the model suitable for determining if a person is facing the camera or not. We further explain the methodology in the implementation section of the report. From this, the node outputs the direction of the object to the Hololens.
+The model identifies 25 key-points on the human body, and can differentiate between the left and right limbs on the human body. This makes the model suitable for determining if a person is facing the camera or not. We further explain the methodology in the implementation section of the report. From this, the node outputs the direction of the object to the Hololens.
 
 \subsubsection{Head Pose Estimation}
-We initially began the project by exploring the use of head-gaze estimation as a novel way of infering the intended direction of motion of a person. We researched the concept of head pose estimation in Section \ref{sec:backHeadPoseEstimation}, with the logic being people tend to look in the direction where they are walking. We leveraged the use of the DeepGaze library as an initial starting point \cite{Patacchiola2017a}, since the library has a built in head-pose estimator. 
+We initially began the project by exploring the use of head-gaze estimation as a novel way of inferring the intended direction of motion of a person. We researched the concept of head pose estimation in Section \ref{sec:backHeadPoseEstimation}, with the logic being people tend to look in the direction where they are walking. We leveraged the use of the DeepGaze library as an initial starting point \cite{Patacchiola2017a}, since the library has a built in head-pose estimator. 
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=1.0\linewidth]{img/chapter4_analysis/hddSystemHeadPose.png}
-	\caption{Initial HDD System with HeadPose}
+	\caption{Initial HDD System with HeadPose Node}
 	\label{fig:headPoseHDD}
 	\vspace{-1\baselineskip}
 \end{figure}
@@ -217,11 +217,11 @@ We initially began the project by exploring the use of head-gaze estimation as a
 	\vspace{-2\baselineskip}
 \end{figure}
 
-\paragraph{Reasons for removal} We noticed from our research that the head pose estimation was not very accurate, as can be seen in Figure \ref{fig:deepGaze}. A close up image of a face still returns an inaccurate estimation of the head pose. For smaller faces with multiple detections, the head pose estimation was not performed in real-time and also produced inaccurate estimations. Finally, as we will explain in the implementation section, the quality of the images received from the Hololens was too low, and as such, facial landmark detectors required for head pose estimation were unable to detect the keypoints.
+\paragraph{Reasons for removal} We noticed from our research that the head pose estimation was not very accurate, as can be seen in Figure \ref{fig:deepGaze}. A close up image of a face still returns an inaccurate estimation of the head pose. For smaller faces with multiple detections, the head pose estimation was not performed in real-time and also produced inaccurate estimations. Finally, as we will explain in the implementation section, the quality of the images received from the Hololens was too low, and as such, facial landmark detectors required for head pose estimation were unable to detect the key-points.
 
 \section{Hololens Unity Application}
 The Microsoft Hololens is a key component of this project since it acts as the main input, visualization and mapping device. To begin, we utilize the world-facing camera, which sees what the PWU is looking at as the input to the HDD system. Further along the processing pipeline, the Hololens Unity application receives the image co-ordinates of human detections and respective directions to build up a map of the objects in the surroundings. The application manages the holograms, keeping track of the world co-ordinates of the objects, which it sends to ARTA for the reactive control of the wheelchair.
-This section covers how the system was designed so that it could be used in conjuction with other ROS nodes despite being a Unity application. It also describes the approach used to develop a front-camera stream, as well as a high level description of the modules responsible for the world mapping and hologram visualization.
+This section covers how the system was designed so that it could be used in conjunction with other ROS nodes despite being a Unity application. It also describes the approach used to develop a front-camera stream, as well as a high level description of the modules responsible for the world mapping and hologram visualization.
 
 \subsection{ROS Node}
 Both ARTA and the HDD are implemented on the Robotic Operating System as ROS nodes, and communicate with their sub-nodes using ROS messages across topics. As explained in Section \ref{sec:systemComms}, we view each of the three sub-systems as individual ROS nodes. However, the Hololens does not natively support ROS.
@@ -245,7 +245,7 @@ We begin the Unity application analysis by starting at the beginning of the syst
 
 \paragraph{Microsoft HoloLensForCV} Another option that was explored was the computer vision development tools released by Microsoft for the Hololens. This library provides developer access to the live camera stream, as well as the raw sensor data, such as the depth and IMU. This would have been the ideal video streaming choice. However, at the beginning of the project, we were not so experienced with developing UWP applications in C\#. Furthermore, it proved difficult to stream the sensor and video streams from a UWP device to a Linux machine, since Windows and Linux have different data formats and standards.
 
-\paragraph{Unity Camera Stream} From our research, we found the \textbf{Vulcan Technologies Hololens Camera Stream} Unity addon library. The community support for Unity development on the Hololens is immense, with various libraries such as the Mixed Reality Toolkit (MRTK) and many other Hololens specific tools. Furthermore, the 3D world modelling and spatial mapping capabilities available in Unity extend the capabilities of an augmented reality system. It abstracts away the complexities of the raw Hololens sensor data, reducing the time to market of applications. Finally, previous work in the PRL involving the Hololens have relied on Unity, making it an ideal choice for this project.
+\paragraph{Unity Camera Stream} From our research, we found the \textbf{Vulcan Technologies Hololens Camera Stream} Unity add-on library. The community support for Unity development on the Hololens is immense, with various libraries such as the Mixed Reality Toolkit (MRTK) and many other Hololens specific tools. Furthermore, the 3D world modelling and spatial mapping capabilities available in Unity extend the capabilities of an augmented reality system. It abstracts away the complexities of the raw Hololens sensor data, reducing the time to market of applications. Finally, previous work in the PRL involving the Hololens have relied on Unity, making it an ideal choice for this project.
 
 \subsubsection{Module Description}
 The HoloCamera module is responsible for accessing the front-camera of the Hololens, compressing the raw image data into a JPEG format and streaming the video frames over the network. The application produces a ROS Compressed Image message that is sent to the HDD for object detection. We provide a complete explanation of the process in the implementation part of this report.
@@ -256,21 +256,22 @@ The goal of this project was to develop an augmented reality system that will as
 \subsubsection{World Manager}
 Since the Hololens is the intermediary, the World Manager sub-module is responsible for managing all the ROS topics between the Hololens, the HDD system and ARTA. The module receives the image co-ordinates from the HDD system and projects the detected points into the world frame. This returns a set of world co-ordinates which we can assign holographic visualizations and map in the Unity world surrounding the Hololens.
 
-\subsubsection{ARTA Alignment} 
-With most visual SLAM implementations, the camera attached to the mobile robot is fixed to the robots frame. This simplifies the conversion of the image co-ordiates to the robot frame, and then to the world frame. However, when a PWU wears the Hololens, the front-camera has the ability to move in 6 degrees of freedom. Most importantly, the PWU can turn their head to look left and right. This brings up the issue of not knowing whether a detected object is actually infront of the powered wheelchair, or if the PWU is looking at an object to the side. 
+\subsubsection{ARTA Manager} 
+This module is a representation of ARTA in the Hololens world. It subscribes to topics published by ARTA that contain information about the robot, such as the position in the real world, the linear velocities and other published topics. 
+
+\paragraph{Alignment}With most visual SLAM implementations, the camera attached to the mobile robot is fixed to the robots frame. This simplifies the conversion of the image co-ordinates to the robot frame, and then to the world frame. However, when a PWU wears the Hololens, the front-camera has the ability to move in 6 degrees of freedom. Most importantly, the PWU can turn their head to look left and right. This brings up the issue of not knowing whether a detected object is actually in front of the powered wheelchair, or if the PWU is looking at an object to the side. 
 
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=0.9\linewidth]{img/chapter4_analysis/holoArtaAligned.png}
-	\caption{We need a way of knowing if a detected object is infront of the wheelchair, or if the PWU is looking to the side. }
+	\caption{We need a way of knowing if a detected object is in front of the wheelchair, or if the PWU is looking to the side. }
 	\label{fig:holoArtaAlignment}
 \end{figure}
 
 \paragraph{}We visualize this problem in Figure \ref{fig:holoArtaAlignment}. When the Hololens camera and wheelchair frames are aligned, it is easy to tell if an object is in the path of the wheelchair. For the reactive control component of ARTA, we need to know if an object is in ARTAs current trajectory to determine if a collision will occur. As such, This module is responsible for discerning between people being in front of the wheelchair or to the side. 
 
+
 \section{ARTA}
-The Personal Robotics Lab (PRL) at Imperial College London have built and developed an original smart powered wheelchair known as the Assitive Robotic Transport for Adults (ARTA). The wheelchair was designed to assist adults with mobility issues, and is frequently used in the PRL as a research topic in conjunction with exotic control interfaces such as the Hololens \cite{Zolotas2018, Chacon-Quesada}.
+The Personal Robotics Lab (PRL) at Imperial College London have built and developed an original smart powered wheelchair known as the Assistive Robotic Transport for Adults (ARTA). The wheelchair was designed to assist adults with mobility issues, and is frequently used in the PRL as a research topic in conjunction with exotic control interfaces such as the Hololens \cite{Zolotas2018, Chacon-Quesada}.
 
 \subsection{Breakdown}
-
-To Write
