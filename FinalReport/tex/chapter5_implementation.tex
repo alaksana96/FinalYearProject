@@ -10,9 +10,6 @@ This chapter is concerned with the implementation details of the individual comp
 
 Figure \ref{fig:detailedHL} is a more detailed diagram of the high level system digram presented in Figure \ref{fig:simplifiedHL}. We show the communication between the three separate devices, and how each node can be broken down into smaller nodes running specific computations. For the rest of this report, we represent the ARTA, Hololens and HDD system components with the colours blue, red and green respectively.
 
-%\section{Hololens Video Camera Stream}
-%For this project to begin, it was absolutely essential to stream the front-facing camera on the Hololens to another PC. Once it had been proven that this was possible, work on the rest of the project could begin. As such, the first month of the project was spent comparing different camera streaming methods. As mentioned in Section \ref{sec:videoStreaming}, we briefly spent some time attempting to use the HoloLensForCV library from Microsoft. However, after speaking with several members of the PRL, it was decided the best method would be to use the Unity application approach as a base.
-
 \section{Human Detection \& Direction System}
 In order to determine the direction people are walking in, it is necessary for the system to be able to detect humans. Only after detection is it possible to discern the motion of individuals, which can be achieved through object tracking and body pose estimation. Figure \ref{fig:detailedHDD} shows the breakdown of the HDD node into components responsible for these two tasks. This section is concerned with the implementation of the methods needed to perform the direction prediction, as well as how the system communicates between its nodes. 
 
@@ -149,7 +146,16 @@ These optimizations were done in order to maximize the amount of GPU memory used
 \paragraph{Training Process} We left the model to train overnight, creating backups of the weights every 1000 iterations. The following day, after reaching 30,000 iterations, we decided to stop training the network. The average loss error and total loss had stopped decreasing for several hours, and was hovering around $29.134$. We reasoned that the network had reached a minima, and further training would be redundant, since it would over-fit the dataset. The final weights are available in the file \code{yolov3-tiny-crowdhuman.backup} .
 
 \subsubsection{Evaluating Trained Model}
-\paragraph{Hololens Videos} As mentioned in Section \ref{sec:backYOLO}, we recorded several test videos using the Microsoft Hololens. These videos were capture in various locations on the Imperial College campus. A common area where lots of people frequent is the Sherfield walkway. As seen in Figure \ref{fig:yoloSherfield}, this was an ideal place to capture a video since it features a lot of people walking around in different directions. We captured several more videos outside the EEE building and inside the 5th floor ICRS lab. 
+\paragraph{Hololens Videos} As mentioned in Section \ref{sec:backYOLO}, we recorded several test videos using the Microsoft Hololens. These videos were capture in various locations on the Imperial College campus. Figure \ref{fig:yoloRange} shows the model detecting people at range.  
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\linewidth]{img/chapter5_implementation/yoloWalkway.png}
+	\caption{Trained model detects people and heads at different ranges. We also see it can detect people far away and accurately detect their heads.}
+	\label{fig:yoloRange}
+\end{figure}
+
+A common area where lots of people frequent is the Sherfield walkway. As seen in Figure \ref{fig:yoloSherfield}, this was an ideal place to capture a video since it features a lot of people walking around in different directions. We captured several more videos outside the EEE building and inside the 5th floor ICRS lab.
 
 \begin{figure}[ht]
 	\centering
@@ -158,14 +164,9 @@ These optimizations were done in order to maximize the amount of GPU memory used
 	\label{fig:yoloSherfield}
 \end{figure}
 
-\paragraph{} The videos from the Hololens were captured whilst a person was walking with the device, to best emulate a PWU in a wheelchair navigating through populated areas. We noticed an improvement in the number and accuracy of the detected bounding boxes compared with the pre-trained COCO models provided by Darknet. The most significant improvement to the model was the ability to detect objects at different ranges, as shown in Figure \ref{fig:yoloRange}. 
+The videos from the Hololens were captured whilst a person was walking with the device, to best emulate a PWU in a wheelchair navigating through populated areas. We noticed an improvement in the number and accuracy of the detected bounding boxes compared with the pre-trained COCO models provided by Darknet. 
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.8\linewidth]{img/chapter5_implementation/yoloWalkway.png}
-	\caption{Trained model detects people and heads at different ranges}
-	\label{fig:yoloRange}
-\end{figure}
+
 
 \subsubsection{ROS Node} \label{sec:nodeYOLO}
 The Python wrappers for Darknet allow us to access the detection and image conversion functionality of the framework. To fully integrate the framework as a ROS node, we must follow the standard ROS procedures for creating a new ROS package. As such, we have created a package\footnote{https://github.com/alaksana96/fyp\_yolo} that runs Darknet and YOLO that can be downloaded and run seamlessly with ROS.
@@ -194,6 +195,8 @@ As explained in Section \ref{sec:YACHT}, the YACHT tracker depends on the Deep S
 
 
 \subsubsection{Deep SORT} 
+
+
 
 \paragraph{Modifications} We have modified\footnote{https://github.com/alaksana96/deep\_sort} Nicolai Wojke's original implementation of Deep SORT to run on Tensorflow-GPU. In the original, as the number of detections increased, so does the delay in tracking. This issue is more prevalent when tested on the MOT dataset, which has a large number of objects in each frame. Figure \ref{fig:deepSortCPU} visualizes the delay on the MOT16-06 video. We can see that the algorithm is operating at a very low FPS, causing it to be delayed in time. 
 
@@ -230,7 +233,7 @@ class ImageEncoder(object):
         self.session = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
 \end{lstlisting}
 
-%The tracker crops the image and generates feature vectors for the detection. The vectors are then compared with the history of feature vectors associated with each tracker.
+
 
 \paragraph{Trackers \& Tracking} For each detection, we generate a feature vector using the image pixels within the bounding box. A matching cascade with Nearest Neighbour metric is used to best match the detection with existing confirmed tracks. Some detections will not get matched since the distance to confirmed tracks is above the \code{matching\ threshold}. The algorithm then attempts to match the detections to unconfirmed tracks using a simple Intersection-over-Union metric. These are newly created tracks that have existed for less than the last $n$ frames. If the detection is still unmatched, the algorithm creates a new tracker for the detection and adds it to the pool of unconfirmed tracks.
 
@@ -378,18 +381,94 @@ def matchDetectionAndPose(self, detections, poses):
 \subsubsection{ROS Topic}
 The direction node publishes the bounding box and direction to the Hololens. The \code{BoundingBox} data structure is defined in Listing \ref{bbmsg}, and is the same bounding boxes generated by the YOLO detector. \\
 
-\begin{lstlisting}[language=Mymatlab,caption={BoundingBoxDirection.msg}]
+\begin{lstlisting}[language=Mymatlab,caption={ROS message structure for BoundingBoxDirection.msg}]
 BoundingBox boundingBox
 bool        directionTowardsCamera
 \end{lstlisting}
 
 \newpage
 \section{Hololens Unity Application}
+The Hololens is the central device in the overall system, acting as an intermediary between the HDD system and ARTA. We rely on the AR capabilities of the device to render visualization holograms to indicate to the user potential collisions. The depth camera and other sensors are used to perceive the distance of detected objects which are communicated to ARTA for reactive assistance. Most importantly, the front facing camera is the main visual input for the whole system, beginning the whole image processing pipeline. Without a live video stream from the camera, object detection and direction inference would be impossible. As such, the initial phase of the project was dedicated to producing a reliable video stream to an external computer. Figure \ref{fig:detailedHololens} shows the two separate parts of the Hololens application, the camera stream and the holographic world. 
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/hololensSystemDiagram.png}
-	\caption{Unity application running on the Hololens}
+	\caption{Components of the Unity application running on the Hololens. We divide the program into two sub-programs, HoloCamera and HoloWorld.}
 	\label{fig:detailedHololens}
 \end{figure}
 
+\paragraph{} Due to the importance, we begin this section by describing the implementation of the video camera stream. We explain the libraries used, the the workarounds required to produce the stream and the limitations of using a Unity based approach. Afterwards, we explain the Unity application responsible for producing holograms, positioning ARTA and how detected objects are placed in the Unity world. Finally, we explain the interaction between the Hololens and ARTA.
+
+\subsection{Hardware \& Software Dependencies}
+\subsubsection{Hardware}
+\paragraph{Microsoft Hololens} The Microsoft Hololens is the world's first fully untethered holographic computer. The device has the ability to render 3D holograms in the world surrounding the user by displaying them on a set of see-through holographic lenses. The device is equipped with a multitude of sensors which we outlined in Section \ref{back:holo}. The device also supports gesture recognition for controlling the device, as well as voice input. The device is also able to connect to Wi-Fi networks, allowing it to stream data to and from other devices. We provide a complete device specification in the Appendix.
+
+\begin{figure}[ht]
+	\begin{subfigure}[b]{.45\textwidth}
+		\centering
+		\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/hololensDevice.jpg}
+		\caption{The Microsoft Hololens with the see through holographic lenses.}
+	\end{subfigure}%
+	\hspace{\fill} 
+	\begin{subfigure}[b]{.45\textwidth}
+		\centering
+		\includegraphics[width=0.55\linewidth]{img/chapter5_implementation/hololensOnHead.jpg}
+		\caption{The device is worn on the head, resting on the bridge of the nose, similar to glasses.}
+	\end{subfigure}
+	\vspace{-1\baselineskip}
+	\begin{center}
+		\caption{The Hololens is larger compared to its competition. However, the increased number of sensors and wider spread usage makes it an ideal AR device for this project.}
+		\label{fig:holodevice}
+	\end{center}
+	\vspace{-2\baselineskip}
+\end{figure}
+
+\subsubsection{Software}
+\paragraph{Universal Windows Platform} The Universal Windows Platform (UWP) allows for applications that can be developed to run on any device running Windows 10. It gives the developer access to a set of standard APIs that make it easier to access data from any device. Software Development Kits (SDKs) are used to extend the capabilities of an app for specialized devices such as the Hololens.
+
+\paragraph{Unity} Unity is a cross-platform game engine used to develop 3D, 2D VR \& AR visualizations for applications such as games, engineering or assistive robotics, among others. The main programming language for the engine is C\#, and the engine features built-in Windows Mixed Reality and Hololens support, allowing for easy development of applications for the Hololens. 
+
+\paragraph{Development Tools} For this project, we used the following setup for development:
+
+\begin{itemize}
+	\item Microsoft Hololens running Windows 10
+	\item Laptop running Windows 10 Developers Fall Edition
+	\item Unity Editor 2018.1.6f1 (64-bit)
+	\item Visual Studio 2017 Community Edition
+\end{itemize}
+
+The application produced in the Unity Editor and Visual Studio 2017 is compiled and deployed to the Hololens as a UWP Unity application that can be accessed and run from the device's heads up display menu.
+
+\subsection{Hololens Locatable Camera}
+The images captured by the front facing camera is meant to be a representation of what the user is seeing. In reality, the field of view (FOV) of the front facing camera is greater than the actual FOV of the device, meaning the camera can see more of the world than the user can. 
+
+\subsubsection{Specifications}
+The front facing camera is a 2 mega pixel photo/ HD video camera with auto white balance, auto exposure and a full image processing pipeline. Due to the real-time requirement of the project, we chose to use the smallest video resolution possible in order to achieve the fastest frame rates. This limits the resolution of the captured video frames to $896\times 504$.
+
+\subsubsection{Limitations}
+The greatest limitation of the Hololens is the field of view. The FOV of the front facing camera is 48 degrees wide, allowing it to capture images of the surrounding world. However, compared to a standard mobile phone camera, the front facing camera provides a cut-off view of the world. We highlight this issue in Figure \ref{fig:holoVsIphone}, which shows the reduced FOV of the device. Another issue is that despite the image processing the pipeline, the Hololens camera produces overexposed images, especially when the front facing camera is pointed towards illuminating objects or when light is only coming from one direction. 
+
+\begin{figure}[ht]
+	\begin{subfigure}[b]{.45\textwidth}
+		\centering
+		\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/hololensFOV.jpeg}
+		\caption{Image captured by Microsoft Hololens. Notice the overexposure in the image.}
+	\end{subfigure}%
+	\hspace{\fill} 
+	\begin{subfigure}[b]{.45\textwidth}
+		\centering
+		\includegraphics[width=0.75\linewidth]{img/chapter5_implementation/hololensFOVIphone.jpg}
+		\caption{Image captured by standard IPhone Camera under the same light conditions.}
+	\end{subfigure}
+	\vspace{-1\baselineskip}
+	\begin{center}
+		\caption{These images were taken from the same position. The Hololens has a reduced FOV and is unable to capture the whole desk.}
+		\label{fig:holoVsIphone}
+	\end{center}
+	\vspace{-2\baselineskip}
+\end{figure}
+
+Furthermore, due to the positioning of the holographic lenses, the users FOV is estimated to be approximately 29-30 degrees wide and 17 degrees high. This is even less than the front facing camera, and actually limits what the user can see in the surrounding area.
+
+\subsection{Hololens Video Camera Stream}
+For this project to begin, it was absolutely essential to stream the front-facing camera on the Hololens to another PC. Once it had been proven that this was possible, work on the rest of the project could begin. As such, the first month of the project was spent comparing different camera streaming methods. As mentioned in Section \ref{sec:videoStreaming}, we briefly spent some time attempting to use the HoloLensForCV library from Microsoft. However, after speaking with several members of the PRL, it was decided the best method would be to use the Unity application approach as a base.

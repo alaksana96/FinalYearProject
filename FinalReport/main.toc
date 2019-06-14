@@ -148,21 +148,20 @@
 \contentsline {paragraph}{Training Process}{37}
 \contentsline {subsubsection}{Evaluating Trained Model}{37}
 \contentsline {paragraph}{Hololens Videos}{37}
-\contentsline {paragraph}{}{37}
 \contentsline {subsubsection}{ROS Node}{38}
 \contentsline {paragraph}{ROS Topics}{38}
-\contentsline {paragraph}{}{39}
+\contentsline {paragraph}{}{38}
 \contentsline {subsection}{\numberline {5.1.3}YACHT Package}{39}
 \contentsline {paragraph}{ROS Communication}{39}
 \contentsline {subsection}{\numberline {5.1.4}YACHT: Tracker}{39}
 \contentsline {subsubsection}{Deep SORT}{39}
 \contentsline {paragraph}{Modifications}{39}
-\contentsline {paragraph}{Deep Association Metric}{40}
+\contentsline {paragraph}{Deep Association Metric}{39}
 \contentsline {paragraph}{Trackers \& Tracking}{40}
 \contentsline {subsubsection}{Linear Extrapolation}{41}
 \contentsline {subsubsection}{ROS Topic}{41}
 \contentsline {subsection}{\numberline {5.1.5}YACHT: Direction}{41}
-\contentsline {paragraph}{}{42}
+\contentsline {paragraph}{}{41}
 \contentsline {subsubsection}{OpenPose}{42}
 \contentsline {paragraph}{Installation \& Setup}{42}
 \contentsline {paragraph}{Model}{42}
@@ -172,3 +171,15 @@
 \contentsline {subsubsection}{Implementation \& Detection Matching}{44}
 \contentsline {subsubsection}{ROS Topic}{44}
 \contentsline {section}{\numberline {5.2}Hololens Unity Application}{45}
+\contentsline {paragraph}{}{45}
+\contentsline {subsection}{\numberline {5.2.1}Hardware \& Software Dependencies}{45}
+\contentsline {subsubsection}{Hardware}{45}
+\contentsline {paragraph}{Microsoft Hololens}{45}
+\contentsline {subsubsection}{Software}{46}
+\contentsline {paragraph}{Universal Windows Platform}{46}
+\contentsline {paragraph}{Unity}{46}
+\contentsline {paragraph}{Development Tools}{46}
+\contentsline {subsection}{\numberline {5.2.2}Hololens Locatable Camera}{47}
+\contentsline {subsubsection}{Specifications}{47}
+\contentsline {subsubsection}{Limitations}{47}
+\contentsline {subsection}{\numberline {5.2.3}Hololens Video Camera Stream}{47}
