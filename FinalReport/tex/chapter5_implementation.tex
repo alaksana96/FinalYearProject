@@ -4,7 +4,7 @@ This chapter is concerned with the implementation details of the individual comp
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/detailedSystemDiagram.png}
-	\caption{System diagram detailing individual components}
+	\caption{System diagram detailing individual components of the programs running on each device.}
 	\label{fig:detailedHL}
 \end{figure}
 
@@ -19,7 +19,7 @@ In order to determine the direction people are walking in, it is necessary for t
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/hddSystemDiagram.png}
-	\caption{Individual nodes in HDD System}
+	\caption{The HDD System is sub-divided into two ROS packages, YOLO and YACHT. We show that YACHT has two sub-nodes which both depend on the outputs of the detector.}
 	\label{fig:detailedHDD}
 \end{figure}
 
@@ -64,7 +64,7 @@ By definition, ROS is language-independent, although at the time of writing, thr
 
 
 
-\begin{lstlisting}[language=Python, caption={Darknet IMAGE Python wrappers}]
+\begin{lstlisting}[language=Python, caption={Darknet IMAGE Python wrappers for seamless ROS integration.}]
 # IMAGE: a C data structure used by Darknet
 class IMAGE(Structure): 
 	_fields_ = [("w", c_int),
@@ -89,17 +89,17 @@ As researched in Section \ref{sec:backYOLO}, the algorithm divides an input imag
 	\begin{subfigure}[b]{.45\textwidth}
 		\centering
 		\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/yoloAlgo1.png}
-		\caption{A grid cell can make $B$ predictions, in this example $B=2$}
+		\caption{A grid cell can make $B$ predictions, in this example $B=2$.}
 	\end{subfigure}%
 	\hspace{\fill} 
 	\begin{subfigure}[b]{.45\textwidth}
 		\centering
 		\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/yoloAlgo.png}
-		\caption{The bounding box with higher box confidence score is used}
+		\caption{The bounding box with higher box confidence score is used.}
 	\end{subfigure}
 	\vspace{-1\baselineskip}
 	\begin{center}
-		\caption{Visualization of YOLO person detection}
+		\caption{Visualization of the YOLO person detection algorithm dividing a resized square image into grid cells.}
 		\label{fig:yoloViz}
 	\end{center}
 	\vspace{-2\baselineskip}
@@ -113,8 +113,8 @@ While testing out the different models, we noticed that the YOLOv3 model was con
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.8\linewidth]{img/chapter5_implementation/crowdHumanStats.png}
-	\caption{A comparison of CrowdHuman to other person image datasets \cite{Shao}}
+	\includegraphics[width=0.9\linewidth]{img/chapter5_implementation/crowdHumanStats.png}
+	\caption{A comparison of CrowdHuman to other person image datasets \cite{Shao}, showing the increase in number of people and diversity in the images.}
 	\label{fig:crowdHumanStats}
 \end{figure}
 
@@ -134,7 +134,7 @@ As can be seen from Figure \ref{fig:crowdHumanStats}, the dataset contains far m
 
 \paragraph{Training Parameters} Before training, we set up the model configuration file to learn 2 classes, head and body, as well as to use batches of 32 divided into subdivision of 8 images. This limits the number of images loaded into memory at once to 8, to prevent running out of GPU memory. We also reduce the size of the training images to $416\times 416$ pixels, to further reduce the GPU usage. \\
 
-\begin{lstlisting}[language=Mymatlab,caption={Training parameters}]
+\begin{lstlisting}[language=Mymatlab,caption={Training parameters used for YOLOv3 Tiny on the CrowdHuman dataset}]
 	batch=32 %Training parameters for YOLO Tiny
 	subdivisions=8
 	width=416
@@ -154,7 +154,7 @@ These optimizations were done in order to maximize the amount of GPU memory used
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.95\linewidth]{img/chapter5_implementation/yoloWalkwayMultiple.png}
-	\caption{Evaluating the model on Sherfield Walkway test video}
+	\caption{Evaluating the model on Sherfield Walkway test video. We notice that it is able to small figures close together at a distance.}
 	\label{fig:yoloSherfield}
 \end{figure}
 
@@ -237,7 +237,7 @@ class ImageEncoder(object):
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.8\linewidth]{img/chapter5_implementation/deepSortMatching.png}
-	\caption{Deep SORT matching visualized}
+	\caption{Visualization of Deep SORT matching. IOU matching is used as a final check for tracks that are unmatched by feature vector Nearest Neighbour matching.}
 	\label{fig:deepSortMatch}
 \end{figure}
 
@@ -248,7 +248,7 @@ We experimented with linear extrapolation across frames as a way of inferring th
 
 \subsubsection{ROS Topic} The decision to use the Hololens depth cameras as a way of determining distance prompted the need for ROS messages to be sent to the device. As seen in Figure \ref{fig:detailedHDD}, the  tracker node publishes the bounding box and tracker ID to the Hololens. The \code{BoundingBox} data structure is defined in Listing \ref{bbmsg}, and is the same bounding boxes generated by the YOLO detector.
 
-\begin{lstlisting}[language=Mymatlab,caption={BoundingBoxID.msg}]
+\begin{lstlisting}[language=Mymatlab,caption={ROS message structure for BoundingBoxID.msg}]
 BoundingBox boundingBox
 int64       id
 \end{lstlisting}
@@ -279,19 +279,19 @@ Due to the bottom-up approach used by OpenPose, the network predicts key-points 
 	\begin{subfigure}[b]{.32\textwidth}
 		\centering
 		\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/openposeKP.png}
-		\caption{People close-up}
+		\caption{Key-point estimation is most accurate on people close-up.}
 	\end{subfigure}%
 	\hspace{\fill} 
 	\begin{subfigure}[b]{.32\textwidth}
 		\centering
 		\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/openposeKP1.png}
-		\caption{People at different scales}
+		\caption{On people at a distance, the estimation accuracy is limited by the network resolution.}
 	\end{subfigure}
 	\hspace{\fill} 
 	\begin{subfigure}[b]{.32\textwidth}
 		\centering
 		\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/openposeKP2.png}
-		\caption{People close together}
+		\caption{A low network resolution results in difficulty discerning between people.}
 	\end{subfigure}
 	\vspace{-1\baselineskip}
 	\begin{center}
@@ -326,7 +326,7 @@ By comparing the relative positions of certain key-points, we can determine if a
 	\end{subfigure}
 	\vspace{-1\baselineskip}
 	\begin{center}
-		\caption{Body keypoint estimation of different views}
+		\caption{Body keypoint estimation of different views. These images show that the network can differentiate between left and right limbs.}
 		\label{fig:keypointShrey}
 	\end{center}
 	\vspace{-2\baselineskip}
@@ -343,8 +343,9 @@ By comparing the relative positions of certain key-points, we can determine if a
 		Left Arm   & 5, 6, 7    \\ \hline
 		Head/Spine & 0, 1, 8    \\ \hline
 	\end{tabular}
-	\caption{Significant keypoints for direction}
+	\caption{Significant key-points for determining whether a person is facing the camera.}
 	\label{tab:keypoints}
+	\vspace{-1\baselineskip}
 \end{table}
 
 We can use the ability to differentiate between the left and right arms to determine if a person is facing the camera. Table \ref{tab:keypoints} presents the key-points for the relevant body parts. If the image co-ordinates of the left shoulder is further along the x-axis than the right shoulder, we can predict the direction as facing towards the camera. From testing, we know this simple method works most of the time. However, problems arise when a person is standing perpendicular to the camera. OpenPose has trouble detecting the torso and predicting the positions of the limbs, and it becomes difficult to decide if they are facing left or right.
@@ -352,7 +353,7 @@ We can use the ability to differentiate between the left and right arms to deter
 \subsubsection{Implementation \& Detection Matching}
 As mentioned in Section \ref{sec:bottomUp}, OpenPose uses a bottom-up approach by detecting individual body parts across the whole image. We need to match the OpenPose keypoint predictions with existing bounding boxes from YOLO, since these are assigned track IDs by the tracker node. This is done in Listing \ref{lst:matchDetPose} \\
 
-\begin{lstlisting}[language=Python, caption={Direction and Detection Matching}, label={lst:matchDetPose}]
+\begin{lstlisting}[language=Python, caption={Direction and Detection Matching code in people\_direction.py}, label={lst:matchDetPose}]
 def matchDetectionAndPose(self, detections, poses):
     for pose in poses:
         # Check torso, right/left shoulder
@@ -371,6 +372,8 @@ def matchDetectionAndPose(self, detections, poses):
                 publishDetectionDirection() 
                 break # Once matched, move onto next pose 
 \end{lstlisting}
+
+\vspace{-1\baselineskip}
 
 \subsubsection{ROS Topic}
 The direction node publishes the bounding box and direction to the Hololens. The \code{BoundingBox} data structure is defined in Listing \ref{bbmsg}, and is the same bounding boxes generated by the YOLO detector. \\

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  14 JUN 2019 19:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  14 JUN 2019 19:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1078,7 +1078,7 @@ Package pdftex.def Info: img/chapter2_background/openpose.jpg used on input lin
 e 143.
 (pdftex.def)             Requested size: 292.77629pt x 164.68468pt.
 
-Overfull \hbox (5.69235pt too wide) in paragraph at lines 147--148
+Overfull \hbox (5.69235pt too wide) in paragraph at lines 148--149
  [] \OT1/ppl/m/n/10.95 As such, Open-Pose presents a method of multi-person pos
 e es-ti-ma-tion us-ing a bottom-
  []
@@ -1090,7 +1090,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [12 <./img/chapter2_background/openpose.jpg>]
-Overfull \hbox (1.26852pt too wide) in paragraph at lines 171--172
+Overfull \hbox (1.26852pt too wide) in paragraph at lines 172--173
  \OT1/ppl/b/n/10.95 Ini-tial-iza-tion[] \OT1/ppl/m/n/10.95 In the ini-tial-iza-
 tion stage, cam-era pose es-ti-ma-tion is con-ducted, to trans-
  []
@@ -1109,20 +1109,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [14]
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 200.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 201.
 
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 200.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 201.
 
 <img/chapter2_background/AR_Interface.png, id=66, 564.1075pt x 407.5225pt>
 File: img/chapter2_background/AR_Interface.png Graphic file (type png)
 
 <use img/chapter2_background/AR_Interface.png>
 Package pdftex.def Info: img/chapter2_background/AR_Interface.png used on input
- line 212.
+ line 213.
 (pdftex.def)             Requested size: 209.12683pt x 151.07944pt.
 )
 (./tex/chapter3_requirements.tex
@@ -1280,7 +1280,7 @@ File: img/chapter4_analysis/hddSystemHeadPose.png Graphic file (type png)
 
 <use img/chapter4_analysis/hddSystemHeadPose.png>
 Package pdftex.def Info: img/chapter4_analysis/hddSystemHeadPose.png used on in
-put line 192.
+put line 191.
 (pdftex.def)             Requested size: 418.25368pt x 150.89307pt.
 
 <img/chapter4_analysis/headPose.jpeg, id=116, 297.11pt x 297.11pt>
@@ -1288,7 +1288,7 @@ File: img/chapter4_analysis/headPose.jpeg Graphic file (type jpg)
 
 <use img/chapter4_analysis/headPose.jpeg>
 Package pdftex.def Info: img/chapter4_analysis/headPose.jpeg used on input line
- 203.
+ 202.
 (pdftex.def)             Requested size: 141.16124pt x 141.16498pt.
 
 <img/chapter4_analysis/deepgazeWhole.png, id=117, 371.3875pt x 252.945pt>
@@ -1296,10 +1296,10 @@ File: img/chapter4_analysis/deepgazeWhole.png Graphic file (type png)
 
 <use img/chapter4_analysis/deepgazeWhole.png>
 Package pdftex.def Info: img/chapter4_analysis/deepgazeWhole.png used on input 
-line 209.
+line 208.
 (pdftex.def)             Requested size: 209.12683pt x 142.4356pt.
 
-Overfull \hbox (2.08049pt too wide) in paragraph at lines 201--213
+Overfull \hbox (2.08049pt too wide) in paragraph at lines 200--212
 [][]  []
  []
 
@@ -1315,7 +1315,7 @@ dSystemHeadPose.png>]
 File: img/chapter4_analysis/holoROSSharpWrapper.png Graphic file (type png)
 <use img/chapter4_analysis/holoROSSharpWrapper.png>
 Package pdftex.def Info: img/chapter4_analysis/holoROSSharpWrapper.png used on 
-input line 231.
+input line 230.
 (pdftex.def)             Requested size: 334.60422pt x 127.87311pt.
 
 
@@ -1325,8 +1325,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [27 <./img/chapter4_analysis/headPose.jpeg> <./img/chapter4_analysis/deepgazeWh
-ole.png> <./img/chapter4_analysis/holoROSSharpWrapper.png>]
-Overfull \hbox (6.48216pt too wide) in paragraph at lines 248--249
+ole.png>]
+Overfull \hbox (6.48216pt too wide) in paragraph at lines 247--248
  \OT1/ppl/b/n/10.95 Unity Cam-era Stream[] \OT1/ppl/m/n/10.95 From our re-searc
 h, we found the \OT1/ppl/b/n/10.95 Vul-can Tech-nolo-gies Hololens
  []
@@ -1337,13 +1337,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28]
+[28 <./img/chapter4_analysis/holoROSSharpWrapper.png>]
 <img/chapter4_analysis/holoArtaAligned.png, id=132, 535.2798pt x 180.675pt>
 File: img/chapter4_analysis/holoArtaAligned.png Graphic file (type png)
 
 <use img/chapter4_analysis/holoArtaAligned.png>
 Package pdftex.def Info: img/chapter4_analysis/holoArtaAligned.png used on inpu
-t line 266.
+t line 265.
 (pdftex.def)             Requested size: 376.42575pt x 127.0616pt.
 
 
@@ -1400,9 +1400,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [32 <./img/chapter5_implementation/hddSystemDiagram.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33]
 Overfull \hbox (7.08296pt too wide) in paragraph at lines 61--62
  [] \OT1/ppl/m/n/10.95 Dark-net has ba-sic Python wrap-pers around the com-pile
 d li-brary which con-vert Python
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
  []
 
 
@@ -1411,12 +1423,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33]
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-
- []
-
-<img/chapter5_implementation/yoloAlgo1.png, id=154, 173.9298pt x 182.6022pt>
+[34]
+<img/chapter5_implementation/yoloAlgo1.png, id=159, 173.9298pt x 182.6022pt>
 File: img/chapter5_implementation/yoloAlgo1.png Graphic file (type png)
 
 <use img/chapter5_implementation/yoloAlgo1.png>
@@ -1432,7 +1440,7 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.91925pt on input line 92.
 
-<img/chapter5_implementation/yoloAlgo.png, id=155, 173.9298pt x 182.6022pt>
+<img/chapter5_implementation/yoloAlgo.png, id=160, 173.9298pt x 182.6022pt>
 File: img/chapter5_implementation/yoloAlgo.png Graphic file (type png)
 
 <use img/chapter5_implementation/yoloAlgo.png>
@@ -1446,37 +1454,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34]
-<img/chapter5_implementation/crowdHumanStats.png, id=161, 846.91406pt x 174.652
+[35 <./img/chapter5_implementation/yoloAlgo1.png> <./img/chapter5_implementatio
+n/yoloAlgo.png>]
+<img/chapter5_implementation/crowdHumanStats.png, id=166, 846.91406pt x 174.652
 5pt>
 File: img/chapter5_implementation/crowdHumanStats.png Graphic file (type png)
  <use img/chapter5_implementation/crowdHumanStats.png>
 Package pdftex.def Info: img/chapter5_implementation/crowdHumanStats.png used o
 n input line 116.
-(pdftex.def)             Requested size: 334.60422pt x 69.00163pt.
+(pdftex.def)             Requested size: 376.42575pt x 77.6255pt.
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[35 <./img/chapter5_implementation/yoloAlgo1.png> <./img/chapter5_implementatio
-n/yoloAlgo.png> <./img/chapter5_implementation/crowdHumanStats.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36]
+[36 <./img/chapter5_implementation/crowdHumanStats.png>]
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
 <img/chapter5_implementation/yoloWalkwayMultiple.png, id=171, 963.6pt x 366.168
 pt>
 File: img/chapter5_implementation/yoloWalkwayMultiple.png Graphic file (type pn
@@ -1500,7 +1501,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37 <./img/chapter5_implementation/yoloWalkwayMultiple.png>]
+[37]
 Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
@@ -1511,7 +1512,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38 <./img/chapter5_implementation/yoloWalkway.png>]
+[38 <./img/chapter5_implementation/yoloWalkwayMultiple.png> <./img/chapter5_imp
+lementation/yoloWalkway.png>]
 <img/chapter5_implementation/deepSortCPU.png, id=181, 683.55376pt x 479.7925pt>
 File: img/chapter5_implementation/deepSortCPU.png Graphic file (type png)
 <use img/chapter5_implementation/deepSortCPU.png>
@@ -1537,8 +1539,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39 <./img/chapter5_implementation/deepSortCPU.png> <./img/chapter5_implementat
-ion/deepSortCPU1.png>]
+[39]
 <img/chapter5_implementation/deepSortMatching.png, id=186, 596.4684pt x 199.947
 pt>
 File: img/chapter5_implementation/deepSortMatching.png Graphic file (type png)
@@ -1553,20 +1554,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40 <./img/chapter5_implementation/deepSortMatching.png>]
+[40 <./img/chapter5_implementation/deepSortCPU.png> <./img/chapter5_implementat
+ion/deepSortCPU1.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41] <img/chapter5_implementation/openposeKP.png, id=194, 642.4pt x 529.98pt>
+[41 <./img/chapter5_implementation/deepSortMatching.png>]
+<img/chapter5_implementation/openposeKP.png, id=194, 642.4pt x 529.98pt>
 File: img/chapter5_implementation/openposeKP.png Graphic file (type png)
 
 <use img/chapter5_implementation/openposeKP.png>
 Package pdftex.def Info: img/chapter5_implementation/openposeKP.png used on inp
 ut line 281.
 (pdftex.def)             Requested size: 133.84424pt x 110.4176pt.
+
+Underfull \hbox (badness 5064) in paragraph at lines 282--282
+[]\OT1/ppl/m/n/10 (a) |Key-point es-ti-ma-tion is
+ []
 
 <img/chapter5_implementation/openposeKP1.png, id=195, 642.4pt x 529.98pt>
 File: img/chapter5_implementation/openposeKP1.png Graphic file (type png)
@@ -1590,9 +1597,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42 <./img/chapter5_implementation/openposeKP.png> <./img/chapter5_implementati
-on/openposeKP1.png> <./img/chapter5_implementation/openposeKP2.png>]
-<img/chapter5_implementation/shreyFront.png, id=204, 542.025pt x 722.7pt>
+[42] <img/chapter5_implementation/shreyFront.png, id=201, 542.025pt x 722.7pt>
 File: img/chapter5_implementation/shreyFront.png Graphic file (type png)
 
 <use img/chapter5_implementation/shreyFront.png>
@@ -1600,7 +1605,7 @@ Package pdftex.def Info: img/chapter5_implementation/shreyFront.png used on inp
 ut line 312.
 (pdftex.def)             Requested size: 133.84424pt x 178.45802pt.
 
-<img/chapter5_implementation/keypoints_pose_25.png, id=205, 348.8232pt x 607.54
+<img/chapter5_implementation/keypoints_pose_25.png, id=202, 348.8232pt x 607.54
 98pt>
 File: img/chapter5_implementation/keypoints_pose_25.png Graphic file (type png)
 
@@ -1609,7 +1614,7 @@ Package pdftex.def Info: img/chapter5_implementation/keypoints_pose_25.png used
  on input line 318.
 (pdftex.def)             Requested size: 102.39075pt x 178.33568pt.
 
-<img/chapter5_implementation/shreyBack.png, id=206, 542.025pt x 722.7pt>
+<img/chapter5_implementation/shreyBack.png, id=203, 542.025pt x 722.7pt>
 File: img/chapter5_implementation/shreyBack.png Graphic file (type png)
 
 <use img/chapter5_implementation/shreyBack.png>
@@ -1617,20 +1622,23 @@ Package pdftex.def Info: img/chapter5_implementation/shreyBack.png used on inpu
 t line 324.
 (pdftex.def)             Requested size: 133.84424pt x 178.45802pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 353--354
-
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[43 <./img/chapter5_implementation/shreyFront.png (PNG copy)> <./img/chapter5_i
-mplementation/keypoints_pose_25.png> <./img/chapter5_implementation/shreyBack.p
-ng (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 376--377
+[43 <./img/chapter5_implementation/openposeKP.png> <./img/chapter5_implementati
+on/openposeKP1.png> <./img/chapter5_implementation/openposeKP2.png> <./img/chap
+ter5_implementation/shreyFront.png (PNG copy)> <./img/chapter5_implementation/k
+eypoints_pose_25.png> <./img/chapter5_implementation/shreyBack.png (PNG copy)>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
 
  []
 
@@ -1647,7 +1655,7 @@ File: img/chapter5_implementation/hololensSystemDiagram.png Graphic file (type
 png)
  <use img/chapter5_implementation/hololensSystemDiagram.png>
 Package pdftex.def Info: img/chapter5_implementation/hololensSystemDiagram.png 
-used on input line 388.
+used on input line 391.
 (pdftex.def)             Requested size: 418.25368pt x 185.04585pt.
 )
 (./main.bbl
@@ -1696,7 +1704,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Here is how much of TeX's memory you used:
  20838 strings out of 493029
  373372 string characters out of 6136235
- 600223 words of memory out of 5000000
+ 600171 words of memory out of 5000000
  23845 multiletter control sequences out of 15000+600000
  39897 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1709,7 +1717,7 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pala
 tino/uplri8a.pfb>
-Output written on main.pdf (50 pages, 20094592 bytes).
+Output written on main.pdf (50 pages, 20137605 bytes).
 PDF statistics:
  260 PDF objects out of 1000 (max. 8388607)
  139 compressed objects within 2 object streams

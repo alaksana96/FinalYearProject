@@ -27,7 +27,7 @@ A related field of research is that of people counting and human detection in vi
 	\vspace{-2\baselineskip}
 	\begin{center}
 		
-		\caption{Comparison of Foreground Detection and Scanning Windows}
+		\caption{Comparison of Foreground Detection and Scanning Windows. The number of bounding boxes drawn by the scanning window shows the computational complexity of the method.}
 		\label{fig:foregroundVsScanning}
 	\end{center}
 	\vspace{-2\baselineskip}
@@ -61,7 +61,7 @@ Modern approaches for human detection largely depend on Deep Convolutional Neura
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=.9\linewidth]{img/chapter2_background/rcnn.png}
-	\caption{R-CNN Approach}
+	\caption{Visualization of the R-CNN approach. The number of region proposals contributes to the latency of this method.}
 \end{figure}
 
 \paragraph{R-CNN} The R-CNN method uses a selective search to extract 2000 regions from an image \cite{Girshick2014}. The regions are selected by generating a large number of candidate regions and using a greedy algorithm to recursively combine similar regions into larger ones. The regions are then fed into a CNN that acts as a feature extractor and the output dense layer consists of the features extracted from the image, which are then fed into an SVM to classify the presence of objects in the region.
@@ -73,7 +73,7 @@ Modern approaches for human detection largely depend on Deep Convolutional Neura
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=.6\linewidth]{img/chapter2_background/yoloApproach.png}
-	\caption{YOLO Approach}
+	\caption{YOLO algorithm dividing a square image into grid-cells for bounding box prediction.}
 \end{figure}
 
 The model divides the image into an $S \times S$ grid, and for each cell, predicts a number of bounding boxes, the confidence for those boxes and the class probabilities.
@@ -141,7 +141,8 @@ An idea we wish to explore is using the body pose of an individual to estimate t
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=.7\linewidth]{img/chapter2_background/openpose.jpg}
-	\caption{OpenPose body pose detection \cite{Cao2017}}
+	\caption{OpenPose body pose detection \cite{Cao2017}. The network is able to determine an estimate of the key-points hidden by objects.}
+	\vspace{-1\baselineskip}
 \end{figure}
 
 \paragraph{} As such, OpenPose presents a method of multi-person pose estimation using a bottom-up approach \cite{Cao2017}. The method relies on \textit{partial affinity fields} (PAFs), a representation that encodes unstructured pairwise relationships between body parts. The network produces the 2D confidence maps of body part locations and PAFs, and through greedy inference, the network outputs the 2D key-points for all people in the image.
