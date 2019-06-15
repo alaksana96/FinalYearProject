@@ -589,10 +589,11 @@ The Hologram Manager is the manager of visualizations rendered on the holographi
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.5\linewidth]{img/chapter5_implementation/greenredholowhite.png}
-	\caption{The Green and Red Arrow holograms rendered. The number under the arrow is the associated tracker ID of the object. This allows us to track objects in the surroundings.}
+	\caption{The Green and Red Arrow prefabs. The number under the arrow is the associated tracker ID of the object. This allows us to track objects in the surroundings.}
 	\label{fig:holograms}
 \end{figure}
 
+To improve the positional accuracy of the holograms, we utilize the spatial mapping capabilities of the Hololens. By using the \code{Raycasting} function in Unity, we can project a ray from the Hololens in the direction of the GameObject. When the ray hits a surface detected by the spatial mapping class, we render the hologram on the surface and move the GameObject to that position in world co-ordinates. This ensures that the holograms are rendered on the detected person, as seen in Figure \ref{fig:greenredrender}.
 
 \begin{figure}[ht]
 	\begin{subfigure}[b]{.45\textwidth}
@@ -609,8 +610,13 @@ The Hologram Manager is the manager of visualizations rendered on the holographi
 	\vspace{-1\baselineskip}
 	\begin{center}
 		\caption{Images captured from the Hololens showing what the PWU would see when wearing the device.}
-		\label{fig:yoloViz}
+		\label{fig:greenredrender}
 	\end{center}
 	\vspace{-2\baselineskip}
 \end{figure}
+
+\subsubsection{ARTA Manager}
+We need to represent the powered wheelchair in the Unity application so that we can calculate the distance between the detected objects and ARTA. As such, the ARTA manager subscribes to the topics published by ARTA.
+
+
 %\section{ARTA Powered Wheelchair}

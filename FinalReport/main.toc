@@ -1,212 +1,211 @@
 \select@language {english}
-\contentsline {paragraph}{Abstract}{1}
+\contentsline {paragraph}{Acknowledgements}{1}
 \contentsline {paragraph}{}{1}
-\contentsline {paragraph}{Acknowledgements}{2}
-\contentsline {paragraph}{}{2}
-\contentsline {paragraph}{}{2}
-\contentsline {paragraph}{}{2}
-\contentsline {paragraph}{}{2}
-\contentsline {paragraph}{}{2}
-\contentsline {chapter}{\numberline {1}Introduction and Requirements}{5}
-\contentsline {section}{\numberline {1.1}Introduction}{5}
-\contentsline {section}{\numberline {1.2}Motivation}{5}
-\contentsline {chapter}{\numberline {2}Background}{6}
-\contentsline {section}{\numberline {2.1}Human Detection}{6}
-\contentsline {subsection}{\numberline {2.1.1}Direction of Research}{6}
-\contentsline {subsection}{\numberline {2.1.2}Review of Existing Methodologies}{6}
+\contentsline {paragraph}{}{1}
+\contentsline {paragraph}{}{1}
+\contentsline {paragraph}{}{1}
+\contentsline {paragraph}{}{1}
+\contentsline {chapter}{\numberline {1}Introduction and Requirements}{4}
+\contentsline {section}{\numberline {1.1}Introduction}{4}
+\contentsline {section}{\numberline {1.2}Motivation}{4}
+\contentsline {chapter}{\numberline {2}Background}{5}
+\contentsline {section}{\numberline {2.1}Human Detection}{5}
+\contentsline {subsection}{\numberline {2.1.1}Direction of Research}{5}
+\contentsline {subsection}{\numberline {2.1.2}Review of Existing Methodologies}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {subsubsection}{Foreground Detection}{6}
 \contentsline {paragraph}{}{6}
-\contentsline {subsubsection}{Foreground Detection}{7}
+\contentsline {subsubsection}{Scanning Windows}{6}
+\contentsline {subsubsection}{Classical Object Detection}{6}
+\contentsline {paragraph}{Haar Cascades}{6}
 \contentsline {paragraph}{}{7}
-\contentsline {subsubsection}{Scanning Windows}{7}
-\contentsline {subsubsection}{Classical Object Detection}{7}
-\contentsline {paragraph}{Haar Cascades}{7}
+\contentsline {paragraph}{Histograms of Oriented Gradients}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {subsubsection}{Deep Learning Object Detection}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{R-CNN}{8}
 \contentsline {paragraph}{}{8}
-\contentsline {paragraph}{Histograms of Oriented Gradients}{8}
+\contentsline {paragraph}{YOLO}{8}
+\contentsline {subsection}{\numberline {2.1.3}Comments}{8}
 \contentsline {paragraph}{}{8}
-\contentsline {subsubsection}{Deep Learning Object Detection}{8}
-\contentsline {paragraph}{}{8}
-\contentsline {paragraph}{R-CNN}{9}
+\contentsline {section}{\numberline {2.2}Object Tracking}{9}
+\contentsline {subsection}{\numberline {2.2.1}Direction of Research}{9}
+\contentsline {subsection}{\numberline {2.2.2}Review of Exisiting Methodologies}{9}
+\contentsline {subsubsection}{SORT}{9}
+\contentsline {paragraph}{Methodology}{9}
 \contentsline {paragraph}{}{9}
-\contentsline {paragraph}{YOLO}{9}
-\contentsline {subsection}{\numberline {2.1.3}Comments}{9}
-\contentsline {paragraph}{}{9}
-\contentsline {section}{\numberline {2.2}Object Tracking}{10}
-\contentsline {subsection}{\numberline {2.2.1}Direction of Research}{10}
-\contentsline {subsection}{\numberline {2.2.2}Review of Exisiting Methodologies}{10}
-\contentsline {subsubsection}{SORT}{10}
+\contentsline {paragraph}{Limitations}{10}
+\contentsline {subsubsection}{Deep SORT}{10}
 \contentsline {paragraph}{Methodology}{10}
 \contentsline {paragraph}{}{10}
-\contentsline {paragraph}{Limitations}{11}
-\contentsline {subsubsection}{Deep SORT}{11}
-\contentsline {paragraph}{Methodology}{11}
-\contentsline {paragraph}{}{11}
-\contentsline {paragraph}{Limitations}{11}
-\contentsline {subsection}{\numberline {2.2.3}Comments}{11}
-\contentsline {section}{\numberline {2.3}Head and Body Pose Estimation}{11}
-\contentsline {subsection}{\numberline {2.3.1}Direction of Research}{12}
-\contentsline {subsection}{\numberline {2.3.2}Review of Existing Methodologies}{12}
-\contentsline {subsubsection}{Head Pose Estimation}{12}
-\contentsline {paragraph}{Facial Landmark Detection}{12}
-\contentsline {subsubsection}{Body Pose Estimation}{12}
-\contentsline {paragraph}{PoseNet}{12}
-\contentsline {paragraph}{OpenPose}{13}
+\contentsline {paragraph}{Limitations}{10}
+\contentsline {subsection}{\numberline {2.2.3}Comments}{10}
+\contentsline {section}{\numberline {2.3}Head and Body Pose Estimation}{10}
+\contentsline {subsection}{\numberline {2.3.1}Direction of Research}{11}
+\contentsline {subsection}{\numberline {2.3.2}Review of Existing Methodologies}{11}
+\contentsline {subsubsection}{Head Pose Estimation}{11}
+\contentsline {paragraph}{Facial Landmark Detection}{11}
+\contentsline {subsubsection}{Body Pose Estimation}{11}
+\contentsline {paragraph}{PoseNet}{11}
+\contentsline {paragraph}{OpenPose}{12}
+\contentsline {paragraph}{}{12}
+\contentsline {subsection}{\numberline {2.3.3}Comments}{12}
+\contentsline {section}{\numberline {2.4}SLAM}{12}
 \contentsline {paragraph}{}{13}
-\contentsline {subsection}{\numberline {2.3.3}Comments}{13}
-\contentsline {section}{\numberline {2.4}SLAM}{13}
-\contentsline {paragraph}{}{14}
-\contentsline {subsection}{\numberline {2.4.1}Direction of Research}{14}
-\contentsline {subsection}{\numberline {2.4.2}Review of Existing Methodologies}{14}
-\contentsline {paragraph}{}{14}
-\contentsline {paragraph}{}{14}
-\contentsline {subsubsection}{Visual SLAM}{14}
-\contentsline {paragraph}{Initialization}{14}
-\contentsline {paragraph}{Tracking}{15}
-\contentsline {paragraph}{Mapping}{15}
-\contentsline {subsection}{\numberline {2.4.3}Comments}{15}
-\contentsline {section}{\numberline {2.5}Augmented Reality Headsets}{15}
-\contentsline {subsection}{\numberline {2.5.1}Direction of Research}{15}
-\contentsline {subsection}{\numberline {2.5.2}Review of Existing Methods}{15}
-\contentsline {subsubsection}{Microsoft Hololens}{15}
-\contentsline {paragraph}{Holograms}{16}
-\contentsline {paragraph}{}{16}
-\contentsline {paragraph}{Hardware Specifications}{16}
-\contentsline {paragraph}{}{16}
-\contentsline {paragraph}{Personal Robotics Lab}{16}
-\contentsline {subsection}{\numberline {2.5.3}Comments}{16}
-\contentsline {chapter}{\numberline {3}Requirements Capture}{18}
-\contentsline {section}{\numberline {3.1}Project Deliverable}{18}
-\contentsline {paragraph}{}{18}
-\contentsline {paragraph}{}{18}
-\contentsline {section}{\numberline {3.2}Human Detection and Direction}{18}
-\contentsline {paragraph}{}{18}
-\contentsline {paragraph}{Features}{19}
-\contentsline {section}{\numberline {3.3}Obstacle Mapping \& Visualization }{19}
-\contentsline {paragraph}{Features}{19}
-\contentsline {section}{\numberline {3.4}Reactive Control}{19}
-\contentsline {paragraph}{Features}{19}
-\contentsline {chapter}{\numberline {4}Analysis and Design}{20}
-\contentsline {section}{\numberline {4.1}Design Overview}{20}
-\contentsline {subsection}{\numberline {4.1.1}Hardware}{21}
-\contentsline {subsection}{\numberline {4.1.2}System Communication}{21}
-\contentsline {subsubsection}{Robotic Operating System}{21}
-\contentsline {paragraph}{ROS Topics}{21}
-\contentsline {section}{\numberline {4.2}Human Detection \& Direction System}{21}
-\contentsline {subsection}{\numberline {4.2.1}YOLO Object Detector}{22}
-\contentsline {subsubsection}{Choice of Detector}{22}
+\contentsline {subsection}{\numberline {2.4.1}Direction of Research}{13}
+\contentsline {subsection}{\numberline {2.4.2}Review of Existing Methodologies}{13}
+\contentsline {paragraph}{}{13}
+\contentsline {paragraph}{}{13}
+\contentsline {subsubsection}{Visual SLAM}{13}
+\contentsline {paragraph}{Initialization}{13}
+\contentsline {paragraph}{Tracking}{14}
+\contentsline {paragraph}{Mapping}{14}
+\contentsline {subsection}{\numberline {2.4.3}Comments}{14}
+\contentsline {section}{\numberline {2.5}Augmented Reality Headsets}{14}
+\contentsline {subsection}{\numberline {2.5.1}Direction of Research}{14}
+\contentsline {subsection}{\numberline {2.5.2}Review of Existing Methods}{14}
+\contentsline {subsubsection}{Microsoft Hololens}{14}
+\contentsline {paragraph}{Holograms}{15}
+\contentsline {paragraph}{}{15}
+\contentsline {paragraph}{Hardware Specifications}{15}
+\contentsline {paragraph}{}{15}
+\contentsline {paragraph}{Personal Robotics Lab}{15}
+\contentsline {subsection}{\numberline {2.5.3}Comments}{15}
+\contentsline {chapter}{\numberline {3}Requirements Capture}{17}
+\contentsline {section}{\numberline {3.1}Project Deliverable}{17}
+\contentsline {paragraph}{}{17}
+\contentsline {paragraph}{}{17}
+\contentsline {section}{\numberline {3.2}Human Detection and Direction}{17}
+\contentsline {paragraph}{}{17}
+\contentsline {paragraph}{Features}{18}
+\contentsline {section}{\numberline {3.3}Obstacle Mapping \& Visualization }{18}
+\contentsline {paragraph}{Features}{18}
+\contentsline {section}{\numberline {3.4}Reactive Control}{18}
+\contentsline {paragraph}{Features}{18}
+\contentsline {chapter}{\numberline {4}Analysis and Design}{19}
+\contentsline {section}{\numberline {4.1}Design Overview}{19}
+\contentsline {subsection}{\numberline {4.1.1}Hardware}{20}
+\contentsline {subsection}{\numberline {4.1.2}System Communication}{20}
+\contentsline {subsubsection}{Robotic Operating System}{20}
+\contentsline {paragraph}{ROS Topics}{20}
+\contentsline {section}{\numberline {4.2}Human Detection \& Direction System}{20}
+\contentsline {subsection}{\numberline {4.2.1}YOLO Object Detector}{21}
+\contentsline {subsubsection}{Choice of Detector}{21}
+\contentsline {paragraph}{}{21}
+\contentsline {subsubsection}{Pre-trained Model vs Training}{21}
+\contentsline {paragraph}{Comparing Models}{21}
+\contentsline {paragraph}{Pedestrian Dataset}{21}
+\contentsline {paragraph}{Analysis}{22}
+\contentsline {subsection}{\numberline {4.2.2}YACHT: Yet Another Crowd Human Tracker}{22}
 \contentsline {paragraph}{}{22}
-\contentsline {subsubsection}{Pre-trained Model vs Training}{22}
-\contentsline {paragraph}{Comparing Models}{22}
-\contentsline {paragraph}{Pedestrian Dataset}{22}
+\contentsline {subsubsection}{YACHT Tracker: Object Tracking}{22}
+\contentsline {paragraph}{SORT}{22}
+\contentsline {paragraph}{Deep SORT}{23}
 \contentsline {paragraph}{Analysis}{23}
-\contentsline {subsection}{\numberline {4.2.2}YACHT: Yet Another Crowd Human Tracker}{23}
-\contentsline {paragraph}{}{23}
-\contentsline {subsubsection}{YACHT Tracker: Object Tracking}{23}
-\contentsline {paragraph}{SORT}{23}
-\contentsline {paragraph}{Deep SORT}{24}
-\contentsline {paragraph}{Analysis}{24}
-\contentsline {subsubsection}{Object Tracking for Direction Inference}{25}
-\contentsline {paragraph}{Algorithm}{25}
-\contentsline {paragraph}{Issues}{25}
-\contentsline {paragraph}{}{26}
-\contentsline {subsubsection}{YACHT Direction: Body Pose Estimation}{26}
-\contentsline {paragraph}{Object Detectors \& Bottom-Up Approaches}{26}
-\contentsline {paragraph}{Keypoint Estimation}{26}
-\contentsline {subsubsection}{Head Pose Estimation}{27}
-\contentsline {paragraph}{Head Detection}{27}
-\contentsline {paragraph}{Reasons for removal}{27}
-\contentsline {section}{\numberline {4.3}Hololens Unity Application}{28}
-\contentsline {subsection}{\numberline {4.3.1}ROS Node}{28}
-\contentsline {paragraph}{}{28}
-\contentsline {subsection}{\numberline {4.3.2}HoloCamera}{28}
-\contentsline {subsubsection}{Video Streaming Choices}{29}
-\contentsline {paragraph}{Windows Device Portal}{29}
-\contentsline {paragraph}{Microsoft HoloLensForCV}{29}
-\contentsline {paragraph}{Unity Camera Stream}{29}
-\contentsline {subsubsection}{Module Description}{30}
-\contentsline {subsection}{\numberline {4.3.3}HoloWorld}{30}
-\contentsline {subsubsection}{World Manager}{30}
-\contentsline {subsubsection}{ARTA Manager}{30}
-\contentsline {paragraph}{Alignment}{30}
-\contentsline {paragraph}{}{30}
-\contentsline {section}{\numberline {4.4}ARTA}{31}
-\contentsline {subsection}{\numberline {4.4.1}Breakdown}{31}
-\contentsline {chapter}{\numberline {5}Implementation}{32}
-\contentsline {section}{\numberline {5.1}Human Detection \& Direction System}{33}
-\contentsline {subsection}{\numberline {5.1.1}Hardware \& Software Dependencies}{33}
-\contentsline {subsubsection}{Hardware}{33}
-\contentsline {subsubsection}{Software}{34}
-\contentsline {subsection}{\numberline {5.1.2}YOLO Object Detector}{34}
-\contentsline {subsubsection}{Darknet}{34}
-\contentsline {subsubsection}{Darknet in ROS}{35}
-\contentsline {paragraph}{}{35}
-\contentsline {paragraph}{}{35}
-\contentsline {subsubsection}{YOLO Detection Algorithm}{36}
-\contentsline {subsubsection}{YOLOv3 Tiny vs YOLOv3}{36}
-\contentsline {subsubsection}{Training YOLOv3 Tiny}{36}
-\contentsline {paragraph}{CrowdHuman}{36}
-\contentsline {paragraph}{Annotations}{37}
-\contentsline {paragraph}{}{37}
-\contentsline {paragraph}{}{37}
-\contentsline {paragraph}{}{37}
-\contentsline {paragraph}{}{37}
-\contentsline {paragraph}{Converting Annotations}{37}
-\contentsline {paragraph}{Training Parameters}{38}
-\contentsline {paragraph}{Training Process}{38}
-\contentsline {subsubsection}{Evaluating Trained Model}{38}
-\contentsline {paragraph}{Hololens Videos}{38}
-\contentsline {subsubsection}{ROS Node}{39}
-\contentsline {paragraph}{ROS Topics}{39}
-\contentsline {paragraph}{}{39}
-\contentsline {subsection}{\numberline {5.1.3}YACHT Package}{40}
-\contentsline {paragraph}{ROS Communication}{40}
-\contentsline {subsection}{\numberline {5.1.4}YACHT: Tracker}{40}
-\contentsline {subsubsection}{Deep SORT}{40}
-\contentsline {paragraph}{Modifications}{40}
-\contentsline {paragraph}{Deep Association Metric}{40}
-\contentsline {paragraph}{Trackers \& Tracking}{41}
-\contentsline {subsubsection}{Linear Extrapolation}{42}
-\contentsline {subsubsection}{ROS Topic}{42}
-\contentsline {subsection}{\numberline {5.1.5}YACHT: Direction}{42}
-\contentsline {paragraph}{}{42}
-\contentsline {subsubsection}{OpenPose}{43}
-\contentsline {paragraph}{Installation \& Setup}{43}
-\contentsline {paragraph}{Model}{43}
-\contentsline {subsubsection}{KeyPoint Estimation}{43}
-\contentsline {subsubsection}{Defining Direction}{44}
-\contentsline {paragraph}{Method}{44}
-\contentsline {subsubsection}{Implementation \& Detection Matching}{45}
-\contentsline {subsubsection}{ROS Topic}{45}
-\contentsline {section}{\numberline {5.2}Hololens Unity Application}{46}
-\contentsline {paragraph}{}{46}
-\contentsline {subsection}{\numberline {5.2.1}Hardware \& Software Dependencies}{46}
-\contentsline {subsubsection}{Hardware}{46}
-\contentsline {paragraph}{Microsoft Hololens}{46}
-\contentsline {subsubsection}{Software}{47}
-\contentsline {paragraph}{Universal Windows Platform}{47}
-\contentsline {paragraph}{Unity}{47}
-\contentsline {paragraph}{Development Tools}{47}
-\contentsline {subsection}{\numberline {5.2.2}Hololens Locatable Camera}{48}
-\contentsline {subsubsection}{Specifications}{48}
-\contentsline {subsubsection}{Limitations}{48}
-\contentsline {subsection}{\numberline {5.2.3}Hololens Video Camera Stream}{48}
-\contentsline {subsubsection}{Image Capture}{49}
-\contentsline {paragraph}{Vulcan Technologies}{49}
-\contentsline {paragraph}{Image Capture Pipeline}{49}
-\contentsline {paragraph}{}{50}
-\contentsline {subsubsection}{Image Compression}{50}
-\contentsline {paragraph}{Unity Threading}{50}
-\contentsline {paragraph}{Limited Frame-rate}{50}
-\contentsline {subsection}{\numberline {5.2.4}ROS Communication}{51}
-\contentsline {subsubsection}{Modifications}{51}
-\contentsline {subsubsection}{ROS Topics}{51}
-\contentsline {paragraph}{Compressed Images}{51}
-\contentsline {paragraph}{HDD Topics}{52}
-\contentsline {subsection}{\numberline {5.2.5}Hololens World}{52}
-\contentsline {subsubsection}{Hololens World Manager}{52}
-\contentsline {paragraph}{Communication}{52}
-\contentsline {paragraph}{Spatial Mapping}{52}
-\contentsline {subsubsection}{HDD Data to GameObjects}{52}
-\contentsline {paragraph}{Matching Bounding Boxes}{53}
-\contentsline {paragraph}{Creating GameObjects}{54}
-\contentsline {subsubsection}{Hologram Manager}{54}
-\contentsline {paragraph}{Holograms}{55}
+\contentsline {subsubsection}{Object Tracking for Direction Inference}{24}
+\contentsline {paragraph}{Algorithm}{24}
+\contentsline {paragraph}{Issues}{24}
+\contentsline {paragraph}{}{25}
+\contentsline {subsubsection}{YACHT Direction: Body Pose Estimation}{25}
+\contentsline {paragraph}{Object Detectors \& Bottom-Up Approaches}{25}
+\contentsline {paragraph}{Keypoint Estimation}{25}
+\contentsline {subsubsection}{Head Pose Estimation}{26}
+\contentsline {paragraph}{Head Detection}{26}
+\contentsline {paragraph}{Reasons for removal}{26}
+\contentsline {section}{\numberline {4.3}Hololens Unity Application}{27}
+\contentsline {subsection}{\numberline {4.3.1}ROS Node}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {subsection}{\numberline {4.3.2}HoloCamera}{27}
+\contentsline {subsubsection}{Video Streaming Choices}{28}
+\contentsline {paragraph}{Windows Device Portal}{28}
+\contentsline {paragraph}{Microsoft HoloLensForCV}{28}
+\contentsline {paragraph}{Unity Camera Stream}{28}
+\contentsline {subsubsection}{Module Description}{29}
+\contentsline {subsection}{\numberline {4.3.3}HoloWorld}{29}
+\contentsline {subsubsection}{World Manager}{29}
+\contentsline {subsubsection}{ARTA Manager}{29}
+\contentsline {paragraph}{Alignment}{29}
+\contentsline {paragraph}{}{29}
+\contentsline {section}{\numberline {4.4}ARTA}{30}
+\contentsline {subsection}{\numberline {4.4.1}Breakdown}{30}
+\contentsline {chapter}{\numberline {5}Implementation}{31}
+\contentsline {section}{\numberline {5.1}Human Detection \& Direction System}{32}
+\contentsline {subsection}{\numberline {5.1.1}Hardware \& Software Dependencies}{32}
+\contentsline {subsubsection}{Hardware}{32}
+\contentsline {subsubsection}{Software}{33}
+\contentsline {subsection}{\numberline {5.1.2}YOLO Object Detector}{33}
+\contentsline {subsubsection}{Darknet}{33}
+\contentsline {subsubsection}{Darknet in ROS}{34}
+\contentsline {paragraph}{}{34}
+\contentsline {paragraph}{}{34}
+\contentsline {subsubsection}{YOLO Detection Algorithm}{35}
+\contentsline {subsubsection}{YOLOv3 Tiny vs YOLOv3}{35}
+\contentsline {subsubsection}{Training YOLOv3 Tiny}{35}
+\contentsline {paragraph}{CrowdHuman}{35}
+\contentsline {paragraph}{Annotations}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {paragraph}{Converting Annotations}{36}
+\contentsline {paragraph}{Training Parameters}{37}
+\contentsline {paragraph}{Training Process}{37}
+\contentsline {subsubsection}{Evaluating Trained Model}{37}
+\contentsline {paragraph}{Hololens Videos}{37}
+\contentsline {subsubsection}{ROS Node}{38}
+\contentsline {paragraph}{ROS Topics}{38}
+\contentsline {paragraph}{}{38}
+\contentsline {subsection}{\numberline {5.1.3}YACHT Package}{39}
+\contentsline {paragraph}{ROS Communication}{39}
+\contentsline {subsection}{\numberline {5.1.4}YACHT: Tracker}{39}
+\contentsline {subsubsection}{Deep SORT}{39}
+\contentsline {paragraph}{Modifications}{39}
+\contentsline {paragraph}{Deep Association Metric}{39}
+\contentsline {paragraph}{Trackers \& Tracking}{40}
+\contentsline {subsubsection}{Linear Extrapolation}{41}
+\contentsline {subsubsection}{ROS Topic}{41}
+\contentsline {subsection}{\numberline {5.1.5}YACHT: Direction}{41}
+\contentsline {paragraph}{}{41}
+\contentsline {subsubsection}{OpenPose}{42}
+\contentsline {paragraph}{Installation \& Setup}{42}
+\contentsline {paragraph}{Model}{42}
+\contentsline {subsubsection}{KeyPoint Estimation}{42}
+\contentsline {subsubsection}{Defining Direction}{43}
+\contentsline {paragraph}{Method}{43}
+\contentsline {subsubsection}{Implementation \& Detection Matching}{44}
+\contentsline {subsubsection}{ROS Topic}{44}
+\contentsline {section}{\numberline {5.2}Hololens Unity Application}{45}
+\contentsline {paragraph}{}{45}
+\contentsline {subsection}{\numberline {5.2.1}Hardware \& Software Dependencies}{45}
+\contentsline {subsubsection}{Hardware}{45}
+\contentsline {paragraph}{Microsoft Hololens}{45}
+\contentsline {subsubsection}{Software}{46}
+\contentsline {paragraph}{Universal Windows Platform}{46}
+\contentsline {paragraph}{Unity}{46}
+\contentsline {paragraph}{Development Tools}{46}
+\contentsline {subsection}{\numberline {5.2.2}Hololens Locatable Camera}{47}
+\contentsline {subsubsection}{Specifications}{47}
+\contentsline {subsubsection}{Limitations}{47}
+\contentsline {subsection}{\numberline {5.2.3}Hololens Video Camera Stream}{47}
+\contentsline {subsubsection}{Image Capture}{48}
+\contentsline {paragraph}{Vulcan Technologies}{48}
+\contentsline {paragraph}{Image Capture Pipeline}{48}
+\contentsline {paragraph}{}{49}
+\contentsline {subsubsection}{Image Compression}{49}
+\contentsline {paragraph}{Unity Threading}{49}
+\contentsline {paragraph}{Limited Frame-rate}{49}
+\contentsline {subsection}{\numberline {5.2.4}ROS Communication}{50}
+\contentsline {subsubsection}{Modifications}{50}
+\contentsline {subsubsection}{ROS Topics}{50}
+\contentsline {paragraph}{Compressed Images}{50}
+\contentsline {paragraph}{HDD Topics}{51}
+\contentsline {subsection}{\numberline {5.2.5}Hololens World}{51}
+\contentsline {subsubsection}{Hololens World Manager}{51}
+\contentsline {paragraph}{Communication}{51}
+\contentsline {paragraph}{Spatial Mapping}{51}
+\contentsline {subsubsection}{HDD Data to GameObjects}{51}
+\contentsline {paragraph}{Matching Bounding Boxes}{52}
+\contentsline {paragraph}{Creating GameObjects}{53}
+\contentsline {subsubsection}{Hologram Manager}{53}
+\contentsline {paragraph}{Holograms}{54}
+\contentsline {subsubsection}{ARTA Manager}{54}

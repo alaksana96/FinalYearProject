@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  15 JUN 2019 18:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  15 JUN 2019 19:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -824,9 +824,6 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 
 LaTeX Warning: Label `sec:YACHT' multiply defined.
 
-
-LaTeX Warning: Label `fig:yoloViz' multiply defined.
-
 )
 \openout1 = `main.aux'.
 
@@ -961,25 +958,21 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.95> not available
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/crest.png>]) (./tex/
-abstract.tex)
-(./tex/acknowledgements.tex
+abstract.tex
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1.
+
+[1]) (./tex/acknowledgements.tex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[1])
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[2]
+[1]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 193.
- (./main.toc [3
+ (./main.toc [2
 
 ])
 \tf@toc=\write4
@@ -992,13 +985,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4] (./tex/chapter1_introduction.tex
+[3] (./tex/chapter1_introduction.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <20.74> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 3.
-) (./tex/chapter2_background.tex [5
+) (./tex/chapter2_background.tex [4
 
 ]
 Chapter 2.
@@ -1026,7 +1019,7 @@ Overfull \hbox (2.08049pt too wide) in paragraph at lines 16--28
 [][]  []
  []
 
-[6
+[5
 
 ]
 
@@ -1035,7 +1028,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7 <./img/chapter2_background/robustBackgroundSubtraction.png> <./img/chapter2_
+[6 <./img/chapter2_background/robustBackgroundSubtraction.png> <./img/chapter2_
 background/yoloBBBoxes.png (PNG copy)>]
 <img/chapter2_background/rcnn.png, id=38, 991.705pt x 367.3725pt>
 File: img/chapter2_background/rcnn.png Graphic file (type png)
@@ -1051,7 +1044,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8 <./img/chapter2_background/rcnn.png (PNG copy)>]
+[7 <./img/chapter2_background/rcnn.png (PNG copy)>]
 <img/chapter2_background/yoloApproach.png, id=42, 803.0pt x 525.965pt>
 File: img/chapter2_background/yoloApproach.png Graphic file (type png)
 
@@ -1066,7 +1059,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9 <./img/chapter2_background/yoloApproach.png (PNG copy)>]
+[8 <./img/chapter2_background/yoloApproach.png (PNG copy)>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1080,14 +1080,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[12] <img/chapter2_background/openpose.jpg, id=59, 1284.8pt x 722.7pt>
+[11] <img/chapter2_background/openpose.jpg, id=59, 1284.8pt x 722.7pt>
 File: img/chapter2_background/openpose.jpg Graphic file (type jpg)
 
 <use img/chapter2_background/openpose.jpg>
@@ -1106,7 +1099,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13 <./img/chapter2_background/openpose.jpg>]
+[12 <./img/chapter2_background/openpose.jpg>]
 Overfull \hbox (1.26852pt too wide) in paragraph at lines 172--173
  \OT1/ppl/b/n/10.95 Ini-tial-iza-tion[] \OT1/ppl/m/n/10.95 In the ini-tial-iza-
 tion stage, cam-era pose es-ti-ma-tion is con-ducted, to trans-
@@ -1118,14 +1111,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14]
+[13]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15]
+[14]
 LaTeX Font Info:    Try loading font information for OMS+ppl on input line 201.
 
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
@@ -1149,16 +1142,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]
+[15]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17 <./img/chapter2_background/AR_Interface.png>]
+[16 <./img/chapter2_background/AR_Interface.png>]
 Chapter 3.
-[18
+[17
 
 ]) (./tex/chapter4_analysis.tex
 
@@ -1167,7 +1160,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19]
+[18]
 Chapter 4.
 
 <img/chapter4_analysis/simpleSystemDiagram.png, id=84, 829.6596pt x 150.8034pt>
@@ -1176,7 +1169,7 @@ File: img/chapter4_analysis/simpleSystemDiagram.png Graphic file (type png)
 Package pdftex.def Info: img/chapter4_analysis/simpleSystemDiagram.png used on 
 input line 14.
 (pdftex.def)             Requested size: 418.25368pt x 76.0228pt.
- [20
+ [19
 
  <./img/chapter4_analysis/simpleSystemDiagram.png>]
 Overfull \hbox (2.59314pt too wide) in paragraph at lines 35--36
@@ -1196,7 +1189,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21] <img/chapter4_analysis/yoloCoco.png, id=92, 1223.57124pt x 691.58376pt>
+[20] <img/chapter4_analysis/yoloCoco.png, id=92, 1223.57124pt x 691.58376pt>
 File: img/chapter4_analysis/yoloCoco.png Graphic file (type png)
 
 <use img/chapter4_analysis/yoloCoco.png>
@@ -1222,14 +1215,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22]
+[21]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23 <./img/chapter4_analysis/yoloCoco.png> <./img/chapter4_analysis/yoloCH.png>
+[22 <./img/chapter4_analysis/yoloCoco.png> <./img/chapter4_analysis/yoloCH.png>
 ] <img/chapter4_analysis/deepSortMOT.png, id=100, 1814.78pt x 473.77pt>
 File: img/chapter4_analysis/deepSortMOT.png Graphic file (type png)
 
@@ -1244,7 +1237,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24 <./img/chapter4_analysis/deepSortMOT.png>]
+[23 <./img/chapter4_analysis/deepSortMOT.png>]
 <img/chapter4_analysis/linExDirection.png, id=105, 481.8pt x 361.35pt>
 File: img/chapter4_analysis/linExDirection.png Graphic file (type png)
 
@@ -1275,7 +1268,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25 <./img/chapter4_analysis/linExDirection.png> <./img/chapter4_analysis/linEx
+[24 <./img/chapter4_analysis/linExDirection.png> <./img/chapter4_analysis/linEx
 DirectionAmb.png>]
 <img/chapter4_analysis/keypoints_pose_25.png, id=113, 348.8232pt x 607.5498pt>
 File: img/chapter4_analysis/keypoints_pose_25.png Graphic file (type png)
@@ -1291,7 +1284,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26 <./img/chapter4_analysis/pinholecamera.png>]
+[25 <./img/chapter4_analysis/pinholecamera.png>]
 <img/chapter4_analysis/hddSystemHeadPose.png, id=118, 825.3234pt x 297.7524pt>
 File: img/chapter4_analysis/hddSystemHeadPose.png Graphic file (type png)
 
@@ -1326,7 +1319,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27 <./img/chapter4_analysis/keypoints_pose_25.png> <./img/chapter4_analysis/hd
+[26 <./img/chapter4_analysis/keypoints_pose_25.png> <./img/chapter4_analysis/hd
 dSystemHeadPose.png>]
 <img/chapter4_analysis/holoROSSharpWrapper.png, id=126, 648.021pt x 247.6452pt>
 File: img/chapter4_analysis/holoROSSharpWrapper.png Graphic file (type png)
@@ -1341,7 +1334,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28 <./img/chapter4_analysis/headPose.jpeg> <./img/chapter4_analysis/deepgazeWh
+[27 <./img/chapter4_analysis/headPose.jpeg> <./img/chapter4_analysis/deepgazeWh
 ole.png>]
 Overfull \hbox (6.48216pt too wide) in paragraph at lines 247--248
  \OT1/ppl/b/n/10.95 Unity Cam-era Stream[] \OT1/ppl/m/n/10.95 From our re-searc
@@ -1354,7 +1347,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29 <./img/chapter4_analysis/holoROSSharpWrapper.png>]
+[28 <./img/chapter4_analysis/holoROSSharpWrapper.png>]
 <img/chapter4_analysis/holoArtaAligned.png, id=135, 535.2798pt x 180.675pt>
 File: img/chapter4_analysis/holoArtaAligned.png Graphic file (type png)
 
@@ -1369,14 +1362,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30]) (./tex/chapter5_implementation.tex
+[29]) (./tex/chapter5_implementation.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31 <./img/chapter4_analysis/holoArtaAligned.png>]
+[30 <./img/chapter4_analysis/holoArtaAligned.png>]
 Chapter 5.
 
 <img/chapter5_implementation/detailedSystemDiagram.png, id=144, 608.5134pt x 25
@@ -1387,7 +1380,7 @@ png)
 Package pdftex.def Info: img/chapter5_implementation/detailedSystemDiagram.png 
 used on input line 6.
 (pdftex.def)             Requested size: 418.25368pt x 172.20483pt.
- [32
+ [31
 
  <./img/chapter5_implementation/detailedSystemDiagram.png>]
 <img/chapter5_implementation/hddSystemDiagram.png, id=149, 942.8826pt x 436.029
@@ -1416,14 +1409,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33 <./img/chapter5_implementation/hddSystemDiagram.png>]
+[32 <./img/chapter5_implementation/hddSystemDiagram.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34]
+[33]
 Overfull \hbox (7.08296pt too wide) in paragraph at lines 58--59
  [] \OT1/ppl/m/n/10.95 Dark-net has ba-sic Python wrap-pers around the com-pile
 d li-brary which con-vert Python
@@ -1440,7 +1433,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35]
+[34]
 <img/chapter5_implementation/yoloAlgo1.png, id=161, 173.9298pt x 182.6022pt>
 File: img/chapter5_implementation/yoloAlgo1.png Graphic file (type png)
 
@@ -1471,7 +1464,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36 <./img/chapter5_implementation/yoloAlgo1.png> <./img/chapter5_implementatio
+[35 <./img/chapter5_implementation/yoloAlgo1.png> <./img/chapter5_implementatio
 n/yoloAlgo.png>]
 <img/chapter5_implementation/crowdHumanStats.png, id=169, 846.91406pt x 174.652
 5pt>
@@ -1491,7 +1484,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37 <./img/chapter5_implementation/crowdHumanStats.png>]
+[36 <./img/chapter5_implementation/crowdHumanStats.png>]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -1509,7 +1502,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38 <./img/chapter5_implementation/yoloWalkway.png>]
+[37 <./img/chapter5_implementation/yoloWalkway.png>]
 <img/chapter5_implementation/yoloWalkwayMultiple.png, id=179, 963.6pt x 366.168
 pt>
 File: img/chapter5_implementation/yoloWalkwayMultiple.png Graphic file (type pn
@@ -1529,7 +1522,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39 <./img/chapter5_implementation/yoloWalkwayMultiple.png>]
+[38 <./img/chapter5_implementation/yoloWalkwayMultiple.png>]
 <img/chapter5_implementation/deepSortCPU.png, id=184, 683.55376pt x 479.7925pt>
 File: img/chapter5_implementation/deepSortCPU.png Graphic file (type png)
 <use img/chapter5_implementation/deepSortCPU.png>
@@ -1555,7 +1548,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40]
+[39]
 <img/chapter5_implementation/deepSortMatching.png, id=189, 596.4684pt x 199.947
 pt>
 File: img/chapter5_implementation/deepSortMatching.png Graphic file (type png)
@@ -1570,7 +1563,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41 <./img/chapter5_implementation/deepSortCPU.png> <./img/chapter5_implementat
+[40 <./img/chapter5_implementation/deepSortCPU.png> <./img/chapter5_implementat
 ion/deepSortCPU1.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1578,7 +1571,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42 <./img/chapter5_implementation/deepSortMatching.png>]
+[41 <./img/chapter5_implementation/deepSortMatching.png>]
 <img/chapter5_implementation/openposeKP.png, id=198, 642.4pt x 529.98pt>
 File: img/chapter5_implementation/openposeKP.png Graphic file (type png)
 
@@ -1613,7 +1606,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[43] <img/chapter5_implementation/shreyFront.png, id=204, 542.025pt x 722.7pt>
+[42] <img/chapter5_implementation/shreyFront.png, id=204, 542.025pt x 722.7pt>
 File: img/chapter5_implementation/shreyFront.png Graphic file (type png)
 
 <use img/chapter5_implementation/shreyFront.png>
@@ -1644,7 +1637,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[44 <./img/chapter5_implementation/openposeKP.png> <./img/chapter5_implementati
+[43 <./img/chapter5_implementation/openposeKP.png> <./img/chapter5_implementati
 on/openposeKP1.png> <./img/chapter5_implementation/openposeKP2.png> <./img/chap
 ter5_implementation/shreyFront.png (PNG copy)> <./img/chapter5_implementation/k
 eypoints_pose_25.png> <./img/chapter5_implementation/shreyBack.png (PNG copy)>]
@@ -1664,7 +1657,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[45]
+[44]
 <img/chapter5_implementation/hololensSystemDiagram.png, id=217, 849.4134pt x 37
 5.804pt>
 File: img/chapter5_implementation/hololensSystemDiagram.png Graphic file (type 
@@ -1680,7 +1673,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[46 <./img/chapter5_implementation/hololensSystemDiagram.png>]
+[45 <./img/chapter5_implementation/hololensSystemDiagram.png>]
 <img/chapter5_implementation/hololensDevice.jpg, id=222, 4047.12pt x 3035.34pt>
 File: img/chapter5_implementation/hololensDevice.jpg Graphic file (type jpg)
 <use img/chapter5_implementation/hololensDevice.jpg>
@@ -1701,7 +1694,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[47 <./img/chapter5_implementation/hololensDevice.jpg> <./img/chapter5_implemen
+[46 <./img/chapter5_implementation/hololensDevice.jpg> <./img/chapter5_implemen
 tation/hololensOnHead.jpg>]
 <img/chapter5_implementation/hololensFOV.jpeg, id=227, 1413.28pt x 794.97pt>
 File: img/chapter5_implementation/hololensFOV.jpeg Graphic file (type jpg)
@@ -1726,7 +1719,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[48 <./img/chapter5_implementation/hololensFOV.jpeg> <./img/chapter5_implementa
+[47 <./img/chapter5_implementation/hololensFOV.jpeg> <./img/chapter5_implementa
 tion/hololensFOVIphone.jpg>]
 <img/chapter5_implementation/imageCapturePipeline.png, id=233, 546.843pt x 184.
 0476pt>
@@ -1743,7 +1736,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[49 <./img/chapter5_implementation/imageCapturePipeline.png>]
+[48 <./img/chapter5_implementation/imageCapturePipeline.png>]
 <img/chapter5_implementation/unityThreads.png, id=239, 553.5882pt x 248.127pt>
 File: img/chapter5_implementation/unityThreads.png Graphic file (type png)
 
@@ -1758,7 +1751,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[50 <./img/chapter5_implementation/unityThreads.png>]
+[49 <./img/chapter5_implementation/unityThreads.png>]
 <img/chapter5_implementation/holoROSTopics.png, id=244, 609.9588pt x 162.3666pt
 >
 File: img/chapter5_implementation/holoROSTopics.png Graphic file (type png)
@@ -1778,14 +1771,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[51 <./img/chapter5_implementation/holoROSTopics.png>]
+[50 <./img/chapter5_implementation/holoROSTopics.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[52]
+[51]
 <img/chapter5_implementation/holoworldbreakdown.png, id=252, 611.886pt x 181.63
 86pt>
 File: img/chapter5_implementation/holoworldbreakdown.png Graphic file (type png
@@ -1805,7 +1798,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[53 <./img/chapter5_implementation/holoworldbreakdown.png>]
+[52 <./img/chapter5_implementation/holoworldbreakdown.png>]
 <img/chapter5_implementation/CameraTransform.png, id=257, 240.9pt x 150.3216pt>
 File: img/chapter5_implementation/CameraTransform.png Graphic file (type png)
 <use img/chapter5_implementation/CameraTransform.png>
@@ -1819,7 +1812,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[54 <./img/chapter5_implementation/CameraTransform.png>]
+[53 <./img/chapter5_implementation/CameraTransform.png>]
 <img/chapter5_implementation/greenredholowhite.png, id=263, 203.25937pt x 105.3
 9375pt>
 File: img/chapter5_implementation/greenredholowhite.png Graphic file (type png)
@@ -1834,7 +1827,7 @@ File: img/chapter5_implementation/shreyAway.png Graphic file (type png)
 
 <use img/chapter5_implementation/shreyAway.png>
 Package pdftex.def Info: img/chapter5_implementation/shreyAway.png used on inpu
-t line 600.
+t line 601.
 (pdftex.def)             Requested size: 188.21288pt x 106.3541pt.
 
 <img/chapter5_implementation/shreyCome.png, id=265, 770.88pt x 438.63875pt>
@@ -1842,7 +1835,7 @@ File: img/chapter5_implementation/shreyCome.png Graphic file (type png)
 
 <use img/chapter5_implementation/shreyCome.png>
 Package pdftex.def Info: img/chapter5_implementation/shreyCome.png used on inpu
-t line 606.
+t line 607.
 (pdftex.def)             Requested size: 188.21288pt x 107.08926pt.
 ) (./main.bbl
 
@@ -1851,14 +1844,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[55 <./img/chapter5_implementation/greenredholowhite.png> <./img/chapter5_imple
+[54 <./img/chapter5_implementation/greenredholowhite.png> <./img/chapter5_imple
 mentation/shreyAway.png> <./img/chapter5_implementation/shreyCome.png>]
 Underfull \hbox (badness 1442) in paragraph at lines 26--31
 []\OT1/ppl/m/n/10.95 Manato Hirabayashi, Shin-pei Kato, Masato Edahiro, Kazuya 
 Takeda, Taiki
  []
 
-[56
+[55
 
 ]
 
@@ -1867,14 +1860,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[57]
+[56]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[58]
+[57]
 Underfull \hbox (badness 10000) in paragraph at lines 249--252
 []\OT1/ppl/m/n/10.95 Joseph Red-mon.  Dark-net: Open Source Neu-ral Net-works i
 n C.
@@ -1887,17 +1880,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[59] (./main.aux)
+[58] (./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 21033 strings out of 493029
- 377711 string characters out of 6136235
- 547515 words of memory out of 5000000
- 24023 multiletter control sequences out of 15000+600000
- 40065 words of font info for 111 fonts, out of 8000000 for 9000
+ 21037 strings out of 493029
+ 377772 string characters out of 6136235
+ 547525 words of memory out of 5000000
+ 24026 multiletter control sequences out of 15000+600000
+ 41054 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,15n,93p,1004b,1880s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1908,7 +1901,7 @@ type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/
 uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
 
-Output written on main.pdf (60 pages, 24036166 bytes).
+Output written on main.pdf (60 pages, 24036203 bytes).
 PDF statistics:
  311 PDF objects out of 1000 (max. 8388607)
  160 compressed objects within 2 object streams
