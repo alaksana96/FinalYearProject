@@ -59,8 +59,6 @@ By definition, ROS is language-independent, although at the time of writing, thr
 
 \paragraph{}In ROS Python, the JPG or PNG images received from the \code{CompressedImage} message can be converted to numpy arrays which store the RGB values, without the need to be saved on disk. As such, we wrote Python wrappers for Darknet that allow the framework to support images in the form of numpy arrays as well as images saved on disk. The following listing defines the \code{IMAGE} data structure, and the conversion of an image numpy array to the Darknet format: \\
 
-
-
 \begin{lstlisting}[language=Python, caption={Darknet IMAGE Python wrappers for seamless ROS integration.}]
 # IMAGE: a C data structure used by Darknet
 class IMAGE(Structure): 
@@ -184,7 +182,7 @@ int64 xmax % Bottom Right Corner
 int64 ymax
 \end{lstlisting}
 
-\subsection{YACHT Package}
+\subsection{YACHT Package} \label{sec:YACHT}
 The major contribution of this project is in the form of the Yet Another Crowd Human Tracker package for ROS. This package utilizes the Deep SORT algorithm and OpenPose body pose estimation framework to attempt to determine the direction of individuals.
 
 
@@ -195,8 +193,6 @@ As explained in Section \ref{sec:YACHT}, the YACHT tracker depends on the Deep S
 
 
 \subsubsection{Deep SORT} 
-
-
 
 \paragraph{Modifications} We have modified\footnote{https://github.com/alaksana96/deep\_sort} Nicolai Wojke's original implementation of Deep SORT to run on Tensorflow-GPU. In the original, as the number of detections increased, so does the delay in tracking. This issue is more prevalent when tested on the MOT dataset, which has a large number of objects in each frame. Figure \ref{fig:deepSortCPU} visualizes the delay on the MOT16-06 video. We can see that the algorithm is operating at a very low FPS, causing it to be delayed in time. 
 
@@ -514,8 +510,8 @@ As explained in Section \ref{sec:rossharp}, we use the ROS\# library originally 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/holoROSTopics.png}
-	\caption{Image compression is a time consuming operation that must be done in the main thread. Only after compression is done can the holograms be rendered, limiting the application to 5 FPS.}
-	\label{fig:unityThreads}
+	\caption{ROS topics in and out of the Unity application. Each topic carries data used by different parts of the overall system.}
+	\label{fig:unityComms}
 \end{figure}
 
 \paragraph{Compressed Images} The raw video frames captured by the front facing camera are compressed into JPEG frames that can be published in the form of \code{CompressedImage} messages across ROS topics. Within the Unity application, we have setup \code{CompressedImage} publishers which are called when an compressed video frame is ready to be read into a message and published.
@@ -524,4 +520,97 @@ As explained in Section \ref{sec:rossharp}, we use the ROS\# library originally 
 
 % TODO: TO ARTA
 
+\subsection{Hololens World}
+Mixed reality applications have the ability to place holograms in the world on real objects. This involves precisely positioning the holograms in places in the world that are meaningful to the user, which in the case of this project, is on detected people walking in the surroundings. Upon receiving messages from ARTA and the HDD system, the Hololens must parse the data to be able to update its internal understanding of the surrounding world. This section explains the other half of the Unity application, which is responsible for communication between devices, positioning of objects in the surrounding world and visualizing detections using holograms.
 
+\subsubsection{Hololens World Manager}
+Every Unity application has \textit{scenes} where developers can place \textit{GameObjects} which render holograms, recognize gestures and communicate with other devices. A scene can be thought of as the Hololens' internal understanding of the world around it. The World Manager acts as the main program in the scene, receiving messages from the HDD system and ARTA, keeping track of objects in the surroundings and the position of the Hololens and ARTA in the real world.
+
+\paragraph{Communication} The World Manager maintains a collection of all the publishers and subscribers on the Hololens. Figure \ref{fig:unityComms} outlines the flow of information in and out of the Unity application. By maintaining a central communication hub, specialized scripts such as the Hologram Manager or ARTA manager can communicate with the other devices without having to create their own publishers or subscribers.
+
+\paragraph{Spatial Mapping} Through spatial mapping, surfaces can be detected and objects rendered on top of tables or other solid objects. The Hololens has built-in cameras that continuously scan the surrounding environment, building up a virtual world geometry of the real world objects. The World Manager provides a central spatial mapping class that all scripts can access so they have the same understanding of the surrounding world.
+
+\subsubsection{HDD Data to GameObjects} 
+From Figure \ref{fig:unityComms}, we can see that the Unity application subscribes to two topics from the HDD system:
+
+\begin{itemize}
+	\item \code{/yacht/output/detectionids/}
+	\item \code{/yacht/output/detectiondirections/}
+\end{itemize}
+
+These are the outputs of the two YACHT nodes described in Section \ref{sec:YACHT}, where we also describe the format of the output messages. The frames captured by the Hololens are sent to the HDD to be processed. From the frames, the HDD replies to the Hololens by sending bounding box image co-ordinates of the detections, as well as a tracking ID and whether the detected person is facing the camera.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\linewidth]{img/chapter5_implementation/holoworldbreakdown.png}
+	\caption{The Intersection-over-Union metric is used to compare bounding boxes for matching. The higher the metric, the more overlap between the boxes.}
+	\label{fig:ioumatching}
+\end{figure}
+
+\paragraph{Matching Bounding Boxes} Due to the design of the YACHT package, two different nodes determine the tracking ID and direction of a detection. This was done to allow the processing to be done in real-time by running on separate threads. Since both YACHT nodes subscribe to the bounding box detections from the YOLO node, we can match IDs and directions by comparing the bounding boxes contained in each message. \\
+
+\begin{lstlisting}[language={[Sharp]C},caption={IOU metric C\# implementation}]
+private float IntersectionOverUnion(BoundingBox a, BoundingBox b)
+    {
+        int xmin = Math.Max(a.xmin, b.xmin);
+        int ymin = Math.Max(a.ymin, b.ymin);
+        int xmax = Math.Min(a.xmax, b.xmax);
+        int ymax = Math.Min(a.ymax, b.ymax);
+
+        int interArea = Math.Max(0, xmax - xmin + 1) * Math.Max(0, ymax - ymin + 1);
+
+        int aArea = (a.xmax - a.xmin + 1) * (a.ymax - a.ymin + 1);
+        int bArea = (b.xmax - b.xmin + 1) * (b.ymax - b.ymin + 1);
+
+        float iou = interArea / (float)(aArea + bArea - interArea);
+
+        return iou;
+    }
+\end{lstlisting}
+
+We use the Intersection-over-Union (IOU) metric to match the bounding boxes by comparing the amount of overlap. This was done since there may potentially be network delays between the received messages. If latency is involved, the bounding boxes from the detection may not match up exactly since one message may be compared with another message from a frame before. By using IOU, we can compare the metric to a threshold to determine a match.
+
+\paragraph{Creating GameObjects} We use GameObjects to represent the detected people in the surroundings. Before we can place the GameObjects of the people in the scene, we first need to determine the real world positions from the position in the image frame. This is done by un-projecting the image and using co-ordinate frame transforms to convert the point in the Camera co-ordinate system to the World co-ordinate system. We highlight the process in Figure \ref{fig:cameraProjection}.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\linewidth]{img/chapter5_implementation/CameraTransform.png}
+	\caption{The front facing camera projects the surroundings onto a 2D plane. We can determine the real world position of a pixel by reversing the projection and using frame transforms.}
+	\label{fig:cameraProjection}
+\end{figure}
+
+Fortunately, the Vulcan Technologies library used to capture the frames has a function that converts pixel locations to world space co-ordinates. Using the \code{camera2World} matrix transform and camera projection matrix, the \code{PixelCoordToWorldCoord()} function determines the real world position of a pixel. We use the centre of the bounding box centres to represent the position of the detected people and we place the GameObjects at the initial world space position determined by the function.
+
+\subsubsection{Hologram Manager}
+The Hologram Manager is the manager of visualizations rendered on the holographic screens. The GameObjects representing detected people created by the World Manager are used to determine the initial positions of the holograms, but the Hologram Manager uses ray casting and spatial mapping to correct the positioning of the GameObjects. The holograms are then rendered by the manager in their correct positions to communicate to the PWU if people are walking towards them or not.
+
+\paragraph{Holograms} We use \textit{prefabs}, 3D holographic models we created in the Unity editor to create the visualizations. When the GameObjects representing people are created, they are invisible to the PWU, since we are not rendering any textures on the objects. By attaching a prefab to the GameObject, we essentially place a hologram at the position of the GameObject in 3D world space. We have created two prefabs, a green and red arrow. The green arrow indicates to the PWU that the person is moving away or in the same direction as the PWU is facing, while a red arrow represents a person walking towards the PWU. We show these prefabs in Figure \ref{fig:holograms}, as well as the blue cursor that indicates to the PWU where they are looking.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\linewidth]{img/chapter5_implementation/greenredholowhite.png}
+	\caption{The Green and Red Arrow holograms rendered. The number under the arrow is the associated tracker ID of the object. This allows us to track objects in the surroundings.}
+	\label{fig:holograms}
+\end{figure}
+
+
+\begin{figure}[ht]
+	\begin{subfigure}[b]{.45\textwidth}
+		\centering
+		\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/shreyAway.png}
+		\caption{Green Arrow hologram rendered on a person walking away.}
+	\end{subfigure}%
+	\hspace{\fill} 
+	\begin{subfigure}[b]{.45\textwidth}
+		\centering
+		\includegraphics[width=1.0\linewidth]{img/chapter5_implementation/shreyCome.png}
+		\caption{Red Arrow hologram rendered on a person walking towards the camera.}
+	\end{subfigure}
+	\vspace{-1\baselineskip}
+	\begin{center}
+		\caption{Images captured from the Hololens showing what the PWU would see when wearing the device.}
+		\label{fig:yoloViz}
+	\end{center}
+	\vspace{-2\baselineskip}
+\end{figure}
+%\section{ARTA Powered Wheelchair}

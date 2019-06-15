@@ -302,6 +302,7 @@
 \newlabel{bbmsg}{{5.3}{40}}
 \@writefile{lol}{\contentsline {lstlisting}{\numberline {5.3}BoundingBox.msg}{40}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.3}YACHT Package}{40}}
+\newlabel{sec:YACHT}{{5.1.3}{40}}
 \@writefile{toc}{\contentsline {paragraph}{ROS Communication}{40}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.4}YACHT: Tracker}{40}}
 \@writefile{toc}{\contentsline {subsubsection}{Deep SORT}{40}}
@@ -373,12 +374,30 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}ROS Communication}{51}}
 \@writefile{toc}{\contentsline {subsubsection}{Modifications}{51}}
 \@writefile{toc}{\contentsline {subsubsection}{ROS Topics}{51}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.16}{\ignorespaces Image compression is a time consuming operation that must be done in the main thread. Only after compression is done can the holograms be rendered, limiting the application to 5 FPS.\relax }}{51}}
-\newlabel{fig:unityThreads}{{5.16}{51}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.16}{\ignorespaces ROS topics in and out of the Unity application. Each topic carries data used by different parts of the overall system.\relax }}{51}}
+\newlabel{fig:unityComms}{{5.16}{51}}
 \@writefile{toc}{\contentsline {paragraph}{Compressed Images}{51}}
+\@writefile{toc}{\contentsline {paragraph}{HDD Topics}{52}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.5}Hololens World}{52}}
+\@writefile{toc}{\contentsline {subsubsection}{Hololens World Manager}{52}}
+\@writefile{toc}{\contentsline {paragraph}{Communication}{52}}
+\@writefile{toc}{\contentsline {paragraph}{Spatial Mapping}{52}}
+\@writefile{toc}{\contentsline {subsubsection}{HDD Data to GameObjects}{52}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.17}{\ignorespaces The Intersection-over-Union metric is used to compare bounding boxes for matching. The higher the metric, the more overlap between the boxes.\relax }}{53}}
+\newlabel{fig:ioumatching}{{5.17}{53}}
+\@writefile{toc}{\contentsline {paragraph}{Matching Bounding Boxes}{53}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.8}IOU metric C\# implementation}{53}}
+\@writefile{toc}{\contentsline {paragraph}{Creating GameObjects}{54}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.18}{\ignorespaces The front facing camera projects the surroundings onto a 2D plane. We can determine the real world position of a pixel by reversing the projection and using frame transforms.\relax }}{54}}
+\newlabel{fig:cameraProjection}{{5.18}{54}}
+\@writefile{toc}{\contentsline {subsubsection}{Hologram Manager}{54}}
 \bibstyle{unsrt}
 \bibdata{fyp_report.bib}
-\@writefile{toc}{\contentsline {paragraph}{HDD Topics}{52}}
+\@writefile{toc}{\contentsline {paragraph}{Holograms}{55}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.19}{\ignorespaces The Green and Red Arrow holograms rendered. The number under the arrow is the associated tracker ID of the object. This allows us to track objects in the surroundings.\relax }}{55}}
+\newlabel{fig:holograms}{{5.19}{55}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.20}{\ignorespaces Images captured from the Hololens showing what the PWU would see when wearing the device.\relax }}{55}}
+\newlabel{fig:yoloViz}{{5.20}{55}}
 \bibcite{Hou2010}{{1}{}{{}}{{}}}
 \bibcite{Zeng2017}{{2}{}{{}}{{}}}
 \bibcite{Redmon}{{3}{}{{}}{{}}}
@@ -422,4 +441,4 @@
 \bibcite{Jia}{{41}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
 \providecommand\totalcount@set[2]{}
-\totalcount@set{page}{57}
+\totalcount@set{page}{60}

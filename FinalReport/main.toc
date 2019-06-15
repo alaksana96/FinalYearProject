@@ -201,3 +201,12 @@
 \contentsline {subsubsection}{ROS Topics}{51}
 \contentsline {paragraph}{Compressed Images}{51}
 \contentsline {paragraph}{HDD Topics}{52}
+\contentsline {subsection}{\numberline {5.2.5}Hololens World}{52}
+\contentsline {subsubsection}{Hololens World Manager}{52}
+\contentsline {paragraph}{Communication}{52}
+\contentsline {paragraph}{Spatial Mapping}{52}
+\contentsline {subsubsection}{HDD Data to GameObjects}{52}
+\contentsline {paragraph}{Matching Bounding Boxes}{53}
+\contentsline {paragraph}{Creating GameObjects}{54}
+\contentsline {subsubsection}{Hologram Manager}{54}
+\contentsline {paragraph}{Holograms}{55}
