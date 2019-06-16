@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  15 JUN 2019 19:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  16 JUN 2019 18:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1658,14 +1658,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [44]
-<img/chapter5_implementation/hololensSystemDiagram.png, id=217, 849.4134pt x 37
+<img/chapter5_implementation/hololensSystemDiagram.png, id=217, 847.4862pt x 37
 5.804pt>
 File: img/chapter5_implementation/hololensSystemDiagram.png Graphic file (type 
 png)
  <use img/chapter5_implementation/hololensSystemDiagram.png>
 Package pdftex.def Info: img/chapter5_implementation/hololensSystemDiagram.png 
 used on input line 392.
-(pdftex.def)             Requested size: 418.25368pt x 185.04585pt.
+(pdftex.def)             Requested size: 418.25368pt x 185.47018pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1752,13 +1752,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [49 <./img/chapter5_implementation/unityThreads.png>]
-<img/chapter5_implementation/holoROSTopics.png, id=244, 609.9588pt x 162.3666pt
->
+<img/chapter5_implementation/holoROSTopics.png, id=244, 609.477pt x 163.3302pt>
 File: img/chapter5_implementation/holoROSTopics.png Graphic file (type png)
- <use img/chapter5_implementation/holoROSTopics.png>
+<use img/chapter5_implementation/holoROSTopics.png>
 Package pdftex.def Info: img/chapter5_implementation/holoROSTopics.png used on 
 input line 512.
-(pdftex.def)             Requested size: 418.25368pt x 111.33936pt.
+(pdftex.def)             Requested size: 418.25368pt x 112.08485pt.
 
 Overfull \hbox (18.14177pt too wide) in paragraph at lines 517--518
 \OT1/ppl/m/n/10.95 mes-sages across ROS top-ics. Within the Unity ap-pli-ca-tio
@@ -1901,7 +1900,7 @@ type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/
 uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
 
-Output written on main.pdf (60 pages, 24036203 bytes).
+Output written on main.pdf (60 pages, 24036030 bytes).
 PDF statistics:
  311 PDF objects out of 1000 (max. 8388607)
  160 compressed objects within 2 object streams
