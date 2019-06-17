@@ -518,12 +518,10 @@ As explained in Section \ref{sec:rossharp}, we use the ROS\# library originally 
 
 \paragraph{HDD Topics} In Section \ref{sec:yachtTrackROS} and Section \ref{sec:yachtDirROS}, we have explained the ROS messages published by the HDD system. The Hololens Unity application subscribes to these topics and receives the messages to transform the image co-ordinates into real world positions.
 
-% TODO: TO ARTA
-
 \subsection{Hololens World}
 Mixed reality applications have the ability to place holograms in the world on real objects. This involves precisely positioning the holograms in places in the world that are meaningful to the user, which in the case of this project, is on detected people walking in the surroundings. Upon receiving messages from ARTA and the HDD system, the Hololens must parse the data to be able to update its internal understanding of the surrounding world. This section explains the other half of the Unity application, which is responsible for communication between devices, positioning of objects in the surrounding world and visualizing detections using holograms.
 
-\subsubsection{Hololens World Manager}
+\subsubsection{Hololens World Manager} \label{sec:holoworld}
 Every Unity application has \textit{scenes} where developers can place \textit{GameObjects} which render holograms, recognize gestures and communicate with other devices. A scene can be thought of as the Hololens' internal understanding of the world around it. The World Manager acts as the main program in the scene, receiving messages from the HDD system and ARTA, keeping track of objects in the surroundings and the position of the Hololens and ARTA in the real world.
 
 \paragraph{Communication} The World Manager maintains a collection of all the publishers and subscribers on the Hololens. Figure \ref{fig:unityComms} outlines the flow of information in and out of the Unity application. By maintaining a central communication hub, specialized scripts such as the Hologram Manager or ARTA manager can communicate with the other devices without having to create their own publishers or subscribers.
@@ -616,7 +614,97 @@ To improve the positional accuracy of the holograms, we utilize the spatial mapp
 \end{figure}
 
 \subsubsection{ARTA Manager}
-We need to represent the powered wheelchair in the Unity application so that we can calculate the distance between the detected objects and ARTA. As such, the ARTA manager subscribes to the topics published by ARTA.
+We create a GameObject to represent the powered wheelchair within the Unity application. The ARTA manager subscribes to topics published by the ROS nodes on the device, shown in Figure \ref{fig:unityComms}. Using the messages received from the powered wheelchair, it is possible for the application to understand the PWU's control intentions and to make decisions reactively. We explain the human avoidance reactive control system in the next section of this report.
+
+\section{ARTA Powered Wheelchair}
+The Assistive Robotic Transport for Adults is a powered wheelchair developed by the Personal Robotics Lab at Imperial College London. The device can be controlled by a PWU through a joystick that converts the user issued commands into motor signals. We communicate the wheelchairs velocity and PWU control signals to the Unity application running on the Hololens, and using the messages from the HDD system, we develop a reactive control systems to people in the surroundings of the PWU. 
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\linewidth]{img/chapter5_implementation/artaSystemDiagram.png}
+	\caption{The ROS nodes running on ARTA. We utilize PRL ROS packages as a base and communicate with the Hololens for reactive control.}
+	\label{fig:detailedARTA}
+\end{figure}
 
 
-%\section{ARTA Powered Wheelchair}
+\subsection{Hardware \& Software Dependencies}
+Building a powered wheelchair with the required sensors for localization and mapping is a time consuming process, well beyond the scope of this project. We rely on the sensors already attached to the wheelchair, as well as the ROS packages developed internally for the conversion of joystick commands to control signals and communication between ROS nodes.
+
+\subsubsection{Hardware}
+The following sensors are fixed to the powered wheelchair for navigation and localization purposes. The laptop is used as the main control system running the ROS nodes that utilize the sensor data. 
+
+\begin{itemize}
+	\item Arduino Uno (Joystick to motor signal conversion).
+	\item 2 Hokuyo URG-04LX-UG1 laser scanners.
+	\item SICK LMS200 rangefinder.
+	\item Phidgets spatial 3/3/3 IMU.
+	\item Laptop running ROS nodes.
+\end{itemize}
+
+\subsubsection{Software}
+The PRL has several GitHub repositories dedicated to the ROS nodes running on ARTA. These ROS packages cover the robotic aspect of the powered wheelchair, from using the sensor data for localization and mapping of the surroundings, to receiving control signals from the joystick or other exotic control interfaces. We utilize these repositories to build the base ARTA system that is needed to control the robot using the joystick.
+
+\subsection{PRL ROS Packages}
+A large robotic device such as ARTA requires a lot of software to control. As such, the PRL have divided the ARTA functionality into several ROS packages, each responsible for a certain aspect of controlling the powered wheelchair. We utilize these packages as a base and contribute our additional reactive control module which works in conjunction with detections from the Hololens.
+
+\subsubsection{ARTA}
+The ARTA ROS package is the main parent node that encompasses the other packages we describe in this report. The package is responsible for the basic manual control and sensor node activation. It provides an interface via ROS messages for other nodes, such as the localisation or navigation nodes to communicate with. Furthermore, the package is responsible for the Gazebo simulation of the device, such as the model of the wheelchair and control systems.
+
+\subsubsection{Localisation}
+The PRL Localisation package is an internally developed library for the robots in the PRL lab. It contains various ROS launchers for common SLAM and localisation packages such as the \code{hector\_mapping} SLAM approach that utilizes laser scan data for mobile robots. The package also contains maps for use with the \code{amcl} package for localisation of the robots. The members of the PRL have  constructed maps for commonly used testing areas, such as the hallway outside the PRL lab on the 10th floor of the EEE building. We leverage these pre-existing maps for testing and evaluation later in this report.
+
+\subsubsection{Navigation}
+In addition to the localisation package, the PRL have developed a ROS package for assistive navigation of the mobile robots in the lab. The package encompasses obstacle avoidance, autonomous navigation as well as shared control. Using the sensor data and localisation techniques from the other packages, we leverage the navigation package to implement our reactive control system.
+
+\subsection{Hololens Communication}
+As shown in Figure \ref{fig:unityComms}, the Hololens Unity application requires data from ARTA to build a Unity GameObject of the powered wheelchair. We utilize ROS topics and messages to communicate to the Hololens the position of the wheelchair in the world, the PWU's joystick input controls and the current wheelchair velocity. Additionally, Figure \ref{fig:detailedARTA} shows the communication from the individual ARTA nodes, and highlights the control messages received from the Hololens.
+
+\subsection{Reactive Control}
+The goal of this project was to build an augmented reality system that would assist PWU in their day to day navigation tasks. Detection of people in the surroundings and visualization of their direction is useful to the PWU, but reactive control for assistive navigation and object avoidance can be seen as a direct use of the people detection. We contribute a system that uses the people detection data from the HDD system and front facing camera of the Hololens to manipulate the PWU manual control signals for wheelchair control.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.6\linewidth]{img/chapter5_implementation/reactiveControlSystem.png}
+	\caption{The Reactive Control system spans both ARTA and the Hololens, due to its dependency on ARTA sensor data as well as the Unity converted HDD system GameObjects.}
+	\label{fig:detailedReactive}
+\end{figure}
+
+We have left the explanation of the reactive control system for last, since it spans both ARTA, the Hololens Unity application. We go over the flow of information through the systems, how they contribute to the final reactive control decisions made by the ARTA manager on the Hololens and how it is translated to motor signals and movement of the powered wheelchair.
+
+\subsubsection{ARTA}
+\paragraph{Manual Control} The powered wheelchair is controlled using a joystick, which the PRL have attached a circuit board and Arduino UNO that converts the user inputs into control signals. The signals are published on the \code{/arta/arta\_joystick} topic, which are sent to the nodes responsible for turning the wheels on the device. Furthermore, the localisation and navigation nodes also subscribe to these topics, since libraries such as the obstacle avoidance nodes require the user input signals. As shown in Figure \ref{fig:detailedReactive}, the Hololens also subscribes to the topic via the ARTA manager.
+
+\paragraph{ARTA Positioning} For the purposes of this project, we have limited the scope to navigating the wheelchair in the hallway outside of the Personal Robotics Lab. We have chosen this since the PRL have already built up height maps of the hallway, allowing the localisation packages to accurately determine the position of the wheelchair in the world. By publish the odometer readings  to the Hololens, we can determine the rotation of PWU relative to their head rotation, solving the issue of not knowing if a detected person is directly in front of the wheelchair brought up in Section \ref{sec:alignment}.
+
+\subsubsection{Hololens}
+\paragraph{World Manager} As explained in Section \ref{sec:holoworld}, the World Manager creates GameObjects representing human detections in the Unity scene. By maintaining a map of the positions of these objects, the reactive control system can use spatial mapping to determine the distance between objects in the real world.
+
+\paragraph{ARTA Manager} The ARTA manager forms the central part of the Reactive Control system. It subscribes to the control and odometer readings from the powered wheelchair and uses it to determine if a detected person is in front of the wheelchair and poses a collision risk. Furthermore, upon determining a risk, it manipulates the PWU control inputs so as to minimize the risk of a collision by lowering the speed of the wheelchair relative to the distance and direction of the person.
+
+\subsubsection{ARTA Hololens Alignment}
+As brought up in Section \ref{sec:alignment}, the major issue we are faced with is determining if a person detected by the Hololens is in front of the wheelchair, or if the PWU is looking to the side, and the person is not in the wheelchairs forward trajectory. We visualized this problem in Figure \ref{fig:holoArtaAlignment}, and show the alignment of the Hololens and ARTA frames in Figure \ref{fig:holoArtaFrames}.a. Although the PWU can tilt their head and rotate the Hololens about the x and y-axis, we have simplified the model and assumed that the PWU will only rotate about the z-axis. Furthermore, through testing, we have determined that the Hololens can only rotate around the z-axis between $-90$ and $+90$ degrees. The PWU is unable to swivel their head further, due to human biomechanics and the headrest of the wheelchair.
+
+\begin{figure}[ht]
+	\begin{subfigure}[b]{.45\textwidth}
+		\centering
+		\includegraphics[width=0.75\linewidth]{img/chapter5_implementation/holoArtaFrames.png}
+		\caption{The Hololens frame can rotate between -90 and +90 degrees, while ARTA can rotate 360 degrees.}
+	\end{subfigure}%
+	\hspace{\fill} 
+	\begin{subfigure}[b]{.45\textwidth}
+		\centering
+		\includegraphics[width=0.75\linewidth]{img/chapter5_implementation/holoArtaFramesAligned.png}
+		\caption{We calculate the offset between the Hololens and ARTA by aligning the frames during calibration.}
+	\end{subfigure}
+	\vspace{-1\baselineskip}
+	\begin{center}
+		\caption{The alignment of the ARTA and Hololens. We note that both frames can rotate about the z-axis.}
+		\label{fig:holoArtaFrames}
+	\end{center}
+	\vspace{-2\baselineskip}
+\end{figure}
+
+
+However, ARTA is limited to rotations about the z-axis, since the powered wheelchair moves within the 2D plane of the floor. As such, we can determine the initial alignment between ARTA and the Hololens.
+
+\paragraph{Alignment Process} Upon starting the Hololens Unity application and ARTA nodes, the Hololens subscribes to the odometry topic published by ARTA. By accessing the pose message contained within the odometry message, we can determine the orientation of the robot in space. The PWU wears the Hololens and sits in the powered wheelchair, facing directly forward. After 5 seconds, the ARTA manager aligns the Hololens to ARTA by calculating an offset between the current ARTA rotation and Hololens rotation measured by the IMU of the device. We show this alignment in Figure \ref{fig:holoArtaFrames}.b. This offset is used to determine whether the PWU is looking forward or to the sides. 
