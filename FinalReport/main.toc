@@ -130,6 +130,9 @@
 \contentsline {section}{\numberline {4.4}ARTA}{30}
 \contentsline {subsection}{\numberline {4.4.1}ROS Packages}{30}
 \contentsline {subsection}{\numberline {4.4.2}Reactive Control}{30}
+\contentsline {subsection}{\numberline {4.4.3}Removal of Exotic Control Interfaces}{31}
+\contentsline {paragraph}{}{31}
+\contentsline {paragraph}{}{31}
 \contentsline {chapter}{\numberline {5}Implementation}{32}
 \contentsline {section}{\numberline {5.1}Human Detection \& Direction System}{33}
 \contentsline {subsection}{\numberline {5.1.1}Hardware \& Software Dependencies}{33}
@@ -229,3 +232,5 @@
 \contentsline {paragraph}{ARTA Manager}{59}
 \contentsline {subsubsection}{ARTA Hololens Alignment}{59}
 \contentsline {paragraph}{Alignment Process}{60}
+\contentsline {subsubsection}{Unity Distance to Objects}{60}
+\contentsline {subsubsection}{Reactive Control Algorithm}{60}
