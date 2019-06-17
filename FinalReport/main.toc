@@ -238,3 +238,6 @@
 \contentsline {paragraph}{}{62}
 \contentsline {section}{\numberline {5.4}System Summary}{62}
 \contentsline {chapter}{\numberline {6}Testing}{63}
+\contentsline {section}{\numberline {6.1}Human Detection Testing}{63}
+\contentsline {section}{\numberline {6.2}Simulation}{63}
+\contentsline {section}{\numberline {6.3}ARTA Reactive Control}{63}
