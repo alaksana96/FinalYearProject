@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  17 JUN 2019 18:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  17 JUN 2019 22:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1970,7 +1970,7 @@ Package pdftex.def Info: img/chapter5_implementation/distanceScaling.PNG used o
 n input line 733.
 (pdftex.def)             Requested size: 334.60422pt x 106.04736pt.
 )
-(./tex/chapter6_testing.tex
+(./tex/chapter6_testingresults.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1979,15 +1979,73 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [62 <./img/chapter5_implementation/distanceScaling.PNG>]
 Chapter 6.
-) (./main.bbl [63
+[63
 
-]
+] <img/chapter6_test/hddTestSetup.png, id=312, 765.5802pt x 372.9132pt>
+File: img/chapter6_test/hddTestSetup.png Graphic file (type png)
+
+<use img/chapter6_test/hddTestSetup.png>
+Package pdftex.def Info: img/chapter6_test/hddTestSetup.png used on input line 
+15.
+(pdftex.def)             Requested size: 418.25368pt x 203.73155pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[64 <./img/chapter6_test/hddTestSetup.png>]
+<img/chapter6_test/hddtestresults.png, id=317, 546.3612pt x 323.2878pt>
+File: img/chapter6_test/hddtestresults.png Graphic file (type png)
+
+<use img/chapter6_test/hddtestresults.png>
+Package pdftex.def Info: img/chapter6_test/hddtestresults.png used on input lin
+e 35.
+(pdftex.def)             Requested size: 418.25368pt x 247.49194pt.
+
+<img/chapter6_test/marek.png, id=318, 767.86874pt x 436.63126pt>
+File: img/chapter6_test/marek.png Graphic file (type png)
+
+<use img/chapter6_test/marek.png>
+Package pdftex.def Info: img/chapter6_test/marek.png used on input line 45.
+(pdftex.def)             Requested size: 133.84424pt x 76.10513pt.
+
+<img/chapter6_test/marek1.png, id=319, 767.86874pt x 438.63875pt>
+File: img/chapter6_test/marek1.png Graphic file (type png)
+
+<use img/chapter6_test/marek1.png>
+Package pdftex.def Info: img/chapter6_test/marek1.png used on input line 51.
+(pdftex.def)             Requested size: 133.84424pt x 76.45505pt.
+
+<img/chapter6_test/marek2.png, id=320, 767.86874pt x 438.63875pt>
+File: img/chapter6_test/marek2.png Graphic file (type png)
+
+<use img/chapter6_test/marek2.png>
+Package pdftex.def Info: img/chapter6_test/marek2.png used on input line 57.
+(pdftex.def)             Requested size: 133.84424pt x 76.45505pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[65 <./img/chapter6_test/hddtestresults.png>]) (./main.bbl
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[66 <./img/chapter6_test/marek.png> <./img/chapter6_test/marek1.png> <./img/cha
+pter6_test/marek2.png>]
 Underfull \hbox (badness 1442) in paragraph at lines 26--31
 []\OT1/ppl/m/n/10.95 Manato Hirabayashi, Shin-pei Kato, Masato Edahiro, Kazuya 
 Takeda, Taiki
  []
 
-[64
+[67
 
 ]
 
@@ -1996,14 +2054,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[65]
+[68]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[66]
+[69]
 Underfull \hbox (badness 10000) in paragraph at lines 249--252
 []\OT1/ppl/m/n/10.95 Joseph Red-mon.  Dark-net: Open Source Neu-ral Net-works i
 n C.
@@ -2016,16 +2074,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[67] (./main.aux)
+[70] (./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 21087 strings out of 493029
- 379482 string characters out of 6136235
- 547622 words of memory out of 5000000
- 24058 multiletter control sequences out of 15000+600000
+ 21116 strings out of 493029
+ 380336 string characters out of 6136235
+ 547655 words of memory out of 5000000
+ 24081 multiletter control sequences out of 15000+600000
  43678 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,15n,93p,1168b,1880s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2037,10 +2095,10 @@ type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/
 uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
 
-Output written on main.pdf (69 pages, 24419883 bytes).
+Output written on main.pdf (72 pages, 28335459 bytes).
 PDF statistics:
- 352 PDF objects out of 1000 (max. 8388607)
- 180 compressed objects within 2 object streams
+ 371 PDF objects out of 1000 (max. 8388607)
+ 186 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 288 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 313 words of extra memory for PDF output out of 10000 (max. 10000000)
 

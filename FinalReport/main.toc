@@ -237,7 +237,14 @@
 \contentsline {paragraph}{}{61}
 \contentsline {paragraph}{}{62}
 \contentsline {section}{\numberline {5.4}System Summary}{62}
-\contentsline {chapter}{\numberline {6}Testing}{63}
-\contentsline {section}{\numberline {6.1}Human Detection Testing}{63}
-\contentsline {section}{\numberline {6.2}Simulation}{63}
-\contentsline {section}{\numberline {6.3}ARTA Reactive Control}{63}
+\contentsline {chapter}{\numberline {6}Testing \& Results}{63}
+\contentsline {section}{\numberline {6.1}Human Detection and Distance}{63}
+\contentsline {subsection}{\numberline {6.1.1}Testing the System}{63}
+\contentsline {subsubsection}{System Description}{63}
+\contentsline {subsubsection}{Test Setup}{63}
+\contentsline {subsubsection}{Test Procedure}{64}
+\contentsline {paragraph}{}{64}
+\contentsline {paragraph}{}{65}
+\contentsline {subsubsection}{Results}{65}
+\contentsline {section}{\numberline {6.2}Gazebo Simulation}{66}
+\contentsline {section}{\numberline {6.3}ARTA Reactive Control}{66}
