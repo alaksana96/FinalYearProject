@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  17 JUN 2019 14:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  17 JUN 2019 15:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1362,14 +1362,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29]) (./tex/chapter5_implementation.tex
+[29]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30 <./img/chapter4_analysis/holoArtaAligned.png>]
+[30 <./img/chapter4_analysis/holoArtaAligned.png>])
+(./tex/chapter5_implementation.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1379,7 +1380,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [31]
 Chapter 5.
 
-<img/chapter5_implementation/detailedSystemDiagram.png, id=147, 608.5134pt x 25
+<img/chapter5_implementation/detailedSystemDiagram.png, id=148, 608.5134pt x 25
 0.536pt>
 File: img/chapter5_implementation/detailedSystemDiagram.png Graphic file (type 
 png)
@@ -1390,7 +1391,7 @@ used on input line 6.
  [32
 
  <./img/chapter5_implementation/detailedSystemDiagram.png>]
-<img/chapter5_implementation/hddSystemDiagram.png, id=152, 942.8826pt x 436.029
+<img/chapter5_implementation/hddSystemDiagram.png, id=153, 942.8826pt x 436.029
 pt>
 File: img/chapter5_implementation/hddSystemDiagram.png Graphic file (type png)
  <use img/chapter5_implementation/hddSystemDiagram.png>
@@ -1994,7 +1995,7 @@ type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/
 uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
 
-Output written on main.pdf (66 pages, 24263465 bytes).
+Output written on main.pdf (66 pages, 24265433 bytes).
 PDF statistics:
  338 PDF objects out of 1000 (max. 8388607)
  173 compressed objects within 2 object streams
