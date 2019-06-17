@@ -713,4 +713,29 @@ However, ARTA is limited to rotations about the z-axis, since the powered wheelc
 The World Manager uses spatial mapping and raycasting to correct the world positions of the GameObjects representing the detected people. The Hololens has an optimal hologram placement range of between $2$ meters and $5$ meters. This means after correction, the we can be more certain about the distance to GameObjects if they are within this range. Unity keeps an internal spatial co-ordinate system of the world, and by keeping track of the Arta/Hololens GameObject position, we can calculate the distance between the device and detected people in the scene.
 
 \subsubsection{Reactive Control Algorithm}
-The ARTA Manager subscribes to the PWU joystick inputs which are translated to ROS \code{Twist} messages. 
+The ARTA Manager subscribes to the PWU joystick inputs which are translated to ROS \code{Twist} messages. These messages represent the linear and angular velocities of the wheels of the powered wheelchair. The forward kinematics of the wheelchair are determined by the linear velocities of the left and right wheel of the wheelchair. To turn the wheelchair, we use angular velocities representing rotations in the z-axis. These messages are received by the Hololens and interpreted to determine the current trajectory of the wheelchair. 
+
+\paragraph{} At the same time, the ARTA Manager searches through the Unity scene for GameObjects in front of ARTA/Hololens and groups them by the direction component of the GameObject from the HDD system. The reactive control system iterates over the GameObjects with directions coming towards the PWU first, since these are more likely to cause a collision. The system then calculates the distance between the PWU and the detected person. 
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\linewidth]{img/chapter5_implementation/reactiveControlFlow.png}
+	\caption{A visualization of the Reactive Control system and the corresponding distance speed scaling functions.}
+	\label{fig:reactiveFlow}
+\end{figure}
+
+As aforementioned, the ideal placement of holograms for distance accuracy is between $2$ to $5$ meters. Therefore, the reactive control system checks if the detected person is less than $3$ meters away. We chose this value to give the whole system time to detect people and make a reactive decision before a collision occurs. We also check if the angle between the person and the powered wheelchair is within 15 degrees of the current trajectory. If the detection falls within both parameters, the system deems the person a collision risk and the reactive control system takes over.
+
+\paragraph{} Upon detecting a collision risk, the reactive control system attempts to avoid a collision by reducing the speed of the powered wheelchair. We have used two scaling functions that reduce the velocity of the wheelchair as the distance to the object decreases. If the person is directly in front of the wheelchair, the function brings the speed of the wheelchair to zero and prevents the device from moving forward until the collision risk has moved out of the way. We show these functions in Figure \ref{fig:distanceScalingFunctions}, which for people facing the wheelchair $f(x)=\frac{1}{1 + e^{-2x+6}}$ and for people walking away $f(x)=\frac{1}{1 + e^{-2x+6}}$. We chose to use different scaling since the wheelchair should slow down more quickly if a person is walking towards them.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\linewidth]{img/chapter5_implementation/distanceScaling.PNG}
+	\caption{The velocity scaling functions relative to the distance to the object. We note that the red function begins decreasing when the detected person is further away. This is to compensate for the person walking towards the PWU.}
+	\label{fig:distanceScalingFunctions}
+\end{figure} 
+
+Finally, these modified control signals are published to ARTA. The main ARTA node receives these control signals and passes it on to the node controlling the wheels of the device.
+
+\section{System Summary}
+To summarize, we have implemented a system which utilizes the Microsoft Hololens as a form of visual input by way of the front facing camera. The images captured by the camera are processed on an external computer. The processing begins with people detection, and the detected objects are fed into an object tracker and body pose estimation system to determine their directions. The bounding box detections and direction estimations are sent to the Hololens for spatial mapping, building a Unity scene with GameObjects that represent the detected people. Using the augmented reality capabilities of the Hololens, we render holographic visualizations for the PWU to see, indicating whether a person is walking towards them or not. Since the PWU is controlling the powered wheelchair manually, we use the reactive control system to monitor the joystick inputs from the PWU and determine whether the system should take over control from the user. If the system decides there is a collision risk in front of the powered wheelchair, it slows down the wheelchair based on the distance between the PWU and the detected person.

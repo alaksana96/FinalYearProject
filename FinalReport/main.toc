@@ -234,3 +234,6 @@
 \contentsline {paragraph}{Alignment Process}{60}
 \contentsline {subsubsection}{Unity Distance to Objects}{60}
 \contentsline {subsubsection}{Reactive Control Algorithm}{60}
+\contentsline {paragraph}{}{61}
+\contentsline {paragraph}{}{62}
+\contentsline {section}{\numberline {5.4}System Summary}{62}
