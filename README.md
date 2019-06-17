@@ -13,8 +13,14 @@ Students should have very strong programming skills (C/C++/Python) and strong in
 
 ___
 
-### HACKY SCRIPT
+### Useful Terminal Commands
 
+#### Compress PDF file (Since TexStudio does not do it automatically)
 ```
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -sOutputFile=apl115.pdf FinalReport/main.pdf
+```
+
+#### Check wordcount of a PDF (Note: This does the whole file, including appendix and stuff)
+```
+pdftotext main.pdf - | wc -w
 ```
