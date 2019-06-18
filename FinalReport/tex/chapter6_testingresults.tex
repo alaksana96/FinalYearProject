@@ -4,7 +4,7 @@ This chapter details the testing that was carried out to assess the performance 
 \section{Human Detection and Distance}
 This section is concerned with testing the Human Detection \& Direction system and the Hologram GameObject placement. To ensure the system will be able to detect real people moving around in the surroundings, it is necessary to test the system detecting people at different distances and the directions they are facing. We also want to test the accuracy of the spatial mapping system in terms of correcting the real world positions of the GameObjects representing the detected people. We utilize the Microsoft Hololens and the HDD system for this test.
 
-\subsection{System Description} \label{sec:hddSys}
+\subsection{Test System Description} \label{sec:hddSys}
 As explained in the Implementation chapter of this report, the front facing camera uses ROS topics to stream video frames to a partner computer the HDD system is implemented on. The HDD processes the frames and detects people and determines whether they are facing the PWU or not. The bounding box of the detections and directions are sent back to the Unity application. Initially, the application converts the pixel co-ordinates of the detections to corresponding world co-ordinates. We then use the spatial mapping and ray casting capabilities of the Hololens to correct the world position distances of the holograms representing the detected people.
 
 \subsection{Test Setup} \label{sec:testSetup}
@@ -66,10 +66,10 @@ The data shows that there is no significant difference in hologram placement dis
 
 \paragraph{} After the test, we asked the test subjects on qualitative feedback on how easy it it is to view a hologram. As expected, the novice Hololens user had difficulty seeing holograms due to the limited FOV of the device. The novice stated that the holograms were being rendered too high up, as they could only see the bottom of the hologram, as the rest of it was slightly out of view unless they tilted their head upwards. The intermediate user had a similar experience, but only had difficulty in seeing the holograms when the target person was closer than 2 meters.
 
-\section{Gazebo Simulation}
+\section{Gazebo Simulation} \label{sec:gazeboSimTest}
 Before testing the system using ARTA in the real world, we used the robot simulation tool Gazebo to test how the reactive control system would manipulate the ARTA control signals in response to person detections at different distances. The purpose of this simulation is to test the communication between ARTA and the Hololens, and how the reactive control system manipulates the velocity of the wheelchair as it approaches a detected person. We also want to test if the system can decide if the detections are to the side of the wheelchair or in front, and react appropriately. 
 
-\subsection{System Description}
+\subsection{Test System Description}
 For this test, we use the same system as the one described in Section \ref{sec:hddSys}, with the addition of the Gazebo simulation of the ARTA powered wheelchair. We communicate the ARTA control signals to the Hololens, which checks the trajectory of the wheelchair and determines if a collision with a detected person is imminent. If the reactive control system decides a detected person is a collision risk, it reduces the velocity of the wheelchair in order to avoid a collision.
 
 \subsection{Test Setup}
@@ -119,7 +119,7 @@ We use the Gazebo Simulation software to load a world built using the height map
 	\begin{subfigure}[b]{.48\textwidth}
 		\centering
 		\includegraphics[width=1.0\linewidth,height=41.5mm]{img/chapter6_test/realFront.jpg}
-		\caption{Corresponding real world lab setup from in front.}
+		\caption{Target persons will stand on the markings in front of the test subject which are 1m apart.}
 	\end{subfigure}
 	\vspace{-1\baselineskip}
 	\begin{center}
@@ -147,11 +147,11 @@ We asked the test subject to sit in a chair in the middle of the hallway wearing
 \paragraph{}After the distance tests, the test subjects were asked to look to the side as the simulated wheelchair moved forward. We asked the target person to stand to the side of the wheelchair to provide a human detection. This was done to test if the system can realize the detection is not in the trajectory of the wheelchair, and for the system to realize reactive control is not necessary.
 
 \subsection{Results}
-We present the results of this experiment in Figure \ref{fig:reactiveResults}. At a distance of 4 meters, the reactive control was not activated. As such, there is no difference between the joystick input and reactive control velocities, so we omit those results from the figure.
+We present the results of this experiment in Figure \ref{fig:reactiveResults}. We note at $3$ meters that the reactive control system detects a collision risk and reacts appropriately by reducing the velocity of the wheelchair. We see in Figure \ref{fig:reactiveResults}.a that the output velocity of the reactive control system is below the ideal reactive control velocity of $0.5$m/s. Furthermore, the velocity oscillates between $0.3$m/s and $0.1$m/s, well below the ideal velocity. Figure \ref{fig:reactiveResults}.b shows a similar trend, whereby the output velocity of the reactive control system is $0$m/s instead of the ideal value of approximately $0.1$m/s in the ideal case. Similarly, Figure \ref{fig:reactiveResults}.c also shows a discrepancy. However, more significantly is that there are oscillations in the velocity caused by flickering detections. At a distance of 4 meters, the reactive control was not activated. As such, there is no difference between the joystick input and reactive control velocities, so we omit those results from the figure.
 
-\paragraph{}We note at $3$ meters that the reactive control system detects a collision risk and reacts appropriately by reducing the velocity of the wheelchair. We see in Figure \ref{fig:reactiveResults}.a that the output velocity of the reactive control system is below the ideal reactive control velocity of $0.5$m/s. Furthermore, the velocity oscillates between $0.3$m/s and $0.1$m/s, well below the ideal velocity. Figure \ref{fig:reactiveResults}.b shows a similar trend, whereby the output velocity of the reactive control system is $0$m/s instead of the ideal value of approximately $0.1$m/s in the ideal case. Similarly, Figure \ref{fig:reactiveResults}.c also shows a discrepancy. However, more significantly is that there are oscillations in the velocity caused by flickering detections. 
+\paragraph{}With respect to the head turning results, we noted that the system was always able to recognize when the test subject was looking forward or to the side, and we noted no change to the joystick inputs when the user was not looking forward. This indicates that the reactive control system is not activated as intended.
 
-\begin{figure}[ht]
+\begin{figure}[]
 	\begin{subfigure}[b]{1.0\textwidth}
 		\centering
 		\includegraphics[width=0.75\linewidth]{img/chapter6_test/reactive3.png}
@@ -176,6 +176,86 @@ We present the results of this experiment in Figure \ref{fig:reactiveResults}. A
 	\vspace{-2\baselineskip}
 \end{figure}
 
+\newpage
+
+\section{Full System}
+As a final test, we want to see the whole system in action with all three devices functioning and communicating with each other. We want to check whether the HDD system can detect people who are walking towards the PWU operating ARTA. We also want to see how the reactive control system responds to collision risks in a real world setting, and whether the the response is fast enough to compensate for people walking and the wheelchair moving. This test utilizes ARTA, the HDD system and the Hololens running the full Unity application.
+
+\subsection{Test Setup}
+This test was conducted in the hallway outside the Personal Robotics Lab on the 10th floor of the EEE building. The reason for this choice of test location is the pre-existing height maps for localisation and navigation that have been developed by the members of the PRL. Furthermore, this experiment was designed to test the real world application of the Gazebo Simulation test we conducted in Section \ref{sec:gazeboSimTest}.
+
+\paragraph{}This experiment involves positioning ARTA at the end of the hallway. The test subject is sat in the wheelchair wearing the Hololens running the Unity application. Communication between the Hololens and the HDD system is established and checked to ensure the HDD system is receiving video frames and processing them. We then check the Hololens for detections by asking the test subject to confirm they can see holograms being rendered. We then ensure ARTA is communicating with the Hololens by trying to move the wheelchair without any detections and checking the \code{/holo/cmd\_vel/} ROS topic for messages.
+
+\subsection{Test Procedure}
+To test the effectiveness of the system, we designed three different scenarios:
+
+\begin{enumerate}
+	\item Target Away: ARTA and PWU driving forward in the same direction as the target person walking away down the hallway.
+	\item Target Towards: ARTA and PWU driving forward as the target person walks towards the PWU.
+	\item Looking Away: ARTA and PWU driving forward, PWU is looking to the side so that the target person is not in the FOV of the Hololens.
+\end{enumerate}
+
+We designed these scenarios with the system in mind. We want to test whether the Hololens will detect a person as a collision risk and translate it to a reactive control output that slows down the powered wheelchair, preventing a collision. We illustrate the positions and motions of the target person using the Gazebo simulation map in Figure \ref{fig:fullSystemTest} since it provides an aerial representation of the hallway.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.9\linewidth]{img/chapter6_test/fullSystem.png}
+	\caption{The experimental setup used to test the full system. We ask the target person to walk down the hallway for Scenarios 1 \& 2. For Scenario 3, the target person stands still.}
+	\label{fig:fullSystemTest}
+\end{figure}
+
+\paragraph{Target Away} In this scenario, we are testing the ability of detecting a person walking in the same direction as the wheelchair. We want to test the system response to the detection which we expect to be a reduction in the forward velocity of ARTA, allowing the robot to continue moving forward, albeit at a slower velocity. We also want to evaluate how the system responds to the person moving out of the frame.
+
+\paragraph{Target Towards} This experiment was designed to test how the system responds to a collision risk that is approaching the wheelchair. The target person is asked to walk towards the wheelchair as the wheelchair moves forward. We are testing for the system to detect the person and rapidly decreasing the forward velocity of the wheelchair as the target person comes closer. We expect the system to stop moving completely when the target person is closer than 2m away.
+
+\paragraph{Looking Away} We ask the test subject wearing the Hololens to drive ARTA in a forward direction while looking to the side. The target person is asked to stand still to the side 2m away from the start position of ARTA and the PWU. This scenario is designed to test how the system is able to recognize the detected person is not in the current trajectory of the wheelchair, and so the reactive control system does not need to modify the user joystick input commands to avoid a collision.
+
+\paragraph{} During Scenarios 1 \& 2, we asked the Target Person to maintain a constant walking speed slightly faster than the top speed of 1.0m/s of the powered wheelchair. We also asked the Target Person to continue walking unless absolutely sure that a collision would occur, in which case we asked the Target Person to avoid the collision themselves.
+
+\begin{figure}[ht]
+	\begin{subfigure}[b]{.48\textwidth}
+		\centering
+		\includegraphics[width=0.5\linewidth]{img/chapter6_test/zihanBack.jpg}
+		\caption{Scenario 1: Target person walking in the same direction as forward motion of ARTA.}
+	\end{subfigure}%
+	\hspace{\fill} 
+	\begin{subfigure}[b]{.48\textwidth}
+		\centering
+		\includegraphics[width=0.5\linewidth]{img/chapter6_test/zihanForward.jpg}
+		\caption{Scenario 2: Target person walking towards the PWU and ARTA.}
+	\end{subfigure}
+	\vspace{-1\baselineskip}
+	\begin{center}
+		\caption{The path taken by the Target Person along the hallway outside the PRL.}
+		\label{fig:zihanBackForward}
+	\end{center}
+	\vspace{-2\baselineskip}
+\end{figure}
 
 
-%\section{ARTA Reactive Control}
+\subsection{Results}
+We measured the success of a scenario by whether human intervention was required to prevent a collision. We define human intervention as the act of:
+
+\begin{itemize}
+	\item The PWU stopping the forward joystick input manually or by navigating the wheelchair out of the way to prevent a collision.
+	\item The Target Person having to move themselves off the assigned path to avoid a collision.  
+\end{itemize}
+
+\subsubsection{Target Away}
+Through our observation of this scenario, we noticed several things:
+
+\begin{itemize}
+	\item System was unable to detect target person beyond 3-4 meters in front of the wheelchair.
+	\item ARTA moved much slower than expected despite the target being between 2-3m in front of the device.
+\end{itemize}
+
+We define a detection as the placement of a hologram at the position of the detected object. The test subject was unable to see a hologram of the green arrow on the surface of the target person when the target person was standing further than 3-4 meters away. The PWU and ARTA retained a relatively smooth velocity behind the target person walking away and no collision with the target occurred. When the target person left the FOV of the PWU, the wheelchair returned to the top velocity of 1m/s.
+
+\subsubsection{Target Towards}
+In this scenario, the PWU and ARTA drove forwards as the target person walked towards the powered wheelchair. We noticed that as soon as the target person was approximately 3m away from the PWU, the velocity of ARTA reduced rapidly in a sudden jerking motion. As the target person got closer, we noted that ARTA oscillating between motion and being stationary, instead of remaining completely still. When the target person was very close to the PWU, ARTA began moving forward, indicating the reactive control system had failed to notice a detection and the system required human intervention. 
+
+\subsubsection{Looking Away}
+This test involved driving the wheelchair forward while the PWU looked at a target to the side. For this scenario, we noted no change in the velocity as the PWU detected the target person, which indicates that the reactive control system was not activated as expected.
+
+\subsubsection{Summary of Scenarios}
+To conclude the full system test, we want to highlight several points we noticed during the test. Firstly, we want to highlight that the system is able to determine whether a detection is in front of the powered wheelchair and in the way of the current trajectory. However, occasionally the system is unable to detect target persons in front of the wheelchair. This issue was observed when the target was either far away from the PWU or extremely close. Secondly, we note that the reactive control causes a sudden and much more rapid decrease in velocity than we intended. Finally, we want to highlight the issue the system faced when the target person was very close which caused Scenario 2 to require human intervention. We discuss the results of our experiments in the following chapter.

@@ -132,7 +132,6 @@
 \contentsline {subsection}{\numberline {4.4.2}Reactive Control}{29}
 \contentsline {subsection}{\numberline {4.4.3}Removal of Exotic Control Interfaces}{30}
 \contentsline {paragraph}{}{30}
-\contentsline {paragraph}{}{30}
 \contentsline {chapter}{\numberline {5}Implementation}{31}
 \contentsline {section}{\numberline {5.1}Human Detection \& Direction System}{32}
 \contentsline {subsection}{\numberline {5.1.1}Hardware \& Software Dependencies}{32}
@@ -239,7 +238,7 @@
 \contentsline {section}{\numberline {5.4}System Summary}{61}
 \contentsline {chapter}{\numberline {6}Testing \& Results}{62}
 \contentsline {section}{\numberline {6.1}Human Detection and Distance}{62}
-\contentsline {subsection}{\numberline {6.1.1}System Description}{62}
+\contentsline {subsection}{\numberline {6.1.1}Test System Description}{62}
 \contentsline {subsection}{\numberline {6.1.2}Test Setup}{62}
 \contentsline {subsection}{\numberline {6.1.3}Test Procedure}{63}
 \contentsline {paragraph}{}{63}
@@ -247,7 +246,7 @@
 \contentsline {subsection}{\numberline {6.1.4}Results}{64}
 \contentsline {paragraph}{}{65}
 \contentsline {section}{\numberline {6.2}Gazebo Simulation}{65}
-\contentsline {subsection}{\numberline {6.2.1}System Description}{65}
+\contentsline {subsection}{\numberline {6.2.1}Test System Description}{65}
 \contentsline {subsection}{\numberline {6.2.2}Test Setup}{65}
 \contentsline {subsubsection}{Gazebo Simulation}{65}
 \contentsline {subsubsection}{Real World Lab Setup}{66}
@@ -256,3 +255,17 @@
 \contentsline {paragraph}{}{67}
 \contentsline {subsection}{\numberline {6.2.4}Results}{67}
 \contentsline {paragraph}{}{67}
+\contentsline {section}{\numberline {6.3}Full System}{69}
+\contentsline {subsection}{\numberline {6.3.1}Test Setup}{69}
+\contentsline {paragraph}{}{69}
+\contentsline {subsection}{\numberline {6.3.2}Test Procedure}{69}
+\contentsline {paragraph}{Target Away}{70}
+\contentsline {paragraph}{Target Towards}{70}
+\contentsline {paragraph}{Looking Away}{70}
+\contentsline {paragraph}{}{70}
+\contentsline {subsection}{\numberline {6.3.3}Results}{71}
+\contentsline {subsubsection}{Target Away}{71}
+\contentsline {subsubsection}{Target Towards}{72}
+\contentsline {subsubsection}{Looking Away}{72}
+\contentsline {subsubsection}{Summary of Scenarios}{72}
+\contentsline {chapter}{\numberline {7}Evaluation}{73}
