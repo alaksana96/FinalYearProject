@@ -303,7 +303,7 @@ Due to the bottom-up approach used by OpenPose, the network predicts key-points 
 
 We highlight the issues in Figure \ref{fig:openposeKP}. The reason for the decrease in accuracy on people further away is due to the network resolution being lowered. Using a higher resolution allows us to detect people further away, but the delay between the arrival of the frame and the detection is more than 0.5 seconds. As such, to achieve real-time operation, we chose to use a lower network resolution.
 
-\subsubsection{Defining Direction}
+\subsubsection{Defining Direction} \label{sec:keypointEstimate}
 By comparing the relative positions of certain key-points, we can determine if a person is facing towards the camera or if they are walking away. This information is important, since it will allow for better visualization of where a person is walking, since people tend to walk in the direction they are facing. This also partially solves the direction problem brought up in Section \ref{sec:objecTrackingDirection}.
 
 \begin{figure}[ht]
