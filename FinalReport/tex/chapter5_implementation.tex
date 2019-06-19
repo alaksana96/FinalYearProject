@@ -158,7 +158,7 @@ A common area where lots of people frequent is Sherfield walkway. As seen in Fig
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.95\linewidth]{img/chapter5_implementation/yoloWalkwayMultiple.png}
-    \caption{Evaluating the model on Sherfield Walkway test video. We notice that it is able to small figures close together at a distance.}
+    \caption{Evaluating the model on Sherfield Walkway test video. We notice that it is able to detect small figures close together at a distance.}
     \label{fig:yoloSherfield}
 \end{figure}
 
@@ -197,17 +197,17 @@ As explained in Section \ref{sec:YACHT}, the YACHT tracker depends on the Deep S
     \begin{subfigure}[b]{.45\textwidth}
         \centering
         \includegraphics[width=1.0\linewidth]{img/chapter5_implementation/deepSortCPU.png}
-        \caption{Output of YOLO. The image frame and bounding boxes are fed to Deep SORT}
+        \caption{Output of YOLO. The image frame and bounding boxes are fed to Deep SORT.}
     \end{subfigure}%
     \hspace{\fill} 
     \begin{subfigure}[b]{.45\textwidth}
         \centering
         \includegraphics[width=0.935\linewidth]{img/chapter5_implementation/deepSortCPU1.png}
-        \caption{Deep SORT is several frames behind since it runs at 4 FPS}
+        \caption{Deep SORT is several frames behind since it runs at 4 FPS.}
     \end{subfigure}
     \vspace{-1\baselineskip}
     \begin{center}
-        \caption{Visualization of delay on CPU bound Deep SORT}
+        \caption{Visualization of delay on CPU bound Deep SORT.}
         \label{fig:deepSortCPU}
     \end{center}
 \end{figure}
@@ -215,7 +215,7 @@ As explained in Section \ref{sec:YACHT}, the YACHT tracker depends on the Deep S
 
 \paragraph{Deep Association Metric} Through code profiling, we noticed that the program was spending a lot of time in the generation of feature vectors. Upon inspection, we noticed that this process was run on a CPU bound version of Tensorflow. The \code{ImageEncoder} class uses a pre-trained deep network that generates the feature vectors for each bounding box. By using Tensorflow-gpu, we were able to run the network on the system GPU, removing the delay. \\
 
-\begin{lstlisting}[language=Python, caption={Deep SORT Tensorflow GPU modifications}]
+\begin{lstlisting}[language=Python, caption={Deep SORT Tensorflow GPU modifications.}]
 class ImageEncoder(object):
 
     def __init__(self, checkpoint_filename, input_name="images",
@@ -542,7 +542,7 @@ These are the outputs of the two YACHT nodes described in Section \ref{sec:YACHT
 
 \paragraph{Matching Bounding Boxes} Due to the design of the YACHT package, two different nodes determine the tracking ID and direction of a detection. This allows the processing to be done in real-time by running on separate threads. Since both YACHT nodes subscribe to the bounding box detections from the YOLO node, we can match IDs and directions by comparing the bounding boxes contained in each message. \\
 
-\begin{lstlisting}[language={[Sharp]C},caption={IOU metric C\# implementation}]
+\begin{lstlisting}[language={[Sharp]C},caption={IOU metric C\# implementation.}]
 private float IntersectionOverUnion(BoundingBox a, BoundingBox b)
     {
         int xmin = Math.Max(a.xmin, b.xmin);
@@ -568,7 +568,7 @@ We use the Intersection-over-Union (IOU) metric to match the bounding boxes by c
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\linewidth]{img/chapter5_implementation/CameraTransform.png}
-    \caption{The front facing camera projects the surroundings onto a 2D plane. We can determine the real world position of a pixel by reversing the projection and using frame transforms.}
+    \caption{The front facing camera projects the surroundings onto a 2D plane. We can determine the real world position of a pixel by reversing the projection and using frame transforms \cite{Microsofta}.}
     \label{fig:cameraProjection}
 \end{figure}
 
