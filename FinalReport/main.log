@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  19 JUN 2019 20:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  19 JUN 2019 20:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -975,7 +975,10 @@ LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1.
 
-[1]) (./tex/acknowledgements.tex)
+[1]) (./tex/acknowledgements.tex
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 3.
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1007,8 +1010,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [4] (./tex/chapter1_introduction.tex
 Chapter 1.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 3.
 [5
 
 ]
@@ -2360,7 +2361,7 @@ type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/
 uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
 
-Output written on main.pdf (92 pages, 31731836 bytes).
+Output written on main.pdf (92 pages, 31732136 bytes).
 PDF statistics:
  452 PDF objects out of 1000 (max. 8388607)
  231 compressed objects within 3 object streams

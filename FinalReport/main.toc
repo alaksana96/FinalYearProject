@@ -1,12 +1,14 @@
 \select@language {english}
 \contentsline {paragraph}{}{1}
 \contentsline {paragraph}{}{1}
-\contentsline {paragraph}{Acknowledgements}{1}
+\setcounter {tocdepth}{0}
 \contentsline {paragraph}{}{1}
 \contentsline {paragraph}{}{1}
 \contentsline {paragraph}{}{1}
 \contentsline {paragraph}{}{1}
 \contentsline {paragraph}{}{1}
+\contentsline {paragraph}{}{1}
+\setcounter {tocdepth}{2}
 \contentsline {chapter}{\numberline {1}Introduction}{5}
 \contentsline {section}{\numberline {1.1}Introduction}{5}
 \contentsline {section}{\numberline {1.2}Motivation \& Objectives}{5}
