@@ -1,5 +1,27 @@
 \begin{thebibliography}{10}
 
+\bibitem{Zolotas2018}
+Mark Zolotas, Joshua Elsdon, and Yiannis Demiris.
+\newblock {Head-Mounted Augmented Reality for Explainable Robotic Wheelchair
+  Assistance}.
+\newblock 2018.
+
+\bibitem{Chacon-Quesada}
+Rodrigo Chac{\'{o}}n-Quesada and Yiannis Demiris.
+\newblock {Augmented Reality Control of Smart Wheelchair Using Eye-Gaze-Enabled
+  Selection of Affordances}.
+\newblock pages 1--4, 2018.
+
+\bibitem{Kairy2014}
+Dahlia Kairy, Paula~W. Rushton, Philippe Archambault, Evelina Pituch, Caryne
+  Torkia, Anas {El Fathi}, Paula Stone, Fran{\c{c}}ois Routhier, Robert Forget,
+  Louise Demers, Joelle Pineau, and Richard Gourdeau.
+\newblock {Exploring powered wheelchair users and their caregivers'
+  perspectives on potential intelligent power wheelchair use: A qualitative
+  study}.
+\newblock {\em International Journal of Environmental Research and Public
+  Health}, 11(2):2244--2261, 2014.
+
 \bibitem{Hou2010}
 Ya~Li Hou and Grantham~K.H. Pang.
 \newblock {Human detection in crowded scenes}.
@@ -166,18 +188,6 @@ Microsoft.
 Microsoft.
 \newblock {Microsoft HoloLens HoloLens Device Specifications}.
 \newblock 2015.
-
-\bibitem{Zolotas2018}
-Mark Zolotas, Joshua Elsdon, and Yiannis Demiris.
-\newblock {Head-Mounted Augmented Reality for Explainable Robotic Wheelchair
-  Assistance}.
-\newblock 2018.
-
-\bibitem{Chacon-Quesada}
-Rodrigo Chac{\'{o}}n-Quesada and Yiannis Demiris.
-\newblock {Augmented Reality Control of Smart Wheelchair Using Eye-Gaze-Enabled
-  Selection of Affordances}.
-\newblock pages 1--4, 2018.
 
 \bibitem{Jin2017}
 Sheng Jin, Xujie Ma, Zhipeng Han, Yue Wu, Wei Yang, Wentao Liu, Chen Qian, and

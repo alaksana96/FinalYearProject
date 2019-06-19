@@ -1,6 +1,29 @@
-\chapter{Introduction and Requirements}
+\chapter{Introduction}
 
 \section{Introduction}
 This report was written as part of the Final Year Project for the MEng Electronic \& Information Engineering course. The project was supervised by Professor Yiannis Demiris at the Imperial College London.
 
-\section{Motivation}
+\section{Motivation \& Objectives}
+Powered wheelchairs are becoming increasingly commonplace in the modern world. As technology advances, the devices have become more accessible and smarter, with schemes such as assistive control which help the user in navigation. Within the Personal Robotics Lab (PRL) at Imperial College London, one of the major research topics revolves around powered wheelchairs, and how the user experience can be enhanced. Previous work in the lab has utilized augmented reality headsets to enhance the user experience, by displaying visual aids to the powered wheelchair user (PWU) \cite{Zolotas2018, Chacon-Quesada} that help the PWU understand the internal state of the device, such as the current trajectory or planned path. However, despite the advances in smart wheelchairs and user enhancement techniques, a study showed that one of the concerns of PWUs is navigating in crowded spaces \cite{Kairy2014}. This concern is due to the unpredictability of people in crowds and their tendency to change direction rapidly. 
+
+\paragraph{}As such, this project explores the development of an augmented reality experience using the Microsoft Hololens as an aid for PWUs. The goal of the system would be to detect people in the surroundings and display the corresponding visual aids to the PWU to indicate potential collisions. To further alleviate the concerns of PWUs, the system should also be able to avoid accidents by reacting appropriately when the PWU is unaware of a potential collision.
+
+\section{Challenges}
+This project highlights the problems associated with the current version of the Microsoft Hololens. First and foremost is the lack of a built-in library for accessing the raw frames of the front facing camera, as well as a library for video streaming to partner devices. Secondly, the lack of a UWP implementation of the Robotic Operating System meant we were forced to modify a third-party library to be able to communicate between the Hololens running a Unity application and ROS nodes on the partner PC. Finally, we observed the limitations of the spatial mapping capabilities of the Hololens, and how they affect hologram stability and placement accuracy. 
+
+\section{Contributions}
+By developing this augmented reality system, we have contributed:
+
+\begin{itemize}
+	\item A Unity Engine application that can stream the front-facing camera of the Hololens across the network.
+	\item A ROS package for the Darknet Neural Network framework.
+	\item A trained object detector for detecting partially occluded people in crowds.
+	\item A ROS wrapper for the OpenPose body pose estimation network.
+	\item A Unity application that can visualize the position of detected persons by rendering holograms at the detected positions.
+	\item A reactive control system for powered wheelchairs that avoid collision by manipulating the velocity of the device when it detects a collision risk.
+\end{itemize}
+
+\section{Report Structure}
+This report begins with the background research that was done before embarking on the development of the system. We explore different computer vision techniques for people detection and tracking, as well as robotic mapping techniques for objects in the surroundings. We then discuss the requirements of the system we implemented, before describing the system from a high-level perspective, as well as why certain design decisions were taken.
+
+\paragraph{}The implementation section of this report covers the steps taken to develop the final system, from training the object detector to the reactive control system for the powered wheelchair. We then describe the testing procedure that allows us to analyse the performance of our product. Finally, we discuss the performance and limitations of the system we implemented before highlighting how the overall system could be improved in future work.
