@@ -1,0 +1,49 @@
+\begin{appendices}
+\chapter{Software}
+\section{Developed Software}
+All code developed in this project is available in their respective GitHub repositories. We have provided instructions in the \code{README.md} file of each repository on how to setup the code and how to run it.
+
+\subsection{Partner PC}
+The following applications were developed to run on Ubuntu 16.04 with 8GB DDR3 RAM and a GTX 1050 Ti. ROS Kinetic is also required, as well as Python 2, gcc and g++. For a more complete listing, please refer to the medium 
+
+\subsubsection{Darknet CrowdHuman}
+\paragraph{Source:} \code{https://github.com/alaksana96/darknet-crowdhuman}
+
+\paragraph{}This repository contains the Darknet version used in this project. We also provide the code required to convert the CrowdHuman dataset to the Darknet format for training the YOLO detector. This repository is also used as a submodule in the \code{fyp\_yolo} repository.
+
+\subsubsection{ROS Darknet/YOLO}
+\paragraph{Source:} \code{https://github.com/alaksana96/fyp\_yolo}
+
+\paragraph{}The ROS wrapper for the Darknet neural network framework. This repository relies on the Darknet CrowdHuman repository, and clones it as a submodule. When cloning this repository, please remember to clone it recursively using the \code{--recurse-submodules} flag
+
+\subsubsection{Yet Another CrowdHuman Tracker}
+\paragraph{Source:} \code{https://github.com/alaksana96/fyp\_yact}
+
+\paragraph{Dependencies:}
+\begin{itemize}
+	\item \code{https://github.com/CMU-Perceptual-Computing-Lab/openpose}
+	\item \code{https://github.com/alaksana96/deep\_sort}
+\end{itemize}
+
+\paragraph{}YACHT depends on the OpenPose network and a modified DeepSORT implementation. Please refer to the OpenPose repository for installation instructions. Furthermore, please clone the YACHT repository recursively using the \code{--recurse-submodules} flag.
+
+\subsection{Hololens}
+The following applications were developed using Unity for the Unity Engine running on the Microsoft Hololens.
+
+\subsubsection{Unity Application}
+\paragraph{Source:} \code{https://github.com/alaksana96/fyp\_hololens\_unity}
+
+\paragraph{}This application requires Unity 2018.1.6f1 and Visual Studio 2017 Community edition to build and deploy to the Hololens.
+
+\section{Personal Robotics Lab Software}
+For the software developed by the Personal Robotics Lab, please email a member of the lab for access to the repositories:
+
+\begin{itemize}
+	\item \code{https://github.com/ImperialCollegeLondon/arta}
+	\item \code{https://github.com/ImperialCollegeLondon/prl\_localisation}
+	\item \code{https://github.com/alaksana96/prl\_navigation}
+\end{itemize}
+
+We have modified the \code{prl\_navigation} repository to work with our reactive control system, please email contact us on GitHub for access to the repository.
+
+\end{appendices}

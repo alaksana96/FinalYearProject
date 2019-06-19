@@ -306,3 +306,22 @@
 \contentsline {subsection}{\numberline {8.2.3}Advanced Reactive Control}{83}
 \contentsline {subsection}{\numberline {8.2.4}Video Streaming}{83}
 \contentsline {paragraph}{}{83}
+\contentsline {chapter}{Appendices}{88}
+\contentsline {chapter}{\numberline {A}Software}{89}
+\contentsline {section}{\numberline {A.1}Developed Software}{89}
+\contentsline {subsection}{\numberline {A.1.1}Partner PC}{89}
+\contentsline {subsubsection}{Darknet CrowdHuman}{89}
+\contentsline {paragraph}{Source:}{89}
+\contentsline {paragraph}{}{89}
+\contentsline {subsubsection}{ROS Darknet/YOLO}{89}
+\contentsline {paragraph}{Source:}{89}
+\contentsline {paragraph}{}{89}
+\contentsline {subsubsection}{Yet Another CrowdHuman Tracker}{89}
+\contentsline {paragraph}{Source:}{89}
+\contentsline {paragraph}{Dependencies:}{90}
+\contentsline {paragraph}{}{90}
+\contentsline {subsection}{\numberline {A.1.2}Hololens}{90}
+\contentsline {subsubsection}{Unity Application}{90}
+\contentsline {paragraph}{Source:}{90}
+\contentsline {paragraph}{}{90}
+\contentsline {section}{\numberline {A.2}Personal Robotics Lab Software}{90}
