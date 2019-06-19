@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  19 JUN 2019 20:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.2)  19 JUN 2019 21:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2285,13 +2285,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[83]
-Underfull \hbox (badness 1442) in paragraph at lines 48--53
-[]\OT1/ppl/m/n/10.95 Manato Hirabayashi, Shin-pei Kato, Masato Edahiro, Kazuya 
-Takeda, Taiki
- []
-
-[84
+[83] [84
 
 ]
 
@@ -2308,7 +2302,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [86]
-Underfull \hbox (badness 10000) in paragraph at lines 259--262
+Underfull \hbox (badness 10000) in paragraph at lines 256--259
 []\OT1/ppl/m/n/10.95 Joseph Red-mon.  Dark-net: Open Source Neu-ral Net-works i
 n C.
  []
@@ -2361,7 +2355,7 @@ type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/
 uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
 
-Output written on main.pdf (92 pages, 31732136 bytes).
+Output written on main.pdf (92 pages, 31732539 bytes).
 PDF statistics:
  452 PDF objects out of 1000 (max. 8388607)
  231 compressed objects within 3 object streams

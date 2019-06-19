@@ -1,10 +1,11 @@
 \begin{thebibliography}{10}
 
 \bibitem{Zolotas2018}
-Mark Zolotas, Joshua Elsdon, and Yiannis Demiris.
-\newblock {Head-Mounted Augmented Reality for Explainable Robotic Wheelchair
-  Assistance}.
-\newblock 2018.
+M.~{Zolotas}, J.~{Elsdon}, and Y.~{Demiris}.
+\newblock Head-mounted augmented reality for explainable robotic wheelchair
+  assistance.
+\newblock In {\em 2018 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems (IROS)}, pages 1823--1829, Oct 2018.
 
 \bibitem{Chacon-Quesada}
 Rodrigo Chac{\'{o}}n-Quesada and Yiannis Demiris.
@@ -23,58 +24,62 @@ Dahlia Kairy, Paula~W. Rushton, Philippe Archambault, Evelina Pituch, Caryne
   Health}, 11(2):2244--2261, 2014.
 
 \bibitem{Hou2010}
-Ya~Li Hou and Grantham~K.H. Pang.
-\newblock {Human detection in crowded scenes}.
-\newblock {\em Proceedings - International Conference on Image Processing,
-  ICIP}, (September 2010):721--724, 2010.
+Y.~{Hou} and G.~K.~H. {Pang}.
+\newblock Human detection in crowded scenes.
+\newblock In {\em 2010 IEEE International Conference on Image Processing},
+  pages 721--724, Sep. 2010.
 
 \bibitem{Zeng2017}
 Dongdong Zeng, Ming Zhu, Tongxue Zhou, Fang Xu, and Hang Yang.
-\newblock {Robust Background Subtraction via the Local Similarity Statistical
-  Descriptor}.
-\newblock {\em Applied Sciences}, 7(10):989, 2017.
+\newblock Robust background subtraction via the local similarity statistical
+  descriptor.
+\newblock 2017.
 
 \bibitem{Redmon}
-Joseph Redmon, Santosh Divvala, Ross Girshick, and Ali Farhadi.
-\newblock {You Only Look Once: Unified, Real-Time Object Detection}.
-\newblock Technical report.
+Joseph Redmon, Santosh~Kumar Divvala, Ross~B. Girshick, and Ali Farhadi.
+\newblock You only look once: Unified, real-time object detection.
+\newblock {\em CoRR}, abs/1506.02640, 2015.
 
 \bibitem{Piccardi2004}
-Massimo Piccardi.
-\newblock {Background subtraction techniques: a review*}.
-\newblock 2004.
+M.~{Piccardi}.
+\newblock Background subtraction techniques: a review.
+\newblock In {\em 2004 IEEE International Conference on Systems, Man and
+  Cybernetics (IEEE Cat. No.04CH37583)}, volume~4, pages 3099--3104 vol.4, Oct
+  2004.
 
 \bibitem{Hirabayashi}
-Manato Hirabayashi, Shinpei Kato, Masato Edahiro, Kazuya Takeda, Taiki Kawano,
-  and Seiichi Mita.
-\newblock {GPU Implementations of Object Detection using HOG Features and
-  Deformable Models}.
-\newblock Technical report.
+M.~{Hirabayashi}, S.~{Kato}, M.~{Edahiro}, K.~{Takeda}, T.~{Kawano}, and
+  S.~{Mita}.
+\newblock Gpu implementations of object detection using hog features and
+  deformable models.
+\newblock In {\em 2013 IEEE 1st International Conference on Cyber-Physical
+  Systems, Networks, and Applications (CPSNA)}, pages 106--111, Aug 2013.
 
 \bibitem{Viola2001}
-Paul Viola and Michael Jones.
-\newblock {Rapid Object Detection using a Boosted Cascade of Simple Features}.
-\newblock Technical report, 2001.
+P.~{Viola} and M.~{Jones}.
+\newblock Rapid object detection using a boosted cascade of simple features.
+\newblock In {\em Proceedings of the 2001 IEEE Computer Society Conference on
+  Computer Vision and Pattern Recognition. CVPR 2001}, volume~1, pages I--I,
+  Dec 2001.
 
 \bibitem{Dalal2005}
-Navneet Dalal, Bill Triggs, Navneet Dalal, and Bill Triggs.
-\newblock {Histograms of Oriented Gradients for Human Detection}.
-\newblock In {\em IEEE Computer Society Conference on Computer Vision and
-  Pattern Recognition}, pages 886--893, 2005.
+N.~{Dalal} and B.~{Triggs}.
+\newblock Histograms of oriented gradients for human detection.
+\newblock In {\em 2005 IEEE Computer Society Conference on Computer Vision and
+  Pattern Recognition (CVPR'05)}, volume~1, pages 886--893 vol. 1, June 2005.
 
 \bibitem{Girshick2014}
-Ross Girshick, Jeff Donahue, Trevor Darrell, and Jitendra Malik.
-\newblock {Rich feature hierarchies for accurate object detection and semantic
-  segmentation}.
-\newblock In {\em Proceedings of the IEEE Computer Society Conference on
-  Computer Vision and Pattern Recognition}, pages 580--587, 2014.
+R.~{Girshick}, J.~{Donahue}, T.~{Darrell}, and J.~{Malik}.
+\newblock Rich feature hierarchies for accurate object detection and semantic
+  segmentation.
+\newblock In {\em 2014 IEEE Conference on Computer Vision and Pattern
+  Recognition}, pages 580--587, June 2014.
 
 \bibitem{Dicle2013}
-Caglayan Dicle, Octavia~I Camps, and Mario Sznaier.
-\newblock {The way they move: Tracking multiple targets with similar
-  appearance}.
-\newblock In {\em Proceedings of the IEEE International Conference on Computer
-  Vision}, pages 2304--2311, 2013.
+C.~{Dicle}, O.~I. {Camps}, and M.~{Sznaier}.
+\newblock The way they move: Tracking multiple targets with similar appearance.
+\newblock In {\em 2013 IEEE International Conference on Computer Vision}, pages
+  2304--2311, Dec 2013.
 
 \bibitem{Bewley2016}
 Alex Bewley, Zongyuan Ge, Lionel Ott, Fabio Ramos, and Ben Upcroft.
@@ -88,10 +93,10 @@ R.~E. Kalman and R.~S. Bucy.
 \newblock {\em Journal of Basic Engineering}, 83(1):95, 1961.
 
 \bibitem{Wojke2018}
-Nicolai Wojke, Alex Bewley, and Dietrich Paulus.
-\newblock {Simple online and realtime tracking with a deep association metric}.
-\newblock In {\em Proceedings - International Conference on Image Processing,
-  ICIP}, volume 2017-Septe, pages 3645--3649, 2018.
+N.~{Wojke}, A.~{Bewley}, and D.~{Paulus}.
+\newblock Simple online and realtime tracking with a deep association metric.
+\newblock In {\em 2017 IEEE International Conference on Image Processing
+  (ICIP)}, pages 3645--3649, Sep. 2017.
 
 \bibitem{Valenti2012}
 Roberto Valenti, Nicu Sebe, and Theo Gevers.
@@ -100,10 +105,10 @@ Roberto Valenti, Nicu Sebe, and Theo Gevers.
 \newblock {\em IEEE Transactions on Image Processing}, 21(2):802--815, 2012.
 
 \bibitem{Murphy-Chutorian2009}
-Erik Murphy-Chutorian and Mohan~Manubhai Trivedi.
-\newblock {Head pose estimation in computer vision: A survey}.
+E.~{Murphy-Chutorian} and M.~M. {Trivedi}.
+\newblock Head pose estimation in computer vision: A survey.
 \newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
-  31(4):607--626, 2009.
+  31(4):607--626, April 2009.
 
 \bibitem{Kazemi2014}
 Vahid Kazemi and Josephine Sullivan.
@@ -117,7 +122,7 @@ George Papandreou, Tyler Zhu, Nori Kanazawa, Alexander Toshev, Jonathan
   Tompson, Chris Bregler, and Kevin Murphy.
 \newblock {Towards accurate multi-person pose estimation in the wild}.
 \newblock In {\em Proceedings - 30th IEEE Conference on Computer Vision and
-  Pattern Recognition, CVPR 2017}, volume 2017-Janua, pages 3711--3719, jan
+  Pattern Recognition, CVPR 2017}, volume 2017-January, pages 3711--3719, Jan
   2017.
 
 \bibitem{Ren2017}
@@ -129,56 +134,52 @@ Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun.
 
 \bibitem{He2016}
 Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
-\newblock {Deep residual learning for image recognition}.
-\newblock In {\em Proceedings of the IEEE Computer Society Conference on
-  Computer Vision and Pattern Recognition}, volume 2016-Decem, pages 770--778,
-  2016.
+\newblock Deep residual learning for image recognition.
+\newblock {\em CoRR}, abs/1512.03385, 2015.
 
 \bibitem{Pishchulin}
 Leonid Pishchulin, Eldar Insafutdinov, Siyu Tang, Bjoern Andres, Mykhaylo
-  Andriluka, Peter Gehler, and Bernt Schiele.
-\newblock {DeepCut: Joint subset partition and labeling for multi person pose
-  estimation}.
-\newblock In {\em Proceedings of the IEEE Computer Society Conference on
-  Computer Vision and Pattern Recognition}, volume 2016-Decem, pages
-  4929--4937, 2016.
+  Andriluka, Peter~V. Gehler, and Bernt Schiele.
+\newblock Deepcut: Joint subset partition and labeling for multi person pose
+  estimation.
+\newblock {\em CoRR}, abs/1511.06645, 2015.
 
 \bibitem{Cao2017}
-Zhe Cao, Tomas Simon, Shih~En Wei, and Yaser Sheikh.
-\newblock {Realtime multi-person 2D pose estimation using part affinity
-  fields}.
-\newblock In {\em Proceedings - 30th IEEE Conference on Computer Vision and
-  Pattern Recognition, CVPR 2017}, volume 2017-Janua, pages 1302--1310, 2017.
+Zhe Cao, Gines Hidalgo, Tomas Simon, Shih{-}En Wei, and Yaser Sheikh.
+\newblock Openpose: Realtime multi-person 2d pose estimation using part
+  affinity fields.
+\newblock {\em CoRR}, abs/1812.08008, 2018.
 
 \bibitem{Bailey2006a}
-T~Bailey and H~Durrant-Whyte.
-\newblock {Simultaneous localisation and mapping (SLAM): Part I - The essential
-  algorithms.}
-\newblock {\em IEEE Robotics and Automation Magazine}, 13(2):99--108, 2006.
+H.~{Durrant-Whyte} and T.~{Bailey}.
+\newblock Simultaneous localization and mapping: part i.
+\newblock {\em IEEE Robotics Automation Magazine}, 13(2):99--110, June 2006.
 
 \bibitem{Cadena2016}
-Cesar Cadena, Luca Carlone, Henry Carrillo, Yasir Latif, Davide Scaramuzza,
-  Jose Neira, Ian Reid, and John~J. Leonard.
-\newblock {Past, present, and future of simultaneous localization and mapping:
-  Toward the robust-perception age}.
-\newblock {\em IEEE Transactions on Robotics}, 32(6):1309--1332, 2016.
+C.~{Cadena}, L.~{Carlone}, H.~{Carrillo}, Y.~{Latif}, D.~{Scaramuzza},
+  J.~{Neira}, I.~{Reid}, and J.~J. {Leonard}.
+\newblock Past, present, and future of simultaneous localization and mapping:
+  Toward the robust-perception age.
+\newblock {\em IEEE Transactions on Robotics}, 32(6):1309--1332, Dec 2016.
 
 \bibitem{Taketomi2017}
 Takafumi Taketomi, Hideaki Uchiyama, and Sei Ikeda.
-\newblock {Visual SLAM algorithms: a survey from 2010 to 2016}.
+\newblock Visual slam algorithms: a survey from 2010 to 2016.
 \newblock {\em IPSJ Transactions on Computer Vision and Applications}, 9(1):16,
-  2017.
+  Jun 2017.
 
 \bibitem{Nister2004}
-David Nist{\'{e}}r.
-\newblock {A Minimal Solution to the Generalised 3-Point Pose Problem}.
-\newblock {\em Journal of Mathematical Imaging and Vision}, 27(1):560--567,
-  2004.
+D.~{Nister}.
+\newblock A minimal solution to the generalised 3-point pose problem.
+\newblock In {\em Proceedings of the 2004 IEEE Computer Society Conference on
+  Computer Vision and Pattern Recognition, 2004. CVPR 2004.}, volume~1, pages
+  I--I, June 2004.
 
 \bibitem{Milgram1994}
 Paul Milgram and Fumio Kishino.
-\newblock {A TAXONOMY OF MIXED REALITY VISUAL DISPLAYS}.
-\newblock {\em IEICE Transactions on Information Systems}, E77(12):1--15, 1994.
+\newblock A taxonomy of mixed reality visual displays.
+\newblock {\em IEICE Trans. Information Systems}, vol. E77-D, no.
+  12:1321--1329, 12 1994.
 
 \bibitem{Microsofta}
 Microsoft.
@@ -190,21 +191,17 @@ Microsoft.
 \newblock 2015.
 
 \bibitem{Jin2017}
-Sheng Jin, Xujie Ma, Zhipeng Han, Yue Wu, Wei Yang, Wentao Liu, Chen Qian, and
-  Wanli Ouyang.
-\newblock {Towards Multi-Person Pose Tracking : Bottom-up and Top-down
-  Methods}.
-\newblock {\em Proceedings of the IEEE International Conference on Computer
-  Vision}, (2):4--7, 2017.
+Guanghan Ning, Ping Liu, Xiaochuan Fan, and Chi Zhang.
+\newblock A top-down approach to articulated human pose estimation and
+  tracking.
+\newblock {\em CoRR}, abs/1901.07680, 2019.
 
 \bibitem{Insafutdinov}
 Eldar Insafutdinov, Leonid Pishchulin, Bjoern Andres, Mykhaylo Andriluka, and
   Bernt Schiele.
-\newblock {Deepercut: A deeper, stronger, and faster multi-person pose
-  estimation model}.
-\newblock In {\em Lecture Notes in Computer Science (including subseries
-  Lecture Notes in Artificial Intelligence and Lecture Notes in
-  Bioinformatics)}, volume 9910 LNCS, pages 34--50, 2016.
+\newblock Deepercut: {A} deeper, stronger, and faster multi-person pose
+  estimation model.
+\newblock {\em CoRR}, abs/1605.03170, 2016.
 
 \bibitem{Detectron2018}
 Ross Girshick, Ilija Radosavovic, Georgia Gkioxari, Piotr Doll{\'{a}}r, and
@@ -214,35 +211,35 @@ Ross Girshick, Ilija Radosavovic, Georgia Gkioxari, Piotr Doll{\'{a}}r, and
   2018.
 
 \bibitem{Rena}
-Shaoqing Ren, Kaiming He, Ross Girshick, and Jian Sun.
-\newblock {Faster R-CNN: Towards Real-Time Object Detection with Region
-  Proposal Networks.}
-\newblock {\em IEEE transactions on pattern analysis and machine intelligence},
-  39(6):1137--1149, 2017.
+S.~{Ren}, K.~{He}, R.~{Girshick}, and J.~{Sun}.
+\newblock Faster r-cnn: Towards real-time object detection with region proposal
+  networks.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  39(6):1137--1149, June 2017.
 
 \bibitem{Redmon2018}
 Joseph Redmon and Ali Farhadi.
-\newblock {YOLOv3: An Incremental Improvement}.
-\newblock Technical report, 2018.
+\newblock Yolov3: An incremental improvement.
+\newblock {\em CoRR}, abs/1804.02767, 2018.
 
 \bibitem{Lin}
-Tsung~Yi Lin, Michael Maire, Serge Belongie, James Hays, Pietro Perona, Deva
-  Ramanan, Piotr Doll{\'{a}}r, and C~Lawrence Zitnick.
-\newblock {Microsoft COCO: Common objects in context}.
-\newblock In {\em Lecture Notes in Computer Science (including subseries
-  Lecture Notes in Artificial Intelligence and Lecture Notes in
-  Bioinformatics)}, volume 8693 LNCS, pages 740--755, 2014.
+Tsung{-}Yi Lin, Michael Maire, Serge~J. Belongie, Lubomir~D. Bourdev, Ross~B.
+  Girshick, James Hays, Pietro Perona, Deva Ramanan, Piotr Doll{\'{a}}r, and
+  C.~Lawrence Zitnick.
+\newblock Microsoft {COCO:} common objects in context.
+\newblock {\em CoRR}, abs/1405.0312, 2014.
 
 \bibitem{Shao}
 Shuai Shao, Zijian Zhao, Boxun Li, Tete Xiao, Gang Yu, Xiangyu Zhang, and Jian
   Sun.
-\newblock {CrowdHuman: A Benchmark for Detecting Human in a Crowd}.
-\newblock 2018.
+\newblock Crowdhuman: {A} benchmark for detecting human in a crowd.
+\newblock {\em CoRR}, abs/1805.00123, 2018.
 
 \bibitem{Milan}
-Anton Milan, Laura Leal-Taixe, Ian Reid, Stefan Roth, and Konrad Schindler.
-\newblock {MOT16: A Benchmark for Multi-Object Tracking}.
-\newblock 2016.
+Anton Milan, Laura Leal{-}Taix{\'{e}}, Ian~D. Reid, Stefan Roth, and Konrad
+  Schindler.
+\newblock {MOT16:} {A} benchmark for multi-object tracking.
+\newblock {\em CoRR}, abs/1603.00831, 2016.
 
 \bibitem{Leutenegger2019}
 Stefan Leutenegger.
@@ -251,19 +248,19 @@ Stefan Leutenegger.
 
 \bibitem{Patacchiola2017a}
 Massimiliano Patacchiola and Angelo Cangelosi.
-\newblock {Head pose estimation in the wild using Convolutional Neural Networks
-  and adaptive gradient methods}.
-\newblock {\em Pattern Recognition}, 71:132--143, 2017.
+\newblock Head pose estimation in the wild using convolutional neural networks
+  and adaptive gradient methods.
+\newblock {\em Pattern Recognition}, 71, 06 2017.
 
 \bibitem{darknet13}
 Joseph Redmon.
 \newblock {Darknet: Open Source Neural Networks in C}.
-\newblock $\backslash$url{\{}http://pjreddie.com/darknet/{\}}.
+\newblock $\backslash$url{\{}http://pjreddie.com/darknet/{\}}, 2013.
 
 \bibitem{Jia}
-Yangqing Jia, Evan Shelhamer, Jeff Donahue, Sergey Karayev, Jonathan Long, Ross
-  Girshick, Sergio Guadarrama, and Trevor Darrell.
-\newblock {Caffe: Convolutional Architecture for Fast Feature Embedding}.
-\newblock 2014.
+Yangqing Jia, Evan Shelhamer, Jeff Donahue, Sergey Karayev, Jonathan Long,
+  Ross~B. Girshick, Sergio Guadarrama, and Trevor Darrell.
+\newblock Caffe: Convolutional architecture for fast feature embedding.
+\newblock {\em CoRR}, abs/1408.5093, 2014.
 
 \end{thebibliography}
